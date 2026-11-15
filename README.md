@@ -1,3 +1,8 @@
+## ▶ Demo video
+
+https://github.com/user-attachments/assets/bdae4a40-c502-42a4-a6ec-b14855998670
+
+
 # WaterProof
 
 *NASA Space Apps Challenge 2026 — "Dancing with the SARs". MIT License.*
