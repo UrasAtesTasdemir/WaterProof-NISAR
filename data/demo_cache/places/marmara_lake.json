@@ -1,0 +1,49 @@
+{
+  "place": "marmara_lake",
+  "lat": 38.62,
+  "lon": 28.03,
+  "window_km": 5.0,
+  "surface": "shallow lake basin / wetland",
+  "group": {
+    "instrument": "L",
+    "track": "129",
+    "direction": "A",
+    "frame": "021",
+    "bandwidth": "2005",
+    "polarization": "DHDH",
+    "source": "A",
+    "crid": "P05023"
+  },
+  "dates": [
+    "2026-06-23",
+    "2026-07-05",
+    "2026-07-17",
+    "2026-08-10",
+    "2026-08-22",
+    "2026-09-03"
+  ],
+  "product_ids": [
+    "NISAR_L2_PR_GCOV_023_129_A_021_2005_DHDH_A_20260623T031835_20260623T031910_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_024_129_A_021_2005_DHDH_A_20260705T031834_20260705T031909_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_025_129_A_021_2005_DHDH_A_20260717T031834_20260717T031908_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_027_129_A_021_2005_DHDH_A_20260810T031832_20260810T031907_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_028_129_A_021_2005_DHDH_A_20260822T031832_20260822T031906_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_029_129_A_021_2005_DHDH_A_20260903T031831_20260903T031906_P05023_N_F_J_001"
+  ],
+  "cache_keys": [
+    "0ad22199cc62ce5f5daca1d8416258da3dfc9e0ad091ec1f7f5ecb123df1097e",
+    "831e2d719c296fd3ad8bc1097618077ccf83cdc21333d586224153dfc89eb46d",
+    "50af95c8ebf4f820ad5f1783e738e29bd606106101246fdc23914f7f4ea48121",
+    "f371e6f60f1795fc1ffab7f041a74819f766916a29fd879d3149ca5447443288",
+    "61cf36f2a6f7959ca5a6b7d8b9b13847af5cf3d5d77cf0bfcd57694b0b27f5c4",
+    "86ffc1499485e4970f056dce8e87e506269744cba1559e4ed8390dad3368e531"
+  ],
+  "selection_rule": "Largest compatible HH+HV group returned by src.live_engine.group_products for the date range (ties: catalog order); its first max_dates acquisition dates; window_km square centred on the point.",
+  "catalog_snapshot": "catalog/marmara_lake.json",
+  "processing_version": "live-window-v1",
+  "status": "cached",
+  "read_seconds": 238.0,
+  "range_bytes_read": 59768880,
+  "dates_reused": 0,
+  "prewarmed_utc": "2026-11-15T01:13:39.836129+00:00"
+}

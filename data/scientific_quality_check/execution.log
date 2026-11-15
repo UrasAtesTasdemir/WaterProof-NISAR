@@ -1,0 +1,116 @@
+{
+  "checked_at_utc": "2026-11-14T08:26:05.438278+00:00",
+  "settings_held_fixed": {
+    "linear_power_filter": "3x3 mask-aware boxcar",
+    "minimum_absolute_change_db": 3,
+    "valid_pixels": 138779
+  },
+  "threshold_sensitivity": [
+    {
+      "water_threshold_db": -14,
+      "min_abs_change_db": 3,
+      "filter_size": 3,
+      "expansion_pixels": 1652,
+      "recession_pixels": 72,
+      "expansion_km2": 0.1652,
+      "recession_km2": 0.0072
+    },
+    {
+      "water_threshold_db": -16,
+      "min_abs_change_db": 3,
+      "filter_size": 3,
+      "expansion_pixels": 569,
+      "recession_pixels": 5,
+      "expansion_km2": 0.0569,
+      "recession_km2": 0.0005
+    },
+    {
+      "water_threshold_db": -18,
+      "min_abs_change_db": 3,
+      "filter_size": 3,
+      "expansion_pixels": 91,
+      "recession_pixels": 0,
+      "expansion_km2": 0.0091,
+      "recession_km2": 0.0
+    },
+    {
+      "water_threshold_db": -20,
+      "min_abs_change_db": 3,
+      "filter_size": 3,
+      "expansion_pixels": 0,
+      "recession_pixels": 0,
+      "expansion_km2": 0.0,
+      "recession_km2": 0.0
+    }
+  ],
+  "invalid_and_alignment": {
+    "crs": "EPSG:32615",
+    "same_grid": true,
+    "same_input_valid_masks": true,
+    "invalid_classified_as_water": 0,
+    "expansion_with_incomplete_3x3_support": 6,
+    "nan_masks_preserved": true
+  },
+  "existing_dark_radar_proximity": {
+    "definition": "Before-date filtered HH <= -16 dB; not an independent water reference",
+    "before_dark_pixels": 230,
+    "expansion_within_30m_pixels": 197,
+    "expansion_within_60m_pixels": 387
+  },
+  "connected_components": {
+    "connectivity": 8,
+    "component_count": 140,
+    "singleton_components": 61,
+    "pixels_in_components_of_1_to_3_pixels": 136,
+    "largest_component_pixels": 29,
+    "interpretation": "Small clusters may be noise or real narrow features; no clusters were removed."
+  },
+  "filter_diagnostic": {
+    "raw_unfiltered_expansion_km2": 0.3432,
+    "filtered_expansion_km2": 0.056900000000000006,
+    "shared_expansion_pixels": 334,
+    "expansion_Jaccard_raw_vs_filtered": 0.09108262885192256,
+    "interpretation": "Processing sensitivity, not an accuracy or validation score; no filter settings optimized."
+  },
+  "delta_distribution_db": {
+    "5": -4.115894605026631,
+    "25": -2.4339113201557394,
+    "50": -1.388781573900281,
+    "75": -0.41121093840245804,
+    "95": 0.9659160558821351
+  },
+  "historical_hydrography_proximity": {
+    "source": "USGS NHD large-scale flowlines/areas/waterbodies",
+    "feature_counts": {
+      "6": 105,
+      "9": 3,
+      "12": 56
+    },
+    "rasterization": "all_touched=True on 10m NISAR grid; distances quantized to raster cells",
+    "expansion_inside_or_touching_hydro_pixels": 566,
+    "expansion_within_30m_pixels": 567,
+    "expansion_within_60m_pixels": 569,
+    "not_date_matched": true,
+    "not_flood_validation": true,
+    "network_excluding_swamp_marsh": {
+      "mapped_pixels_in_common_aoi": 19182,
+      "expansion_inside_or_touching_pixels": 512,
+      "expansion_within_30m_pixels": 533,
+      "expansion_within_60m_pixels": 541
+    },
+    "explicit_canal_ditch_or_stream_river": {
+      "mapped_pixels_in_common_aoi": 9302,
+      "expansion_inside_or_touching_pixels": 416,
+      "expansion_within_30m_pixels": 431,
+      "expansion_within_60m_pixels": 441
+    },
+    "swamp_marsh_only": {
+      "mapped_pixels_in_common_aoi": 102552,
+      "expansion_inside_or_touching_pixels": 59,
+      "expansion_within_30m_pixels": 362,
+      "expansion_within_60m_pixels": 533
+    },
+    "caution": "All-hydrography union includes broad historical swamp/marsh polygons; use the separate canal/stream statistics when discussing river/ditch proximity."
+  },
+  "independent_validation_status": "unvalidated; hydrography is historical context and DSWx catalog/pixel checks are recorded separately"
+}

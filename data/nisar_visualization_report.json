@@ -1,0 +1,113 @@
+{
+  "started_at_utc": "2026-11-14T08:01:03.072189+00:00",
+  "status": "success",
+  "observations": [
+    {
+      "hdf5_group": "/science/LSAR/GCOV/grids/frequencyA",
+      "layer": "HHHH",
+      "full_grid_shape": [
+        34632,
+        35208
+      ],
+      "subset_shape": [
+        257,
+        579
+      ],
+      "epsg": 32615,
+      "pixel_spacing_m": [
+        10.0,
+        -10.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        759680.0,
+        0.0,
+        -10.0,
+        3313600.0
+      ],
+      "pixel_center_window": {
+        "row_start": 25832,
+        "row_stop_exclusive": 26089,
+        "column_start": 19664,
+        "column_stop_exclusive": 20243
+      },
+      "aoi_pixel_centers": 138779,
+      "finite_positive_pixels": 138779,
+      "invalid_or_nonpositive_pixels_inside_aoi": 0,
+      "power_min": 0.0038914084434509277,
+      "power_max": 38.79638671875,
+      "db_min": -24.09893226623535,
+      "db_max": 15.88791275024414,
+      "power_units": "1",
+      "db_formula": "10 * log10(power), finite positive values only",
+      "aoi_mask_rule": "pixel center inside transformed AOI; outside and invalid values are NaN",
+      "product_id": "NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001",
+      "acquisition_utc": "2026-06-21T11:19:06+00:00",
+      "source_catalog_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001/NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001.h5",
+      "remote_product_bytes": 6593445888,
+      "range_bytes_read": 8388616,
+      "cache_limit_bytes": 16777216,
+      "geotiff": "data/subsets/nisar_hhhh_2026-06-21.tif",
+      "geotiff_readback_verified": true
+    },
+    {
+      "hdf5_group": "/science/LSAR/GCOV/grids/frequencyA",
+      "layer": "HHHH",
+      "full_grid_shape": [
+        34632,
+        35208
+      ],
+      "subset_shape": [
+        257,
+        579
+      ],
+      "epsg": 32615,
+      "pixel_spacing_m": [
+        10.0,
+        -10.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        759680.0,
+        0.0,
+        -10.0,
+        3313600.0
+      ],
+      "pixel_center_window": {
+        "row_start": 25832,
+        "row_stop_exclusive": 26089,
+        "column_start": 19664,
+        "column_stop_exclusive": 20243
+      },
+      "aoi_pixel_centers": 138779,
+      "finite_positive_pixels": 138779,
+      "invalid_or_nonpositive_pixels_inside_aoi": 0,
+      "power_min": 0.00302278995513916,
+      "power_max": 38.99609375,
+      "db_min": -25.195920944213867,
+      "db_max": 15.910210609436035,
+      "power_units": "1",
+      "db_formula": "10 * log10(power), finite positive values only",
+      "aoi_mask_rule": "pixel center inside transformed AOI; outside and invalid values are NaN",
+      "product_id": "NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001",
+      "acquisition_utc": "2026-07-03T11:19:05+00:00",
+      "source_catalog_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001.h5",
+      "remote_product_bytes": 6585057280,
+      "range_bytes_read": 8388616,
+      "cache_limit_bytes": 16777216,
+      "geotiff": "data/subsets/nisar_hhhh_2026-07-03.tif",
+      "geotiff_readback_verified": true
+    }
+  ],
+  "full_products_downloaded": false,
+  "aoi_wkt": "POLYGON((-90.31002 29.902604, -90.250797 29.902604, -90.250797 29.924476, -90.31002 29.924476, -90.31002 29.902604))",
+  "image": "data/nisar_hhhh_comparison.png",
+  "color_scale_db": [
+    -16.63953399658203,
+    -0.6400125026702881
+  ],
+  "color_scale_rule": "Shared pooled 2nd\u201398th percentiles; display only, no classification",
+  "completed_at_utc": "2026-11-14T08:01:37.295215+00:00"
+}

@@ -1,0 +1,188 @@
+{
+  "status": "success",
+  "requested_size_km": 10,
+  "requested_projected_bounds": [
+    757575.327887017,
+    3307314.4414333254,
+    767575.327887017,
+    3317314.4414333254
+  ],
+  "requested_aoi_geojson": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -90.22991876128887,
+          29.867394231681864
+        ],
+        [
+          -90.22742103540278,
+          29.957535590791668
+        ],
+        [
+          -90.33094391570201,
+          29.95967489634307
+        ],
+        [
+          -90.33334865608172,
+          29.869525803595074
+        ],
+        [
+          -90.22991876128887,
+          29.867394231681864
+        ]
+      ]
+    ]
+  },
+  "requested_area_km2": 100.0,
+  "catalog_overlap_coverage_fraction": 1,
+  "crs": "EPSG:32615",
+  "resolution_m": [
+    10,
+    10
+  ],
+  "transform": [
+    10.0,
+    0.0,
+    757340.0,
+    0.0,
+    -10.0,
+    3317560.0
+  ],
+  "shape": [
+    1049,
+    1048
+  ],
+  "observations": [
+    {
+      "hdf5_group": "/science/LSAR/GCOV/grids/frequencyA",
+      "layer": "HHHH",
+      "full_grid_shape": [
+        34632,
+        35208
+      ],
+      "subset_shape": [
+        1049,
+        1048
+      ],
+      "epsg": 32615,
+      "pixel_spacing_m": [
+        10.0,
+        -10.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        757340.0,
+        0.0,
+        -10.0,
+        3317560.0
+      ],
+      "pixel_center_window": {
+        "row_start": 25436,
+        "row_stop_exclusive": 26485,
+        "column_start": 19430,
+        "column_stop_exclusive": 20478
+      },
+      "aoi_pixel_centers": 1000000,
+      "finite_positive_pixels": 1000000,
+      "invalid_or_nonpositive_pixels_inside_aoi": 0,
+      "power_min": 0.0033111870288848877,
+      "power_max": 3828.78125,
+      "db_min": -24.80016326904297,
+      "db_max": 35.830604553222656,
+      "power_units": "1",
+      "db_formula": "10 * log10(power), finite positive values only",
+      "aoi_mask_rule": "pixel center inside transformed AOI; outside and invalid values are NaN",
+      "remote_product_bytes": 6593445888,
+      "range_bytes_read": 15728648,
+      "cache_limit_bytes": 16777216,
+      "product_id": "NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001",
+      "acquisition_utc": "2026-06-21T11:19:06+00:00"
+    },
+    {
+      "hdf5_group": "/science/LSAR/GCOV/grids/frequencyA",
+      "layer": "HHHH",
+      "full_grid_shape": [
+        34632,
+        35208
+      ],
+      "subset_shape": [
+        1049,
+        1048
+      ],
+      "epsg": 32615,
+      "pixel_spacing_m": [
+        10.0,
+        -10.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        757340.0,
+        0.0,
+        -10.0,
+        3317560.0
+      ],
+      "pixel_center_window": {
+        "row_start": 25436,
+        "row_stop_exclusive": 26485,
+        "column_start": 19430,
+        "column_stop_exclusive": 20478
+      },
+      "aoi_pixel_centers": 1000000,
+      "finite_positive_pixels": 1000000,
+      "invalid_or_nonpositive_pixels_inside_aoi": 0,
+      "power_min": 0.002049684524536133,
+      "power_max": 3812.09375,
+      "db_min": -26.883129119873047,
+      "db_max": 35.81163787841797,
+      "power_units": "1",
+      "db_formula": "10 * log10(power), finite positive values only",
+      "aoi_mask_rule": "pixel center inside transformed AOI; outside and invalid values are NaN",
+      "remote_product_bytes": 6585057280,
+      "range_bytes_read": 14680072,
+      "cache_limit_bytes": 16777216,
+      "product_id": "NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001",
+      "acquisition_utc": "2026-07-03T11:19:05+00:00"
+    }
+  ],
+  "settings": {
+    "source_before": "NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001",
+    "source_after": "NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001",
+    "dates": "2026-06-21 / 2026-07-03",
+    "polarization": "frequencyA HH / HHHH",
+    "settings": "linear 3x3 mask-aware mean, water<=-16dB, absolute delta>=3dB; no singleton suppression",
+    "interpretation": "Unvalidated candidate surface-water changes"
+  },
+  "areas": {
+    "0": {
+      "name": "Unknown / no data",
+      "pixels": 99352,
+      "area_km2": 9.9352
+    },
+    "1": {
+      "name": "Persistent water candidate",
+      "pixels": 2324,
+      "area_km2": 0.23240000000000002
+    },
+    "2": {
+      "name": "New water candidate (possible expansion)",
+      "pixels": 5062,
+      "area_km2": 0.5062
+    },
+    "3": {
+      "name": "Receded water candidate",
+      "pixels": 352,
+      "area_km2": 0.0352
+    },
+    "4": {
+      "name": "Other valid surface",
+      "pixels": 992262,
+      "area_km2": 99.2262
+    }
+  },
+  "valid_comparison_area_km2": 100.0,
+  "elapsed_seconds": 109.06196937500499,
+  "full_HDF5_downloaded": false
+}

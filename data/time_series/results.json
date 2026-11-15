@@ -1,0 +1,396 @@
+{
+  "status": "success",
+  "created_utc": "2026-11-14T12:05:30.883998+00:00",
+  "observations": [
+    {
+      "date": "2026-06-21",
+      "acquisition_utc": "2026-06-21T11:19:06+00:00",
+      "product_id": "NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001",
+      "valid_pixels": 138779,
+      "common_pixels": 138779,
+      "mean_db": -6.181558037782486,
+      "std_db": 3.021453788406361,
+      "p5_db": -11.968853997482308,
+      "p25_db": -7.982113816844636,
+      "p50_db": -5.642242630132922,
+      "p75_db": -3.9444439140255083,
+      "p95_db": -2.2981237519340865,
+      "source_verification": {
+        "product_id": "NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001",
+        "date_utc": "2026-06-21T11:19:06+00:00",
+        "path": "data/subsets/nisar_hhhh_2026-06-21.tif",
+        "sha256": "133b8a8d020f2a29a5e53163224f9bdadfcd8c7008480f84cd029968a26239f9",
+        "provenance_verified_against": [
+          "manifest",
+          "Milestone 2 report",
+          "JSON sidecar",
+          "GeoTIFF tags"
+        ],
+        "db_max_absolute_error": 1.8757186417417415e-06,
+        "valid_pixels": 138779,
+        "crs": "EPSG:32615",
+        "shape": [
+          257,
+          579
+        ],
+        "resolution": [
+          10.0,
+          10.0
+        ],
+        "transform": [
+          10.0,
+          0.0,
+          759680.0,
+          0.0,
+          -10.0,
+          3313600.0
+        ],
+        "reused_existing_cache": true,
+        "range_bytes_read_this_run": 0,
+        "aligned_by_nearest": false
+      }
+    },
+    {
+      "date": "2026-07-03",
+      "acquisition_utc": "2026-07-03T11:19:05+00:00",
+      "product_id": "NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001",
+      "valid_pixels": 138779,
+      "common_pixels": 138779,
+      "mean_db": -7.632276161433334,
+      "std_db": 3.2539038159029476,
+      "p5_db": -13.849573005090825,
+      "p25_db": -9.48650206206358,
+      "p50_db": -6.987086462191883,
+      "p75_db": -5.270922934228902,
+      "p95_db": -3.4741791986274206,
+      "source_verification": {
+        "product_id": "NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001",
+        "date_utc": "2026-07-03T11:19:05+00:00",
+        "path": "data/subsets/nisar_hhhh_2026-07-03.tif",
+        "sha256": "bc8f5d92aaf286b1d3873ed00bc08a8847b7cf62751e8ff788cd67cff33b0d8e",
+        "provenance_verified_against": [
+          "manifest",
+          "Milestone 2 report",
+          "JSON sidecar",
+          "GeoTIFF tags"
+        ],
+        "db_max_absolute_error": 2.137666676560457e-06,
+        "valid_pixels": 138779,
+        "crs": "EPSG:32615",
+        "shape": [
+          257,
+          579
+        ],
+        "resolution": [
+          10.0,
+          10.0
+        ],
+        "transform": [
+          10.0,
+          0.0,
+          759680.0,
+          0.0,
+          -10.0,
+          3313600.0
+        ],
+        "reused_existing_cache": true,
+        "range_bytes_read_this_run": 0,
+        "aligned_by_nearest": false
+      }
+    },
+    {
+      "date": "2026-07-15",
+      "acquisition_utc": "2026-07-15T11:19:05+00:00",
+      "product_id": "NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001",
+      "valid_pixels": 138779,
+      "common_pixels": 138779,
+      "mean_db": -6.953985134847892,
+      "std_db": 3.075473032566797,
+      "p5_db": -12.801962309943573,
+      "p25_db": -8.643915236728212,
+      "p50_db": -6.428870052007474,
+      "p75_db": -4.7837802315021065,
+      "p95_db": -2.951899504086528,
+      "source_verification": {
+        "hdf5_group": "/science/LSAR/GCOV/grids/frequencyA",
+        "layer": "HHHH",
+        "full_grid_shape": [
+          34632,
+          35208
+        ],
+        "subset_shape": [
+          257,
+          579
+        ],
+        "epsg": 32615,
+        "pixel_spacing_m": [
+          10.0,
+          -10.0
+        ],
+        "transform": [
+          10.0,
+          0.0,
+          759680.0,
+          0.0,
+          -10.0,
+          3313600.0
+        ],
+        "pixel_center_window": {
+          "row_start": 25832,
+          "row_stop_exclusive": 26089,
+          "column_start": 19664,
+          "column_stop_exclusive": 20243
+        },
+        "aoi_pixel_centers": 138779,
+        "finite_positive_pixels": 138779,
+        "invalid_or_nonpositive_pixels_inside_aoi": 0,
+        "power_min": 0.003367781639099121,
+        "power_max": 33.8857421875,
+        "db_min": -24.726560592651367,
+        "db_max": 15.300169944763184,
+        "power_units": "1",
+        "db_formula": "10 * log10(power), finite positive values only",
+        "aoi_mask_rule": "pixel center inside transformed AOI; outside and invalid values are NaN",
+        "product_id": "NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001",
+        "acquisition_utc": "2026-07-15T11:19:05+00:00",
+        "remote_product_bytes": 6601834496,
+        "range_bytes_read": 9437192,
+        "cache_limit_bytes": 16777216,
+        "range_bytes_read_this_run": 9437192,
+        "reused_existing_cache": false,
+        "path": "data/time_series/hhhh_2026-07-15.tif",
+        "sha256": "f6fca8126462954e832ecc8c135be4e5eb708cab53faf05097102108d39d3bdb",
+        "aligned_by_nearest": false
+      }
+    },
+    {
+      "date": "2026-07-27",
+      "acquisition_utc": "2026-07-27T11:19:04+00:00",
+      "product_id": "NISAR_L2_PR_GCOV_026_105_A_017_4005_DHDH_A_20260727T111904_20260727T111939_P05023_N_F_J_001",
+      "valid_pixels": 138779,
+      "common_pixels": 138779,
+      "mean_db": -7.902767574327703,
+      "std_db": 3.4118341712591773,
+      "p5_db": -14.689041354237926,
+      "p25_db": -9.852722563018084,
+      "p50_db": -7.0949373965346645,
+      "p75_db": -5.437581445926744,
+      "p95_db": -3.6885362655229486,
+      "source_verification": {
+        "hdf5_group": "/science/LSAR/GCOV/grids/frequencyA",
+        "layer": "HHHH",
+        "full_grid_shape": [
+          34632,
+          35208
+        ],
+        "subset_shape": [
+          257,
+          579
+        ],
+        "epsg": 32615,
+        "pixel_spacing_m": [
+          10.0,
+          -10.0
+        ],
+        "transform": [
+          10.0,
+          0.0,
+          759680.0,
+          0.0,
+          -10.0,
+          3313600.0
+        ],
+        "pixel_center_window": {
+          "row_start": 25832,
+          "row_stop_exclusive": 26089,
+          "column_start": 19664,
+          "column_stop_exclusive": 20243
+        },
+        "aoi_pixel_centers": 138779,
+        "finite_positive_pixels": 138779,
+        "invalid_or_nonpositive_pixels_inside_aoi": 0,
+        "power_min": 0.003414332866668701,
+        "power_max": 35.44921875,
+        "db_min": -24.666940689086914,
+        "db_max": 15.49606704711914,
+        "power_units": "1",
+        "db_formula": "10 * log10(power), finite positive values only",
+        "aoi_mask_rule": "pixel center inside transformed AOI; outside and invalid values are NaN",
+        "product_id": "NISAR_L2_PR_GCOV_026_105_A_017_4005_DHDH_A_20260727T111904_20260727T111939_P05023_N_F_J_001",
+        "acquisition_utc": "2026-07-27T11:19:04+00:00",
+        "remote_product_bytes": 6589251584,
+        "range_bytes_read": 8388616,
+        "cache_limit_bytes": 16777216,
+        "range_bytes_read_this_run": 8388616,
+        "reused_existing_cache": false,
+        "path": "data/time_series/hhhh_2026-07-27.tif",
+        "sha256": "6e588abb5101748ef99f91f2febf4f9d2b3318267fc30710e687a3e3dde0ada3",
+        "aligned_by_nearest": false
+      }
+    },
+    {
+      "date": "2026-08-20",
+      "acquisition_utc": "2026-08-20T11:19:03+00:00",
+      "product_id": "NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001",
+      "valid_pixels": 138779,
+      "common_pixels": 138779,
+      "mean_db": -8.202746813250787,
+      "std_db": 3.39731471667167,
+      "p5_db": -14.71011579526088,
+      "p25_db": -10.332188904906365,
+      "p50_db": -7.376615021378252,
+      "p75_db": -5.761207798021399,
+      "p95_db": -3.9716976199157243,
+      "source_verification": {
+        "hdf5_group": "/science/LSAR/GCOV/grids/frequencyA",
+        "layer": "HHHH",
+        "full_grid_shape": [
+          34632,
+          35208
+        ],
+        "subset_shape": [
+          257,
+          579
+        ],
+        "epsg": 32615,
+        "pixel_spacing_m": [
+          10.0,
+          -10.0
+        ],
+        "transform": [
+          10.0,
+          0.0,
+          759680.0,
+          0.0,
+          -10.0,
+          3313600.0
+        ],
+        "pixel_center_window": {
+          "row_start": 25832,
+          "row_stop_exclusive": 26089,
+          "column_start": 19664,
+          "column_stop_exclusive": 20243
+        },
+        "aoi_pixel_centers": 138779,
+        "finite_positive_pixels": 138779,
+        "invalid_or_nonpositive_pixels_inside_aoi": 0,
+        "power_min": 0.00225067138671875,
+        "power_max": 39.32568359375,
+        "db_min": -26.476879119873047,
+        "db_max": 15.946762084960938,
+        "power_units": "1",
+        "db_formula": "10 * log10(power), finite positive values only",
+        "aoi_mask_rule": "pixel center inside transformed AOI; outside and invalid values are NaN",
+        "product_id": "NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001",
+        "acquisition_utc": "2026-08-20T11:19:03+00:00",
+        "remote_product_bytes": 6585057280,
+        "range_bytes_read": 9437192,
+        "cache_limit_bytes": 16777216,
+        "range_bytes_read_this_run": 9437192,
+        "reused_existing_cache": false,
+        "path": "data/time_series/hhhh_2026-08-20.tif",
+        "sha256": "21ca681c84a4f8e00013b7c612fe579e0674c67a44e539e76467521740176ec4",
+        "aligned_by_nearest": false
+      }
+    },
+    {
+      "date": "2026-09-01",
+      "acquisition_utc": "2026-09-01T11:19:03+00:00",
+      "product_id": "NISAR_L2_PR_GCOV_029_105_A_017_4005_DHDH_A_20260901T111903_20260901T111937_P05023_N_F_J_001",
+      "valid_pixels": 138779,
+      "common_pixels": 138779,
+      "mean_db": -7.144789182467488,
+      "std_db": 3.5169757250489053,
+      "p5_db": -13.81566326869473,
+      "p25_db": -9.285095150477265,
+      "p50_db": -6.32887254823781,
+      "p75_db": -4.606463651806557,
+      "p95_db": -2.609145293222682,
+      "source_verification": {
+        "hdf5_group": "/science/LSAR/GCOV/grids/frequencyA",
+        "layer": "HHHH",
+        "full_grid_shape": [
+          34632,
+          35208
+        ],
+        "subset_shape": [
+          257,
+          579
+        ],
+        "epsg": 32615,
+        "pixel_spacing_m": [
+          10.0,
+          -10.0
+        ],
+        "transform": [
+          10.0,
+          0.0,
+          759680.0,
+          0.0,
+          -10.0,
+          3313600.0
+        ],
+        "pixel_center_window": {
+          "row_start": 25832,
+          "row_stop_exclusive": 26089,
+          "column_start": 19664,
+          "column_stop_exclusive": 20243
+        },
+        "aoi_pixel_centers": 138779,
+        "finite_positive_pixels": 138779,
+        "invalid_or_nonpositive_pixels_inside_aoi": 0,
+        "power_min": 0.0031411945819854736,
+        "power_max": 34.10693359375,
+        "db_min": -25.029050827026367,
+        "db_max": 15.328426361083984,
+        "power_units": "1",
+        "db_formula": "10 * log10(power), finite positive values only",
+        "aoi_mask_rule": "pixel center inside transformed AOI; outside and invalid values are NaN",
+        "product_id": "NISAR_L2_PR_GCOV_029_105_A_017_4005_DHDH_A_20260901T111903_20260901T111937_P05023_N_F_J_001",
+        "acquisition_utc": "2026-09-01T11:19:03+00:00",
+        "remote_product_bytes": 6408896512,
+        "range_bytes_read": 8388616,
+        "cache_limit_bytes": 16777216,
+        "range_bytes_read_this_run": 8388616,
+        "reused_existing_cache": false,
+        "path": "data/time_series/hhhh_2026-09-01.tif",
+        "sha256": "b214d59f82c901b4d44c8093238b540099b6279762e376cbdfb47b59a698e8ea",
+        "aligned_by_nearest": false
+      }
+    }
+  ],
+  "aoi_wkt": "POLYGON((-90.31002 29.902604, -90.250797 29.902604, -90.250797 29.924476, -90.31002 29.924476, -90.31002 29.902604))",
+  "crs": "EPSG:32615",
+  "transform": [
+    10.0,
+    0.0,
+    759680.0,
+    0.0,
+    -10.0,
+    3313600.0
+  ],
+  "shape": [
+    257,
+    579
+  ],
+  "common_valid_pixels": 138779,
+  "common_valid_area_km2": 13.8779,
+  "common_fraction_of_original_valid": 1.0,
+  "display_scale_db": [
+    -15.592462255007964,
+    -2.19079327693048
+  ],
+  "source_layer": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+  "filter_size": 3,
+  "filter_mask": "per-date finite positive power; invalid centers remain invalid; comparisons use common masks",
+  "anomaly_definition": "signed dB deviation from per-pixel six-date temporal median; not normalized, not probability",
+  "consecutive_intervals_days": [
+    12,
+    12,
+    12,
+    24,
+    12
+  ],
+  "full_hdf5_downloaded": false,
+  "elapsed_seconds": 142.23745650000637
+}

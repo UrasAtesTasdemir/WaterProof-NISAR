@@ -1,0 +1,9 @@
+Phase A hash verification 2026-11-14T19:46:25Z
+OK 391
+New files:
+data/robustness_v2/REPORT.md
+data/robustness_v2/leave_one_date_out.csv
+data/robustness_v2/results.json
+data/robustness_v2/ring_comparison.csv
+data/robustness_v2/settings_sensitivity.csv
+data/robustness_v2/sidecar.json

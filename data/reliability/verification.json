@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "automated_tests": 26,
+  "original_scientific_outputs_and_cached_inputs_unchanged": true,
+  "optional_raster_readback_passed": true,
+  "unknown_and_persistent_classes_preserved": true,
+  "live_streamlit_health": "HTTP 200 ok",
+  "new_toggle_tested_with": "Streamlit AppTest; not a new browser interaction test"
+}

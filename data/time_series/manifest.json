@@ -1,0 +1,315 @@
+{
+  "aoi_wkt": "POLYGON((-90.31002 29.902604, -90.250797 29.902604, -90.250797 29.924476, -90.31002 29.924476, -90.31002 29.902604))",
+  "observations": [
+    {
+      "product_id": "NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001",
+      "start_time_utc": "2026-06-21T11:19:06+00:00",
+      "end_time_utc": "2026-06-21T11:19:41+00:00",
+      "product_type": "L2_GCOV",
+      "data_maturity": "PROVISIONAL",
+      "requested_polarization": "HH",
+      "gcov_layer": "frequencyA/HHHH",
+      "download_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001/NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001.h5",
+      "filename_fields": {
+        "instrument": "L",
+        "cycle": "023",
+        "track": "105",
+        "direction": "A",
+        "frame": "017",
+        "bandwidth": "4005",
+        "polarization": "DHDH",
+        "source": "A",
+        "start": "20260621T111906",
+        "end": "20260621T111941",
+        "crid": "P05023",
+        "accuracy": "N",
+        "coverage": "F",
+        "location": "J",
+        "counter": "001"
+      },
+      "date": "2026-06-21",
+      "catalog_coverage_fraction": 0.9999999999999999,
+      "catalog_metadata": {
+        "startTime": "2026-06-21T11:19:06Z",
+        "stopTime": "2026-06-21T11:19:41Z",
+        "pathNumber": 105,
+        "frameNumber": 17,
+        "mainBandPolarization": [
+          "HH",
+          "HV"
+        ],
+        "sideBandPolarization": [
+          "HH",
+          "HV"
+        ],
+        "rangeBandwidth": [
+          "40+5"
+        ],
+        "productionConfiguration": "PR",
+        "crid": "P05023",
+        "pgeVersion": "R05.02.3",
+        "collectionName": "NISAR_L2_GCOV_PROVISIONAL_V1"
+      }
+    },
+    {
+      "product_id": "NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001",
+      "start_time_utc": "2026-07-03T11:19:05+00:00",
+      "end_time_utc": "2026-07-03T11:19:40+00:00",
+      "product_type": "L2_GCOV",
+      "data_maturity": "PROVISIONAL",
+      "requested_polarization": "HH",
+      "gcov_layer": "frequencyA/HHHH",
+      "download_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001.h5",
+      "filename_fields": {
+        "instrument": "L",
+        "cycle": "024",
+        "track": "105",
+        "direction": "A",
+        "frame": "017",
+        "bandwidth": "4005",
+        "polarization": "DHDH",
+        "source": "A",
+        "start": "20260703T111905",
+        "end": "20260703T111940",
+        "crid": "P05023",
+        "accuracy": "N",
+        "coverage": "F",
+        "location": "J",
+        "counter": "001"
+      },
+      "date": "2026-07-03",
+      "catalog_coverage_fraction": 0.9999999999999999,
+      "catalog_metadata": {
+        "startTime": "2026-07-03T11:19:05Z",
+        "stopTime": "2026-07-03T11:19:40Z",
+        "pathNumber": 105,
+        "frameNumber": 17,
+        "mainBandPolarization": [
+          "HH",
+          "HV"
+        ],
+        "sideBandPolarization": [
+          "HH",
+          "HV"
+        ],
+        "rangeBandwidth": [
+          "40+5"
+        ],
+        "productionConfiguration": "PR",
+        "crid": "P05023",
+        "pgeVersion": "R05.02.3",
+        "collectionName": "NISAR_L2_GCOV_PROVISIONAL_V1"
+      }
+    },
+    {
+      "product_id": "NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001",
+      "start_time_utc": "2026-07-15T11:19:05+00:00",
+      "end_time_utc": "2026-07-15T11:19:40+00:00",
+      "product_type": "L2_GCOV",
+      "data_maturity": "PROVISIONAL",
+      "requested_polarization": "HH",
+      "gcov_layer": "frequencyA/HHHH",
+      "download_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001.h5",
+      "filename_fields": {
+        "instrument": "L",
+        "cycle": "025",
+        "track": "105",
+        "direction": "A",
+        "frame": "017",
+        "bandwidth": "4005",
+        "polarization": "DHDH",
+        "source": "A",
+        "start": "20260715T111905",
+        "end": "20260715T111940",
+        "crid": "P05023",
+        "accuracy": "N",
+        "coverage": "F",
+        "location": "J",
+        "counter": "001"
+      },
+      "date": "2026-07-15",
+      "catalog_coverage_fraction": 0.9999999999999999,
+      "catalog_metadata": {
+        "startTime": "2026-07-15T11:19:05Z",
+        "stopTime": "2026-07-15T11:19:40Z",
+        "pathNumber": 105,
+        "frameNumber": 17,
+        "mainBandPolarization": [
+          "HH",
+          "HV"
+        ],
+        "sideBandPolarization": [
+          "HH",
+          "HV"
+        ],
+        "rangeBandwidth": [
+          "40+5"
+        ],
+        "productionConfiguration": "PR",
+        "crid": "P05023",
+        "pgeVersion": "R05.02.3",
+        "collectionName": "NISAR_L2_GCOV_PROVISIONAL_V1"
+      }
+    },
+    {
+      "product_id": "NISAR_L2_PR_GCOV_026_105_A_017_4005_DHDH_A_20260727T111904_20260727T111939_P05023_N_F_J_001",
+      "start_time_utc": "2026-07-27T11:19:04+00:00",
+      "end_time_utc": "2026-07-27T11:19:39+00:00",
+      "product_type": "L2_GCOV",
+      "data_maturity": "PROVISIONAL",
+      "requested_polarization": "HH",
+      "gcov_layer": "frequencyA/HHHH",
+      "download_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_105_A_017_4005_DHDH_A_20260727T111904_20260727T111939_P05023_N_F_J_001/NISAR_L2_PR_GCOV_026_105_A_017_4005_DHDH_A_20260727T111904_20260727T111939_P05023_N_F_J_001.h5",
+      "filename_fields": {
+        "instrument": "L",
+        "cycle": "026",
+        "track": "105",
+        "direction": "A",
+        "frame": "017",
+        "bandwidth": "4005",
+        "polarization": "DHDH",
+        "source": "A",
+        "start": "20260727T111904",
+        "end": "20260727T111939",
+        "crid": "P05023",
+        "accuracy": "N",
+        "coverage": "F",
+        "location": "J",
+        "counter": "001"
+      },
+      "date": "2026-07-27",
+      "catalog_coverage_fraction": 0.9999999999999999,
+      "catalog_metadata": {
+        "startTime": "2026-07-27T11:19:04Z",
+        "stopTime": "2026-07-27T11:19:39Z",
+        "pathNumber": 105,
+        "frameNumber": 17,
+        "mainBandPolarization": [
+          "HH",
+          "HV"
+        ],
+        "sideBandPolarization": [
+          "HH",
+          "HV"
+        ],
+        "rangeBandwidth": [
+          "40+5"
+        ],
+        "productionConfiguration": "PR",
+        "crid": "P05023",
+        "pgeVersion": "R05.02.3",
+        "collectionName": "NISAR_L2_GCOV_PROVISIONAL_V1"
+      }
+    },
+    {
+      "product_id": "NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001",
+      "start_time_utc": "2026-08-20T11:19:03+00:00",
+      "end_time_utc": "2026-08-20T11:19:38+00:00",
+      "product_type": "L2_GCOV",
+      "data_maturity": "PROVISIONAL",
+      "requested_polarization": "HH",
+      "gcov_layer": "frequencyA/HHHH",
+      "download_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001/NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001.h5",
+      "filename_fields": {
+        "instrument": "L",
+        "cycle": "028",
+        "track": "105",
+        "direction": "A",
+        "frame": "017",
+        "bandwidth": "4005",
+        "polarization": "DHDH",
+        "source": "A",
+        "start": "20260820T111903",
+        "end": "20260820T111938",
+        "crid": "P05023",
+        "accuracy": "N",
+        "coverage": "F",
+        "location": "J",
+        "counter": "001"
+      },
+      "date": "2026-08-20",
+      "catalog_coverage_fraction": 0.9999999999999999,
+      "catalog_metadata": {
+        "startTime": "2026-08-20T11:19:03Z",
+        "stopTime": "2026-08-20T11:19:38Z",
+        "pathNumber": 105,
+        "frameNumber": 17,
+        "mainBandPolarization": [
+          "HH",
+          "HV"
+        ],
+        "sideBandPolarization": [
+          "HH",
+          "HV"
+        ],
+        "rangeBandwidth": [
+          "40+5"
+        ],
+        "productionConfiguration": "PR",
+        "crid": "P05023",
+        "pgeVersion": "R05.02.3",
+        "collectionName": "NISAR_L2_GCOV_PROVISIONAL_V1"
+      }
+    },
+    {
+      "product_id": "NISAR_L2_PR_GCOV_029_105_A_017_4005_DHDH_A_20260901T111903_20260901T111937_P05023_N_F_J_001",
+      "start_time_utc": "2026-09-01T11:19:03+00:00",
+      "end_time_utc": "2026-09-01T11:19:37+00:00",
+      "product_type": "L2_GCOV",
+      "data_maturity": "PROVISIONAL",
+      "requested_polarization": "HH",
+      "gcov_layer": "frequencyA/HHHH",
+      "download_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_029_105_A_017_4005_DHDH_A_20260901T111903_20260901T111937_P05023_N_F_J_001/NISAR_L2_PR_GCOV_029_105_A_017_4005_DHDH_A_20260901T111903_20260901T111937_P05023_N_F_J_001.h5",
+      "filename_fields": {
+        "instrument": "L",
+        "cycle": "029",
+        "track": "105",
+        "direction": "A",
+        "frame": "017",
+        "bandwidth": "4005",
+        "polarization": "DHDH",
+        "source": "A",
+        "start": "20260901T111903",
+        "end": "20260901T111937",
+        "crid": "P05023",
+        "accuracy": "N",
+        "coverage": "F",
+        "location": "J",
+        "counter": "001"
+      },
+      "date": "2026-09-01",
+      "catalog_coverage_fraction": 0.9999999999999999,
+      "catalog_metadata": {
+        "startTime": "2026-09-01T11:19:03Z",
+        "stopTime": "2026-09-01T11:19:37Z",
+        "pathNumber": 105,
+        "frameNumber": 17,
+        "mainBandPolarization": [
+          "HH",
+          "HV"
+        ],
+        "sideBandPolarization": [
+          "HH",
+          "HV"
+        ],
+        "rangeBandwidth": [
+          "40+5"
+        ],
+        "productionConfiguration": "PR",
+        "crid": "P05023",
+        "pgeVersion": "R05.02.3",
+        "collectionName": "NISAR_L2_GCOV_PROVISIONAL_V1"
+      }
+    }
+  ],
+  "compatibility_fields": [
+    "instrument",
+    "track",
+    "direction",
+    "frame",
+    "bandwidth",
+    "polarization",
+    "source",
+    "crid"
+  ]
+}

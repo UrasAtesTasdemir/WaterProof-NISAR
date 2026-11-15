@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "common_valid_pixels": 138779,
+  "checks": [
+    "source files unchanged (SHA-256)",
+    "output CRS/transform/shape match",
+    "unknown equals complement of common mask",
+    "positive filtered powers",
+    "filtered dB conversion",
+    "after-minus-before difference",
+    "classification reproduced from saved float32 rasters",
+    "class counts and projected areas"
+  ],
+  "expansion_pixels": 569,
+  "recession_pixels": 5
+}

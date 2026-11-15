@@ -1,0 +1,38 @@
+{
+  "checked_at_utc": "2026-11-14T08:57:28.217160+00:00",
+  "scope": "Bounded CMR discovery: DSWx-S1 independent sensor, +/-1 day; metadata only, not pixel validation. Prior same-day HLS pixel checks retained.",
+  "queries": [
+    {
+      "target_date": "2026-06-21",
+      "parameters": {
+        "short_name": "OPERA_L3_DSWX-S1_V1",
+        "bounding_box": "-90.31002,29.902604,-90.250797,29.924476",
+        "temporal": "2026-06-20T00:00:00Z,2026-06-23T00:00:00Z",
+        "page_size": 100,
+        "provider": "POCLOUD"
+      },
+      "status": "success",
+      "hits": "1",
+      "granules": [
+        {
+          "id": "OPERA_L3_DSWx-S1_T15RYP_20260621T001010Z_20260827T184457Z_S1A_30_v1.0",
+          "time_start": "2026-06-21T00:10:26.000Z",
+          "time_end": "2026-06-21T00:10:46.000Z"
+        }
+      ]
+    },
+    {
+      "target_date": "2026-07-03",
+      "parameters": {
+        "short_name": "OPERA_L3_DSWX-S1_V1",
+        "bounding_box": "-90.31002,29.902604,-90.250797,29.924476",
+        "temporal": "2026-07-02T00:00:00Z,2026-07-05T00:00:00Z",
+        "page_size": 100,
+        "provider": "POCLOUD"
+      },
+      "status": "success",
+      "hits": "0",
+      "granules": []
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+"""Offline FloodPulse NISAR dashboard; no network or credential access."""
+import os
+from pathlib import Path
+ROOT=Path(__file__).resolve().parent
+os.environ.setdefault('MPLCONFIGDIR',str(ROOT/'.cache/matplotlib'))
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+from matplotlib.colors import ListedColormap,BoundaryNorm
+import numpy as np
+from rasterio.transform import array_bounds
+import streamlit as st
+from src.dashboard_data import input_signature,prepare_data,calculate,sensitivity
+
+st.set_page_config(page_title='FloodPulse NISAR',page_icon='🌊',layout='wide')
+st.markdown('''<style>
+.stApp{background:#f5f8fb;} h1,h2,h3{color:#12334a;letter-spacing:-.025em;}
+[data-testid="stMetric"]{background:white;border:1px solid #dce7ef;border-radius:14px;padding:16px;}
+[data-testid="stSidebar"]{background:#eaf1f6;}
+</style>''',unsafe_allow_html=True)
+st.caption('NASA SPACE APPS CHALLENGE 2026 / DANCING WITH THE SARs')
+st.title('FloodPulse NISAR')
+st.markdown('Explore radar observations and **candidate surface-water change** in Louisiana.')
+st.warning('Exploratory surface-water change candidates. NOT confirmed flooding. Independent validation unavailable.')
+
+@st.cache_data(show_spinner='Verifying local radar data…',max_entries=2)
+def cached_data(signature):
+    return prepare_data()
+
+try:
+    data=cached_data(input_signature())
+except (FileNotFoundError,ValueError,KeyError,StopIteration,OSError,TypeError) as exc:
+    st.error(f'Local data could not be verified ({type(exc).__name__}). Restore the Milestone 2 subsets and Milestone 3 metadata in data/. No download was attempted.')
+    st.stop()
+with st.sidebar:
+    st.header('Explore the signal')
+    st.caption('Two real observations · Local cached data')
+    threshold=st.slider('Water threshold (dB)',-22.,-12.,-16.,.5,key='water_threshold',help='Filtered HH ≤ threshold is a water candidate. This is an exploratory setting.')
+    minimum=st.slider('Minimum backscatter change (dB)',0.,8.,3.,.5,key='minimum_change',help='Transitions require |after − before| ≥ this value. Zero removes the magnitude gate.')
+    remove_singletons=st.toggle('Suppress single-pixel change candidates (optional)',value=False,key='remove_singletons',help='Separately suppress 8-connected one-pixel expansion and recession groups. Can remove real narrow features. Persistent and unknown pixels stay unchanged.')
+    st.caption('Fixed: 3 × 3 mask-aware mean in linear power, then dB conversion.')
+    st.info('Thresholds explore sensitivity. They do not validate flooding.')
+    st.caption('HH · 10 m grid · EPSG:32615\n\nNo credentials or NASA downloads needed.')
+try:
+    result=calculate(data,threshold,minimum,remove_singletons)
+except ValueError as exc:
+    st.error(str(exc));st.stop()
+st.caption('BEFORE 21 June 2026, 11:19 UTC → AFTER 3 July 2026, 11:19 UTC · Louisiana, USA')
+for col,(label,key) in zip(st.columns(4),[('Candidate expansion','expansion'),('Candidate recession','recession'),('Net candidate change','net'),('Valid comparison area','valid_area')]):
+    col.metric(label,f"{result[key]:.4f} km²")
+st.caption(f'Water threshold {threshold:g} dB · Minimum change {minimum:g} dB · {int(data["valid"].sum()):,} common valid pixels')
+if remove_singletons:
+    st.info(f'Optional size filter ON: {result["suppressed_pixels"]} isolated change-candidate pixels suppressed. They are shown as other valid surface, not verified dry land. Real small water features can be lost. Radar values are unchanged.')
+with st.expander('Scientific interpretation', expanded=True):
+    median_change=float(np.median(result['delta'][data['valid']]))
+    st.markdown(f'''**Darker radar is not proof of flooding.** Existing channels, smooth ground, vegetation, wind and soil moisture can change the return.
+
+**Threshold sensitivity:** candidate areas vary with the exploratory water threshold and change gate. Use the sensitivity tab; no threshold is optimized for a larger area.
+
+**Scene-wide darkening:** the common AOI median change is **{median_change:.2f} dB**. This may influence candidates but is not established sensor bias. No scene-offset correction is applied. A spatially uniform shift of this size alone is below the default 3 dB gate.
+
+**Independent validation is unavailable.** Same-day inspected optical references were cloud/shadow covered. Historical waterways provide context, not proof of flooding. Singleton suppression is optional and does not increase scientific confidence.''')
+map_tab,sensitivity_tab,source_tab=st.tabs(['Radar & water candidates','Threshold sensitivity','Data & scientific context'])
+colors=['#d8e1e8','#2372a5','#00b5a6','#ed9e38','#eeeee8']
+
+def radar_plot(array,kind):
+    fig,ax=plt.subplots(figsize=(7,3.7),layout='constrained')
+    west,south,east,north=array_bounds(*array.shape,data['grid']['transform'])
+    cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+    if kind=='classes':
+        opts=dict(cmap=ListedColormap(colors),norm=BoundaryNorm(np.arange(-.5,5.5),5))
+    elif kind=='difference':
+        limit=max(1.,float(np.percentile(np.abs(result['delta'][data['valid']]),98)))
+        opts=dict(cmap=cmap,vmin=-limit,vmax=limit)
+    else:
+        lo,hi=np.percentile(np.concatenate([data['before'][data['valid']],data['after'][data['valid']]]),[2,98])
+        opts=dict(cmap=cmap,vmin=lo,vmax=max(hi,lo+.01))
+    im=ax.imshow(array,extent=(west,east,south,north),origin='upper',interpolation='nearest',**opts)
+    ax.set_xlabel('Easting (m)',fontsize=8);ax.set_ylabel('Northing (m)',fontsize=8)
+    ax.ticklabel_format(useOffset=False,style='plain');ax.tick_params(labelsize=7)
+    if kind!='classes':fig.colorbar(im,ax=ax,shrink=.8,label='Δ dB' if kind=='difference' else 'Gamma-0 (dB)')
+    return fig
+
+with map_tab:
+    entries=[('Before SAR backscatter','21 June 2026 · filtered HH',data['before'],'radar'),
+             ('After SAR backscatter','3 July 2026 · filtered HH',data['after'],'radar'),
+             ('Backscatter difference','After − before · negative = darkening',result['delta'],'difference'),
+             ('Candidate surface-water change','Exploratory classes · unknown remains unknown',result['classes'],'classes')]
+    for start in (0,2):
+        for col,(title,caption,array,kind) in zip(st.columns(2),entries[start:start+2]):
+            with col:
+                st.subheader(title);st.caption(caption)
+                fig=radar_plot(array,kind);st.pyplot(fig);plt.close(fig)
+    st.caption('CLASS LEGEND: Gray-blue = unknown / no data · Blue = persistent water candidate · Teal = new water candidate · Orange = receded water candidate · Light gray = other valid surface (including transitions rejected by the change gate).')
+    st.caption('Before/after share one display scale. Percentile display limits never clip scientific data.')
+with sensitivity_tab:
+    st.subheader('How much depends on the threshold?')
+    st.write('Every point is calculated from the real radar arrays using the selected minimum change.')
+    rows=sensitivity(data,minimum,remove_singletons)
+    fig,ax=plt.subplots(figsize=(10,3.6),layout='constrained')
+    for field,color in [('Expansion (km²)','#009d90'),('Recession (km²)','#de8b22')]:
+        ax.plot([r['Threshold (dB)'] for r in rows],[r[field] for r in rows],marker='.',label=field,color=color)
+    ax.axvline(threshold,color='#12334a',linestyle='--',label='Selected threshold')
+    ax.set_xlabel('Exploratory water threshold (dB)');ax.set_ylabel('Candidate area (km²)');ax.legend()
+    st.pyplot(fig);plt.close(fig)
+    st.dataframe(rows,hide_index=True)
+    st.caption('Sensitivity is not accuracy. No threshold is selected to maximize candidate area.')
+with source_tab:
+    st.subheader('Two observations. A transparent processing record.')
+    st.dataframe([{'Acquisition (UTC)':s['date_utc'],'Product ID':s['product_id'],'Polarization':'HH / HHHH intensity','Product':'NISAR L2 GCOV Provisional','Local source':s['path']} for s in data['sources']],hide_index=True)
+    st.write('Louisiana, USA · Longitude −90.310020 to −90.250797° · Latitude 29.902604 to 29.924476° · EPSG:32615 · 10 m pixels.')
+    st.code(data['manifest']['aoi_wkt'],language=None)
+    st.caption('Source identifiers, file fingerprints, tags and dB values are checked against previous processing records. Areas use projected metres, never degrees.')
+    if data['quality']:
+        q=data['quality'];near=q['historical_hydrography_proximity']['explicit_canal_ditch_or_stream_river']['expansion_within_30m_pixels']
+        count=next(r['expansion_pixels'] for r in q['threshold_sensitivity'] if r['water_threshold_db']==-16)
+        st.info(f'Baseline quality check (−16 dB / 3 dB, not the current slider result): {near}/{count} expansion candidates lie within 30 m of historical mapped canals/streams. Same-day optical reference windows were cloud/shadow masked. This is not flood validation.')
+    else:st.info('Optional quality report missing. Independent validation remains unavailable.')
+    st.markdown('[NASA ASF NISAR Cookbook](https://asfopensarlab.github.io/NISAR_Cookbook/search-stream-nisar-asf-search/) · [Independent optical reference: DSWx-HLS](https://podaac.jpl.nasa.gov/dataset/OPERA_L3_DSWX-HLS_V1) · [Historical USGS hydrography](https://www.usgs.gov/national-hydrography/access-national-hydrography-products)')
+    for item in data['manifest']['observations']:
+        st.markdown(f"[{item['start_time_utc'][:10]} NASA catalog product URL]({item['download_url']})")
+with st.expander('Methodology & scientific limitations'):
+    st.markdown('''NISAR measures radar scattering from the Earth’s surface. **HH** means horizontally transmitted and horizontally received radar. The GCOV **HHHH** layer is radiometrically terrain-corrected gamma-0 backscatter power.
+
+We intersect valid positive-power masks, apply a **3 × 3 normalized mean in linear power**, preserve invalid centers, then compute **dB = 10 × log10(power)**. Change is **after dB − before dB**.
+
+At or below the selected threshold is a **water candidate**. Both dates below: persistent candidate. Crossing downward: new candidate. Crossing upward: receded candidate. Transitions must also meet the absolute-change control. Other valid pixels remain other surface; missing pixels are always unknown. Areas count projected 100 m² cells.
+
+**The threshold is exploratory, not universal.** Existing channels, smooth ground and radar shadow can produce dark returns. Wind, vegetation, soil moisture and acquisition conditions affect interpretation. Filtering blurs narrow features and has reduced support near AOI boundaries. Isolated detections, scene-wide darkening and subpixel registration need further study. Historical water maps cannot establish flooding on these dates. Inspected date-matched optical references were cloud/shadow masked. Independent validation is unavailable; no accuracy or confidence score is claimed.''')
+st.caption('FloodPulse NISAR · Real cached NASA data · Exploratory science, openly stated limits')

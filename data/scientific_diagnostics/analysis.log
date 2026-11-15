@@ -1,0 +1,48 @@
+{
+  "comparison": {
+    "baseline_expansion_km2": 0.056900000000000006,
+    "baseline_recession_km2": 0.0005,
+    "alternative_expansion_km2": 0.0448,
+    "alternative_recession_km2": 0.00030000000000000003,
+    "comparison_area_km2": 13.8779,
+    "baseline_expansion_also_alternative_pixels": 448,
+    "baseline_recession_also_alternative_pixels": 3,
+    "baseline_change_pixels_without_four_reference_observations": 0,
+    "effective_gate_db": {
+      "count": 138779,
+      "median": 3.0,
+      "mad": 0.0,
+      "scaled_mad": 0.0,
+      "iqr": 0.5445829368974984,
+      "p05": 3.0,
+      "p25": 3.0,
+      "p75": 3.5445829368974984,
+      "p95": 5.679846439512086
+    },
+    "score": {
+      "count": 138779,
+      "median": -1.2025079727172852,
+      "mad": 0.893346896933378,
+      "scaled_mad": 1.3244780912885217,
+      "iqr": 1.7952921156637516,
+      "p05": -3.7484761238098145,
+      "p25": -2.154977317174584,
+      "p75": -0.3596852015108325,
+      "p95": 0.8676587104797371
+    },
+    "HH_score_gate_pixels": 16169,
+    "HV_score_gate_pixels": 6158
+  },
+  "stable_regions": 3,
+  "qualified_ENL_estimates": 2,
+  "stability": {
+    "scenarios": 12,
+    "expansion_in_any_km2": 0.8152,
+    "expansion_in_all_km2": 0.0,
+    "recession_in_any_km2": 0.11380000000000001,
+    "recession_in_all_km2": 0.0,
+    "baseline_expansion_in_all_pixels": 0,
+    "baseline_expansion_within_30m_waterway_pixels": 431,
+    "any_expansion_within_30m_waterway_pixels": 2458
+  }
+}

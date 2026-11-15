@@ -1,0 +1,12 @@
+{
+  "description": "Offline demo places for the Explore page. Selection criterion: different surface types, chosen by the project owner from places whose public NISAR GCOV catalog coverage (HH+HV, 1 Jun - 30 Sep 2026) was checked BEFORE any radar window was read. Places were not chosen for expected or striking results.",
+  "selection_rule": "Largest compatible HH+HV group returned by src.live_engine.group_products for the date range (ties: catalog order); its first max_dates acquisition dates; window_km square centred on the point.",
+  "date_range": ["2026-06-01", "2026-09-30"],
+  "window_km": 5.0,
+  "max_dates": 6,
+  "places": [
+    {"key": "marmara_lake", "lat": 38.62, "lon": 28.03, "surface": "shallow lake basin / wetland"},
+    {"key": "central_valley", "lat": 36.60, "lon": -120.10, "surface": "irrigated agriculture"},
+    {"key": "mekong_delta", "lat": 10.00, "lon": 105.80, "surface": "river delta / rice paddies"}
+  ]
+}

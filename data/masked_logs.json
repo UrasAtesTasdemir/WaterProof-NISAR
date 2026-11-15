@@ -1,0 +1,86 @@
+{
+ "description": "Local home paths were masked in these saved test/environment logs before publication (owner request, final release). Only the path prefix changed: the project folder became \"<project>\" and any other home path \"<home>\". No scientific data or metric is in these files. Historical hash records elsewhere still list original_sha256; tests accept a file when its record equals original_sha256 here and its current content equals masked_sha256.",
+ "masked_utc": "2026-11-15T10:35:50.143977+00:00",
+ "files": {
+  "data/benchmark_validation/tests.log": {
+   "original_sha256": "78403685bdce620880bd797b3b4a1f53ea813ca3f9128bc3214ae6f492ccc7b0",
+   "masked_sha256": "75c15e4440110dd1a0bdda42dd158a9e0e7903c43b492b20a77ec4eb73747ca6",
+   "replacements": 15
+  },
+  "data/dashboard_tests.log": {
+   "original_sha256": "277c4b25ad83c7eb2d007193cde0b20ea73c1a84f4189c47554ea8fa235de6e9",
+   "masked_sha256": "bec14c0c72ef0540aedd3bece75b491a3380f842df6e04b71478d4129ea488b3",
+   "replacements": 10
+  },
+  "data/environment_check.json": {
+   "original_sha256": "a8acc20b46a71045bc7df0bca62281c34514ede63c5a97663963f280410a24c2",
+   "masked_sha256": "854854a422631bf4e2ccd8531cff80db20f3f39ba83bc1380435ad23434f6995",
+   "replacements": 1
+  },
+  "data/geographic_mapping/tests.log": {
+   "original_sha256": "f873d506d3769b7759653557734098b28d9acc558bd2fead105210748ebc7c9d",
+   "masked_sha256": "9bcce987a2ef2f05823742662ee7a729ea86bdb682fb9256a9b241b79d120da6",
+   "replacements": 17
+  },
+  "data/investigation_engine/baseline_tests.log": {
+   "original_sha256": "5db1d70690c29b196817fd838f9136c55caccc08bf16def9ea3b07963018dc7d",
+   "masked_sha256": "0a7ecf8fb744a5a64785bcbe6f708487794681707133e0835bc9e435ea00db4f",
+   "replacements": 40
+  },
+  "data/investigation_engine/engine_tests.log": {
+   "original_sha256": "3dafcfb9693b3d79a50b82179e99bcbc2bae7869ce8b4f30c76dbe716a18f134",
+   "masked_sha256": "f3ad1dfc24c069e1983bbb4731651bc9f9b39c93630bbba2ed8cdbbb5daae9b4",
+   "replacements": 8
+  },
+  "data/investigation_engine/regression_tests.log": {
+   "original_sha256": "f437d2d760097ed6c9374c3a643efb4b840968b31abe9cdeff7a5af1139791f3",
+   "masked_sha256": "16f60fd65d94049995b974eeeb80df9c87c254fd3c35f62f5499b24bd29a5308",
+   "replacements": 45
+  },
+  "data/pair_selection/regression_tests.log": {
+   "original_sha256": "00c702941a7d2040ce427fdfc741fedc8a74e0c2c88eb98485b457f01a686269",
+   "masked_sha256": "aa00ed2e141a963ce38e94f548f098f9c825cc54bbf5c304dc11f65566196023",
+   "replacements": 13
+  },
+  "data/polarization_analysis/baseline_tests.log": {
+   "original_sha256": "3dd1e4c06dbe3d0986427d94560edcd5c0102b4fe8cdae34480de1ba5e826c02",
+   "masked_sha256": "321c9d20354ffb94003a680c4e845f14d99df7879fddcf29b17fe785df7b2c7c",
+   "replacements": 20
+  },
+  "data/polarization_analysis/regression_tests.log": {
+   "original_sha256": "56ec5d1b99a936c29c8b538de8bc4a2457dc48ed0627acecb0ec120f3648d402",
+   "masked_sha256": "528784c3fdefed5ec01867a572e1e4feac9a3036a3761243aa62604242d858b0",
+   "replacements": 36
+  },
+  "data/reliability/tests.log": {
+   "original_sha256": "f3450c54f4f1e5514f805d32afed4ce5e74e841426974913199fae48b10abadb",
+   "masked_sha256": "1e7b3dea1851e43b9b2dcf65e6c3959057b43c2896f568542829c36f0481c7df",
+   "replacements": 13
+  },
+  "data/scientific_diagnostics/baseline_tests.log": {
+   "original_sha256": "6682e2e2b21e1e0aa22f65a785d8432905f37123dac024d34c0556f8a76d0dbf",
+   "masked_sha256": "0a8b8e11d8c2a8fe5519f88bb86770efba87eb1c9e300d5c074098ac2b809a8b",
+   "replacements": 36
+  },
+  "data/scientific_diagnostics/regression_tests.log": {
+   "original_sha256": "f1c76343e5d7095c467841b19229bc9f3bddde8063f80137c72ae0561155514c",
+   "masked_sha256": "eedeb87e134b85d8d76697e0fa22c945c98878f1ebfab659480fb6ec96d0ac56",
+   "replacements": 40
+  },
+  "data/time_series/phase0_tests.log": {
+   "original_sha256": "cba437f1b89341d99b4df82dfbbbbd4496e54e16c00eaacafc2ba1ad03285137",
+   "masked_sha256": "56f27f82d4ab1ad39be58f312a28f32adfc8ecf9cfff20c563413981353891bc",
+   "replacements": 17
+  },
+  "data/time_series/regression_tests.log": {
+   "original_sha256": "a624731261df64dad94cde1eea03e03e3317c2348511f4659dc5038313e6e7ea",
+   "masked_sha256": "480c91724d9ededa4a17c5659e1c8dd5e9ad1697644cdafea314e7863d63c875",
+   "replacements": 20
+  },
+  "data/validation/tests.log": {
+   "original_sha256": "e54c66229a0a941f1ce03e68a49d4d05e297dcc095bec735ffee19384b29a260",
+   "masked_sha256": "09276f793ef45d6105b86c605b371ea5ea3172108f1fe9325cbc240852c499ef",
+   "replacements": 13
+  }
+ }
+}

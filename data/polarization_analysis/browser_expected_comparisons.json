@@ -1,0 +1,29 @@
+[
+  {
+    "selected": "2026-06-21",
+    "comparison": "2026-07-03",
+    "pixels": 138779,
+    "median_HH_delta_db": -1.3887815475463867,
+    "median_HV_delta_db": -0.720402717590332,
+    "median_delta_HH_minus_delta_HV_db": -0.7084927558898926,
+    "spatial_Pearson_r": 0.3506569107316075
+  },
+  {
+    "selected": "2026-06-21",
+    "comparison": "2026-09-01",
+    "pixels": 138779,
+    "median_HH_delta_db": -0.9145989418029785,
+    "median_HV_delta_db": -0.7222690582275391,
+    "median_delta_HH_minus_delta_HV_db": -0.19547796249389648,
+    "spatial_Pearson_r": 0.42669860158669404
+  },
+  {
+    "selected": "2026-06-21",
+    "comparison": "2026-06-21",
+    "pixels": 138779,
+    "median_HH_delta_db": 0.0,
+    "median_HV_delta_db": 0.0,
+    "median_delta_HH_minus_delta_HV_db": 0.0,
+    "spatial_Pearson_r": null
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "status": "blocked",
+  "error_type": "TypeError",
+  "detail": "Sensitive exception text suppressed.",
+  "completed_dates": [
+    "2026-06-21",
+    "2026-07-03"
+  ]
+}

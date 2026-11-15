@@ -1,0 +1,362 @@
+{
+  "status": "success",
+  "created_utc": "2026-11-14T16:50:04.220114+00:00",
+  "network_access_used": false,
+  "pair": [
+    "2026-06-21",
+    "2026-07-03"
+  ],
+  "sources": [
+    {
+      "date": "2026-06-21",
+      "product_id": "NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001",
+      "acquisition_utc": "2026-06-21T11:19:06+00:00",
+      "HH": {
+        "path": "data/subsets/nisar_hhhh_2026-06-21.tif",
+        "layer": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+        "sha256": "133b8a8d020f2a29a5e53163224f9bdadfcd8c7008480f84cd029968a26239f9"
+      },
+      "HV": {
+        "path": "data/polarization_analysis/raw/hvhv_2026-06-21.tif",
+        "layer": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+        "sha256": "85ea6ea61a94bd3699d205176179e803399aa055bddb50b81a86b9a9451c10b3",
+        "original_range_bytes_read": 8388616
+      }
+    },
+    {
+      "date": "2026-07-03",
+      "product_id": "NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001",
+      "acquisition_utc": "2026-07-03T11:19:05+00:00",
+      "HH": {
+        "path": "data/subsets/nisar_hhhh_2026-07-03.tif",
+        "layer": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+        "sha256": "bc8f5d92aaf286b1d3873ed00bc08a8847b7cf62751e8ff788cd67cff33b0d8e"
+      },
+      "HV": {
+        "path": "data/polarization_analysis/raw/hvhv_2026-07-03.tif",
+        "layer": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+        "sha256": "253314d3d9c66c063334aa225eaa1b763220948b95957800c848e78367f4e1fd",
+        "original_range_bytes_read": 8388616
+      }
+    }
+  ],
+  "crs": "EPSG:32615",
+  "transform": [
+    10.0,
+    0.0,
+    759680.0,
+    0.0,
+    -10.0,
+    3313600.0
+  ],
+  "shape": [
+    257,
+    579
+  ],
+  "agreement_with_polarization_two_date_max_abs_db": {
+    "HH": 9.218192573712258e-07,
+    "HV": 4.6761809535667e-07
+  },
+  "histogram_0p5db_clipped_pm8": {
+    "edges": [
+      -8.0,
+      -7.5,
+      -7.0,
+      -6.5,
+      -6.0,
+      -5.5,
+      -5.0,
+      -4.5,
+      -4.0,
+      -3.5,
+      -3.0,
+      -2.5,
+      -2.0,
+      -1.5,
+      -1.0,
+      -0.5,
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      4.0,
+      4.5,
+      5.0,
+      5.5,
+      6.0,
+      6.5,
+      7.0,
+      7.5,
+      8.0
+    ],
+    "HH": [
+      131,
+      51,
+      113,
+      328,
+      612,
+      1140,
+      2076,
+      3468,
+      5357,
+      8295,
+      11321,
+      14765,
+      17601,
+      18642,
+      17418,
+      14238,
+      10316,
+      6276,
+      3457,
+      1653,
+      726,
+      333,
+      143,
+      84,
+      45,
+      36,
+      32,
+      32,
+      19,
+      10,
+      9,
+      52
+    ],
+    "HV": [
+      104,
+      14,
+      18,
+      31,
+      75,
+      191,
+      396,
+      960,
+      1861,
+      3727,
+      6593,
+      10552,
+      14997,
+      18783,
+      20204,
+      19343,
+      15912,
+      11017,
+      6946,
+      3834,
+      1688,
+      781,
+      323,
+      148,
+      67,
+      49,
+      37,
+      28,
+      24,
+      16,
+      8,
+      52
+    ]
+  },
+  "indicators": {
+    "pixels": 138779,
+    "HH_change": {
+      "p5": -4.115894605026631,
+      "p25": -2.4339113201557394,
+      "median": -1.388781573900281,
+      "p75": -0.41121093840245804,
+      "p95": 0.9659160558821351,
+      "mean": -1.4507181236508482,
+      "std": 1.5880760671742096
+    },
+    "HV_change": {
+      "p5": -3.046292688422013,
+      "p25": -1.6443536337467597,
+      "median": -0.7204029063633666,
+      "p75": 0.17920357407082843,
+      "p95": 1.5123319073999766,
+      "mean": -0.739481084229556,
+      "std": 1.4383046144442149
+    },
+    "pearson_r_dHH_dHV": 0.3506569103460969,
+    "lag_autocorrelation": {
+      "1px_10m": {
+        "HH": [
+          0.8286459731396588,
+          0.8206109273694213
+        ],
+        "HV": [
+          0.7914861072321566,
+          0.7846881371037417
+        ]
+      },
+      "3px_30m": {
+        "HH": [
+          0.38889004623088763,
+          0.3712179883094348
+        ],
+        "HV": [
+          0.26466323548491616,
+          0.2664116543465972
+        ]
+      },
+      "5px_50m": {
+        "HH": [
+          0.2995743227207443,
+          0.2830222564989542
+        ],
+        "HV": [
+          0.17961471221814604,
+          0.180577999443453
+        ]
+      },
+      "10px_100m": {
+        "HH": [
+          0.22071015605301614,
+          0.2125037201950623
+        ],
+        "HV": [
+          0.11850788735166438,
+          0.11664026447400849
+        ]
+      },
+      "20px_200m": {
+        "HH": [
+          0.17453713871440757,
+          0.17073197607290652
+        ],
+        "HV": [
+          0.08411692368737035,
+          0.0960488608726204
+        ]
+      }
+    },
+    "filtered_HV_level_db": {
+      "2026-06-21": {
+        "p5": -19.927122734890453,
+        "p25": -15.867195647173794,
+        "median": -13.370683434421966,
+        "p75": -11.444332503434683,
+        "p95": -9.727573287847063,
+        "mean": -13.878518332647623,
+        "std": 3.16925964240464
+      },
+      "2026-07-03": {
+        "p5": -20.765948958389195,
+        "p25": -16.809465824674703,
+        "median": -14.146619076573701,
+        "p75": -11.988551793958889,
+        "p95": -10.165034370971458,
+        "mean": -14.61799941687718,
+        "std": 3.3005687596454907
+      }
+    },
+    "filtered_HV_scene_p1_db": {
+      "2026-06-21": -22.52589003621975,
+      "2026-07-03": -22.59552127443987
+    },
+    "by_baseline_class": {
+      "persistent_water_candidate": {
+        "pixels": 158,
+        "median_dHH_db": -0.24922545236858618,
+        "median_dHV_db": 0.01898012394225468,
+        "hv_dark_level": {
+          "percentile": 5,
+          "dates": [
+            {
+              "region_median_db": -22.44499343415908,
+              "scene_percentile_db": -19.927122734890453
+            },
+            {
+              "region_median_db": -22.432933662724615,
+              "scene_percentile_db": -20.765948958389195
+            }
+          ],
+          "flag": true
+        }
+      },
+      "new_water_candidate": {
+        "pixels": 569,
+        "median_dHH_db": -3.6521133680829934,
+        "median_dHV_db": -0.5405585014859042,
+        "hv_dark_level": {
+          "percentile": 5,
+          "dates": [
+            {
+              "region_median_db": -21.868319010361223,
+              "scene_percentile_db": -19.927122734890453
+            },
+            {
+              "region_median_db": -22.348371862026895,
+              "scene_percentile_db": -20.765948958389195
+            }
+          ],
+          "flag": true
+        }
+      },
+      "receded_water_candidate": {
+        "pixels": 5,
+        "median_dHH_db": 4.626924612205652,
+        "median_dHV_db": 0.981581510221627,
+        "hv_dark_level": {
+          "percentile": 5,
+          "dates": [
+            {
+              "region_median_db": -21.959860165862132,
+              "scene_percentile_db": -19.927122734890453
+            },
+            {
+              "region_median_db": -20.852809217207504,
+              "scene_percentile_db": -20.765948958389195
+            }
+          ],
+          "flag": true
+        }
+      },
+      "other_valid_surface": {
+        "pixels": 138047,
+        "median_dHH_db": -1.383337153113732,
+        "median_dHV_db": -0.7222191713088613,
+        "hv_dark_level": {
+          "percentile": 5,
+          "dates": [
+            {
+              "region_median_db": -13.350482511943706,
+              "scene_percentile_db": -19.927122734890453
+            },
+            {
+              "region_median_db": -14.122887624315819,
+              "scene_percentile_db": -20.765948958389195
+            }
+          ],
+          "flag": false
+        }
+      }
+    },
+    "noise_floor": "not available: NISAR GCOV noise-equivalent layers are documented in linear DN\u00b2 and a verified DN\u00b2-to-gamma-0 conversion was not established (see data/scientific_diagnostics/REPORT.md); noiseCorrectionApplied=False in both products."
+  },
+  "verdict": {
+    "hv_scene_scale": "usable with caution",
+    "evidence": [
+      "\u0394HV is spatially structured beyond the 3\u00d73 filter footprint: lag-5 px (50 m) autocorrelation 0.18/0.18 (columns/rows), compared with 0.30 for \u0394HH. Independent pixel noise would be near 0; a smooth large-scale pattern (e.g. incidence-angle or calibration ramp) could also contribute.",
+      "\u0394HV and \u0394HH are positively correlated (r = 0.35); speckle in the two channels is largely independent, so part of the change is shared.",
+      "Median \u0394HV is -0.72 dB vs \u0394HH -1.39 dB; IQR -1.64\u2026+0.18 dB."
+    ],
+    "dark_pixel_warning": "In the darkest pixels HV may be floor-limited: new-water candidates have median filtered HV -21.9 / -22.3 dB, close to the scene's 1st percentile (-22.5 / -22.6 dB), and their HV barely changes (median -0.54 dB) while HH drops -3.65 dB. A stable lower bound is consistent with, but does not prove, a noise floor. HV change is weak evidence in such regions.",
+    "compass_policy": "The Compass shows HV-based labels, flags regions whose median HV sits at/below the scene 5th percentile on either date, and returns \"inconclusive\" for small or disagreeing change vectors.",
+    "not_established": [
+      "noise floor / HV SNR",
+      "cause of the scene-wide darkening",
+      "any land-cover or water truth"
+    ]
+  },
+  "output_sha256": {
+    "pair_change_db.tif": "67ff361fa55b04237d8bc5248026c1765b11054316e19959a7b3c4327208e2c9",
+    "pair_filtered_db.tif": "22c6d6aec1a17f83b56a1be94502cec681326fb71ab577448897a85227342a15",
+    "change_histograms.png": "c616780d731e07d804b5264b8948c85c47b991289cc3b7e5a204ad75df58f570"
+  }
+}

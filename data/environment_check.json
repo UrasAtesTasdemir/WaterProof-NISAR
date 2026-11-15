@@ -1,0 +1,16 @@
+{
+  "python": "3.12.0 (v3.12.0:0fb18b02c8, Oct  2 2023, 09:45:56) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "executable": "<project>/.venv/bin/python",
+  "packages": {
+    "asf_search": "14.1.0",
+    "numpy": "2.5.4",
+    "xarray": "2026.9.0",
+    "h5py": "3.16.0",
+    "h5netcdf": "1.8.3",
+    "fsspec": "2026.9.0",
+    "scipy": "1.18.1",
+    "rasterio": "1.5.2",
+    "matplotlib": "3.11.2",
+    "streamlit": "1.67.0"
+  }
+}

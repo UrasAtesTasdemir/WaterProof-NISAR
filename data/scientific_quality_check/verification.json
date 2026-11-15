@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "original_hashes_unchanged": true,
+  "threshold_raster_counts_areas_and_masks_verified": true,
+  "optical_subset_class_counts_verified": true,
+  "same_day_optical_usable_pixels_per_date": {
+    "2026-06-21": 0,
+    "2026-07-03": 0
+  },
+  "independent_validation": "not possible with inspected same-day cloudy optical data"
+}

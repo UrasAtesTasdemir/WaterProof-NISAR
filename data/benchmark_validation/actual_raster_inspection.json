@@ -1,0 +1,570 @@
+[
+  {
+    "scene": "Ghana_61925",
+    "split": "train",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      0,
+      1
+    ],
+    "max_affine_coefficient_difference": 3.1170812458958252e-19,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "Ghana_141910",
+    "split": "train",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      0,
+      1
+    ],
+    "max_affine_coefficient_difference": 3.1170812458958252e-19,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "India_73419",
+    "split": "train",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      -1,
+      0,
+      1
+    ],
+    "max_affine_coefficient_difference": 6.423897871976614e-18,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "India_979278",
+    "split": "train",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      -1,
+      0,
+      1
+    ],
+    "max_affine_coefficient_difference": 6.423897871976614e-18,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "Mekong_1396181",
+    "split": "train",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      -1,
+      0,
+      1
+    ],
+    "max_affine_coefficient_difference": 6.423897871976614e-18,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "Mekong_221789",
+    "split": "train",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      -1,
+      0
+    ],
+    "max_affine_coefficient_difference": 6.423897871976614e-18,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "Nigeria_35845",
+    "split": "train",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      -1,
+      0,
+      1
+    ],
+    "max_affine_coefficient_difference": 5.149960319306146e-19,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "Nigeria_707067",
+    "split": "train",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      -1,
+      0,
+      1
+    ],
+    "max_affine_coefficient_difference": 5.149960319306146e-19,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "Pakistan_246510",
+    "split": "train",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      -1,
+      0,
+      1
+    ],
+    "max_affine_coefficient_difference": 6.423897871976614e-18,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "Pakistan_760290",
+    "split": "train",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      -1,
+      0
+    ],
+    "max_affine_coefficient_difference": 6.423897871976614e-18,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "Paraguay_212687",
+    "split": "train",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      0,
+      1
+    ],
+    "max_affine_coefficient_difference": 5.149960319306146e-19,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "Paraguay_1056717",
+    "split": "train",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      0,
+      1
+    ],
+    "max_affine_coefficient_difference": 5.149960319306146e-19,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "Ghana_313799",
+    "split": "test",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      -1,
+      0,
+      1
+    ],
+    "max_affine_coefficient_difference": 3.1170812458958252e-19,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "Ghana_866994",
+    "split": "test",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      -1,
+      0,
+      1
+    ],
+    "max_affine_coefficient_difference": 3.1170812458958252e-19,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "India_44475",
+    "split": "test",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      -1,
+      0
+    ],
+    "max_affine_coefficient_difference": 6.423897871976614e-18,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "India_952728",
+    "split": "test",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      -1,
+      0,
+      1
+    ],
+    "max_affine_coefficient_difference": 6.423897871976614e-18,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "Mekong_254910",
+    "split": "test",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      -1,
+      0,
+      1
+    ],
+    "max_affine_coefficient_difference": 6.423897871976614e-18,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "Mekong_45934",
+    "split": "test",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      -1,
+      0,
+      1
+    ],
+    "max_affine_coefficient_difference": 6.423897871976614e-18,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "Nigeria_417184",
+    "split": "test",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      -1,
+      0,
+      1
+    ],
+    "max_affine_coefficient_difference": 5.149960319306146e-19,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "Nigeria_812045",
+    "split": "test",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      -1,
+      0,
+      1
+    ],
+    "max_affine_coefficient_difference": 5.149960319306146e-19,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "Pakistan_167553",
+    "split": "test",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      -1,
+      0,
+      1
+    ],
+    "max_affine_coefficient_difference": 6.423897871976614e-18,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "Pakistan_664885",
+    "split": "test",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      -1,
+      0,
+      1
+    ],
+    "max_affine_coefficient_difference": 6.423897871976614e-18,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "Paraguay_683296",
+    "split": "test",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      -1,
+      0,
+      1
+    ],
+    "max_affine_coefficient_difference": 5.149960319306146e-19,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  },
+  {
+    "scene": "Paraguay_651904",
+    "split": "test",
+    "radar_bands": [
+      "VV",
+      "VH"
+    ],
+    "nodata": [
+      "nan",
+      "nan"
+    ],
+    "label_nodata_attribute": "None",
+    "manual_label_codes": [
+      0,
+      1
+    ],
+    "max_affine_coefficient_difference": 5.149960319306146e-19,
+    "crs": "EPSG:4326",
+    "shape": [
+      512,
+      512
+    ]
+  }
+]

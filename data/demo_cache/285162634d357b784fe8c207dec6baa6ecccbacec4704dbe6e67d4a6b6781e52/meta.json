@@ -1,0 +1,44 @@
+{
+  "product_id": "NISAR_L2_PR_GCOV_025_047_D_083_4005_DHDH_A_20260711T112323_20260711T112357_P05023_N_F_J_001",
+  "date": "2026-07-11",
+  "start_time_utc": "2026-07-11T11:23:23+00:00",
+  "bounds_wgs84": [
+    105.7771373531491,
+    9.977335291858155,
+    105.82286579969679,
+    10.022663367364816
+  ],
+  "crs": "EPSG:32648",
+  "transform": [
+    10.0,
+    0.0,
+    585160.0,
+    0.0,
+    -10.0,
+    1108040.0
+  ],
+  "shape": [
+    504,
+    504
+  ],
+  "range_bytes_read": 15728648,
+  "group": {
+    "instrument": "L",
+    "track": "047",
+    "direction": "D",
+    "frame": "083",
+    "bandwidth": "4005",
+    "polarization": "DHDH",
+    "source": "A",
+    "crid": "P05023"
+  },
+  "layers": [
+    "HHHH",
+    "HVHV"
+  ],
+  "hdf5_group": "/science/LSAR/GCOV/grids/frequencyA",
+  "full_product_downloaded": false,
+  "sha256": "ff3a481afca7210376bc36b1e62b6541898c072ebae1beed929e6f936b707060",
+  "cached_utc": "2026-11-15T01:18:42.618901+00:00",
+  "processing_version": "live-window-v1"
+}

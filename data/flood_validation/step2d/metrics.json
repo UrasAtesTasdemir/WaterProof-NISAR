@@ -1,0 +1,222 @@
+{
+ "stage": "d",
+ "created_utc": "2026-11-15T06:21:18.527378+00:00",
+ "primary_config": {
+  "variant": "HH",
+  "t_HH": -16.0,
+  "min_change_db": 3.0,
+  "outcome": "new open water",
+  "reference": "S1"
+ },
+ "tracks": {
+  "004 D": {
+   "product_ids": [
+    "NISAR_L2_PR_GCOV_030_004_D_081_4005_DHDH_A_20260906T114712_20260906T114746_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_031_004_D_081_4005_DHDH_A_20260918T114712_20260918T114746_P05023_F_F_J_001",
+    "NISAR_L2_PR_GCOV_032_004_D_081_4005_DHDH_A_20260930T114712_20260930T114746_P05023_N_F_J_001"
+   ],
+   "bytes_read": 25165832,
+   "read_seconds": 46.4,
+   "coregistration": {
+    "offset_09_18_px": {
+     "row": 0.09717311049048247,
+     "col": -0.09792900244134588,
+     "magnitude": 0.13795906248432047,
+     "peak_correlation": 0.9047691639888774
+    },
+    "offset_09_30_px": {
+     "row": 0.14020558359985222,
+     "col": 0.00622346983851879,
+     "magnitude": 0.14034363986090037,
+     "peak_correlation": 0.8215730329051788
+    },
+    "rule": "pass if |offset(09-06, 09-18)| <= 1 px",
+    "passed": true
+   },
+   "tier_A": {
+    "new_water_share_before_before": 0.031388,
+    "new_water_share_before_during": 0.256675,
+    "new_water_km2_before_before": 3.1388000000000003,
+    "new_water_km2_before_during": 25.6675
+   },
+   "tier_B": {
+    "reference_new_water_share": 0.012609680027960016,
+    "TP": 3080,
+    "FP": 28174,
+    "FN": 9223,
+    "TN": 935202,
+    "precision": 0.09854738593460037,
+    "recall": 0.25034544420060145,
+    "F1": 0.14142388135087358,
+    "IoU": 0.07609259579514292,
+    "false_new_water_km2": 2.8174
+   },
+   "directions_before_before": {
+    "all valid": {
+     "pixels": 1000000,
+     "median_dHH_db": -0.59765943683595,
+     "median_dHV_db": -0.6841701768659183,
+     "share_dHH_negative": 0.635862,
+     "share_dHV_negative": 0.67151,
+     "share_dHH_up_3db": 0.016441
+    },
+    "NISAR new water (before-before)": {
+     "pixels": 31388,
+     "median_dHH_db": -5.098143082177816,
+     "median_dHV_db": -2.775893574305824,
+     "share_dHH_negative": 1.0,
+     "share_dHV_negative": 0.9417611826175608,
+     "share_dHH_up_3db": 0.0
+    }
+   }
+  },
+  "011 A": {
+   "product_ids": [
+    "NISAR_L2_PR_GCOV_030_011_A_009_4005_DHDH_A_20260906T224526_20260906T224604_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_031_011_A_009_4005_DHDH_A_20260918T224526_20260918T224604_P05023_F_F_J_001",
+    "NISAR_L2_PR_GCOV_032_011_A_009_4005_DHDH_A_20260930T224526_20260930T224605_P05023_N_F_J_001"
+   ],
+   "bytes_read": 20971528,
+   "read_seconds": 36.8,
+   "coregistration": {
+    "offset_09_18_px": {
+     "row": 0.005511397455594073,
+     "col": -0.059857881599802265,
+     "magnitude": 0.060111076279912634,
+     "peak_correlation": 0.9121909948784239
+    },
+    "offset_09_30_px": {
+     "row": 0.01279120970260277,
+     "col": -0.04328425803227805,
+     "magnitude": 0.045134709914441525,
+     "peak_correlation": 0.8090684047225112
+    },
+    "rule": "pass if |offset(09-06, 09-18)| <= 1 px",
+    "passed": true
+   },
+   "tier_A": {
+    "new_water_share_before_before": 0.051921,
+    "new_water_share_before_during": 0.314443,
+    "new_water_km2_before_before": 5.1921,
+    "new_water_km2_before_during": 31.444300000000002
+   },
+   "tier_B": {
+    "reference_new_water_share": 0.012609680027960016,
+    "TP": 2911,
+    "FP": 48761,
+    "FN": 9392,
+    "TN": 914615,
+    "precision": 0.05633612014243691,
+    "recall": 0.23660895716491911,
+    "F1": 0.0910042985541227,
+    "IoU": 0.04767129568976811,
+    "false_new_water_km2": 4.8761
+   },
+   "directions_before_before": {
+    "all valid": {
+     "pixels": 1000000,
+     "median_dHH_db": -0.9023877070833417,
+     "median_dHV_db": -0.7571009362081682,
+     "share_dHH_negative": 0.709452,
+     "share_dHV_negative": 0.700005,
+     "share_dHH_up_3db": 0.007737
+    },
+    "NISAR new water (before-before)": {
+     "pixels": 51921,
+     "median_dHH_db": -4.7567065166471885,
+     "median_dHV_db": -2.004879348027252,
+     "share_dHH_negative": 1.0,
+     "share_dHV_negative": 0.9065503360875176,
+     "share_dHH_up_3db": 0.0
+    }
+   }
+  }
+ },
+ "note": "09-18 products use a forecast orbit (filename accuracy field F).",
+ "rows": [
+  {
+   "scope": "negative control 004 D",
+   "threshold_set": "PRIMARY: untuned default (HH -16 dB, |dHH| >= 3 dB)",
+   "variant": "HH",
+   "outcome": "new open water, before-before (09-06 -> 09-18)",
+   "reference": "S1 09-08 -> 09-19",
+   "offset_hours": "pre 59.2, second 35.4",
+   "t_HH": -16.0,
+   "TP": 3080,
+   "FP": 28174,
+   "FN": 9223,
+   "TN": 935202,
+   "invalid": 66762,
+   "precision": 0.09854738593460037,
+   "recall": 0.25034544420060145,
+   "F1": 0.14142388135087358,
+   "IoU": 0.07609259579514292,
+   "reference_positive_share": 0.012609680027960016,
+   "ci95": {
+    "blocks": 121,
+    "block_px": 100,
+    "resamples": 1000,
+    "seed": 20261115,
+    "precision": [
+     0.04075115187288245,
+     0.16956150506564788
+    ],
+    "recall": [
+     0.1153261315130501,
+     0.36025662789922497
+    ],
+    "F1": [
+     0.061736601229129,
+     0.2234230004323389
+    ],
+    "IoU": [
+     0.03185150330506621,
+     0.12576040156387724
+    ]
+   },
+   "false_new_water_km2": 2.8174
+  },
+  {
+   "scope": "negative control 011 A",
+   "threshold_set": "PRIMARY: untuned default (HH -16 dB, |dHH| >= 3 dB)",
+   "variant": "HH",
+   "outcome": "new open water, before-before (09-06 -> 09-18)",
+   "reference": "S1 09-08 -> 09-19",
+   "offset_hours": "pre 48.2, second 24.4",
+   "t_HH": -16.0,
+   "TP": 2911,
+   "FP": 48761,
+   "FN": 9392,
+   "TN": 914615,
+   "invalid": 66762,
+   "precision": 0.05633612014243691,
+   "recall": 0.23660895716491911,
+   "F1": 0.0910042985541227,
+   "IoU": 0.04767129568976811,
+   "reference_positive_share": 0.012609680027960016,
+   "ci95": {
+    "blocks": 121,
+    "block_px": 100,
+    "resamples": 1000,
+    "seed": 20261115,
+    "precision": [
+     0.021565409508681715,
+     0.10670632131866628
+    ],
+    "recall": [
+     0.12020869692862547,
+     0.33681551493547707
+    ],
+    "F1": [
+     0.03691632779422009,
+     0.15774481302013302
+    ],
+    "IoU": [
+     0.018805275464705788,
+     0.0856259326914738
+    ]
+   },
+   "false_new_water_km2": 4.8761
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+{
+  "regions": 5,
+  "proposals": 268,
+  "summary": [
+    {
+      "id": 1,
+      "area_km2": 0.0074,
+      "recurrence": 4,
+      "max_median_HH_change_db": 5.96602988243103,
+      "coordinates": [
+        -90.26474470101566,
+        29.910968919210216
+      ]
+    },
+    {
+      "id": 2,
+      "area_km2": 0.003,
+      "recurrence": 4,
+      "max_median_HH_change_db": 8.771552324295044,
+      "coordinates": [
+        -90.26882221380009,
+        29.92088478148224
+      ]
+    },
+    {
+      "id": 3,
+      "area_km2": 0.046400000000000004,
+      "recurrence": 3,
+      "max_median_HH_change_db": 4.403779983520508,
+      "coordinates": [
+        -90.26331310291341,
+        29.917884228444887
+      ]
+    },
+    {
+      "id": 4,
+      "area_km2": 0.0158,
+      "recurrence": 3,
+      "max_median_HH_change_db": 4.732326507568359,
+      "coordinates": [
+        -90.26071834600835,
+        29.923783184787077
+      ]
+    },
+    {
+      "id": 5,
+      "area_km2": 0.013000000000000001,
+      "recurrence": 3,
+      "max_median_HH_change_db": 4.982228755950928,
+      "coordinates": [
+        -90.2622855323931,
+        29.921380491913506
+      ]
+    }
+  ]
+}

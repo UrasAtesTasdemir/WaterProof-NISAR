@@ -1,0 +1,322 @@
+{
+ "stage": "c",
+ "created_utc": "2026-11-15T06:10:36.099479+00:00",
+ "primary_config": {
+  "variant": "HH",
+  "t_HH": -16.0,
+  "min_change_db": 3.0,
+  "outcome": "new open water",
+  "reference": "S1"
+ },
+ "secondary_thresholds": {
+  "HH": -10.0,
+  "HV": -15.5
+ },
+ "nisar": {
+  "product_ids": [
+   "NISAR_L2_PR_GCOV_031_026_A_015_4005_DHDH_A_20260919T234703_20260919T234738_P05023_F_F_J_001",
+   "NISAR_L2_PR_GCOV_032_026_A_015_4005_DHDH_A_20261001T234703_20261001T234738_P05023_N_F_J_001"
+  ],
+  "times": [
+   "2026-09-19T23:47:03+00:00",
+   "2026-10-01T23:47:03+00:00"
+  ],
+  "bytes_read": 49283088,
+  "read_seconds": 179.6,
+  "grid_shape": [
+   1048,
+   1049
+  ],
+  "transform": [
+   10.0,
+   0.0,
+   821120.0,
+   0.0,
+   -10.0,
+   2963760.0
+  ],
+  "crs": "EPSG:32644",
+  "valid_fraction": 0.9103753847721203
+ },
+ "references": {
+  "S1_pre": "OPERA_L3_DSWx-S1_T45RTK_20260917T001912Z_20261012T215550Z_S1D_30_v1.0",
+  "S1_during": "OPERA_L3_DSWx-S1_T45RTK_20260929T001912Z_20261012T062954Z_S1D_30_v1.0",
+  "HLS_during": null
+ },
+ "directions": {
+  "S1 new open water": {
+   "pixels": 39771,
+   "median_dHH_db": -2.31858461813877,
+   "median_dHV_db": -2.643192395626908,
+   "share_dHH_negative": 0.7450152120892107,
+   "share_dHV_negative": 0.7895451459606245,
+   "share_dHH_up_3db": 0.03386889944934751
+  },
+  "S1 persistent open water": {
+   "pixels": 61626,
+   "median_dHH_db": -0.3056195411657736,
+   "median_dHV_db": -0.36370476585072176,
+   "share_dHH_negative": 0.5669035796579366,
+   "share_dHV_negative": 0.6175802421056048,
+   "share_dHH_up_3db": 0.06964592866647194
+  },
+  "S1 persistent not water": {
+   "pixels": 859070,
+   "median_dHH_db": -0.532769280111882,
+   "median_dHV_db": -0.21995815590083456,
+   "share_dHH_negative": 0.6154294760613221,
+   "share_dHV_negative": 0.5462930843819479,
+   "share_dHH_up_3db": 0.02195862968093403
+  },
+  "S1 new inundated vegetation": {
+   "pixels": 20165,
+   "median_dHH_db": 1.0363285505291664,
+   "median_dHV_db": 0.9404815919931728,
+   "share_dHH_negative": 0.3215472353087032,
+   "share_dHV_negative": 0.3326555913711877,
+   "share_dHH_up_3db": 0.16518720555417804
+  }
+ },
+ "exploratory_vegetated_flooding": {
+  "rule": "dHH >= 3 dB and dHV >= 0 vs S1 new inundated vegetation",
+  "label": "EXPLORATORY; failed in the calibration scene (F1 0.02); not a claim",
+  "TP": 3112,
+  "FP": 13919,
+  "FN": 17053,
+  "TN": 845151,
+  "invalid": 220117,
+  "precision": 0.1827256179907228,
+  "recall": 0.15432680386808828,
+  "F1": 0.16732982041079686,
+  "IoU": 0.0913038375777491,
+  "reference_positive_share": 0.02293471028792075
+ },
+ "rows": [
+  {
+   "scope": "test scene (Gandak primary 026 A, 2026-09-19 -> 10-01 (test, S1 only))",
+   "threshold_set": "PRIMARY: untuned default (HH -16 dB, |dHH| >= 3 dB)",
+   "variant": "HH",
+   "outcome": "open water presence (during)",
+   "reference": "S1 primary",
+   "offset_hours": -71.5,
+   "t_HH": -16.0,
+   "t_HV": null,
+   "TP": 63860,
+   "FP": 16500,
+   "FN": 43982,
+   "TN": 852075,
+   "invalid": 122935,
+   "precision": 0.7946739671478348,
+   "recall": 0.5921626082602326,
+   "F1": 0.6786325331292973,
+   "IoU": 0.5135835035627543,
+   "reference_positive_share": 0.11044666366931342,
+   "ci95": {
+    "blocks": 121,
+    "block_px": 100,
+    "resamples": 1000,
+    "seed": 20261115,
+    "precision": [
+     0.7050883256623337,
+     0.849817775408763
+    ],
+    "recall": [
+     0.4705892992313099,
+     0.698467017547813
+    ],
+    "F1": [
+     0.5741637224329417,
+     0.7541496428852542
+    ],
+    "IoU": [
+     0.4026855922075589,
+     0.605329234432985
+    ]
+   }
+  },
+  {
+   "scope": "test scene (Gandak primary 026 A, 2026-09-19 -> 10-01 (test, S1 only))",
+   "threshold_set": "PRIMARY: untuned default (HH -16 dB, |dHH| >= 3 dB)",
+   "variant": "HH",
+   "outcome": "new open water (during minus pre)",
+   "reference": "S1 primary",
+   "offset_hours": "pre -71.5, during -71.5",
+   "t_HH": -16.0,
+   "t_HV": null,
+   "min_change_db": 3.0,
+   "TP": 7448,
+   "FP": 14284,
+   "FN": 32323,
+   "TN": 909691,
+   "invalid": 135606,
+   "precision": 0.3427204122952328,
+   "recall": 0.18727213296120288,
+   "F1": 0.24219956750077232,
+   "IoU": 0.13778558875219685,
+   "reference_positive_share": 0.04126709734722634,
+   "ci95": {
+    "blocks": 121,
+    "block_px": 100,
+    "resamples": 1000,
+    "seed": 20261115,
+    "precision": [
+     0.2504607794813311,
+     0.4320289026322715
+    ],
+    "recall": [
+     0.1227136880906959,
+     0.26330160134982267
+    ],
+    "F1": [
+     0.1688822380185549,
+     0.3128422428868043
+    ],
+    "IoU": [
+     0.09222905214819246,
+     0.1854256024398716
+    ]
+   }
+  },
+  {
+   "scope": "test scene (Gandak primary 026 A, 2026-09-19 -> 10-01 (test, S1 only))",
+   "threshold_set": "PRIMARY: untuned default (HH -16 dB, |dHH| >= 3 dB)",
+   "variant": "HV",
+   "outcome": "all",
+   "note": "not applicable (no frozen default for this channel)"
+  },
+  {
+   "scope": "test scene (Gandak primary 026 A, 2026-09-19 -> 10-01 (test, S1 only))",
+   "threshold_set": "PRIMARY: untuned default (HH -16 dB, |dHH| >= 3 dB)",
+   "variant": "HH+HV",
+   "outcome": "all",
+   "note": "not applicable (no frozen default for this channel)"
+  },
+  {
+   "scope": "test scene (Gandak primary 026 A, 2026-09-19 -> 10-01 (test, S1 only))",
+   "threshold_set": "SECONDARY: frozen calibrated (HH -10.0, HV -15.5)",
+   "variant": "HH",
+   "outcome": "open water presence (during)",
+   "reference": "S1 primary",
+   "offset_hours": -71.5,
+   "t_HH": -10.0,
+   "t_HV": -15.5,
+   "TP": 93269,
+   "FP": 110236,
+   "FN": 14573,
+   "TN": 758339,
+   "invalid": 122935,
+   "precision": 0.45831306356109186,
+   "recall": 0.8648671204169062,
+   "F1": 0.5991321580101944,
+   "IoU": 0.42768642412347874,
+   "reference_positive_share": 0.11044666366931342
+  },
+  {
+   "scope": "test scene (Gandak primary 026 A, 2026-09-19 -> 10-01 (test, S1 only))",
+   "threshold_set": "SECONDARY: frozen calibrated (HH -10.0, HV -15.5)",
+   "variant": "HH",
+   "outcome": "new open water (during minus pre)",
+   "reference": "S1 primary",
+   "offset_hours": "pre -71.5, during -71.5",
+   "t_HH": -10.0,
+   "t_HV": -15.5,
+   "min_change_db": 3.0,
+   "TP": 10737,
+   "FP": 58361,
+   "FN": 29034,
+   "TN": 865614,
+   "invalid": 135606,
+   "precision": 0.15538799965266722,
+   "recall": 0.2699705815795429,
+   "F1": 0.19724623170966943,
+   "IoU": 0.10941385073166755,
+   "reference_positive_share": 0.04126709734722634
+  },
+  {
+   "scope": "test scene (Gandak primary 026 A, 2026-09-19 -> 10-01 (test, S1 only))",
+   "threshold_set": "SECONDARY: frozen calibrated (HH -10.0, HV -15.5)",
+   "variant": "HV",
+   "outcome": "open water presence (during)",
+   "reference": "S1 primary",
+   "offset_hours": -71.5,
+   "t_HH": -10.0,
+   "t_HV": -15.5,
+   "TP": 104793,
+   "FP": 279817,
+   "FN": 3049,
+   "TN": 588758,
+   "invalid": 122935,
+   "precision": 0.27246561451860324,
+   "recall": 0.9717271563954675,
+   "F1": 0.4255968094352343,
+   "IoU": 0.2703226289083963,
+   "reference_positive_share": 0.11044666366931342,
+   "note": "secondary/exploratory (no untuned default for this variant)"
+  },
+  {
+   "scope": "test scene (Gandak primary 026 A, 2026-09-19 -> 10-01 (test, S1 only))",
+   "threshold_set": "SECONDARY: frozen calibrated (HH -10.0, HV -15.5)",
+   "variant": "HV",
+   "outcome": "new open water (during minus pre)",
+   "reference": "S1 primary",
+   "offset_hours": "pre -71.5, during -71.5",
+   "t_HH": -10.0,
+   "t_HV": -15.5,
+   "min_change_db": 3.0,
+   "TP": 5777,
+   "FP": 59899,
+   "FN": 33994,
+   "TN": 864076,
+   "invalid": 135606,
+   "precision": 0.08796211705950423,
+   "recall": 0.14525659400065374,
+   "F1": 0.10957163314271624,
+   "IoU": 0.05796127219825424,
+   "reference_positive_share": 0.04126709734722634,
+   "note": "secondary/exploratory (no untuned default for this variant)"
+  },
+  {
+   "scope": "test scene (Gandak primary 026 A, 2026-09-19 -> 10-01 (test, S1 only))",
+   "threshold_set": "SECONDARY: frozen calibrated (HH -10.0, HV -15.5)",
+   "variant": "HH+HV",
+   "outcome": "open water presence (during)",
+   "reference": "S1 primary",
+   "offset_hours": -71.5,
+   "t_HH": -10.0,
+   "t_HV": -15.5,
+   "TP": 93220,
+   "FP": 108698,
+   "FN": 14622,
+   "TN": 759877,
+   "invalid": 122935,
+   "precision": 0.461672560148179,
+   "recall": 0.864412751989021,
+   "F1": 0.6018853305785123,
+   "IoU": 0.4304978295003233,
+   "reference_positive_share": 0.11044666366931342,
+   "note": "secondary/exploratory (no untuned default for this variant)"
+  },
+  {
+   "scope": "test scene (Gandak primary 026 A, 2026-09-19 -> 10-01 (test, S1 only))",
+   "threshold_set": "SECONDARY: frozen calibrated (HH -10.0, HV -15.5)",
+   "variant": "HH+HV",
+   "outcome": "new open water (during minus pre)",
+   "reference": "S1 primary",
+   "offset_hours": "pre -71.5, during -71.5",
+   "t_HH": -10.0,
+   "t_HV": -15.5,
+   "min_change_db": 3.0,
+   "TP": 10889,
+   "FP": 57938,
+   "FN": 28882,
+   "TN": 866037,
+   "invalid": 135606,
+   "precision": 0.1582082612928066,
+   "recall": 0.2737924618440572,
+   "F1": 0.20053776312639274,
+   "IoU": 0.11144316286114893,
+   "reference_positive_share": 0.04126709734722634,
+   "note": "secondary/exploratory (no untuned default for this variant)"
+  }
+ ]
+}

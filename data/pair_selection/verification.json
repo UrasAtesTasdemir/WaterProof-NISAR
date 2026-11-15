@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "regression_tests": 32,
+  "catalog_dates": 6,
+  "reference_mask_counts_verified": true,
+  "pair_common_valid_support_checked": true,
+  "production_and_existing_data_hashes_unchanged": true,
+  "no_new_nisar_product_data_downloads": true,
+  "no_large_area_maps": true
+}

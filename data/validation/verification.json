@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "tests_passed": 32,
+  "original_scientific_files_unchanged": true,
+  "real_agreement_metrics_computed": false,
+  "reason": "Insufficient contemporaneous common valid reference coverage",
+  "alternative_region_processed": false,
+  "large_products_downloaded": false
+}

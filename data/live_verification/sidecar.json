@@ -1,0 +1,9 @@
+{
+  "description": "Sidecar for data/live_verification",
+  "outputs_sha256": {
+    "report.json": "e3826de67d9a4b5e98b67673465633531cfb1b1b9025a13e91bce5ba2773dade"
+  },
+  "sources_sha256": {
+    "data/polarization_analysis/six_date/hh_hv_cube.nc": "433f905331d03b892692ca251ae0fbf86b6f4fdd51932e9936b2dd7efa6fc199"
+  }
+}

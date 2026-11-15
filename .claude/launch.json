@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "change-compass",
+      "runtimeExecutable": ".venv/bin/python",
+      "runtimeArgs": ["-m", "streamlit", "run", "app.py", "--server.port", "8507", "--server.headless", "true", "--server.fileWatcherType", "poll"],
+      "port": 8507
+    }
+  ]
+}

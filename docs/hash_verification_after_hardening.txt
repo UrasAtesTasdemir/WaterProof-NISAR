@@ -1,0 +1,17 @@
+# Verified 2026-11-14T18:16:32Z against docs/baseline_hashes_hardening.sha256 (430 files: data/, src/, scripts/, app.py)
+# Expected: only UI/logic files edited in hardening; confidence*.py renamed to evidence*.py; overview_panel.py replaced by about_panel.py. data/ must be unchanged.
+app.py: FAILED
+src/change_compass.py: FAILED
+src/compass_panel.py: FAILED
+src/confidence.py: FAILED open or read
+src/confidence_panel.py: FAILED open or read
+src/diagnostics_panel.py: FAILED
+src/investigation_panel.py: FAILED
+src/navigation.py: FAILED
+src/overview_panel.py: FAILED open or read
+src/polarization_panel.py: FAILED
+src/time_series_panel.py: FAILED
+src/visibility.py: FAILED
+src/visibility_panel.py: FAILED
+# OK: 417
+# data/ entries not OK: 0

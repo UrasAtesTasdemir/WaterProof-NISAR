@@ -1,0 +1,15 @@
+Opening real HHHH 2026-06-21T11:19:06+00:00
+  Metadata inspected: full grid (34632, 35208); loading window (525, 525), EPSG:32615
+Read MiB 10.000007629394531
+Opening real HHHH 2026-07-03T11:19:05+00:00
+  Metadata inspected: full grid (34632, 35208); loading window (525, 525), EPSG:32615
+Read MiB 11.000007629394531
+{
+  "requested_size_km": 5,
+  "shape": [
+    525,
+    525
+  ],
+  "valid_comparison_area_km2": 25.0,
+  "elapsed_seconds": 71.28027733397903
+}

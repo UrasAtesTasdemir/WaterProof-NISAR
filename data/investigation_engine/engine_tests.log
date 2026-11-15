@@ -1,0 +1,41 @@
+<home>/.matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /var/folders/b9/pdrdyv8x60v5ztmp4jzl85fw0000gn/T/matplotlib-xmu59kfe because there was an issue with the default path (<home>/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib is building the font cache; this may take a moment.
+2026-11-14 17:09:15.345 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-11-14 17:09:15.346 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+test_actual_geographic_polygons_points_native_areas_and_nonoverlap (test_investigation.InvestigationTests.test_actual_geographic_polygons_points_native_areas_and_nonoverlap) ... FAIL
+test_actual_markdown_exports_contain_observations_rules_and_cautions (test_investigation.InvestigationTests.test_actual_markdown_exports_contain_observations_rules_and_cautions) ... ok
+test_deterministic_lexicographic_ranking_and_overlap_suppression (test_investigation.InvestigationTests.test_deterministic_lexicographic_ranking_and_overlap_suppression) ... ok
+test_existing_scientific_and_benchmark_files_unchanged (test_investigation.InvestigationTests.test_existing_scientific_and_benchmark_files_unchanged) ... ok
+test_four_connectivity_sign_and_no_missing_HV (test_investigation.InvestigationTests.test_four_connectivity_sign_and_no_missing_HV) ... ok
+test_map_numbering_geographic_layers_and_selected_region (test_investigation.InvestigationTests.test_map_numbering_geographic_layers_and_selected_region) ... ok
+test_missing_or_no_candidate_outputs_are_explicit (test_investigation.InvestigationTests.test_missing_or_no_candidate_outputs_are_explicit) ... 2026-11-14 17:09:15.761 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+<project>/app.py:94: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+2026-11-14 17:09:16.580 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+<project>/app.py:94: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+ok
+test_no_candidates_identical_uniform_small_or_invalid (test_investigation.InvestigationTests.test_no_candidates_identical_uniform_small_or_invalid) ... ok
+test_real_ranking_matches_actual_cached_observations (test_investigation.InvestigationTests.test_real_ranking_matches_actual_cached_observations) ... ok
+test_widget_region_selection_exports_and_existing_workspaces (test_investigation.InvestigationTests.test_widget_region_selection_exports_and_existing_workspaces) ... 2026-11-14 17:09:17.382 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+<project>/app.py:94: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/scripts/process_polarization.py:53: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cm = plt.get_cmap('RdBu_r' if is_delta else 'gray').copy(); cm.set_bad('#d8e1e8')
+<project>/app.py:94: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+ok
+
+======================================================================
+FAIL: test_actual_geographic_polygons_points_native_areas_and_nonoverlap (test_investigation.InvestigationTests.test_actual_geographic_polygons_points_native_areas_and_nonoverlap)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<project>/tests/test_investigation.py", line 70, in test_actual_geographic_polygons_points_native_areas_and_nonoverlap
+    self.assertLess(geom.difference(footprint.buffer(1e-9)).area,1e-12)
+AssertionError: 1.1844178147097712e-11 not less than 1e-12
+
+----------------------------------------------------------------------
+Ran 10 tests in 5.845s
+
+FAILED (failures=1)

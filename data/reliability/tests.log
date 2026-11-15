@@ -1,0 +1,59 @@
+test_invalid_thresholds_rejected (test_dashboard.DashboardTests.test_invalid_thresholds_rejected) ... ok
+test_missing_files_show_recovery_message (test_dashboard.DashboardTests.test_missing_files_show_recovery_message) ... 2026-11-14 11:59:23.698 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_real_widget_metrics_update_without_network_or_output_changes (test_dashboard.DashboardTests.test_real_widget_metrics_update_without_network_or_output_changes) ... <project>/tests/test_dashboard.py:15: ResourceWarning: unclosed file <_io.TextIOWrapper name='<project>/data/scientific_quality_check/threshold_sensitivity.csv' mode='r' encoding='UTF-8'>
+  expected={float(r['water_threshold_db']):r for r in csv.DictReader((ROOT/'data/scientific_quality_check/threshold_sensitivity.csv').open())}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+2026-11-14 11:59:23.911 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+<project>/app.py:69: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/app.py:69: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/app.py:69: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/app.py:69: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/app.py:69: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/app.py:69: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/app.py:69: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/app.py:69: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+ok
+test_303_data_redirect_strips_token_keeps_range (test_earthdata_access.RedirectTests.test_303_data_redirect_strips_token_keeps_range) ... ok
+test_ignored_range_body_is_not_read (test_earthdata_access.RedirectTests.test_ignored_range_body_is_not_read) ... ok
+test_login_redirect_is_not_followed (test_earthdata_access.RedirectTests.test_login_redirect_is_not_followed) ... ok
+test_observed_nisar_cloudfront_redirect (test_earthdata_access.RedirectTests.test_observed_nisar_cloudfront_redirect) ... ok
+test_other_cloudfront_distribution_is_blocked (test_earthdata_access.RedirectTests.test_other_cloudfront_distribution_is_blocked) ... ok
+test_redirect_loop_is_bounded (test_earthdata_access.RedirectTests.test_redirect_loop_is_bounded) ... ok
+test_unapproved_or_insecure_redirects_are_not_requested (test_earthdata_access.RedirectTests.test_unapproved_or_insecure_redirects_are_not_requested) ... ok
+test_identical_or_unknown_maps_unchanged (test_reliability.ReliabilityTests.test_identical_or_unknown_maps_unchanged) ... ok
+test_real_singleton_counts_and_default_preserved (test_reliability.ReliabilityTests.test_real_singleton_counts_and_default_preserved) ... ok
+test_separate_classes_and_diagonal_connectivity (test_reliability.ReliabilityTests.test_separate_classes_and_diagonal_connectivity) ... ok
+test_toggle_updates_metrics_and_reverts (test_reliability.ReliabilityTests.test_toggle_updates_metrics_and_reverts) ... 2026-11-14 11:59:28.800 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+<project>/app.py:69: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/app.py:69: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/app.py:69: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+ok
+test_alignment_identical_and_shifted_grid_masks (test_water_change.WaterChangeTests.test_alignment_identical_and_shifted_grid_masks) ... ok
+test_all_class_transitions_and_signed_change (test_water_change.WaterChangeTests.test_all_class_transitions_and_signed_change) ... ok
+test_area_rejects_degrees_and_converts_projected_feet (test_water_change.WaterChangeTests.test_area_rejects_degrees_and_converts_projected_feet) ... ok
+test_bad_parameters_rejected (test_water_change.WaterChangeTests.test_bad_parameters_rejected) ... ok
+test_change_gate_reject_disable_and_exact_boundary (test_water_change.WaterChangeTests.test_change_gate_reject_disable_and_exact_boundary) ... ok
+test_common_mask_cannot_be_overridden_by_filter (test_water_change.WaterChangeTests.test_common_mask_cannot_be_overridden_by_filter) ... ok
+test_db_known_values (test_water_change.WaterChangeTests.test_db_known_values) ... ok
+test_filter_is_in_linear_power (test_water_change.WaterChangeTests.test_filter_is_in_linear_power) ... ok
+test_identical_images_have_no_change (test_water_change.WaterChangeTests.test_identical_images_have_no_change) ... ok
+test_invalid_power_never_becomes_water (test_water_change.WaterChangeTests.test_invalid_power_never_becomes_water) ... ok
+test_mask_filter_no_zero_bias_and_no_gap_filling (test_water_change.WaterChangeTests.test_mask_filter_no_zero_bias_and_no_gap_filling) ... ok
+test_projected_area_and_rotated_determinant (test_water_change.WaterChangeTests.test_projected_area_and_rotated_determinant) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 6.831s
+
+OK

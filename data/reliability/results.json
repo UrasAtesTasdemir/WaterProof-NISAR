@@ -1,0 +1,190 @@
+{
+  "created_at_utc": "2026-11-14T08:58:46.970988+00:00",
+  "default": {
+    "expansion": 0.056900000000000006,
+    "recession": 0.0005,
+    "net": 0.056400000000000006,
+    "valid_area": 13.8779,
+    "suppressed_pixels": 0
+  },
+  "optional_singleton_filter": {
+    "expansion": 0.050800000000000005,
+    "recession": 0.0002,
+    "net": 0.050600000000000006,
+    "valid_area": 13.8779,
+    "suppressed_pixels": 64
+  },
+  "measured_median_delta_db": -1.388781573900281,
+  "darkening_scenarios": [
+    {
+      "fraction_of_measured_median_removed": 0,
+      "hypothetical_after_offset_db": -0.0,
+      "expansion_km2": 0.056900000000000006,
+      "recession_km2": 0.0005,
+      "baseline_expansion_pixels_still_candidates": 569
+    },
+    {
+      "fraction_of_measured_median_removed": 0.5,
+      "hypothetical_after_offset_db": 0.6943907869501404,
+      "expansion_km2": 0.019200000000000002,
+      "recession_km2": 0.0007,
+      "baseline_expansion_pixels_still_candidates": 192
+    },
+    {
+      "fraction_of_measured_median_removed": 1,
+      "hypothetical_after_offset_db": 1.388781573900281,
+      "expansion_km2": 0.006200000000000001,
+      "recession_km2": 0.0015,
+      "baseline_expansion_pixels_still_candidates": 62
+    }
+  ],
+  "darkening_interpretation": "Offsets are counterfactual sensitivity scenarios applied to the actual after dB values, not sensor calibration or evidence that environmental change is bias. The -1.39 dB median alone is smaller than the 3 dB gate; local variation is needed. No offset is applied to defaults or dashboard.",
+  "singleton_interpretation": "One 10m grid pixel = 100m\u00b2; removing singletons may remove real small water features. Persistent and unknown classes are untouched; suppressed changes become other valid surface.",
+  "isolated_expansion_pixels": 61,
+  "isolated_expansion_near_waterway_pixels": 37,
+  "waterway_context": {
+    "default": {
+      "expansion": {
+        "within_30m_pixels": 431,
+        "beyond_30m_pixels": 138,
+        "within_30m_km2": 0.0431,
+        "beyond_30m_km2": 0.013800000000000002
+      },
+      "recession": {
+        "within_30m_pixels": 3,
+        "beyond_30m_pixels": 2,
+        "within_30m_km2": 0.00030000000000000003,
+        "beyond_30m_km2": 0.0002
+      }
+    },
+    "optional_singleton_suppression": {
+      "expansion": {
+        "within_30m_pixels": 394,
+        "beyond_30m_pixels": 114,
+        "within_30m_km2": 0.039400000000000004,
+        "beyond_30m_km2": 0.0114
+      },
+      "recession": {
+        "within_30m_pixels": 2,
+        "beyond_30m_pixels": 0,
+        "within_30m_km2": 0.0002,
+        "beyond_30m_km2": 0.0
+      }
+    }
+  },
+  "waterway_rule": "Historical NHD ftype336/460 rasterized all_touched on original grid; within 30m approximate raster distance. Not flood validation; near-water detections are not automatically removed.",
+  "independent_validation": "Unavailable: inspected HLS windows cloudy; bounded DSWx-S1 catalog search finds June21 candidate but no July3 +/-1 day counterpart. A catalog hit is not pixel validation; no paired confirmation.",
+  "sources": [
+    {
+      "product_id": "NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001",
+      "date_utc": "2026-06-21T11:19:06+00:00",
+      "path": "data/subsets/nisar_hhhh_2026-06-21.tif",
+      "sha256": "133b8a8d020f2a29a5e53163224f9bdadfcd8c7008480f84cd029968a26239f9",
+      "provenance_verified_against": [
+        "manifest",
+        "Milestone 2 report",
+        "JSON sidecar",
+        "GeoTIFF tags"
+      ],
+      "db_max_absolute_error": 1.8757186417417415e-06,
+      "valid_pixels": 138779,
+      "crs": "EPSG:32615",
+      "shape": [
+        257,
+        579
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        759680.0,
+        0.0,
+        -10.0,
+        3313600.0
+      ]
+    },
+    {
+      "product_id": "NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001",
+      "date_utc": "2026-07-03T11:19:05+00:00",
+      "path": "data/subsets/nisar_hhhh_2026-07-03.tif",
+      "sha256": "bc8f5d92aaf286b1d3873ed00bc08a8847b7cf62751e8ff788cd67cff33b0d8e",
+      "provenance_verified_against": [
+        "manifest",
+        "Milestone 2 report",
+        "JSON sidecar",
+        "GeoTIFF tags"
+      ],
+      "db_max_absolute_error": 2.137666676560457e-06,
+      "valid_pixels": 138779,
+      "crs": "EPSG:32615",
+      "shape": [
+        257,
+        579
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        759680.0,
+        0.0,
+        -10.0,
+        3313600.0
+      ]
+    }
+  ],
+  "settings": {
+    "water_db": -16,
+    "min_change_db": 3,
+    "linear_filter_size": 3,
+    "component_connectivity": 8,
+    "singleton_filter_default": false
+  },
+  "preserved_original_hashes": {
+    "data/subsets/nisar_hhhh_2026-06-21.tif": "133b8a8d020f2a29a5e53163224f9bdadfcd8c7008480f84cd029968a26239f9",
+    "data/subsets/nisar_hhhh_2026-07-03.json": "704f6e266349f7397dd79f2d4fad42c617d28c9847a484e80cafdc64eb004f59",
+    "data/subsets/nisar_hhhh_2026-07-03.tif": "bc8f5d92aaf286b1d3873ed00bc08a8847b7cf62751e8ff788cd67cff33b0d8e",
+    "data/subsets/nisar_hhhh_2026-06-21.json": "06af41487283a6b0cbb5dcef475d815cdec988964c7c243c3e2fbddccaf232a4",
+    "data/water_change/common_valid_mask.tif": "4b6760c224e3f5d05fc4f07fddf412ce2897f9a63ffc97b206107ff7a3798c9c",
+    "data/water_change/water_change_classification.png": "0d3732fec3a106b312eb65ded841320b90fe54b9d674161edf858219f46bd438",
+    "data/water_change/before_backscatter.png": "caa246e7ce0069fddb7d09ac40ddfca10532af9cd4fd83f2d6d3d3294507dff4",
+    "data/water_change/summary.md": "b6b0d9540b7eceea02e37da936978d537e6bd757cf74afa4cb20ada088d847a5",
+    "data/water_change/results.json": "077b528e18174656a4915936c167118fadfa221d4f9713c0b2c50e0f12c7897f",
+    "data/water_change/water_change_classes.tif": "69f6b0e2e41fc4f4b5766667a3763527413681eba970b4cf9145be7d6e3b758b",
+    "data/water_change/verification.json": "001bd27dddc82fda8c669a11061b153f84391ac7053c8233fc6161590edd6986",
+    "data/water_change/after_backscatter.png": "26979f578eff8e306ea227fe7fdc6a93b31c8a3cbb76c7bab9d710a853f895b1",
+    "data/water_change/backscatter_difference.png": "f302186d84769f6e440bd244436a50e48a760459aad3ee4903b58dc30db590c0",
+    "data/water_change/water_change_overview.png": "256a3e52122ef7b42acdc615578f42f21499a43f9a43595b78c4dde5a0016b5e",
+    "data/water_change/filtered_radar_change.tif": "e81076a34e73c0612ff263b75cfbd296e2342224aa662f4dc1974ae7db29a3b6",
+    "data/scientific_quality_check/OPERA_L3_DSWx-HLS_T15RYP_20260622T163711Z_20260624T131726Z_S2A_30_v1.1_aoi_WTR.tif": "07f42fda99e0c41ecbadb5e2b0b7b0e2061dd9068b3d1dfc9ad99779a7a8445a",
+    "data/scientific_quality_check/threshold_spatial_comparison.png": "9c5b4ccc66a2f40808011ae0a40dfb200a3e8383169e03cd6bc9f0a47447c739",
+    "data/scientific_quality_check/expansion_component_centroids.geojson": "a345689fe1bd9d4ae623b09eb84a58cad0e0270a5e8b75a7b9f279519c57bfe7",
+    "data/scientific_quality_check/hydro_service.json": "653cd11ef7b43278c346c26d71335043a6b859f90370d8e357a662a881f46bcf",
+    "data/scientific_quality_check/classes_threshold_18db.tif": "1c7ec4011e9c0ddeb4cf1dab5a6cc3e9376fbb5bf3073d829c43383d47b212b2",
+    "data/scientific_quality_check/OPERA_L3_DSWx-HLS_T15RYP_20260621T163131Z_20260722T172422Z_L9_30_v1.1_aoi_WTR.tif": "a752bdce38acb0d2764bbebcbc6ec6de4475fe3379e738dedfcc9a510e90fe07",
+    "data/scientific_quality_check/threshold_sensitivity.png": "ad6078ae047cf6b3b9f6c2e8e9277ab8e77634cd418f9352dc64444848512035",
+    "data/scientific_quality_check/dswx_collections.json": "dae17ff803e47eb3b66220f29163e7bf0e902f6cd4e06cd894596c5c7a39068a",
+    "data/scientific_quality_check/classes_threshold_20db.tif": "cb56a190e5fff68c95d350df165393d7fb12773aa699c500a46a859fcd7c6e4d",
+    "data/scientific_quality_check/REPORT.md": "cbe8acdbf7a1a62947303bbff4dae55c0aa5771afae4045b57048b10d4287675",
+    "data/scientific_quality_check/quality_diagnostics.json": "9ee8db876344a6060163ec45c09395f3a920a318d475e1355b23f0b52f48ce3f",
+    "data/scientific_quality_check/nhd_layer_12.geojson": "3c7ec264e6227325983ebde74c8ea9a87cf54739dff49f8c32a0b7e9ce43f275",
+    "data/scientific_quality_check/nhd_layer_9.geojson": "55ddd1ad094a964f22478d88425a814e67853cfab6c8b9f92c40b5758f9f54ec",
+    "data/scientific_quality_check/dswx_granules_2026-07-03.json": "11d9ddcfb79df766dd3cca4ce48d5f50705e0dedecaea4148f2fbebda9cad3d7",
+    "data/scientific_quality_check/dswx_granules_2026-06-21.json": "44b429e5c245697b4c38cf1f83bca3cbde135f08c16b336cd0309f7ea59b8cc6",
+    "data/scientific_quality_check/execution.log": "928e15dd29e67a4c31860b790fc1bd2aaae89d32ab12e2f4cc97ba3fed69ed9b",
+    "data/scientific_quality_check/candidate_location_context.png": "6d29d1ece1e43603021028caebb0f7c9d4249baffee7c36d094bf5a5a382ef21",
+    "data/scientific_quality_check/verification.json": "0f16028262ff66bfe438f5f1d3a611125c0b53d763cadb4c832d9c41765b0c56",
+    "data/scientific_quality_check/classes_threshold_16db.tif": "087b9a97be11a72a613128eae084563aeaf8b9979aa5622897feeeb73d3dcc2c",
+    "data/scientific_quality_check/independent_reference_check.json": "77639a78c2e68035f6f8e91c230ca677a206d72598c201e4de3b41e19130a441",
+    "data/scientific_quality_check/classes_threshold_14db.tif": "c17ed31241da7610b31535b0e4a04558c4f172767ceda0a1a2a9f99b6d6fc117",
+    "data/scientific_quality_check/threshold_sensitivity.csv": "a0d62b514e6b19a800080523c4aaadadaf67fa523910d8634401336355300868",
+    "data/scientific_quality_check/OPERA_L3_DSWx-HLS_T15RYP_20260703T163841Z_20260720T223436Z_S2C_30_v1.1_aoi_WTR.tif": "33ec3b9f8be63a17403f62a56a12d44992a9ae39122ce8ba8093fb3d146af5c1",
+    "data/scientific_quality_check/OPERA_L3_DSWx-HLS_T15RYP_20260630T162831Z_20260702T030402Z_S2C_30_v1.1_aoi_WTR.tif": "04564024c86bf5e2d5e5818c19222b15eaa22edd455787d699842bd089888d33",
+    "data/scientific_quality_check/nhd_layer_6.geojson": "94b627f9f5e44c38ea5296d92c64d57795c6480bc468a7e4e113871cdc5dab12"
+  }
+}

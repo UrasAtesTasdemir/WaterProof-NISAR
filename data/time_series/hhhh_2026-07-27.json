@@ -1,0 +1,50 @@
+{
+  "hdf5_group": "/science/LSAR/GCOV/grids/frequencyA",
+  "layer": "HHHH",
+  "full_grid_shape": [
+    34632,
+    35208
+  ],
+  "subset_shape": [
+    257,
+    579
+  ],
+  "epsg": 32615,
+  "pixel_spacing_m": [
+    10.0,
+    -10.0
+  ],
+  "transform": [
+    10.0,
+    0.0,
+    759680.0,
+    0.0,
+    -10.0,
+    3313600.0
+  ],
+  "pixel_center_window": {
+    "row_start": 25832,
+    "row_stop_exclusive": 26089,
+    "column_start": 19664,
+    "column_stop_exclusive": 20243
+  },
+  "aoi_pixel_centers": 138779,
+  "finite_positive_pixels": 138779,
+  "invalid_or_nonpositive_pixels_inside_aoi": 0,
+  "power_min": 0.003414332866668701,
+  "power_max": 35.44921875,
+  "db_min": -24.666940689086914,
+  "db_max": 15.49606704711914,
+  "power_units": "1",
+  "db_formula": "10 * log10(power), finite positive values only",
+  "aoi_mask_rule": "pixel center inside transformed AOI; outside and invalid values are NaN",
+  "product_id": "NISAR_L2_PR_GCOV_026_105_A_017_4005_DHDH_A_20260727T111904_20260727T111939_P05023_N_F_J_001",
+  "acquisition_utc": "2026-07-27T11:19:04+00:00",
+  "remote_product_bytes": 6589251584,
+  "range_bytes_read": 8388616,
+  "cache_limit_bytes": 16777216,
+  "range_bytes_read_this_run": 8388616,
+  "reused_existing_cache": false,
+  "path": "data/time_series/hhhh_2026-07-27.tif",
+  "sha256": "6e588abb5101748ef99f91f2febf4f9d2b3318267fc30710e687a3e3dde0ada3"
+}

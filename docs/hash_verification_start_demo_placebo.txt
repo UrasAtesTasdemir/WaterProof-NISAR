@@ -1,0 +1,2 @@
+2026-11-15: verified 403 pre-existing files under data/ after Jobs A-C: all unchanged (shasum -a 256 -c).
+New folders only: data/demo_cache/ (shipped demo windows + catalog snapshots, sidecar.json), data/demo_places/ (places.json), data/placebo/ (results.json, summary.csv, sidecar.json).

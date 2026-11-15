@@ -1,0 +1,8 @@
+{
+  "feed": {
+    "updated": "2026-11-14T08:57:29.291Z",
+    "id": "https://cmr.earthdata.nasa.gov:443/search/granules.json?short_name=OPERA_L3_DSWX-S1_V1&bounding_box=-90.31002%2C29.902604%2C-90.250797%2C29.924476&temporal=2026-07-02T00%3A00%3A00Z%2C2026-07-05T00%3A00%3A00Z&page_size=100&provider=POCLOUD",
+    "title": "ECHO granule metadata",
+    "entry": []
+  }
+}

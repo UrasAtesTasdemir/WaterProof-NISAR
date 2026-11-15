@@ -1,0 +1,68 @@
+{
+  "hdf5_group": "/science/LSAR/GCOV/grids/frequencyA",
+  "layer": "HVHV",
+  "full_grid_shape": [
+    34632,
+    35208
+  ],
+  "subset_shape": [
+    257,
+    579
+  ],
+  "epsg": 32615,
+  "pixel_spacing_m": [
+    10.0,
+    -10.0
+  ],
+  "transform": [
+    10.0,
+    0.0,
+    759680.0,
+    0.0,
+    -10.0,
+    3313600.0
+  ],
+  "pixel_center_window": {
+    "row_start": 25832,
+    "row_stop_exclusive": 26089,
+    "column_start": 19664,
+    "column_stop_exclusive": 20243
+  },
+  "aoi_pixel_centers": 138779,
+  "finite_positive_pixels": 138779,
+  "invalid_or_nonpositive_pixels_inside_aoi": 0,
+  "power_min": 0.0010079890489578247,
+  "power_max": 2.41156005859375,
+  "db_min": -29.96544075012207,
+  "db_max": 3.8229808807373047,
+  "power_units": "1",
+  "db_formula": "10 * log10(power), finite positive values only",
+  "aoi_mask_rule": "pixel center inside transformed AOI; outside and invalid values are NaN",
+  "product_id": "NISAR_L2_PR_GCOV_029_105_A_017_4005_DHDH_A_20260901T111903_20260901T111937_P05023_N_F_J_001",
+  "acquisition_utc": "2026-09-01T11:19:03+00:00",
+  "available_layers": {
+    "HHHH": {
+      "shape": [
+        34632,
+        35208
+      ],
+      "dtype": "float32",
+      "units": "1",
+      "description": "Geocoded polarimetric covariance term HHHH"
+    },
+    "HVHV": {
+      "shape": [
+        34632,
+        35208
+      ],
+      "dtype": "float32",
+      "units": "1",
+      "description": "Geocoded polarimetric covariance term HVHV"
+    }
+  },
+  "remote_product_bytes": 6408896512,
+  "range_bytes_read": 8388616,
+  "cache_limit_bytes": 16777216,
+  "range_bytes_read_this_run": 8388616,
+  "sha256": "ffa15bf7ecc65dc3bd708fc774eac0c576591e2b4b0a164185da979c65c2ea6d"
+}

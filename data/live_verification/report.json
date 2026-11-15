@@ -1,0 +1,111 @@
+{
+  "status": "success",
+  "created_utc": "2026-11-14T23:16:37.940436+00:00",
+  "purpose": "Live engine reproduces the cached Louisiana six-date HH/HV windows",
+  "product_ids": [
+    "NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_026_105_A_017_4005_DHDH_A_20260727T111904_20260727T111939_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_029_105_A_017_4005_DHDH_A_20260901T111903_20260901T111937_P05023_N_F_J_001"
+  ],
+  "dates": [
+    "2026-06-21",
+    "2026-07-03",
+    "2026-07-15",
+    "2026-07-27",
+    "2026-08-20",
+    "2026-09-01"
+  ],
+  "area_of_interest_wkt": "POLYGON((-90.31002 29.902604, -90.250797 29.902604, -90.250797 29.924476, -90.31002 29.924476, -90.31002 29.902604))",
+  "live_read": {
+    "elapsed_seconds": 272.9,
+    "range_bytes_read": 65011760,
+    "mib_read": 62.0,
+    "steps": [
+      {
+        "index": 0,
+        "date": "2026-06-21",
+        "source": "read",
+        "t": 0.0
+      },
+      {
+        "index": 1,
+        "date": "2026-07-03",
+        "source": "read",
+        "t": 40.6
+      },
+      {
+        "index": 2,
+        "date": "2026-07-15",
+        "source": "read",
+        "t": 85.2
+      },
+      {
+        "index": 3,
+        "date": "2026-07-27",
+        "source": "read",
+        "t": 134.0
+      },
+      {
+        "index": 4,
+        "date": "2026-08-20",
+        "source": "read",
+        "t": 178.4
+      },
+      {
+        "index": 5,
+        "date": "2026-09-01",
+        "source": "read",
+        "t": 228.5
+      }
+    ],
+    "seconds_per_date": 45.5
+  },
+  "repeat_from_cache": {
+    "elapsed_seconds": 0.0,
+    "network_bytes": 0,
+    "dates_from_cache": 6,
+    "token_used": false
+  },
+  "comparison": {
+    "HH": {
+      "live_shape": [
+        6,
+        257,
+        579
+      ],
+      "cached_shape": [
+        6,
+        257,
+        579
+      ],
+      "same_shape": true,
+      "same_valid_mask": true,
+      "max_abs_difference": 0.0,
+      "max_relative_difference": 0.0,
+      "allclose_rtol_1e_6": true
+    },
+    "HV": {
+      "live_shape": [
+        6,
+        257,
+        579
+      ],
+      "cached_shape": [
+        6,
+        257,
+        579
+      ],
+      "same_shape": true,
+      "same_valid_mask": true,
+      "max_abs_difference": 0.0,
+      "max_relative_difference": 0.0,
+      "allclose_rtol_1e_6": true
+    }
+  },
+  "full_product_downloaded": false,
+  "credentials_stored": false,
+  "cached_source_sha256": "433f905331d03b892692ca251ae0fbf86b6f4fdd51932e9936b2dd7efa6fc199"
+}

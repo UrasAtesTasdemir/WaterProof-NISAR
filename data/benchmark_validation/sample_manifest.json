@@ -1,0 +1,241 @@
+{
+  "source": "https://github.com/cloudtostreet/Sen1Floods11",
+  "bucket": "https://storage.googleapis.com/sen1floods11/v1.1/",
+  "units": "dB",
+  "band_order": [
+    "VV",
+    "VH"
+  ],
+  "labels": {
+    "-1": "ignore",
+    "0": "not water",
+    "1": "water"
+  },
+  "selection": "First six alphabetic event groups shared by official train/test, two chips per group per split by SHA256(FloodPulse-Sen1Floods11-v1:filename). Fixed before opening labels.",
+  "groups": [
+    "Ghana",
+    "India",
+    "Mekong",
+    "Nigeria",
+    "Pakistan",
+    "Paraguay"
+  ],
+  "records": [
+    {
+      "split": "train",
+      "group": "Ghana",
+      "scene_id": "Ghana_61925",
+      "radar": "Ghana_61925_S1Hand.tif",
+      "label": "Ghana_61925_LabelHand.tif",
+      "radar_sha256": "8af21d3cc5c09af542430022dee40e30dfb77bfd104d73280c89f51d03b0e0df",
+      "label_sha256": "9fab07a0039122963bdf9c658819d817a697501a4432b9add2e1aef8bd568586"
+    },
+    {
+      "split": "train",
+      "group": "Ghana",
+      "scene_id": "Ghana_141910",
+      "radar": "Ghana_141910_S1Hand.tif",
+      "label": "Ghana_141910_LabelHand.tif",
+      "radar_sha256": "cc7251fdfa6910f76e11bb295c0a81c4865372f72e30bd73ea05dd6bddcd80b0",
+      "label_sha256": "e6dd6c0eb8f2bc5e5e64b12e99f7398d27a0e56a4670f8be5382055504c4602b"
+    },
+    {
+      "split": "train",
+      "group": "India",
+      "scene_id": "India_73419",
+      "radar": "India_73419_S1Hand.tif",
+      "label": "India_73419_LabelHand.tif",
+      "radar_sha256": "927b00f697d4ce8edf4cf1bdd86e59e86d3269c34255b947df8ce1029059f684",
+      "label_sha256": "cf45ae87f726ce64f5d51d13be90e3c3a834d067d5b31816a016585263a36bf2"
+    },
+    {
+      "split": "train",
+      "group": "India",
+      "scene_id": "India_979278",
+      "radar": "India_979278_S1Hand.tif",
+      "label": "India_979278_LabelHand.tif",
+      "radar_sha256": "2a6457391987f87dbb39037f1d3270f20bca2e39453050bd4a5256fc203415f8",
+      "label_sha256": "aaf6ebc78c6cc70d6e7d7427a5c97fe7d046286b7c804fdb3e16e0d20aa658b5"
+    },
+    {
+      "split": "train",
+      "group": "Mekong",
+      "scene_id": "Mekong_1396181",
+      "radar": "Mekong_1396181_S1Hand.tif",
+      "label": "Mekong_1396181_LabelHand.tif",
+      "radar_sha256": "c773065e29000e3d76d1f1c3909480e73d1aa23d856c3541b593f7ddca759538",
+      "label_sha256": "3cba6ca75f2c277d5e681437ebd8da0e45707e37b82c026b3bc799791ca16438"
+    },
+    {
+      "split": "train",
+      "group": "Mekong",
+      "scene_id": "Mekong_221789",
+      "radar": "Mekong_221789_S1Hand.tif",
+      "label": "Mekong_221789_LabelHand.tif",
+      "radar_sha256": "cd471fbd9b56deb10fed00f12f8fc70e86e405e98b2702adf684cc6288e7987b",
+      "label_sha256": "8dc056d9f4da55b049e5c446f72cf19175d67a4350a816540e8778c399b566e1"
+    },
+    {
+      "split": "train",
+      "group": "Nigeria",
+      "scene_id": "Nigeria_35845",
+      "radar": "Nigeria_35845_S1Hand.tif",
+      "label": "Nigeria_35845_LabelHand.tif",
+      "radar_sha256": "e6393a8c3a32e0fa0dc66c89be3fce3fd054b4af905ee8574a30225a805dc9fb",
+      "label_sha256": "c61c8bafed9eaa97c515d991c4e402e2dfc9b3cb3823e3d404ceb674db609f7b"
+    },
+    {
+      "split": "train",
+      "group": "Nigeria",
+      "scene_id": "Nigeria_707067",
+      "radar": "Nigeria_707067_S1Hand.tif",
+      "label": "Nigeria_707067_LabelHand.tif",
+      "radar_sha256": "4c6cbdebd9dbb47dbd38eba116c11d16ebc0f77c6aca8175acf91f62c1cbdeee",
+      "label_sha256": "89a36972a4efa30b0a8488af035e07e350ef4a1453402ed603717d66884c482f"
+    },
+    {
+      "split": "train",
+      "group": "Pakistan",
+      "scene_id": "Pakistan_246510",
+      "radar": "Pakistan_246510_S1Hand.tif",
+      "label": "Pakistan_246510_LabelHand.tif",
+      "radar_sha256": "4bee6a02b489f6152b159bb5442620c3fa74e92b3d2b256d7585ffb8827205c9",
+      "label_sha256": "2ecb22ece2e6ea5c462a9844f1a5f90b813f60366a76eab369b8779ae31be519"
+    },
+    {
+      "split": "train",
+      "group": "Pakistan",
+      "scene_id": "Pakistan_760290",
+      "radar": "Pakistan_760290_S1Hand.tif",
+      "label": "Pakistan_760290_LabelHand.tif",
+      "radar_sha256": "4f81fd7470d45f95452f039c12815b22ab2bf192628c8b1680c989df0fba43a0",
+      "label_sha256": "c33e7ba36023e54ad26e721ffccfee4858e986a4579de59fee199a9b07ce2d2d"
+    },
+    {
+      "split": "train",
+      "group": "Paraguay",
+      "scene_id": "Paraguay_212687",
+      "radar": "Paraguay_212687_S1Hand.tif",
+      "label": "Paraguay_212687_LabelHand.tif",
+      "radar_sha256": "906126ede554df1c1834f0c166b6eb0b5233b1df731be1ddb3466ed6a07e8a6c",
+      "label_sha256": "4c5c3fe0eb23beba11247dec63e6b648976dfc380d8ee279ea1b191e411b741e"
+    },
+    {
+      "split": "train",
+      "group": "Paraguay",
+      "scene_id": "Paraguay_1056717",
+      "radar": "Paraguay_1056717_S1Hand.tif",
+      "label": "Paraguay_1056717_LabelHand.tif",
+      "radar_sha256": "68b6857aad121d93a4c191596da13fcb7401d9246db9283fc706c0115077654a",
+      "label_sha256": "7418b6b9d656007f05b7a4cae4faf2709426691c91bde7add13dfab323f7cda1"
+    },
+    {
+      "split": "test",
+      "group": "Ghana",
+      "scene_id": "Ghana_313799",
+      "radar": "Ghana_313799_S1Hand.tif",
+      "label": "Ghana_313799_LabelHand.tif",
+      "radar_sha256": "4555c98d54ea0ca81e681abc75af20d61774fbbcdc3d48992c3378ebdd5887bc",
+      "label_sha256": "3bde81b5172d5017ec561ce137cdf8d59fbf3a69fc7796d08188b97219a32862"
+    },
+    {
+      "split": "test",
+      "group": "Ghana",
+      "scene_id": "Ghana_866994",
+      "radar": "Ghana_866994_S1Hand.tif",
+      "label": "Ghana_866994_LabelHand.tif",
+      "radar_sha256": "d59fe3b0acf60b68b0270b7b2639a46142765332abde0edb97108b0a5181fb01",
+      "label_sha256": "7ee5f6c06fbf23b686db0f53beb6ceed9fe462c429eb4aa8155cd9aec134c352"
+    },
+    {
+      "split": "test",
+      "group": "India",
+      "scene_id": "India_44475",
+      "radar": "India_44475_S1Hand.tif",
+      "label": "India_44475_LabelHand.tif",
+      "radar_sha256": "8f37aec1f4c623f6e7ba2c5a6f5340016aad1edb07b4a33a3dfaa66fb7588a08",
+      "label_sha256": "6bac2a7734377a8721f38c8abe4c66f267375f88b780dee75fad552bb24e4b85"
+    },
+    {
+      "split": "test",
+      "group": "India",
+      "scene_id": "India_952728",
+      "radar": "India_952728_S1Hand.tif",
+      "label": "India_952728_LabelHand.tif",
+      "radar_sha256": "ccd39d95515ed60d19b0e6c767581545b4ea5fd6044624440b1159402ad55e6c",
+      "label_sha256": "45edbf83b77d384bff6a15dd23d8a4e3ff5ddc3df28efe0704be843ca7b0583b"
+    },
+    {
+      "split": "test",
+      "group": "Mekong",
+      "scene_id": "Mekong_254910",
+      "radar": "Mekong_254910_S1Hand.tif",
+      "label": "Mekong_254910_LabelHand.tif",
+      "radar_sha256": "143aed56655704da0f27412dccf63cafc78f95719995f405b9021c14dea0bf26",
+      "label_sha256": "6bc5cf165f540b5a0c437a30c75e5ec3b561980d9ddb94ee135a97cb491db8f2"
+    },
+    {
+      "split": "test",
+      "group": "Mekong",
+      "scene_id": "Mekong_45934",
+      "radar": "Mekong_45934_S1Hand.tif",
+      "label": "Mekong_45934_LabelHand.tif",
+      "radar_sha256": "c0030a2e0781b7bc4225d827f753d2f138203db77be404f9d9657dc3d042f6cb",
+      "label_sha256": "febef62270ee0ce2d407ee26a075bfb90240f25efec7425db8554841bf215a77"
+    },
+    {
+      "split": "test",
+      "group": "Nigeria",
+      "scene_id": "Nigeria_417184",
+      "radar": "Nigeria_417184_S1Hand.tif",
+      "label": "Nigeria_417184_LabelHand.tif",
+      "radar_sha256": "99b58fdcad3b27e09a0bb672246cf59f58e1c7e211d290e45485c5321995d7dc",
+      "label_sha256": "f0d0acbdd9483dfa0873dc6baf577e9f97b4e07f12c6d5de5088ec675976e6a4"
+    },
+    {
+      "split": "test",
+      "group": "Nigeria",
+      "scene_id": "Nigeria_812045",
+      "radar": "Nigeria_812045_S1Hand.tif",
+      "label": "Nigeria_812045_LabelHand.tif",
+      "radar_sha256": "60721c48b1bc862abdb9e6b0ee93d67590fb058f4581e43f615569b22beff4e0",
+      "label_sha256": "77386f8586a6a825430b11d74619fd39391f2c5d3fc2fc93d829bc15f4933308"
+    },
+    {
+      "split": "test",
+      "group": "Pakistan",
+      "scene_id": "Pakistan_167553",
+      "radar": "Pakistan_167553_S1Hand.tif",
+      "label": "Pakistan_167553_LabelHand.tif",
+      "radar_sha256": "412d8b25b478d7e34e70394ba2ceebfdb983575b0d10179702d936e50d993dd7",
+      "label_sha256": "7284487345eded3bdafa305ce08a9ca15106131f89cd1c7f2633f245c845bed6"
+    },
+    {
+      "split": "test",
+      "group": "Pakistan",
+      "scene_id": "Pakistan_664885",
+      "radar": "Pakistan_664885_S1Hand.tif",
+      "label": "Pakistan_664885_LabelHand.tif",
+      "radar_sha256": "e5c39467d3f1672fa280077d4a8157d1df6cc41b1d91e0fafee457e2858e310f",
+      "label_sha256": "1aa975e13dac53e1f6c5116fed47090604f0158dda85e75d8afda5b3e4262e99"
+    },
+    {
+      "split": "test",
+      "group": "Paraguay",
+      "scene_id": "Paraguay_683296",
+      "radar": "Paraguay_683296_S1Hand.tif",
+      "label": "Paraguay_683296_LabelHand.tif",
+      "radar_sha256": "46c517219a6ecd97ad5becbec3d583e78c0a8876fd14a22e58d5051244b4b2f6",
+      "label_sha256": "801856a8b87b294b53e7fd12d705f0f369b318f42dba46046f6b714c00eb1b08"
+    },
+    {
+      "split": "test",
+      "group": "Paraguay",
+      "scene_id": "Paraguay_651904",
+      "radar": "Paraguay_651904_S1Hand.tif",
+      "label": "Paraguay_651904_LabelHand.tif",
+      "radar_sha256": "0b2635e40584ea1f016f4ffc503748afcd2431cf9330db63eacf900c15eed30c",
+      "label_sha256": "44d1514eeef21b3a0c04aa0fa7c1c49ef780f4c4835c734bfa2db172b455d289"
+    }
+  ]
+}

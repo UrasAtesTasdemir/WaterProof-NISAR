@@ -1,0 +1,1871 @@
+{
+  "status": "success",
+  "version": 2,
+  "supersedes": "data/robustness (version 1)",
+  "created_utc": "2026-11-14T19:41:25.427492+00:00",
+  "network_access_used": false,
+  "dates": [
+    "2026-06-21",
+    "2026-07-03",
+    "2026-07-15",
+    "2026-07-27",
+    "2026-08-20",
+    "2026-09-01"
+  ],
+  "product_ids": [
+    "NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_026_105_A_017_4005_DHDH_A_20260727T111904_20260727T111939_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_029_105_A_017_4005_DHDH_A_20260901T111903_20260901T111937_P05023_N_F_J_001"
+  ],
+  "acquisition_gaps": [
+    {
+      "start": "2026-07-27",
+      "end": "2026-08-20",
+      "days": 24,
+      "missing_acquisitions": 1
+    }
+  ],
+  "method": {
+    "screening": "src.investigation.event_components / describe_proposals / rank_regions, unchanged",
+    "settings_grid": {
+      "filter_size": [
+        1,
+        3,
+        5
+      ],
+      "magnitude_floor_db": [
+        2.5,
+        3.0,
+        3.5
+      ],
+      "scene_percentile": [
+        85.0,
+        90.0,
+        95.0
+      ],
+      "default": {
+        "filter_size": 3,
+        "magnitude_floor_db": 3.0,
+        "scene_percentile": 90.0
+      },
+      "filtering": "3x3 (or 1/5) mask-aware linear-power mean on the all-date common mask, then dB"
+    },
+    "area_and_rank": "(a) pixels of the fixed footprint still screened; top-5 rank and pixels of the best-overlapping selected region (IoU >= 0.5)",
+    "similarity": "(b) best IoU with any selected region and with any eligible proposal; same seed interval and direction",
+    "leave_one_date_out": "default settings on the existing filtered cube with one date removed; only the interval that contains the original seed event (merged across the removed date when needed) is checked with the existing notable-interval rule (|median \u0394HH| >= 3 dB and > scene 90th percentile) in the seed direction. Same-direction changes in other intervals are listed separately and do not count. If the removed date is the first or last date and an endpoint of the seed interval, the event is not testable.",
+    "ring": "pixels 50-150 m from the candidate, inside the common mask, excluding all candidates; medians of raw pixel-wise change. A comparison, not a correction."
+  },
+  "default_variant_reproduces_saved_regions": {
+    "best_iou_per_candidate": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "note": "Default variant recomputed from raw power with the all-date common mask; the saved regions used per-date masks."
+  },
+  "scene_intervals": [
+    {
+      "start": "2026-06-21",
+      "end": "2026-07-03",
+      "scene_dHH_db": -1.3887815475463867,
+      "scene_dHV_db": -0.720402717590332
+    },
+    {
+      "start": "2026-07-03",
+      "end": "2026-07-15",
+      "scene_dHH_db": 0.6656074523925781,
+      "scene_dHV_db": 0.25582408905029297
+    },
+    {
+      "start": "2026-07-15",
+      "end": "2026-07-27",
+      "scene_dHH_db": -0.8812637329101562,
+      "scene_dHV_db": -0.4461984634399414
+    },
+    {
+      "start": "2026-07-27",
+      "end": "2026-08-20",
+      "scene_dHH_db": -0.2906150817871094,
+      "scene_dHV_db": -0.29469966888427734
+    },
+    {
+      "start": "2026-08-20",
+      "end": "2026-09-01",
+      "scene_dHH_db": 1.034224510192871,
+      "scene_dHV_db": 0.4829416275024414
+    }
+  ],
+  "summary": [
+    {
+      "candidate": 1,
+      "area_km2": 0.0074,
+      "seed": "2026-07-03 \u2192 2026-07-15 (increase)",
+      "settings_variants": 27,
+      "variants_in_top5": 27,
+      "rank_range": [
+        1,
+        2
+      ],
+      "screened_pixels_range": [
+        53,
+        74
+      ],
+      "iou_top5_range": [
+        0.5181,
+        1.0
+      ],
+      "variants_same_seed": 27,
+      "lodo_removals": 6,
+      "lodo_removals_still_notable": 5,
+      "lodo_dates_not_notable": [
+        "2026-07-15"
+      ],
+      "lodo_dates_not_testable": [],
+      "ring_seed_interval": {
+        "start": "2026-07-03",
+        "end": "2026-07-15",
+        "candidate_dHH_db": 5.96602988243103,
+        "ring_dHH_db": 0.4205334186553955,
+        "candidate_minus_ring_dHH_db": 5.545496463775635,
+        "candidate_dHV_db": 4.055113792419434,
+        "ring_dHV_db": 0.2843794822692871,
+        "candidate_minus_ring_dHV_db": 3.7707343101501465,
+        "ring_pixels": 1022,
+        "candidate_pixels": 74
+      }
+    },
+    {
+      "candidate": 2,
+      "area_km2": 0.003,
+      "seed": "2026-07-15 \u2192 2026-07-27 (decrease)",
+      "settings_variants": 27,
+      "variants_in_top5": 5,
+      "rank_range": [
+        2,
+        3
+      ],
+      "screened_pixels_range": [
+        7,
+        30
+      ],
+      "iou_top5_range": [
+        0.0,
+        1.0
+      ],
+      "variants_same_seed": 9,
+      "lodo_removals": 6,
+      "lodo_removals_still_notable": 4,
+      "lodo_dates_not_notable": [
+        "2026-07-15",
+        "2026-07-27"
+      ],
+      "lodo_dates_not_testable": [],
+      "ring_seed_interval": {
+        "start": "2026-07-15",
+        "end": "2026-07-27",
+        "candidate_dHH_db": -4.906281471252441,
+        "ring_dHH_db": -1.2583322525024414,
+        "candidate_minus_ring_dHH_db": -3.64794921875,
+        "candidate_dHV_db": -2.8437047004699707,
+        "ring_dHV_db": -0.6569099426269531,
+        "candidate_minus_ring_dHV_db": -2.1867947578430176,
+        "ring_pixels": 887,
+        "candidate_pixels": 30
+      }
+    },
+    {
+      "candidate": 3,
+      "area_km2": 0.046400000000000004,
+      "seed": "2026-06-21 \u2192 2026-07-03 (decrease)",
+      "settings_variants": 27,
+      "variants_in_top5": 3,
+      "rank_range": [
+        3,
+        4
+      ],
+      "screened_pixels_range": [
+        0,
+        464
+      ],
+      "iou_top5_range": [
+        0.0,
+        1.0
+      ],
+      "variants_same_seed": 11,
+      "lodo_removals": 6,
+      "lodo_removals_still_notable": 4,
+      "lodo_dates_not_notable": [
+        "2026-07-03"
+      ],
+      "lodo_dates_not_testable": [
+        "2026-06-21"
+      ],
+      "ring_seed_interval": {
+        "start": "2026-06-21",
+        "end": "2026-07-03",
+        "candidate_dHH_db": -4.403779983520508,
+        "ring_dHH_db": -2.4812374114990234,
+        "candidate_minus_ring_dHH_db": -1.9225425720214844,
+        "candidate_dHV_db": -2.745401382446289,
+        "ring_dHV_db": -1.2680988311767578,
+        "candidate_minus_ring_dHV_db": -1.4773025512695312,
+        "ring_pixels": 1801,
+        "candidate_pixels": 464
+      }
+    },
+    {
+      "candidate": 4,
+      "area_km2": 0.0158,
+      "seed": "2026-07-03 \u2192 2026-07-15 (increase)",
+      "settings_variants": 27,
+      "variants_in_top5": 5,
+      "rank_range": [
+        4,
+        5
+      ],
+      "screened_pixels_range": [
+        0,
+        158
+      ],
+      "iou_top5_range": [
+        0.0,
+        1.0
+      ],
+      "variants_same_seed": 9,
+      "lodo_removals": 6,
+      "lodo_removals_still_notable": 4,
+      "lodo_dates_not_notable": [
+        "2026-07-03",
+        "2026-07-15"
+      ],
+      "lodo_dates_not_testable": [],
+      "ring_seed_interval": {
+        "start": "2026-07-03",
+        "end": "2026-07-15",
+        "candidate_dHH_db": 3.493382453918457,
+        "ring_dHH_db": 2.1783604621887207,
+        "candidate_minus_ring_dHH_db": 1.3150219917297363,
+        "candidate_dHV_db": 1.5254545211791992,
+        "ring_dHV_db": 1.1819419860839844,
+        "candidate_minus_ring_dHV_db": 0.34351253509521484,
+        "ring_pixels": 750,
+        "candidate_pixels": 158
+      }
+    },
+    {
+      "candidate": 5,
+      "area_km2": 0.013000000000000001,
+      "seed": "2026-07-03 \u2192 2026-07-15 (increase)",
+      "settings_variants": 27,
+      "variants_in_top5": 4,
+      "rank_range": [
+        5,
+        5
+      ],
+      "screened_pixels_range": [
+        0,
+        130
+      ],
+      "iou_top5_range": [
+        0.0,
+        1.0
+      ],
+      "variants_same_seed": 9,
+      "lodo_removals": 6,
+      "lodo_removals_still_notable": 4,
+      "lodo_dates_not_notable": [
+        "2026-07-03",
+        "2026-07-15"
+      ],
+      "lodo_dates_not_testable": [],
+      "ring_seed_interval": {
+        "start": "2026-07-03",
+        "end": "2026-07-15",
+        "candidate_dHH_db": 3.6824142932891846,
+        "ring_dHH_db": 1.9114551544189453,
+        "candidate_minus_ring_dHH_db": 1.7709591388702393,
+        "candidate_dHV_db": 0.7331085205078125,
+        "ring_dHV_db": 0.9480094909667969,
+        "candidate_minus_ring_dHV_db": -0.21490097045898438,
+        "ring_pixels": 1171,
+        "candidate_pixels": 130
+      }
+    }
+  ],
+  "leave_one_date_out": {
+    "1": [
+      {
+        "removed_date": "2026-06-21",
+        "notable_intervals": 4,
+        "seed_event_interval": "2026-07-03 \u2192 2026-07-15",
+        "seed_event_interval_days": 12,
+        "seed_event_delta_db": 5.96602988243103,
+        "seed_event_still_notable": true,
+        "seed_event_status": "still notable in the seed direction",
+        "other_same_direction_notable_intervals": [
+          "2026-07-27 \u2192 2026-08-20"
+        ],
+        "footprint_fraction_screened": 1.0,
+        "best_iou_any_proposal": 1.0,
+        "best_iou_top5": 1.0,
+        "top5_rank": 1,
+        "intervals": [
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-15",
+            "delta_db": 5.96602988243103,
+            "notable": true
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-07-27",
+            "delta_db": -4.008034944534302,
+            "notable": true
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-08-20",
+            "delta_db": 3.8562936782836914,
+            "notable": true
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-09-01",
+            "delta_db": -5.963050365447998,
+            "notable": true
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-07-03",
+        "notable_intervals": 4,
+        "seed_event_interval": "2026-06-21 \u2192 2026-07-15",
+        "seed_event_interval_days": 24,
+        "seed_event_delta_db": 4.30396032333374,
+        "seed_event_still_notable": true,
+        "seed_event_status": "still notable in the seed direction",
+        "other_same_direction_notable_intervals": [
+          "2026-07-27 \u2192 2026-08-20"
+        ],
+        "footprint_fraction_screened": 0.8918918918918919,
+        "best_iou_any_proposal": 0.7162162162162162,
+        "best_iou_top5": 0.6091954022988506,
+        "top5_rank": 1,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-15",
+            "delta_db": 4.30396032333374,
+            "notable": true
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-07-27",
+            "delta_db": -4.008034944534302,
+            "notable": true
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-08-20",
+            "delta_db": 3.8562936782836914,
+            "notable": true
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-09-01",
+            "delta_db": -5.963050365447998,
+            "notable": true
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-07-15",
+        "notable_intervals": 2,
+        "seed_event_interval": "2026-07-03 \u2192 2026-07-27",
+        "seed_event_interval_days": 24,
+        "seed_event_delta_db": 1.5294513702392578,
+        "seed_event_still_notable": false,
+        "seed_event_status": "not notable in the seed direction",
+        "other_same_direction_notable_intervals": [
+          "2026-07-27 \u2192 2026-08-20"
+        ],
+        "footprint_fraction_screened": 0.8378378378378378,
+        "best_iou_any_proposal": 0.6091954022988506,
+        "best_iou_top5": 0.0,
+        "top5_rank": null,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-03",
+            "delta_db": -1.9462237358093262,
+            "notable": false
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-27",
+            "delta_db": 1.5294513702392578,
+            "notable": false
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-08-20",
+            "delta_db": 3.8562936782836914,
+            "notable": true
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-09-01",
+            "delta_db": -5.963050365447998,
+            "notable": true
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-07-27",
+        "notable_intervals": 2,
+        "seed_event_interval": "2026-07-03 \u2192 2026-07-15",
+        "seed_event_interval_days": 12,
+        "seed_event_delta_db": 5.96602988243103,
+        "seed_event_still_notable": true,
+        "seed_event_status": "still notable in the seed direction",
+        "other_same_direction_notable_intervals": [],
+        "footprint_fraction_screened": 1.0,
+        "best_iou_any_proposal": 1.0,
+        "best_iou_top5": 0.0,
+        "top5_rank": null,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-03",
+            "delta_db": -1.9462237358093262,
+            "notable": false
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-15",
+            "delta_db": 5.96602988243103,
+            "notable": true
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-08-20",
+            "delta_db": 0.01755237579345703,
+            "notable": false
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-09-01",
+            "delta_db": -5.963050365447998,
+            "notable": true
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-08-20",
+        "notable_intervals": 2,
+        "seed_event_interval": "2026-07-03 \u2192 2026-07-15",
+        "seed_event_interval_days": 12,
+        "seed_event_delta_db": 5.96602988243103,
+        "seed_event_still_notable": true,
+        "seed_event_status": "still notable in the seed direction",
+        "other_same_direction_notable_intervals": [],
+        "footprint_fraction_screened": 1.0,
+        "best_iou_any_proposal": 1.0,
+        "best_iou_top5": 0.0,
+        "top5_rank": null,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-03",
+            "delta_db": -1.9462237358093262,
+            "notable": false
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-15",
+            "delta_db": 5.96602988243103,
+            "notable": true
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-07-27",
+            "delta_db": -4.008034944534302,
+            "notable": true
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-09-01",
+            "delta_db": -0.8342947959899902,
+            "notable": false
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-09-01",
+        "notable_intervals": 3,
+        "seed_event_interval": "2026-07-03 \u2192 2026-07-15",
+        "seed_event_interval_days": 12,
+        "seed_event_delta_db": 5.96602988243103,
+        "seed_event_still_notable": true,
+        "seed_event_status": "still notable in the seed direction",
+        "other_same_direction_notable_intervals": [
+          "2026-07-27 \u2192 2026-08-20"
+        ],
+        "footprint_fraction_screened": 1.0,
+        "best_iou_any_proposal": 1.0,
+        "best_iou_top5": 1.0,
+        "top5_rank": 5,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-03",
+            "delta_db": -1.9462237358093262,
+            "notable": false
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-15",
+            "delta_db": 5.96602988243103,
+            "notable": true
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-07-27",
+            "delta_db": -4.008034944534302,
+            "notable": true
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-08-20",
+            "delta_db": 3.8562936782836914,
+            "notable": true
+          }
+        ]
+      }
+    ],
+    "2": [
+      {
+        "removed_date": "2026-06-21",
+        "notable_intervals": 4,
+        "seed_event_interval": "2026-07-15 \u2192 2026-07-27",
+        "seed_event_interval_days": 12,
+        "seed_event_delta_db": -4.906281471252441,
+        "seed_event_still_notable": true,
+        "seed_event_status": "still notable in the seed direction",
+        "other_same_direction_notable_intervals": [
+          "2026-08-20 \u2192 2026-09-01"
+        ],
+        "footprint_fraction_screened": 1.0,
+        "best_iou_any_proposal": 1.0,
+        "best_iou_top5": 1.0,
+        "top5_rank": 2,
+        "intervals": [
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-15",
+            "delta_db": 3.4262765645980835,
+            "notable": true
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-07-27",
+            "delta_db": -4.906281471252441,
+            "notable": true
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-08-20",
+            "delta_db": 8.771552324295044,
+            "notable": true
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-09-01",
+            "delta_db": -7.4249714612960815,
+            "notable": true
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-07-03",
+        "notable_intervals": 3,
+        "seed_event_interval": "2026-07-15 \u2192 2026-07-27",
+        "seed_event_interval_days": 12,
+        "seed_event_delta_db": -4.906281471252441,
+        "seed_event_still_notable": true,
+        "seed_event_status": "still notable in the seed direction",
+        "other_same_direction_notable_intervals": [
+          "2026-08-20 \u2192 2026-09-01"
+        ],
+        "footprint_fraction_screened": 1.0,
+        "best_iou_any_proposal": 1.0,
+        "best_iou_top5": 0.1774193548387097,
+        "top5_rank": null,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-15",
+            "delta_db": 0.8979858160018921,
+            "notable": false
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-07-27",
+            "delta_db": -4.906281471252441,
+            "notable": true
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-08-20",
+            "delta_db": 8.771552324295044,
+            "notable": true
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-09-01",
+            "delta_db": -7.4249714612960815,
+            "notable": true
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-07-15",
+        "notable_intervals": 2,
+        "seed_event_interval": "2026-07-03 \u2192 2026-07-27",
+        "seed_event_interval_days": 24,
+        "seed_event_delta_db": -0.9890875816345215,
+        "seed_event_still_notable": false,
+        "seed_event_status": "not notable in the seed direction",
+        "other_same_direction_notable_intervals": [
+          "2026-08-20 \u2192 2026-09-01"
+        ],
+        "footprint_fraction_screened": 0.7,
+        "best_iou_any_proposal": 0.2222222222222222,
+        "best_iou_top5": 0.1774193548387097,
+        "top5_rank": null,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-03",
+            "delta_db": -1.605098843574524,
+            "notable": false
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-27",
+            "delta_db": -0.9890875816345215,
+            "notable": false
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-08-20",
+            "delta_db": 8.771552324295044,
+            "notable": true
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-09-01",
+            "delta_db": -7.4249714612960815,
+            "notable": true
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-07-27",
+        "notable_intervals": 2,
+        "seed_event_interval": "2026-07-15 \u2192 2026-08-20",
+        "seed_event_interval_days": 36,
+        "seed_event_delta_db": 2.151275157928467,
+        "seed_event_still_notable": false,
+        "seed_event_status": "not notable in the seed direction",
+        "other_same_direction_notable_intervals": [
+          "2026-08-20 \u2192 2026-09-01"
+        ],
+        "footprint_fraction_screened": 0.6666666666666666,
+        "best_iou_any_proposal": 0.2222222222222222,
+        "best_iou_top5": 0.0,
+        "top5_rank": null,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-03",
+            "delta_db": -1.605098843574524,
+            "notable": false
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-15",
+            "delta_db": 3.4262765645980835,
+            "notable": true
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-08-20",
+            "delta_db": 2.151275157928467,
+            "notable": false
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-09-01",
+            "delta_db": -7.4249714612960815,
+            "notable": true
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-08-20",
+        "notable_intervals": 2,
+        "seed_event_interval": "2026-07-15 \u2192 2026-07-27",
+        "seed_event_interval_days": 12,
+        "seed_event_delta_db": -4.906281471252441,
+        "seed_event_still_notable": true,
+        "seed_event_status": "still notable in the seed direction",
+        "other_same_direction_notable_intervals": [],
+        "footprint_fraction_screened": 1.0,
+        "best_iou_any_proposal": 1.0,
+        "best_iou_top5": 0.0,
+        "top5_rank": null,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-03",
+            "delta_db": -1.605098843574524,
+            "notable": false
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-15",
+            "delta_db": 3.4262765645980835,
+            "notable": true
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-07-27",
+            "delta_db": -4.906281471252441,
+            "notable": true
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-09-01",
+            "delta_db": 1.2859792709350586,
+            "notable": false
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-09-01",
+        "notable_intervals": 3,
+        "seed_event_interval": "2026-07-15 \u2192 2026-07-27",
+        "seed_event_interval_days": 12,
+        "seed_event_delta_db": -4.906281471252441,
+        "seed_event_still_notable": true,
+        "seed_event_status": "still notable in the seed direction",
+        "other_same_direction_notable_intervals": [],
+        "footprint_fraction_screened": 1.0,
+        "best_iou_any_proposal": 1.0,
+        "best_iou_top5": 0.0,
+        "top5_rank": null,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-03",
+            "delta_db": -1.605098843574524,
+            "notable": false
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-15",
+            "delta_db": 3.4262765645980835,
+            "notable": true
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-07-27",
+            "delta_db": -4.906281471252441,
+            "notable": true
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-08-20",
+            "delta_db": 8.771552324295044,
+            "notable": true
+          }
+        ]
+      }
+    ],
+    "3": [
+      {
+        "removed_date": "2026-06-21",
+        "notable_intervals": 2,
+        "seed_event_interval": null,
+        "seed_event_interval_days": null,
+        "seed_event_delta_db": null,
+        "seed_event_still_notable": null,
+        "seed_event_status": "not testable: the seed event is not observable without this date",
+        "other_same_direction_notable_intervals": [
+          "2026-07-15 \u2192 2026-07-27"
+        ],
+        "footprint_fraction_screened": 0.5948275862068966,
+        "best_iou_any_proposal": 0.32922535211267606,
+        "best_iou_top5": 0.32922535211267606,
+        "top5_rank": null,
+        "intervals": [
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-15",
+            "delta_db": 3.0930380821228027,
+            "notable": true
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-07-27",
+            "delta_db": -3.0593719482421875,
+            "notable": true
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-08-20",
+            "delta_db": -0.3710460662841797,
+            "notable": false
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-09-01",
+            "delta_db": 1.0987510681152344,
+            "notable": false
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-07-03",
+        "notable_intervals": 1,
+        "seed_event_interval": "2026-06-21 \u2192 2026-07-15",
+        "seed_event_interval_days": 24,
+        "seed_event_delta_db": -1.4695076942443848,
+        "seed_event_still_notable": false,
+        "seed_event_status": "not notable in the seed direction",
+        "other_same_direction_notable_intervals": [
+          "2026-07-15 \u2192 2026-07-27"
+        ],
+        "footprint_fraction_screened": 0.40301724137931033,
+        "best_iou_any_proposal": 0.32922535211267606,
+        "best_iou_top5": 0.0,
+        "top5_rank": null,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-15",
+            "delta_db": -1.4695076942443848,
+            "notable": false
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-07-27",
+            "delta_db": -3.0593719482421875,
+            "notable": true
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-08-20",
+            "delta_db": -0.3710460662841797,
+            "notable": false
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-09-01",
+            "delta_db": 1.0987510681152344,
+            "notable": false
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-07-15",
+        "notable_intervals": 1,
+        "seed_event_interval": "2026-06-21 \u2192 2026-07-03",
+        "seed_event_interval_days": 12,
+        "seed_event_delta_db": -4.403779983520508,
+        "seed_event_still_notable": true,
+        "seed_event_status": "still notable in the seed direction",
+        "other_same_direction_notable_intervals": [],
+        "footprint_fraction_screened": 1.0,
+        "best_iou_any_proposal": 1.0,
+        "best_iou_top5": 0.0,
+        "top5_rank": null,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-03",
+            "delta_db": -4.403779983520508,
+            "notable": true
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-27",
+            "delta_db": -0.014483451843261719,
+            "notable": false
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-08-20",
+            "delta_db": -0.3710460662841797,
+            "notable": false
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-09-01",
+            "delta_db": 1.0987510681152344,
+            "notable": false
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-07-27",
+        "notable_intervals": 3,
+        "seed_event_interval": "2026-06-21 \u2192 2026-07-03",
+        "seed_event_interval_days": 12,
+        "seed_event_delta_db": -4.403779983520508,
+        "seed_event_still_notable": true,
+        "seed_event_status": "still notable in the seed direction",
+        "other_same_direction_notable_intervals": [
+          "2026-07-15 \u2192 2026-08-20"
+        ],
+        "footprint_fraction_screened": 1.0,
+        "best_iou_any_proposal": 1.0,
+        "best_iou_top5": 1.0,
+        "top5_rank": 1,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-03",
+            "delta_db": -4.403779983520508,
+            "notable": true
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-15",
+            "delta_db": 3.0930380821228027,
+            "notable": true
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-08-20",
+            "delta_db": -3.561591625213623,
+            "notable": true
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-09-01",
+            "delta_db": 1.0987510681152344,
+            "notable": false
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-08-20",
+        "notable_intervals": 3,
+        "seed_event_interval": "2026-06-21 \u2192 2026-07-03",
+        "seed_event_interval_days": 12,
+        "seed_event_delta_db": -4.403779983520508,
+        "seed_event_still_notable": true,
+        "seed_event_status": "still notable in the seed direction",
+        "other_same_direction_notable_intervals": [
+          "2026-07-15 \u2192 2026-07-27"
+        ],
+        "footprint_fraction_screened": 1.0,
+        "best_iou_any_proposal": 1.0,
+        "best_iou_top5": 1.0,
+        "top5_rank": 1,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-03",
+            "delta_db": -4.403779983520508,
+            "notable": true
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-15",
+            "delta_db": 3.0930380821228027,
+            "notable": true
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-07-27",
+            "delta_db": -3.0593719482421875,
+            "notable": true
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-09-01",
+            "delta_db": 0.7121334075927734,
+            "notable": false
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-09-01",
+        "notable_intervals": 3,
+        "seed_event_interval": "2026-06-21 \u2192 2026-07-03",
+        "seed_event_interval_days": 12,
+        "seed_event_delta_db": -4.403779983520508,
+        "seed_event_still_notable": true,
+        "seed_event_status": "still notable in the seed direction",
+        "other_same_direction_notable_intervals": [
+          "2026-07-15 \u2192 2026-07-27"
+        ],
+        "footprint_fraction_screened": 1.0,
+        "best_iou_any_proposal": 1.0,
+        "best_iou_top5": 1.0,
+        "top5_rank": 1,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-03",
+            "delta_db": -4.403779983520508,
+            "notable": true
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-15",
+            "delta_db": 3.0930380821228027,
+            "notable": true
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-07-27",
+            "delta_db": -3.0593719482421875,
+            "notable": true
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-08-20",
+            "delta_db": -0.3710460662841797,
+            "notable": false
+          }
+        ]
+      }
+    ],
+    "4": [
+      {
+        "removed_date": "2026-06-21",
+        "notable_intervals": 2,
+        "seed_event_interval": "2026-07-03 \u2192 2026-07-15",
+        "seed_event_interval_days": 12,
+        "seed_event_delta_db": 3.493382453918457,
+        "seed_event_still_notable": true,
+        "seed_event_status": "still notable in the seed direction",
+        "other_same_direction_notable_intervals": [],
+        "footprint_fraction_screened": 1.0,
+        "best_iou_any_proposal": 1.0,
+        "best_iou_top5": 1.0,
+        "top5_rank": 5,
+        "intervals": [
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-15",
+            "delta_db": 3.493382453918457,
+            "notable": true
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-07-27",
+            "delta_db": -4.5452985763549805,
+            "notable": true
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-08-20",
+            "delta_db": 0.23668718338012695,
+            "notable": false
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-09-01",
+            "delta_db": 0.8107485771179199,
+            "notable": false
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-07-03",
+        "notable_intervals": 1,
+        "seed_event_interval": "2026-06-21 \u2192 2026-07-15",
+        "seed_event_interval_days": 24,
+        "seed_event_delta_db": -0.9539623260498047,
+        "seed_event_still_notable": false,
+        "seed_event_status": "not notable in the seed direction",
+        "other_same_direction_notable_intervals": [],
+        "footprint_fraction_screened": 0.9493670886075949,
+        "best_iou_any_proposal": 0.08792497069167643,
+        "best_iou_top5": 0.0,
+        "top5_rank": null,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-15",
+            "delta_db": -0.9539623260498047,
+            "notable": false
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-07-27",
+            "delta_db": -4.5452985763549805,
+            "notable": true
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-08-20",
+            "delta_db": 0.23668718338012695,
+            "notable": false
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-09-01",
+            "delta_db": 0.8107485771179199,
+            "notable": false
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-07-15",
+        "notable_intervals": 1,
+        "seed_event_interval": "2026-07-03 \u2192 2026-07-27",
+        "seed_event_interval_days": 24,
+        "seed_event_delta_db": -1.0425829887390137,
+        "seed_event_still_notable": false,
+        "seed_event_status": "not notable in the seed direction",
+        "other_same_direction_notable_intervals": [],
+        "footprint_fraction_screened": 0.9113924050632911,
+        "best_iou_any_proposal": 0.12743362831858407,
+        "best_iou_top5": 0.0,
+        "top5_rank": null,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-03",
+            "delta_db": -4.732326507568359,
+            "notable": true
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-27",
+            "delta_db": -1.0425829887390137,
+            "notable": false
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-08-20",
+            "delta_db": 0.23668718338012695,
+            "notable": false
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-09-01",
+            "delta_db": 0.8107485771179199,
+            "notable": false
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-07-27",
+        "notable_intervals": 3,
+        "seed_event_interval": "2026-07-03 \u2192 2026-07-15",
+        "seed_event_interval_days": 12,
+        "seed_event_delta_db": 3.493382453918457,
+        "seed_event_still_notable": true,
+        "seed_event_status": "still notable in the seed direction",
+        "other_same_direction_notable_intervals": [],
+        "footprint_fraction_screened": 1.0,
+        "best_iou_any_proposal": 1.0,
+        "best_iou_top5": 1.0,
+        "top5_rank": 2,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-03",
+            "delta_db": -4.732326507568359,
+            "notable": true
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-15",
+            "delta_db": 3.493382453918457,
+            "notable": true
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-08-20",
+            "delta_db": -4.526974678039551,
+            "notable": true
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-09-01",
+            "delta_db": 0.8107485771179199,
+            "notable": false
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-08-20",
+        "notable_intervals": 3,
+        "seed_event_interval": "2026-07-03 \u2192 2026-07-15",
+        "seed_event_interval_days": 12,
+        "seed_event_delta_db": 3.493382453918457,
+        "seed_event_still_notable": true,
+        "seed_event_status": "still notable in the seed direction",
+        "other_same_direction_notable_intervals": [],
+        "footprint_fraction_screened": 1.0,
+        "best_iou_any_proposal": 1.0,
+        "best_iou_top5": 1.0,
+        "top5_rank": 2,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-03",
+            "delta_db": -4.732326507568359,
+            "notable": true
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-15",
+            "delta_db": 3.493382453918457,
+            "notable": true
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-07-27",
+            "delta_db": -4.5452985763549805,
+            "notable": true
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-09-01",
+            "delta_db": 1.0233898162841797,
+            "notable": false
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-09-01",
+        "notable_intervals": 3,
+        "seed_event_interval": "2026-07-03 \u2192 2026-07-15",
+        "seed_event_interval_days": 12,
+        "seed_event_delta_db": 3.493382453918457,
+        "seed_event_still_notable": true,
+        "seed_event_status": "still notable in the seed direction",
+        "other_same_direction_notable_intervals": [],
+        "footprint_fraction_screened": 1.0,
+        "best_iou_any_proposal": 1.0,
+        "best_iou_top5": 1.0,
+        "top5_rank": 2,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-03",
+            "delta_db": -4.732326507568359,
+            "notable": true
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-15",
+            "delta_db": 3.493382453918457,
+            "notable": true
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-07-27",
+            "delta_db": -4.5452985763549805,
+            "notable": true
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-08-20",
+            "delta_db": 0.23668718338012695,
+            "notable": false
+          }
+        ]
+      }
+    ],
+    "5": [
+      {
+        "removed_date": "2026-06-21",
+        "notable_intervals": 2,
+        "seed_event_interval": "2026-07-03 \u2192 2026-07-15",
+        "seed_event_interval_days": 12,
+        "seed_event_delta_db": 3.6824142932891846,
+        "seed_event_still_notable": true,
+        "seed_event_status": "still notable in the seed direction",
+        "other_same_direction_notable_intervals": [],
+        "footprint_fraction_screened": 1.0,
+        "best_iou_any_proposal": 1.0,
+        "best_iou_top5": 0.0,
+        "top5_rank": null,
+        "intervals": [
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-15",
+            "delta_db": 3.6824142932891846,
+            "notable": true
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-07-27",
+            "delta_db": -4.982228755950928,
+            "notable": true
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-08-20",
+            "delta_db": -0.2603030204772949,
+            "notable": false
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-09-01",
+            "delta_db": 0.6735877990722656,
+            "notable": false
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-07-03",
+        "notable_intervals": 1,
+        "seed_event_interval": "2026-06-21 \u2192 2026-07-15",
+        "seed_event_interval_days": 24,
+        "seed_event_delta_db": -0.8880376815795898,
+        "seed_event_still_notable": false,
+        "seed_event_status": "not notable in the seed direction",
+        "other_same_direction_notable_intervals": [],
+        "footprint_fraction_screened": 0.9384615384615385,
+        "best_iou_any_proposal": 0.07151230949589683,
+        "best_iou_top5": 0.0,
+        "top5_rank": null,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-15",
+            "delta_db": -0.8880376815795898,
+            "notable": false
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-07-27",
+            "delta_db": -4.982228755950928,
+            "notable": true
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-08-20",
+            "delta_db": -0.2603030204772949,
+            "notable": false
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-09-01",
+            "delta_db": 0.6735877990722656,
+            "notable": false
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-07-15",
+        "notable_intervals": 1,
+        "seed_event_interval": "2026-07-03 \u2192 2026-07-27",
+        "seed_event_interval_days": 24,
+        "seed_event_delta_db": -1.1716465950012207,
+        "seed_event_still_notable": false,
+        "seed_event_status": "not notable in the seed direction",
+        "other_same_direction_notable_intervals": [],
+        "footprint_fraction_screened": 0.8769230769230769,
+        "best_iou_any_proposal": 0.0997352162400706,
+        "best_iou_top5": 0.0,
+        "top5_rank": null,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-03",
+            "delta_db": -4.774702072143555,
+            "notable": true
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-27",
+            "delta_db": -1.1716465950012207,
+            "notable": false
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-08-20",
+            "delta_db": -0.2603030204772949,
+            "notable": false
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-09-01",
+            "delta_db": 0.6735877990722656,
+            "notable": false
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-07-27",
+        "notable_intervals": 3,
+        "seed_event_interval": "2026-07-03 \u2192 2026-07-15",
+        "seed_event_interval_days": 12,
+        "seed_event_delta_db": 3.6824142932891846,
+        "seed_event_still_notable": true,
+        "seed_event_status": "still notable in the seed direction",
+        "other_same_direction_notable_intervals": [],
+        "footprint_fraction_screened": 1.0,
+        "best_iou_any_proposal": 1.0,
+        "best_iou_top5": 1.0,
+        "top5_rank": 3,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-03",
+            "delta_db": -4.774702072143555,
+            "notable": true
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-15",
+            "delta_db": 3.6824142932891846,
+            "notable": true
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-08-20",
+            "delta_db": -5.425333023071289,
+            "notable": true
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-09-01",
+            "delta_db": 0.6735877990722656,
+            "notable": false
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-08-20",
+        "notable_intervals": 3,
+        "seed_event_interval": "2026-07-03 \u2192 2026-07-15",
+        "seed_event_interval_days": 12,
+        "seed_event_delta_db": 3.6824142932891846,
+        "seed_event_still_notable": true,
+        "seed_event_status": "still notable in the seed direction",
+        "other_same_direction_notable_intervals": [],
+        "footprint_fraction_screened": 1.0,
+        "best_iou_any_proposal": 1.0,
+        "best_iou_top5": 1.0,
+        "top5_rank": 3,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-03",
+            "delta_db": -4.774702072143555,
+            "notable": true
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-15",
+            "delta_db": 3.6824142932891846,
+            "notable": true
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-07-27",
+            "delta_db": -4.982228755950928,
+            "notable": true
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-09-01",
+            "delta_db": 0.44833803176879883,
+            "notable": false
+          }
+        ]
+      },
+      {
+        "removed_date": "2026-09-01",
+        "notable_intervals": 3,
+        "seed_event_interval": "2026-07-03 \u2192 2026-07-15",
+        "seed_event_interval_days": 12,
+        "seed_event_delta_db": 3.6824142932891846,
+        "seed_event_still_notable": true,
+        "seed_event_status": "still notable in the seed direction",
+        "other_same_direction_notable_intervals": [],
+        "footprint_fraction_screened": 1.0,
+        "best_iou_any_proposal": 1.0,
+        "best_iou_top5": 1.0,
+        "top5_rank": 3,
+        "intervals": [
+          {
+            "start": "2026-06-21",
+            "end": "2026-07-03",
+            "delta_db": -4.774702072143555,
+            "notable": true
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-15",
+            "delta_db": 3.6824142932891846,
+            "notable": true
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-07-27",
+            "delta_db": -4.982228755950928,
+            "notable": true
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-08-20",
+            "delta_db": -0.2603030204772949,
+            "notable": false
+          }
+        ]
+      }
+    ]
+  },
+  "ring_comparison": {
+    "1": [
+      {
+        "start": "2026-06-21",
+        "end": "2026-07-03",
+        "candidate_dHH_db": -1.9462237358093262,
+        "ring_dHH_db": -1.5767207145690918,
+        "candidate_minus_ring_dHH_db": -0.3695030212402344,
+        "candidate_dHV_db": -0.3175058364868164,
+        "ring_dHV_db": -0.8355889320373535,
+        "candidate_minus_ring_dHV_db": 0.5180830955505371,
+        "ring_pixels": 1022,
+        "candidate_pixels": 74
+      },
+      {
+        "start": "2026-07-03",
+        "end": "2026-07-15",
+        "candidate_dHH_db": 5.96602988243103,
+        "ring_dHH_db": 0.4205334186553955,
+        "candidate_minus_ring_dHH_db": 5.545496463775635,
+        "candidate_dHV_db": 4.055113792419434,
+        "ring_dHV_db": 0.2843794822692871,
+        "candidate_minus_ring_dHV_db": 3.7707343101501465,
+        "ring_pixels": 1022,
+        "candidate_pixels": 74
+      },
+      {
+        "start": "2026-07-15",
+        "end": "2026-07-27",
+        "candidate_dHH_db": -4.008034944534302,
+        "ring_dHH_db": -0.47694098949432373,
+        "candidate_minus_ring_dHH_db": -3.531093955039978,
+        "candidate_dHV_db": -3.3080081939697266,
+        "ring_dHV_db": -0.34593820571899414,
+        "candidate_minus_ring_dHV_db": -2.9620699882507324,
+        "ring_pixels": 1022,
+        "candidate_pixels": 74
+      },
+      {
+        "start": "2026-07-27",
+        "end": "2026-08-20",
+        "candidate_dHH_db": 3.8562936782836914,
+        "ring_dHH_db": -0.35663700103759766,
+        "candidate_minus_ring_dHH_db": 4.212930679321289,
+        "candidate_dHV_db": 3.102220058441162,
+        "ring_dHV_db": -0.2806429862976074,
+        "candidate_minus_ring_dHV_db": 3.3828630447387695,
+        "ring_pixels": 1022,
+        "candidate_pixels": 74
+      },
+      {
+        "start": "2026-08-20",
+        "end": "2026-09-01",
+        "candidate_dHH_db": -5.963050365447998,
+        "ring_dHH_db": 1.1874260902404785,
+        "candidate_minus_ring_dHH_db": -7.150476455688477,
+        "candidate_dHV_db": -3.174091339111328,
+        "ring_dHV_db": 0.2885003089904785,
+        "candidate_minus_ring_dHV_db": -3.4625916481018066,
+        "ring_pixels": 1022,
+        "candidate_pixels": 74
+      }
+    ],
+    "2": [
+      {
+        "start": "2026-06-21",
+        "end": "2026-07-03",
+        "candidate_dHH_db": -1.605098843574524,
+        "ring_dHH_db": -1.2540373802185059,
+        "candidate_minus_ring_dHH_db": -0.35106146335601807,
+        "candidate_dHV_db": -2.665834903717041,
+        "ring_dHV_db": -0.9975099563598633,
+        "candidate_minus_ring_dHV_db": -1.6683249473571777,
+        "ring_pixels": 887,
+        "candidate_pixels": 30
+      },
+      {
+        "start": "2026-07-03",
+        "end": "2026-07-15",
+        "candidate_dHH_db": 3.4262765645980835,
+        "ring_dHH_db": 0.9420309066772461,
+        "candidate_minus_ring_dHH_db": 2.4842456579208374,
+        "candidate_dHV_db": 2.6884450912475586,
+        "ring_dHV_db": 0.5780487060546875,
+        "candidate_minus_ring_dHV_db": 2.110396385192871,
+        "ring_pixels": 887,
+        "candidate_pixels": 30
+      },
+      {
+        "start": "2026-07-15",
+        "end": "2026-07-27",
+        "candidate_dHH_db": -4.906281471252441,
+        "ring_dHH_db": -1.2583322525024414,
+        "candidate_minus_ring_dHH_db": -3.64794921875,
+        "candidate_dHV_db": -2.8437047004699707,
+        "ring_dHV_db": -0.6569099426269531,
+        "candidate_minus_ring_dHV_db": -2.1867947578430176,
+        "ring_pixels": 887,
+        "candidate_pixels": 30
+      },
+      {
+        "start": "2026-07-27",
+        "end": "2026-08-20",
+        "candidate_dHH_db": 8.771552324295044,
+        "ring_dHH_db": 0.11525726318359375,
+        "candidate_minus_ring_dHH_db": 8.65629506111145,
+        "candidate_dHV_db": 3.5444393157958984,
+        "ring_dHV_db": -0.18857765197753906,
+        "candidate_minus_ring_dHV_db": 3.7330169677734375,
+        "ring_pixels": 887,
+        "candidate_pixels": 30
+      },
+      {
+        "start": "2026-08-20",
+        "end": "2026-09-01",
+        "candidate_dHH_db": -7.4249714612960815,
+        "ring_dHH_db": 0.4986727237701416,
+        "candidate_minus_ring_dHH_db": -7.923644185066223,
+        "candidate_dHV_db": -1.846799373626709,
+        "ring_dHV_db": 0.5689487457275391,
+        "candidate_minus_ring_dHV_db": -2.415748119354248,
+        "ring_pixels": 887,
+        "candidate_pixels": 30
+      }
+    ],
+    "3": [
+      {
+        "start": "2026-06-21",
+        "end": "2026-07-03",
+        "candidate_dHH_db": -4.403779983520508,
+        "ring_dHH_db": -2.4812374114990234,
+        "candidate_minus_ring_dHH_db": -1.9225425720214844,
+        "candidate_dHV_db": -2.745401382446289,
+        "ring_dHV_db": -1.2680988311767578,
+        "candidate_minus_ring_dHV_db": -1.4773025512695312,
+        "ring_pixels": 1801,
+        "candidate_pixels": 464
+      },
+      {
+        "start": "2026-07-03",
+        "end": "2026-07-15",
+        "candidate_dHH_db": 3.0930380821228027,
+        "ring_dHH_db": 1.3640575408935547,
+        "candidate_minus_ring_dHH_db": 1.728980541229248,
+        "candidate_dHV_db": 1.546630859375,
+        "ring_dHV_db": 0.5287017822265625,
+        "candidate_minus_ring_dHV_db": 1.0179290771484375,
+        "ring_pixels": 1801,
+        "candidate_pixels": 464
+      },
+      {
+        "start": "2026-07-15",
+        "end": "2026-07-27",
+        "candidate_dHH_db": -3.0593719482421875,
+        "ring_dHH_db": -1.5573492050170898,
+        "candidate_minus_ring_dHH_db": -1.5020227432250977,
+        "candidate_dHV_db": -1.1167573928833008,
+        "ring_dHV_db": -0.5166435241699219,
+        "candidate_minus_ring_dHV_db": -0.6001138687133789,
+        "ring_pixels": 1801,
+        "candidate_pixels": 464
+      },
+      {
+        "start": "2026-07-27",
+        "end": "2026-08-20",
+        "candidate_dHH_db": -0.3710460662841797,
+        "ring_dHH_db": -0.3838682174682617,
+        "candidate_minus_ring_dHH_db": 0.012822151184082031,
+        "candidate_dHV_db": -0.9106855392456055,
+        "ring_dHV_db": -0.46486854553222656,
+        "candidate_minus_ring_dHV_db": -0.4458169937133789,
+        "ring_pixels": 1801,
+        "candidate_pixels": 464
+      },
+      {
+        "start": "2026-08-20",
+        "end": "2026-09-01",
+        "candidate_dHH_db": 1.0987510681152344,
+        "ring_dHH_db": 0.6384449005126953,
+        "candidate_minus_ring_dHH_db": 0.46030616760253906,
+        "candidate_dHV_db": 0.4398488998413086,
+        "ring_dHV_db": 0.6171245574951172,
+        "candidate_minus_ring_dHV_db": -0.1772756576538086,
+        "ring_pixels": 1801,
+        "candidate_pixels": 464
+      }
+    ],
+    "4": [
+      {
+        "start": "2026-06-21",
+        "end": "2026-07-03",
+        "candidate_dHH_db": -4.732326507568359,
+        "ring_dHH_db": -3.6624836921691895,
+        "candidate_minus_ring_dHH_db": -1.06984281539917,
+        "candidate_dHV_db": -2.8432769775390625,
+        "ring_dHV_db": -2.3908300399780273,
+        "candidate_minus_ring_dHV_db": -0.45244693756103516,
+        "ring_pixels": 750,
+        "candidate_pixels": 158
+      },
+      {
+        "start": "2026-07-03",
+        "end": "2026-07-15",
+        "candidate_dHH_db": 3.493382453918457,
+        "ring_dHH_db": 2.1783604621887207,
+        "candidate_minus_ring_dHH_db": 1.3150219917297363,
+        "candidate_dHV_db": 1.5254545211791992,
+        "ring_dHV_db": 1.1819419860839844,
+        "candidate_minus_ring_dHV_db": 0.34351253509521484,
+        "ring_pixels": 750,
+        "candidate_pixels": 158
+      },
+      {
+        "start": "2026-07-15",
+        "end": "2026-07-27",
+        "candidate_dHH_db": -4.5452985763549805,
+        "ring_dHH_db": -3.4866490364074707,
+        "candidate_minus_ring_dHH_db": -1.0586495399475098,
+        "candidate_dHV_db": -2.246683120727539,
+        "ring_dHV_db": -1.9697599411010742,
+        "candidate_minus_ring_dHV_db": -0.27692317962646484,
+        "ring_pixels": 750,
+        "candidate_pixels": 158
+      },
+      {
+        "start": "2026-07-27",
+        "end": "2026-08-20",
+        "candidate_dHH_db": 0.23668718338012695,
+        "ring_dHH_db": -0.37363529205322266,
+        "candidate_minus_ring_dHH_db": 0.6103224754333496,
+        "candidate_dHV_db": -0.06373977661132812,
+        "ring_dHV_db": -0.20658016204833984,
+        "candidate_minus_ring_dHV_db": 0.14284038543701172,
+        "ring_pixels": 750,
+        "candidate_pixels": 158
+      },
+      {
+        "start": "2026-08-20",
+        "end": "2026-09-01",
+        "candidate_dHH_db": 0.8107485771179199,
+        "ring_dHH_db": 1.1104741096496582,
+        "candidate_minus_ring_dHH_db": -0.2997255325317383,
+        "candidate_dHV_db": 0.20121192932128906,
+        "ring_dHV_db": 0.2621641159057617,
+        "candidate_minus_ring_dHV_db": -0.060952186584472656,
+        "ring_pixels": 750,
+        "candidate_pixels": 158
+      }
+    ],
+    "5": [
+      {
+        "start": "2026-06-21",
+        "end": "2026-07-03",
+        "candidate_dHH_db": -4.774702072143555,
+        "ring_dHH_db": -3.1462221145629883,
+        "candidate_minus_ring_dHH_db": -1.6284799575805664,
+        "candidate_dHV_db": -2.080439567565918,
+        "ring_dHV_db": -1.8773479461669922,
+        "candidate_minus_ring_dHV_db": -0.20309162139892578,
+        "ring_pixels": 1171,
+        "candidate_pixels": 130
+      },
+      {
+        "start": "2026-07-03",
+        "end": "2026-07-15",
+        "candidate_dHH_db": 3.6824142932891846,
+        "ring_dHH_db": 1.9114551544189453,
+        "candidate_minus_ring_dHH_db": 1.7709591388702393,
+        "candidate_dHV_db": 0.7331085205078125,
+        "ring_dHV_db": 0.9480094909667969,
+        "candidate_minus_ring_dHV_db": -0.21490097045898438,
+        "ring_pixels": 1171,
+        "candidate_pixels": 130
+      },
+      {
+        "start": "2026-07-15",
+        "end": "2026-07-27",
+        "candidate_dHH_db": -4.982228755950928,
+        "ring_dHH_db": -2.627042770385742,
+        "candidate_minus_ring_dHH_db": -2.3551859855651855,
+        "candidate_dHV_db": -1.2618598937988281,
+        "ring_dHV_db": -1.1911945343017578,
+        "candidate_minus_ring_dHV_db": -0.07066535949707031,
+        "ring_pixels": 1171,
+        "candidate_pixels": 130
+      },
+      {
+        "start": "2026-07-27",
+        "end": "2026-08-20",
+        "candidate_dHH_db": -0.2603030204772949,
+        "ring_dHH_db": -0.6946811676025391,
+        "candidate_minus_ring_dHH_db": 0.43437814712524414,
+        "candidate_dHV_db": -0.7055606842041016,
+        "ring_dHV_db": -0.6702289581298828,
+        "candidate_minus_ring_dHV_db": -0.03533172607421875,
+        "ring_pixels": 1171,
+        "candidate_pixels": 130
+      },
+      {
+        "start": "2026-08-20",
+        "end": "2026-09-01",
+        "candidate_dHH_db": 0.6735877990722656,
+        "ring_dHH_db": 1.220139503479004,
+        "candidate_minus_ring_dHH_db": -0.5465517044067383,
+        "candidate_dHV_db": 0.17414379119873047,
+        "ring_dHV_db": 0.6696548461914062,
+        "candidate_minus_ring_dHV_db": -0.4955110549926758,
+        "ring_pixels": 1171,
+        "candidate_pixels": 130
+      }
+    ]
+  },
+  "files": {
+    "settings": "settings_sensitivity.csv",
+    "lodo": "leave_one_date_out.csv",
+    "ring": "ring_comparison.csv"
+  },
+  "source_sha256": {
+    "data/polarization_analysis/six_date/hh_db.tif": "dc91713753f78d6c1cf8b18b2422f6a3d785e2b3972465bbe4a54a6a8aefb26d",
+    "data/polarization_analysis/six_date/hv_db.tif": "ce8ad75230f246c012b62ea63776068f40e8fa93f285135eb7ac7ae3b7e6551e",
+    "data/polarization_analysis/six_date/hh_hv_cube.nc": "433f905331d03b892692ca251ae0fbf86b6f4fdd51932e9936b2dd7efa6fc199",
+    "data/polarization_analysis/six_date/results.json": "68be4b5505ec49bef8da3ae47b64d24c0080060854d1315f2ab79fb0ac134786",
+    "data/investigation_engine/results.json": "be118b6eb04cad6d7784f6e84f20990426688fe7efad887dd13aa5453c9470f3",
+    "data/investigation_engine/region_labels.tif": "66f85652615878a2c6ee0b1f3f3d86f7aff85808fcdc4d53958ed1401cc1b088"
+  },
+  "version_1_lodo_rule": "counted any remaining interval (superseded)",
+  "elapsed_seconds": 4.3,
+  "limitations": [
+    "Same observations select and test the candidates; robustness is not validation.",
+    "Settings variants are sensitivity checks; no variant is preferred or tuned.",
+    "Removing a date changes interval lengths (12 \u2192 24 or 36 days); a change that is still notable can be a longer-term difference.",
+    "The ring may contain different land cover from the candidate; a contrast does not identify a cause."
+  ]
+}

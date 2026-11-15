@@ -1,0 +1,49 @@
+{
+  "place": "mekong_delta",
+  "lat": 10.0,
+  "lon": 105.8,
+  "window_km": 5.0,
+  "surface": "river delta / rice paddies",
+  "group": {
+    "instrument": "L",
+    "track": "047",
+    "direction": "D",
+    "frame": "083",
+    "bandwidth": "4005",
+    "polarization": "DHDH",
+    "source": "A",
+    "crid": "P05023"
+  },
+  "dates": [
+    "2026-06-17",
+    "2026-06-29",
+    "2026-07-11",
+    "2026-07-23",
+    "2026-08-16",
+    "2026-08-28"
+  ],
+  "product_ids": [
+    "NISAR_L2_PR_GCOV_023_047_D_083_4005_DHDH_A_20260617T112324_20260617T112358_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_024_047_D_083_4005_DHDH_A_20260629T112323_20260629T112358_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_025_047_D_083_4005_DHDH_A_20260711T112323_20260711T112357_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_026_047_D_083_4005_DHDH_A_20260723T112322_20260723T112356_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_028_047_D_083_4005_DHDH_A_20260816T112321_20260816T112355_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_029_047_D_083_4005_DHDH_A_20260828T112320_20260828T112355_P05023_N_F_J_001"
+  ],
+  "cache_keys": [
+    "070638483606f1bbbcab34944e346a75852576be0b8e0b983ba7620aa9b83c3b",
+    "874412a480de6e0df92ba12a405e59cec82a9e59ad98286518089e26bdb61aff",
+    "285162634d357b784fe8c207dec6baa6ecccbacec4704dbe6e67d4a6b6781e52",
+    "f795a203964fbcc84dc57af0ee3096e400de5c41f3010f2af87260b2de405b22",
+    "c8b77f2be8a083915430e76ef6e47ff900e293d1f25ed1a7505bc34efcea449a",
+    "2e232ac5cd40f57f415f722a246fadcc9fbf880f2da3a5167776349f032f2b51"
+  ],
+  "selection_rule": "Largest compatible HH+HV group returned by src.live_engine.group_products for the date range (ties: catalog order); its first max_dates acquisition dates; window_km square centred on the point.",
+  "catalog_snapshot": "catalog/mekong_delta.json",
+  "processing_version": "live-window-v1",
+  "status": "cached",
+  "read_seconds": 147.2,
+  "range_bytes_read": 93323312,
+  "dates_reused": 0,
+  "prewarmed_utc": "2026-11-15T01:19:53.681041+00:00"
+}

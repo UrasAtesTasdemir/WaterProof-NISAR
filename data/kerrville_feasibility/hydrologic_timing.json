@@ -1,0 +1,34 @@
+{
+  "station": "USGS 08166200 Guadalupe River at Kerrville",
+  "units": "feet, local gauge datum; not inundation depth",
+  "peak": {
+    "value": "30.06",
+    "qualifiers": [
+      "P"
+    ],
+    "dateTime": "2026-07-16T04:50:00.000-05:00"
+  },
+  "observations": [
+    {
+      "nisar_date": "2026-07-18T01:26:48Z",
+      "hours_after_gauge_peak": 39.61333333333334,
+      "nearest_stage_ft": 4.41,
+      "gauge_sample_time": "2026-07-17T20:25:00.000-05:00",
+      "time_gap_minutes": 1.8,
+      "qualifiers": [
+        "P"
+      ]
+    },
+    {
+      "nisar_date": "2026-07-19T11:52:23Z",
+      "hours_after_gauge_peak": 74.03972222222222,
+      "nearest_stage_ft": 2.81,
+      "gauge_sample_time": "2026-07-19T06:50:00.000-05:00",
+      "time_gap_minutes": 2.3833333333333333,
+      "qualifiers": [
+        "P"
+      ]
+    }
+  ],
+  "warning": "Provisional P gauge samples; one station does not determine flood extent or remaining floodplain water."
+}

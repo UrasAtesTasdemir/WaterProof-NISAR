@@ -1,0 +1,7 @@
+Inspecting real frequencyA polarization metadata: 2026-06-21
+  Metadata inspected: full grid (34632, 35208); loading window (257, 579), EPSG:32615
+Verified real HVHV 2026-06-21 138779 positive valid pixels
+Inspecting real frequencyA polarization metadata: 2026-07-03
+  Metadata inspected: full grid (34632, 35208); loading window (257, 579), EPSG:32615
+Verified real HVHV 2026-07-03 138779 positive valid pixels
+SUCCESS: 2 real HH/HV dates; 13.8779 km² common valid area

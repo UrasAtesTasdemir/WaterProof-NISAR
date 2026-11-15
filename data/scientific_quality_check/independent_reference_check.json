@@ -1,0 +1,119 @@
+{
+  "checked_at_utc": "2026-11-14T08:24:56.858029+00:00",
+  "collection": "OPERA_L3_DSWX-HLS_V1",
+  "observations": [
+    {
+      "product_id": "OPERA_L3_DSWx-HLS_T15RYP_20260621T163131Z_20260722T172422Z_L9_30_v1.1",
+      "acquisition_utc": "2026-06-21T16:31:31.238Z",
+      "tile_cloud_cover_percent": "98",
+      "tile_cloud_cover_is_not_aoi_cloud_fraction": true,
+      "public_catalog_url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/OPERA_L3_DSWX-HLS_V1/OPERA_L3_DSWx-HLS_T15RYP_20260621T163131Z_20260722T172422Z_L9_30_v1.1_B01_WTR.tif",
+      "http_status": 206,
+      "status": "aoi_inspected",
+      "aoi_class_counts": {
+        "253": 15424
+      },
+      "aoi_pixel_centers": 15424,
+      "range_bytes_read": 109709,
+      "subset_path": "data/scientific_quality_check/OPERA_L3_DSWx-HLS_T15RYP_20260621T163131Z_20260722T172422Z_L9_30_v1.1_aoi_WTR.tif",
+      "usable_water_or_nonwater_pixels": 0,
+      "class_codes": {
+        "0": "not water",
+        "1": "open water",
+        "2": "partial surface water",
+        "252": "snow/ice",
+        "253": "cloud/cloud shadow",
+        "254": "ocean masked",
+        "255": "no data"
+      },
+      "nisar_target_date": "2026-06-21",
+      "same_day": true
+    },
+    {
+      "product_id": "OPERA_L3_DSWx-HLS_T15RYP_20260622T163711Z_20260624T131726Z_S2A_30_v1.1",
+      "acquisition_utc": "2026-06-22T16:45:33.397Z",
+      "tile_cloud_cover_percent": "90",
+      "tile_cloud_cover_is_not_aoi_cloud_fraction": true,
+      "public_catalog_url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/OPERA_L3_DSWX-HLS_V1/OPERA_L3_DSWx-HLS_T15RYP_20260622T163711Z_20260624T131726Z_S2A_30_v1.1_B01_WTR.tif",
+      "http_status": 206,
+      "status": "aoi_inspected",
+      "aoi_class_counts": {
+        "253": 15424
+      },
+      "aoi_pixel_centers": 15424,
+      "range_bytes_read": 131072,
+      "subset_path": "data/scientific_quality_check/OPERA_L3_DSWx-HLS_T15RYP_20260622T163711Z_20260624T131726Z_S2A_30_v1.1_aoi_WTR.tif",
+      "usable_water_or_nonwater_pixels": 0,
+      "class_codes": {
+        "0": "not water",
+        "1": "open water",
+        "2": "partial surface water",
+        "252": "snow/ice",
+        "253": "cloud/cloud shadow",
+        "254": "ocean masked",
+        "255": "no data"
+      },
+      "nisar_target_date": "2026-06-21",
+      "same_day": false
+    },
+    {
+      "product_id": "OPERA_L3_DSWx-HLS_T15RYP_20260703T163841Z_20260720T223436Z_S2C_30_v1.1",
+      "acquisition_utc": "2026-07-03T16:55:11.907Z",
+      "tile_cloud_cover_percent": "72",
+      "tile_cloud_cover_is_not_aoi_cloud_fraction": true,
+      "public_catalog_url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/OPERA_L3_DSWX-HLS_V1/OPERA_L3_DSWx-HLS_T15RYP_20260703T163841Z_20260720T223436Z_S2C_30_v1.1_B01_WTR.tif",
+      "http_status": 206,
+      "status": "aoi_inspected",
+      "aoi_class_counts": {
+        "253": 15424
+      },
+      "aoi_pixel_centers": 15424,
+      "range_bytes_read": 131072,
+      "subset_path": "data/scientific_quality_check/OPERA_L3_DSWx-HLS_T15RYP_20260703T163841Z_20260720T223436Z_S2C_30_v1.1_aoi_WTR.tif",
+      "usable_water_or_nonwater_pixels": 0,
+      "class_codes": {
+        "0": "not water",
+        "1": "open water",
+        "2": "partial surface water",
+        "252": "snow/ice",
+        "253": "cloud/cloud shadow",
+        "254": "ocean masked",
+        "255": "no data"
+      },
+      "nisar_target_date": "2026-07-03",
+      "same_day": true
+    },
+    {
+      "product_id": "OPERA_L3_DSWx-HLS_T15RYP_20260630T162831Z_20260702T030402Z_S2C_30_v1.1",
+      "acquisition_utc": "2026-06-30T16:45:15.359Z",
+      "tile_cloud_cover_percent": "50",
+      "tile_cloud_cover_is_not_aoi_cloud_fraction": true,
+      "public_catalog_url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/OPERA_L3_DSWX-HLS_V1/OPERA_L3_DSWx-HLS_T15RYP_20260630T162831Z_20260702T030402Z_S2C_30_v1.1_B01_WTR.tif",
+      "http_status": 206,
+      "status": "aoi_inspected",
+      "aoi_class_counts": {
+        "0": 1260,
+        "1": 53,
+        "2": 29,
+        "252": 4,
+        "253": 14078
+      },
+      "aoi_pixel_centers": 15424,
+      "range_bytes_read": 131072,
+      "subset_path": "data/scientific_quality_check/OPERA_L3_DSWx-HLS_T15RYP_20260630T162831Z_20260702T030402Z_S2C_30_v1.1_aoi_WTR.tif",
+      "usable_water_or_nonwater_pixels": 1342,
+      "class_codes": {
+        "0": "not water",
+        "1": "open water",
+        "2": "partial surface water",
+        "252": "snow/ice",
+        "253": "cloud/cloud shadow",
+        "254": "ocean masked",
+        "255": "no data"
+      },
+      "nisar_target_date": "2026-07-03",
+      "same_day": false
+    }
+  ],
+  "interpretation": "Independent optical water product, not ground truth. Cloud/shadow is unknown, not water or nonwater. Historical NHD is not dated flood evidence."
+}

@@ -1,0 +1,98 @@
+test_actual_heldout_counts_and_micro_scores (test_benchmark.BenchmarkTests.test_actual_heldout_counts_and_micro_scores) ... ok
+test_already_db_no_double_log (test_benchmark.BenchmarkTests.test_already_db_no_double_log) ... ok
+test_confusion_matrix (test_benchmark.BenchmarkTests.test_confusion_matrix) ... ok
+test_frozen_calibration_matches_train_only_grid (test_benchmark.BenchmarkTests.test_frozen_calibration_matches_train_only_grid) ... ok
+test_manual_mask_and_radar_invalid (test_benchmark.BenchmarkTests.test_manual_mask_and_radar_invalid) ... ok
+test_missing_data_preserved (test_benchmark.BenchmarkTests.test_missing_data_preserved) ... ok
+test_no_train_test_leakage (test_benchmark.BenchmarkTests.test_no_train_test_leakage) ... ok
+test_optional_ui_keeps_metrics_separate (test_benchmark.BenchmarkTests.test_optional_ui_keeps_metrics_separate) ... <project>/app.py:82: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/app.py:82: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+ok
+test_otsu_requires_no_labels (test_benchmark.BenchmarkTests.test_otsu_requires_no_labels) ... ok
+test_invalid_thresholds_rejected (test_dashboard.DashboardTests.test_invalid_thresholds_rejected) ... ok
+test_missing_files_show_recovery_message (test_dashboard.DashboardTests.test_missing_files_show_recovery_message) ... ok
+test_real_widget_metrics_update_without_network_or_output_changes (test_dashboard.DashboardTests.test_real_widget_metrics_update_without_network_or_output_changes) ... <project>/tests/test_dashboard.py:15: ResourceWarning: unclosed file <_io.TextIOWrapper name='<project>/data/scientific_quality_check/threshold_sensitivity.csv' mode='r' encoding='UTF-8'>
+  expected={float(r['water_threshold_db']):r for r in csv.DictReader((ROOT/'data/scientific_quality_check/threshold_sensitivity.csv').open())}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+<project>/app.py:82: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/app.py:82: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/app.py:82: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/app.py:82: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/app.py:82: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/app.py:82: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/app.py:82: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/app.py:82: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+ok
+test_303_data_redirect_strips_token_keeps_range (test_earthdata_access.RedirectTests.test_303_data_redirect_strips_token_keeps_range) ... ok
+test_ignored_range_body_is_not_read (test_earthdata_access.RedirectTests.test_ignored_range_body_is_not_read) ... ok
+test_login_redirect_is_not_followed (test_earthdata_access.RedirectTests.test_login_redirect_is_not_followed) ... ok
+test_observed_nisar_cloudfront_redirect (test_earthdata_access.RedirectTests.test_observed_nisar_cloudfront_redirect) ... ok
+test_other_cloudfront_distribution_is_blocked (test_earthdata_access.RedirectTests.test_other_cloudfront_distribution_is_blocked) ... ok
+test_redirect_loop_is_bounded (test_earthdata_access.RedirectTests.test_redirect_loop_is_bounded) ... ok
+test_unapproved_or_insecure_redirects_are_not_requested (test_earthdata_access.RedirectTests.test_unapproved_or_insecure_redirects_are_not_requested) ... ok
+test_actual_louisiana_location_and_native_areas (test_geographic_map.GeographicMapTests.test_actual_louisiana_location_and_native_areas) ... ok
+test_dashboard_page_separation_and_missing_data (test_geographic_map.GeographicMapTests.test_dashboard_page_separation_and_missing_data) ... <project>/app.py:82: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/app.py:82: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+ok
+test_map_html_layers_and_projected_display (test_geographic_map.GeographicMapTests.test_map_html_layers_and_projected_display) ... ok
+test_orientation_and_transparency (test_geographic_map.GeographicMapTests.test_orientation_and_transparency) ... ok
+test_real_classification_uses_existing_algorithm (test_geographic_map.GeographicMapTests.test_real_classification_uses_existing_algorithm) ... ok
+test_categorical_nearest_preserves_codes (test_reference_validation.ReferenceValidationTests.test_categorical_nearest_preserves_codes) ... ok
+test_known_confusion_matrix (test_reference_validation.ReferenceValidationTests.test_known_confusion_matrix) ... ok
+test_real_attempt_has_no_unsupported_scores (test_reference_validation.ReferenceValidationTests.test_real_attempt_has_no_unsupported_scores) ... ok
+test_temporal_and_coverage_gate (test_reference_validation.ReferenceValidationTests.test_temporal_and_coverage_gate) ... ok
+test_undefined_scores_not_fabricated (test_reference_validation.ReferenceValidationTests.test_undefined_scores_not_fabricated) ... ok
+test_unknowns_excluded (test_reference_validation.ReferenceValidationTests.test_unknowns_excluded) ... ok
+test_identical_or_unknown_maps_unchanged (test_reliability.ReliabilityTests.test_identical_or_unknown_maps_unchanged) ... ok
+test_real_singleton_counts_and_default_preserved (test_reliability.ReliabilityTests.test_real_singleton_counts_and_default_preserved) ... ok
+test_separate_classes_and_diagonal_connectivity (test_reliability.ReliabilityTests.test_separate_classes_and_diagonal_connectivity) ... ok
+test_toggle_updates_metrics_and_reverts (test_reliability.ReliabilityTests.test_toggle_updates_metrics_and_reverts) ... <project>/app.py:82: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/app.py:82: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/app.py:82: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+ok
+test_catalog_configuration_and_reject_incompatible_or_uncovered (test_time_series.TimeSeriesTests.test_catalog_configuration_and_reject_incompatible_or_uncovered) ... ok
+test_continuous_map_orientation_transparency_and_real_layers (test_time_series.TimeSeriesTests.test_continuous_map_orientation_transparency_and_real_layers) ... ok
+test_pair_sign_common_mask_and_identical_dates (test_time_series.TimeSeriesTests.test_pair_sign_common_mask_and_identical_dates) ... ok
+test_real_selected_point_matches_native_pixel_and_missing (test_time_series.TimeSeriesTests.test_real_selected_point_matches_native_pixel_and_missing) ... ok
+test_real_six_date_grid_units_masks_and_geolocation (test_time_series.TimeSeriesTests.test_real_six_date_grid_units_masks_and_geolocation) ... ok
+test_temporal_residual_zero_variance_outlier_missing (test_time_series.TimeSeriesTests.test_temporal_residual_zero_variance_outlier_missing) ... ok
+test_time_series_missing_files_recovery (test_time_series.TimeSeriesTests.test_time_series_missing_files_recovery) ... <project>/app.py:82: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+ok
+test_time_series_widgets_real_dates_point_and_preserved_workspaces (test_time_series.TimeSeriesTests.test_time_series_widgets_real_dates_point_and_preserved_workspaces) ... <project>/app.py:82: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+<project>/app.py:82: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap=plt.get_cmap('RdBu_r' if kind=='difference' else 'gray').copy();cmap.set_bad(colors[0])
+ok
+test_alignment_identical_and_shifted_grid_masks (test_water_change.WaterChangeTests.test_alignment_identical_and_shifted_grid_masks) ... ok
+test_all_class_transitions_and_signed_change (test_water_change.WaterChangeTests.test_all_class_transitions_and_signed_change) ... ok
+test_area_rejects_degrees_and_converts_projected_feet (test_water_change.WaterChangeTests.test_area_rejects_degrees_and_converts_projected_feet) ... ok
+test_bad_parameters_rejected (test_water_change.WaterChangeTests.test_bad_parameters_rejected) ... ok
+test_change_gate_reject_disable_and_exact_boundary (test_water_change.WaterChangeTests.test_change_gate_reject_disable_and_exact_boundary) ... ok
+test_common_mask_cannot_be_overridden_by_filter (test_water_change.WaterChangeTests.test_common_mask_cannot_be_overridden_by_filter) ... ok
+test_db_known_values (test_water_change.WaterChangeTests.test_db_known_values) ... ok
+test_filter_is_in_linear_power (test_water_change.WaterChangeTests.test_filter_is_in_linear_power) ... ok
+test_identical_images_have_no_change (test_water_change.WaterChangeTests.test_identical_images_have_no_change) ... ok
+test_invalid_power_never_becomes_water (test_water_change.WaterChangeTests.test_invalid_power_never_becomes_water) ... ok
+test_mask_filter_no_zero_bias_and_no_gap_filling (test_water_change.WaterChangeTests.test_mask_filter_no_zero_bias_and_no_gap_filling) ... ok
+test_projected_area_and_rotated_determinant (test_water_change.WaterChangeTests.test_projected_area_and_rotated_determinant) ... ok
+
+----------------------------------------------------------------------
+Ran 54 tests in 14.345s
+
+OK

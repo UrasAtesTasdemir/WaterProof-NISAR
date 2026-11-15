@@ -1,0 +1,5 @@
+water_threshold_db,min_abs_change_db,filter_size,expansion_pixels,recession_pixels,expansion_km2,recession_km2
+-14,3,3,1652,72,0.1652,0.0072
+-16,3,3,569,5,0.0569,0.0005
+-18,3,3,91,0,0.0091,0.0
+-20,3,3,0,0,0.0,0.0

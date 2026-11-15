@@ -1,0 +1,598 @@
+{
+  "status": "success",
+  "created_utc": "2026-11-14T12:38:10.108628+00:00",
+  "observations": [
+    {
+      "date": "2026-06-21",
+      "acquisition_utc": "2026-06-21T11:19:06+00:00",
+      "product_id": "NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001",
+      "joint_valid_pixels": 138779,
+      "statistics_pixels": 138779,
+      "HH_p25_db": -7.982113816844636,
+      "HH_median_db": -5.642242630132922,
+      "HH_p75_db": -3.9444439140255083,
+      "HH_mean_db": -6.181558037782486,
+      "HH_std_db": 3.021453788406361,
+      "HV_p25_db": -15.867195647173794,
+      "HV_median_db": -13.370683434421966,
+      "HV_p75_db": -11.444332503434683,
+      "HV_mean_db": -13.878518332647623,
+      "HV_std_db": 3.16925964240464,
+      "ratio_db_p25_db": 6.599315181583059,
+      "ratio_db_median_db": 7.659565372274152,
+      "ratio_db_p75_db": 8.765234458742952,
+      "ratio_db_mean_db": 7.696960294865135,
+      "ratio_db_std_db": 1.6405349167480787
+    },
+    {
+      "date": "2026-07-03",
+      "acquisition_utc": "2026-07-03T11:19:05+00:00",
+      "product_id": "NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001",
+      "joint_valid_pixels": 138779,
+      "statistics_pixels": 138779,
+      "HH_p25_db": -9.48650206206358,
+      "HH_median_db": -6.987086462191883,
+      "HH_p75_db": -5.270922934228902,
+      "HH_mean_db": -7.632276161433334,
+      "HH_std_db": 3.2539038159029476,
+      "HV_p25_db": -16.809465824674703,
+      "HV_median_db": -14.146619076573701,
+      "HV_p75_db": -11.988551793958889,
+      "HV_mean_db": -14.61799941687718,
+      "HV_std_db": 3.3005687596454907,
+      "ratio_db_p25_db": 5.93728954865198,
+      "ratio_db_median_db": 6.946166113422628,
+      "ratio_db_p75_db": 7.98294380972199,
+      "ratio_db_mean_db": 6.985723255443843,
+      "ratio_db_std_db": 1.5591199517623604
+    },
+    {
+      "date": "2026-07-15",
+      "acquisition_utc": "2026-07-15T11:19:05+00:00",
+      "product_id": "NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001",
+      "joint_valid_pixels": 138779,
+      "statistics_pixels": 138779,
+      "HH_p25_db": -8.643915236728212,
+      "HH_median_db": -6.428870052007474,
+      "HH_p75_db": -4.7837802315021065,
+      "HH_mean_db": -6.953985134847892,
+      "HH_std_db": 3.075473032566797,
+      "HV_p25_db": -16.271852239238576,
+      "HV_median_db": -14.04043884701873,
+      "HV_p75_db": -11.934701857979098,
+      "HV_mean_db": -14.360149419957287,
+      "HV_std_db": 3.1042892706145886,
+      "ratio_db_p25_db": 6.3294158990861185,
+      "ratio_db_median_db": 7.368290182623182,
+      "ratio_db_p75_db": 8.44403715588502,
+      "ratio_db_mean_db": 7.406164285109393,
+      "ratio_db_std_db": 1.6191723727931397
+    },
+    {
+      "date": "2026-07-27",
+      "acquisition_utc": "2026-07-27T11:19:04+00:00",
+      "product_id": "NISAR_L2_PR_GCOV_026_105_A_017_4005_DHDH_A_20260727T111904_20260727T111939_P05023_N_F_J_001",
+      "joint_valid_pixels": 138779,
+      "statistics_pixels": 138779,
+      "HH_p25_db": -9.852722563018084,
+      "HH_median_db": -7.0949373965346645,
+      "HH_p75_db": -5.437581445926744,
+      "HH_mean_db": -7.902767574327703,
+      "HH_std_db": 3.4118341712591773,
+      "HV_p25_db": -16.91532994523979,
+      "HV_median_db": -14.396331439956075,
+      "HV_p75_db": -12.242885180753811,
+      "HV_mean_db": -14.816210083674886,
+      "HV_std_db": 3.265222925747979,
+      "ratio_db_p25_db": 5.829720464702306,
+      "ratio_db_median_db": 6.8390485112241155,
+      "ratio_db_p75_db": 7.920634233022567,
+      "ratio_db_mean_db": 6.913442509347183,
+      "ratio_db_std_db": 1.605461536221416
+    },
+    {
+      "date": "2026-08-20",
+      "acquisition_utc": "2026-08-20T11:19:03+00:00",
+      "product_id": "NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001",
+      "joint_valid_pixels": 138779,
+      "statistics_pixels": 138779,
+      "HH_p25_db": -10.332188904906365,
+      "HH_median_db": -7.376615021378252,
+      "HH_p75_db": -5.761207798021399,
+      "HH_mean_db": -8.202746813250787,
+      "HH_std_db": 3.39731471667167,
+      "HV_p25_db": -17.49037007569581,
+      "HV_median_db": -14.60856162595243,
+      "HV_p75_db": -12.408255083519741,
+      "HV_mean_db": -15.116567871523403,
+      "HV_std_db": 3.4178712795800394,
+      "ratio_db_p25_db": 5.848783612751291,
+      "ratio_db_median_db": 6.863033053556451,
+      "ratio_db_p75_db": 7.921848967085182,
+      "ratio_db_mean_db": 6.9138210582726165,
+      "ratio_db_std_db": 1.5965835068928778
+    },
+    {
+      "date": "2026-09-01",
+      "acquisition_utc": "2026-09-01T11:19:03+00:00",
+      "product_id": "NISAR_L2_PR_GCOV_029_105_A_017_4005_DHDH_A_20260901T111903_20260901T111937_P05023_N_F_J_001",
+      "joint_valid_pixels": 138779,
+      "statistics_pixels": 138779,
+      "HH_p25_db": -9.285095150477265,
+      "HH_median_db": -6.32887254823781,
+      "HH_p75_db": -4.606463651806557,
+      "HH_mean_db": -7.144789182467488,
+      "HH_std_db": 3.5169757250489053,
+      "HV_p25_db": -17.173408409166317,
+      "HV_median_db": -14.243884175024409,
+      "HV_p75_db": -11.784712356074106,
+      "HV_mean_db": -14.64903393438097,
+      "HV_std_db": 3.426368535153989,
+      "ratio_db_p25_db": 6.184180311270387,
+      "ratio_db_median_db": 7.33130574164414,
+      "ratio_db_p75_db": 8.634657194395151,
+      "ratio_db_mean_db": 7.504244751913483,
+      "ratio_db_std_db": 1.918967885364879
+    }
+  ],
+  "sources": [
+    {
+      "hdf5_group": "/science/LSAR/GCOV/grids/frequencyA",
+      "layer": "HVHV",
+      "full_grid_shape": [
+        34632,
+        35208
+      ],
+      "subset_shape": [
+        257,
+        579
+      ],
+      "epsg": 32615,
+      "pixel_spacing_m": [
+        10.0,
+        -10.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        759680.0,
+        0.0,
+        -10.0,
+        3313600.0
+      ],
+      "pixel_center_window": {
+        "row_start": 25832,
+        "row_stop_exclusive": 26089,
+        "column_start": 19664,
+        "column_stop_exclusive": 20243
+      },
+      "aoi_pixel_centers": 138779,
+      "finite_positive_pixels": 138779,
+      "invalid_or_nonpositive_pixels_inside_aoi": 0,
+      "power_min": 0.0010795146226882935,
+      "power_max": 3.117401123046875,
+      "db_min": -29.667713165283203,
+      "db_max": 4.937926769256592,
+      "power_units": "1",
+      "db_formula": "10 * log10(power), finite positive values only",
+      "aoi_mask_rule": "pixel center inside transformed AOI; outside and invalid values are NaN",
+      "product_id": "NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001",
+      "acquisition_utc": "2026-06-21T11:19:06+00:00",
+      "available_layers": {
+        "HHHH": {
+          "shape": [
+            34632,
+            35208
+          ],
+          "dtype": "float32",
+          "units": "1",
+          "description": "Geocoded polarimetric covariance term HHHH"
+        },
+        "HVHV": {
+          "shape": [
+            34632,
+            35208
+          ],
+          "dtype": "float32",
+          "units": "1",
+          "description": "Geocoded polarimetric covariance term HVHV"
+        }
+      },
+      "remote_product_bytes": 6593445888,
+      "range_bytes_read": 8388616,
+      "cache_limit_bytes": 16777216,
+      "range_bytes_read_this_run": 0,
+      "sha256": "85ea6ea61a94bd3699d205176179e803399aa055bddb50b81a86b9a9451c10b3",
+      "aligned_by_nearest": false
+    },
+    {
+      "hdf5_group": "/science/LSAR/GCOV/grids/frequencyA",
+      "layer": "HVHV",
+      "full_grid_shape": [
+        34632,
+        35208
+      ],
+      "subset_shape": [
+        257,
+        579
+      ],
+      "epsg": 32615,
+      "pixel_spacing_m": [
+        10.0,
+        -10.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        759680.0,
+        0.0,
+        -10.0,
+        3313600.0
+      ],
+      "pixel_center_window": {
+        "row_start": 25832,
+        "row_stop_exclusive": 26089,
+        "column_start": 19664,
+        "column_stop_exclusive": 20243
+      },
+      "aoi_pixel_centers": 138779,
+      "finite_positive_pixels": 138779,
+      "invalid_or_nonpositive_pixels_inside_aoi": 0,
+      "power_min": 0.0011320561170578003,
+      "power_max": 3.266815185546875,
+      "db_min": -29.461318969726562,
+      "db_max": 5.1412458419799805,
+      "power_units": "1",
+      "db_formula": "10 * log10(power), finite positive values only",
+      "aoi_mask_rule": "pixel center inside transformed AOI; outside and invalid values are NaN",
+      "product_id": "NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001",
+      "acquisition_utc": "2026-07-03T11:19:05+00:00",
+      "available_layers": {
+        "HHHH": {
+          "shape": [
+            34632,
+            35208
+          ],
+          "dtype": "float32",
+          "units": "1",
+          "description": "Geocoded polarimetric covariance term HHHH"
+        },
+        "HVHV": {
+          "shape": [
+            34632,
+            35208
+          ],
+          "dtype": "float32",
+          "units": "1",
+          "description": "Geocoded polarimetric covariance term HVHV"
+        }
+      },
+      "remote_product_bytes": 6585057280,
+      "range_bytes_read": 8388616,
+      "cache_limit_bytes": 16777216,
+      "range_bytes_read_this_run": 0,
+      "sha256": "253314d3d9c66c063334aa225eaa1b763220948b95957800c848e78367f4e1fd",
+      "aligned_by_nearest": false
+    },
+    {
+      "hdf5_group": "/science/LSAR/GCOV/grids/frequencyA",
+      "layer": "HVHV",
+      "full_grid_shape": [
+        34632,
+        35208
+      ],
+      "subset_shape": [
+        257,
+        579
+      ],
+      "epsg": 32615,
+      "pixel_spacing_m": [
+        10.0,
+        -10.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        759680.0,
+        0.0,
+        -10.0,
+        3313600.0
+      ],
+      "pixel_center_window": {
+        "row_start": 25832,
+        "row_stop_exclusive": 26089,
+        "column_start": 19664,
+        "column_stop_exclusive": 20243
+      },
+      "aoi_pixel_centers": 138779,
+      "finite_positive_pixels": 138779,
+      "invalid_or_nonpositive_pixels_inside_aoi": 0,
+      "power_min": 0.0010247528553009033,
+      "power_max": 4.083740234375,
+      "db_min": -29.893808364868164,
+      "db_max": 6.110581398010254,
+      "power_units": "1",
+      "db_formula": "10 * log10(power), finite positive values only",
+      "aoi_mask_rule": "pixel center inside transformed AOI; outside and invalid values are NaN",
+      "product_id": "NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001",
+      "acquisition_utc": "2026-07-15T11:19:05+00:00",
+      "available_layers": {
+        "HHHH": {
+          "shape": [
+            34632,
+            35208
+          ],
+          "dtype": "float32",
+          "units": "1",
+          "description": "Geocoded polarimetric covariance term HHHH"
+        },
+        "HVHV": {
+          "shape": [
+            34632,
+            35208
+          ],
+          "dtype": "float32",
+          "units": "1",
+          "description": "Geocoded polarimetric covariance term HVHV"
+        }
+      },
+      "remote_product_bytes": 6601834496,
+      "range_bytes_read": 8388616,
+      "cache_limit_bytes": 16777216,
+      "range_bytes_read_this_run": 8388616,
+      "sha256": "0013ae408bb229c7cc0c160ca3f9b510b378932f2992ac2b5cf0a9f1c073c933",
+      "aligned_by_nearest": false
+    },
+    {
+      "hdf5_group": "/science/LSAR/GCOV/grids/frequencyA",
+      "layer": "HVHV",
+      "full_grid_shape": [
+        34632,
+        35208
+      ],
+      "subset_shape": [
+        257,
+        579
+      ],
+      "epsg": 32615,
+      "pixel_spacing_m": [
+        10.0,
+        -10.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        759680.0,
+        0.0,
+        -10.0,
+        3313600.0
+      ],
+      "pixel_center_window": {
+        "row_start": 25832,
+        "row_stop_exclusive": 26089,
+        "column_start": 19664,
+        "column_stop_exclusive": 20243
+      },
+      "aoi_pixel_centers": 138779,
+      "finite_positive_pixels": 138779,
+      "invalid_or_nonpositive_pixels_inside_aoi": 0,
+      "power_min": 0.0009788721799850464,
+      "power_max": 2.759552001953125,
+      "db_min": -30.09273910522461,
+      "db_max": 4.408385753631592,
+      "power_units": "1",
+      "db_formula": "10 * log10(power), finite positive values only",
+      "aoi_mask_rule": "pixel center inside transformed AOI; outside and invalid values are NaN",
+      "product_id": "NISAR_L2_PR_GCOV_026_105_A_017_4005_DHDH_A_20260727T111904_20260727T111939_P05023_N_F_J_001",
+      "acquisition_utc": "2026-07-27T11:19:04+00:00",
+      "available_layers": {
+        "HHHH": {
+          "shape": [
+            34632,
+            35208
+          ],
+          "dtype": "float32",
+          "units": "1",
+          "description": "Geocoded polarimetric covariance term HHHH"
+        },
+        "HVHV": {
+          "shape": [
+            34632,
+            35208
+          ],
+          "dtype": "float32",
+          "units": "1",
+          "description": "Geocoded polarimetric covariance term HVHV"
+        }
+      },
+      "remote_product_bytes": 6589251584,
+      "range_bytes_read": 8388616,
+      "cache_limit_bytes": 16777216,
+      "range_bytes_read_this_run": 8388616,
+      "sha256": "92dbb95fd86b754cae2e7ff1c58443db09e2a55f78b730f8968aa7cfbf0a1c2b",
+      "aligned_by_nearest": false
+    },
+    {
+      "hdf5_group": "/science/LSAR/GCOV/grids/frequencyA",
+      "layer": "HVHV",
+      "full_grid_shape": [
+        34632,
+        35208
+      ],
+      "subset_shape": [
+        257,
+        579
+      ],
+      "epsg": 32615,
+      "pixel_spacing_m": [
+        10.0,
+        -10.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        759680.0,
+        0.0,
+        -10.0,
+        3313600.0
+      ],
+      "pixel_center_window": {
+        "row_start": 25832,
+        "row_stop_exclusive": 26089,
+        "column_start": 19664,
+        "column_stop_exclusive": 20243
+      },
+      "aoi_pixel_centers": 138779,
+      "finite_positive_pixels": 138779,
+      "invalid_or_nonpositive_pixels_inside_aoi": 0,
+      "power_min": 0.0007737502455711365,
+      "power_max": 4.37628173828125,
+      "db_min": -31.113990783691406,
+      "db_max": 6.411052703857422,
+      "power_units": "1",
+      "db_formula": "10 * log10(power), finite positive values only",
+      "aoi_mask_rule": "pixel center inside transformed AOI; outside and invalid values are NaN",
+      "product_id": "NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001",
+      "acquisition_utc": "2026-08-20T11:19:03+00:00",
+      "available_layers": {
+        "HHHH": {
+          "shape": [
+            34632,
+            35208
+          ],
+          "dtype": "float32",
+          "units": "1",
+          "description": "Geocoded polarimetric covariance term HHHH"
+        },
+        "HVHV": {
+          "shape": [
+            34632,
+            35208
+          ],
+          "dtype": "float32",
+          "units": "1",
+          "description": "Geocoded polarimetric covariance term HVHV"
+        }
+      },
+      "remote_product_bytes": 6585057280,
+      "range_bytes_read": 8388616,
+      "cache_limit_bytes": 16777216,
+      "range_bytes_read_this_run": 8388616,
+      "sha256": "5504b71ca9eb26139116754007aef61d7559f62b61b6bf332baf9a594756ee6a",
+      "aligned_by_nearest": false
+    },
+    {
+      "hdf5_group": "/science/LSAR/GCOV/grids/frequencyA",
+      "layer": "HVHV",
+      "full_grid_shape": [
+        34632,
+        35208
+      ],
+      "subset_shape": [
+        257,
+        579
+      ],
+      "epsg": 32615,
+      "pixel_spacing_m": [
+        10.0,
+        -10.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        759680.0,
+        0.0,
+        -10.0,
+        3313600.0
+      ],
+      "pixel_center_window": {
+        "row_start": 25832,
+        "row_stop_exclusive": 26089,
+        "column_start": 19664,
+        "column_stop_exclusive": 20243
+      },
+      "aoi_pixel_centers": 138779,
+      "finite_positive_pixels": 138779,
+      "invalid_or_nonpositive_pixels_inside_aoi": 0,
+      "power_min": 0.0010079890489578247,
+      "power_max": 2.41156005859375,
+      "db_min": -29.96544075012207,
+      "db_max": 3.8229808807373047,
+      "power_units": "1",
+      "db_formula": "10 * log10(power), finite positive values only",
+      "aoi_mask_rule": "pixel center inside transformed AOI; outside and invalid values are NaN",
+      "product_id": "NISAR_L2_PR_GCOV_029_105_A_017_4005_DHDH_A_20260901T111903_20260901T111937_P05023_N_F_J_001",
+      "acquisition_utc": "2026-09-01T11:19:03+00:00",
+      "available_layers": {
+        "HHHH": {
+          "shape": [
+            34632,
+            35208
+          ],
+          "dtype": "float32",
+          "units": "1",
+          "description": "Geocoded polarimetric covariance term HHHH"
+        },
+        "HVHV": {
+          "shape": [
+            34632,
+            35208
+          ],
+          "dtype": "float32",
+          "units": "1",
+          "description": "Geocoded polarimetric covariance term HVHV"
+        }
+      },
+      "remote_product_bytes": 6408896512,
+      "range_bytes_read": 8388616,
+      "cache_limit_bytes": 16777216,
+      "range_bytes_read_this_run": 8388616,
+      "sha256": "ffa15bf7ecc65dc3bd708fc774eac0c576591e2b4b0a164185da979c65c2ea6d",
+      "aligned_by_nearest": false
+    }
+  ],
+  "source_layers": {
+    "HH": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+    "HV": "/science/LSAR/GCOV/grids/frequencyA/HVHV"
+  },
+  "crs": "EPSG:32615",
+  "transform": [
+    10.0,
+    0.0,
+    759680.0,
+    0.0,
+    -10.0,
+    3313600.0
+  ],
+  "shape": [
+    257,
+    579
+  ],
+  "common_valid_pixels": 138779,
+  "common_valid_area_km2": 13.8779,
+  "backscatter_scale_db": [
+    -21.178728570417217,
+    -2.771234718710051
+  ],
+  "change_scale_db": [
+    -4.5213277528173705,
+    4.5213277528173705
+  ],
+  "before_after_statistics": {
+    "pixels": 138779,
+    "median_HH_delta_db": -1.388781573900281,
+    "median_HV_delta_db": -0.7204029063633666,
+    "median_delta_HH_minus_delta_HV_db": -0.7084923624323967,
+    "spatial_Pearson_r": 0.3506569103460969
+  },
+  "settings": {
+    "filter": "3x3 mask-aware mean in linear power then 10*log10",
+    "mask": "joint HH/HV positive finite per-date mask; all-date joint mask for temporal statistics",
+    "ratio_definition": "filtered HH_power / filtered HV_power; dimensionless; ratio_dB=HH_dB-HV_dB",
+    "noise_floor_correction": "none; noise diagnostics deferred to Phase 4",
+    "classification": "none; original HH water algorithm unchanged"
+  },
+  "range_bytes_read_this_run": 33554464,
+  "full_hdf5_downloaded": false,
+  "elapsed_seconds": 133.9616797499475
+}

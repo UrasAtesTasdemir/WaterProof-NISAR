@@ -1,0 +1,95 @@
+{
+  "phase": "4 complete; stop here",
+  "checkpoint_tag": "pre-scientific-diagnostics-phase4",
+  "checkpoint_commit": "24880228d4b6b7a06495fb5d681a43f9be55e824",
+  "baseline_tests_passed": 62,
+  "final_tests_passed": 71,
+  "real_HH_HV_dates": 6,
+  "common_valid_pixels": 138779,
+  "common_valid_area_km2": 13.8779,
+  "quality_metadata_dates": [
+    "2026-06-21",
+    "2026-07-03"
+  ],
+  "quality_mask_codes": {
+    "1": 138779
+  },
+  "HV_noise_floor_estimated": false,
+  "noise_floor_reason": "Noise-equivalent metadata describe DN^2; no verified calibration to gamma-0.",
+  "conditional_ENL_qualified_patches": [
+    {
+      "region": 2,
+      "band": "HV",
+      "date": "2026-07-03",
+      "conditional_ENL": 4.009017455184648
+    },
+    {
+      "region": 3,
+      "band": "HV",
+      "date": "2026-07-03",
+      "conditional_ENL": 3.9008420868440528
+    }
+  ],
+  "conditional_ENL_caveat": "Provisional raw spatial moment proxies under screening assumptions, not thermal-noise calibration.",
+  "comparison": {
+    "baseline_expansion_km2": 0.056900000000000006,
+    "baseline_recession_km2": 0.0005,
+    "alternative_expansion_km2": 0.0448,
+    "alternative_recession_km2": 0.00030000000000000003,
+    "comparison_area_km2": 13.8779,
+    "baseline_expansion_also_alternative_pixels": 448,
+    "baseline_recession_also_alternative_pixels": 3,
+    "baseline_change_pixels_without_four_reference_observations": 0,
+    "effective_gate_db": {
+      "count": 138779,
+      "median": 3.0,
+      "mad": 0.0,
+      "scaled_mad": 0.0,
+      "iqr": 0.5445829368974984,
+      "p05": 3.0,
+      "p25": 3.0,
+      "p75": 3.5445829368974984,
+      "p95": 5.679846439512086
+    },
+    "score": {
+      "count": 138779,
+      "median": -1.2025079727172852,
+      "mad": 0.893346896933378,
+      "scaled_mad": 1.3244780912885217,
+      "iqr": 1.7952921156637516,
+      "p05": -3.7484761238098145,
+      "p25": -2.154977317174584,
+      "p75": -0.3596852015108325,
+      "p95": 0.8676587104797371
+    },
+    "HH_score_gate_pixels": 16169,
+    "HV_score_gate_pixels": 6158
+  },
+  "sensitivity_scenarios": 12,
+  "scene_median_normalization": false,
+  "production_classifier_changed": false,
+  "benchmark_used_for_tuning": false,
+  "preexisting_data_files_sha256_unchanged": 336,
+  "HH_HV_outputs_unchanged": true,
+  "benchmark_unchanged": true,
+  "modified_checkpoint_files": [
+    "README.md",
+    "app.py",
+    "src/nisar_data.py"
+  ],
+  "actual_browser_checks": {
+    "diagnostics_workspace_rendered": true,
+    "HH_original_pair_median": "-1.389 dB",
+    "HV_original_pair_median": "-0.720 dB",
+    "HV_Aug20_Sept1_median": "0.483 dB",
+    "date_pair_and_band_controls": true,
+    "baseline_alternative_tab": true,
+    "expansion_and_recession_sensitivity_controls": true,
+    "quality_texture_tab": true,
+    "within_family_consistency_summary": true,
+    "narrow_layout_sidebar_and_tab_scrolling": true
+  },
+  "tested_server": "http://127.0.0.1:8505",
+  "server_health_http": 200,
+  "scientific_interpretation": "Exploratory presentation only; no independently validated flood/water accuracy or calibrated uncertainty."
+}

@@ -1,0 +1,51 @@
+{
+  "phase": "3 only",
+  "checkpoint_tag": "pre-polarization-phase3",
+  "checkpoint_commit": "3fabbe09ae36e2f7c5641602381bc81a7749f3aa",
+  "baseline_tests_passed": 54,
+  "final_tests_passed": 62,
+  "real_HH_HV_dates_processed": 6,
+  "HVHV_available": true,
+  "actual_source_layers": {
+    "HH": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+    "HV": "/science/LSAR/GCOV/grids/frequencyA/HVHV"
+  },
+  "common_valid_pixels": 138779,
+  "common_valid_area_km2": 13.8779,
+  "alignment_reprojection_required": false,
+  "full_hdf5_downloaded": false,
+  "new_transfer_bytes_total": 50331696,
+  "power_ratio_identity_verified": "10*log10(HH_power/HV_power) == HH_dB-HV_dB",
+  "original_pair_statistics": {
+    "pixels": 138779,
+    "median_HH_delta_db": -1.3887815475463867,
+    "median_HV_delta_db": -0.720402717590332,
+    "median_delta_HH_minus_delta_HV_db": -0.7084927558898926,
+    "spatial_Pearson_r": 0.3506569107316075
+  },
+  "preexisting_data_files_sha256_preserved": 288,
+  "benchmark_unchanged": true,
+  "HH_time_series_unchanged": true,
+  "water_change_algorithm_unchanged": true,
+  "modified_preexisting_files": [
+    "README.md",
+    "app.py",
+    "scripts/visualize_nisar.py"
+  ],
+  "actual_browser_checks": {
+    "HH_HV_ratio_switching": true,
+    "June21_July3": true,
+    "June21_September1": true,
+    "identical_dates_zero_change": true,
+    "two_real_geographic_rasters_loaded": true,
+    "six_panel_comparison_rendered": true,
+    "raster_visibility_toggle": true,
+    "existing_HH_time_series": true,
+    "existing_benchmark_section": true,
+    "workspace_return_consistent": true
+  },
+  "dashboard_health_http": 200,
+  "tested_dashboard_url": "http://127.0.0.1:8504",
+  "phase4_started": false,
+  "scientific_status": "Descriptive scattering; no verified flooding/flooded vegetation, confidence or NISAR accuracy scores."
+}

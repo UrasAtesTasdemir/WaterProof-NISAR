@@ -1,0 +1,18 @@
+{
+  "query": {
+    "short_name": "OPERA_L3_DSWX-S1_V1",
+    "provider": "POCLOUD",
+    "bounding_box": "-90.31002,29.902604,-90.250797,29.924476",
+    "temporal": "2026-08-31T00:00:00Z,2026-09-03T00:00:00Z",
+    "page_size": 100
+  },
+  "hits": "0",
+  "response": {
+    "feed": {
+      "updated": "2026-11-14T09:48:09.568Z",
+      "id": "https://cmr.earthdata.nasa.gov:443/search/granules.json?short_name=OPERA_L3_DSWX-S1_V1&provider=POCLOUD&bounding_box=-90.31002%2C29.902604%2C-90.250797%2C29.924476&temporal=2026-08-31T00%3A00%3A00Z%2C2026-09-03T00%3A00%3A00Z&page_size=100",
+      "title": "ECHO granule metadata",
+      "entry": []
+    }
+  }
+}

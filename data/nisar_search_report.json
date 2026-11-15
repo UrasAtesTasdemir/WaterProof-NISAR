@@ -1,0 +1,170 @@
+{
+  "queried_at_utc": "2026-11-14T07:09:31.655815+00:00",
+  "reference": "https://asfopensarlab.github.io/NISAR_Cookbook/search-stream-nisar-asf-search/",
+  "aoi_wkt": "POLYGON((-90.31002 29.902604, -90.250797 29.902604, -90.250797 29.924476, -90.31002 29.924476, -90.31002 29.902604))",
+  "target_dates_utc": [
+    "2026-06-21",
+    "2026-07-03"
+  ],
+  "queries": [
+    {
+      "options": {
+        "dataset": [
+          "NISAR"
+        ],
+        "processingLevel": [
+          "GCOV"
+        ],
+        "productionConfiguration": [
+          "PR"
+        ],
+        "dataMaturity": "PROVISIONAL",
+        "flightDirection": "ASCENDING",
+        "intersectsWith": "POLYGON((-90.31002 29.902604, -90.250797 29.902604, -90.250797 29.924476, -90.31002 29.924476, -90.31002 29.902604))",
+        "start": "2026-06-21T00:00:00Z",
+        "end": "2026-06-22T00:00:00Z",
+        "maxResults": 250
+      },
+      "result_count": 1
+    },
+    {
+      "options": {
+        "dataset": [
+          "NISAR"
+        ],
+        "processingLevel": [
+          "GCOV"
+        ],
+        "productionConfiguration": [
+          "PR"
+        ],
+        "dataMaturity": "PROVISIONAL",
+        "flightDirection": "ASCENDING",
+        "intersectsWith": "POLYGON((-90.31002 29.902604, -90.250797 29.902604, -90.250797 29.924476, -90.31002 29.924476, -90.31002 29.902604))",
+        "start": "2026-07-03T00:00:00Z",
+        "end": "2026-07-04T00:00:00Z",
+        "maxResults": 250
+      },
+      "result_count": 1
+    }
+  ],
+  "products": [
+    {
+      "product_id": "NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001",
+      "start_time_utc": "2026-06-21T11:19:06+00:00",
+      "end_time_utc": "2026-06-21T11:19:41+00:00",
+      "product_type": "L2_GCOV",
+      "data_maturity": "PROVISIONAL",
+      "requested_polarization": "HH",
+      "gcov_layer": "frequencyA/HHHH",
+      "download_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001/NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001.h5",
+      "filename_fields": {
+        "instrument": "L",
+        "cycle": "023",
+        "track": "105",
+        "direction": "A",
+        "frame": "017",
+        "bandwidth": "4005",
+        "polarization": "DHDH",
+        "source": "A",
+        "start": "20260621T111906",
+        "end": "20260621T111941",
+        "crid": "P05023",
+        "accuracy": "N",
+        "coverage": "F",
+        "location": "J",
+        "counter": "001"
+      },
+      "catalog_metadata": {
+        "fileID": "NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001",
+        "startTime": "2026-06-21T11:19:06Z",
+        "stopTime": "2026-06-21T11:19:41Z",
+        "processingLevel": "GCOV",
+        "collectionName": "NISAR_L2_GCOV_PROVISIONAL_V1",
+        "pathNumber": 105,
+        "frameNumber": 17,
+        "flightDirection": "ASCENDING",
+        "mainBandPolarization": [
+          "HH",
+          "HV"
+        ],
+        "sideBandPolarization": [
+          "HH",
+          "HV"
+        ],
+        "rangeBandwidth": [
+          "40+5"
+        ],
+        "productionConfiguration": "PR",
+        "crid": "P05023",
+        "pgeVersion": "R05.02.3"
+      },
+      "s3_urls": [
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001/NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001.h5"
+      ]
+    },
+    {
+      "product_id": "NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001",
+      "start_time_utc": "2026-07-03T11:19:05+00:00",
+      "end_time_utc": "2026-07-03T11:19:40+00:00",
+      "product_type": "L2_GCOV",
+      "data_maturity": "PROVISIONAL",
+      "requested_polarization": "HH",
+      "gcov_layer": "frequencyA/HHHH",
+      "download_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001.h5",
+      "filename_fields": {
+        "instrument": "L",
+        "cycle": "024",
+        "track": "105",
+        "direction": "A",
+        "frame": "017",
+        "bandwidth": "4005",
+        "polarization": "DHDH",
+        "source": "A",
+        "start": "20260703T111905",
+        "end": "20260703T111940",
+        "crid": "P05023",
+        "accuracy": "N",
+        "coverage": "F",
+        "location": "J",
+        "counter": "001"
+      },
+      "catalog_metadata": {
+        "fileID": "NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001",
+        "startTime": "2026-07-03T11:19:05Z",
+        "stopTime": "2026-07-03T11:19:40Z",
+        "processingLevel": "GCOV",
+        "collectionName": "NISAR_L2_GCOV_PROVISIONAL_V1",
+        "pathNumber": 105,
+        "frameNumber": 17,
+        "flightDirection": "ASCENDING",
+        "mainBandPolarization": [
+          "HH",
+          "HV"
+        ],
+        "sideBandPolarization": [
+          "HH",
+          "HV"
+        ],
+        "rangeBandwidth": [
+          "40+5"
+        ],
+        "productionConfiguration": "PR",
+        "crid": "P05023",
+        "pgeVersion": "R05.02.3"
+      },
+      "s3_urls": [
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001.h5"
+      ]
+    }
+  ],
+  "compatible_pairs": [
+    [
+      "NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001",
+      "NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001"
+    ]
+  ],
+  "hdf5_downloaded": false,
+  "url_access_verified": false,
+  "both_observations_found": true
+}

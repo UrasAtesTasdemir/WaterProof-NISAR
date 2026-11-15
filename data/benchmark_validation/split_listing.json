@@ -1,0 +1,101 @@
+{
+  "kind": "storage#objects",
+  "items": [
+    {
+      "kind": "storage#object",
+      "id": "sen1floods11/v1.1/splits/flood_handlabeled/flood_bolivia_data.csv/1601586113803640",
+      "selfLink": "https://www.googleapis.com/storage/v1/b/sen1floods11/o/v1.1%2Fsplits%2Fflood_handlabeled%2Fflood_bolivia_data.csv",
+      "mediaLink": "https://storage.googleapis.com/download/storage/v1/b/sen1floods11/o/v1.1%2Fsplits%2Fflood_handlabeled%2Fflood_bolivia_data.csv?generation=1601586113803640&alt=media",
+      "name": "v1.1/splits/flood_handlabeled/flood_bolivia_data.csv",
+      "bucket": "sen1floods11",
+      "generation": "1601586113803640",
+      "metageneration": "1",
+      "contentType": "text/csv",
+      "storageClass": "STANDARD",
+      "size": "834",
+      "md5Hash": "XsAnM1l3NsfrwLCgocLjRQ==",
+      "contentLanguage": "en",
+      "crc32c": "hoRqQA==",
+      "etag": "CPjqj5ullOwCEAE=",
+      "timeCreated": "2020-10-01T21:01:53.803Z",
+      "updated": "2020-10-01T21:01:53.803Z",
+      "timeStorageClassUpdated": "2020-10-01T21:01:53.803Z",
+      "timeFinalized": "2020-10-01T21:01:53.803Z",
+      "metadata": {
+        "goog-reserved-file-mtime": "1601585791"
+      }
+    },
+    {
+      "kind": "storage#object",
+      "id": "sen1floods11/v1.1/splits/flood_handlabeled/flood_test_data.csv/1601586113841291",
+      "selfLink": "https://www.googleapis.com/storage/v1/b/sen1floods11/o/v1.1%2Fsplits%2Fflood_handlabeled%2Fflood_test_data.csv",
+      "mediaLink": "https://storage.googleapis.com/download/storage/v1/b/sen1floods11/o/v1.1%2Fsplits%2Fflood_handlabeled%2Fflood_test_data.csv?generation=1601586113841291&alt=media",
+      "name": "v1.1/splits/flood_handlabeled/flood_test_data.csv",
+      "bucket": "sen1floods11",
+      "generation": "1601586113841291",
+      "metageneration": "1",
+      "contentType": "text/csv",
+      "storageClass": "STANDARD",
+      "size": "4858",
+      "md5Hash": "6bLjqClk1I3fHkUO2dR0Nw==",
+      "contentLanguage": "en",
+      "crc32c": "xckkGA==",
+      "etag": "CIuRkpullOwCEAE=",
+      "timeCreated": "2020-10-01T21:01:53.841Z",
+      "updated": "2020-10-01T21:01:53.841Z",
+      "timeStorageClassUpdated": "2020-10-01T21:01:53.841Z",
+      "timeFinalized": "2020-10-01T21:01:53.841Z",
+      "metadata": {
+        "goog-reserved-file-mtime": "1601585791"
+      }
+    },
+    {
+      "kind": "storage#object",
+      "id": "sen1floods11/v1.1/splits/flood_handlabeled/flood_train_data.csv/1601586113872989",
+      "selfLink": "https://www.googleapis.com/storage/v1/b/sen1floods11/o/v1.1%2Fsplits%2Fflood_handlabeled%2Fflood_train_data.csv",
+      "mediaLink": "https://storage.googleapis.com/download/storage/v1/b/sen1floods11/o/v1.1%2Fsplits%2Fflood_handlabeled%2Fflood_train_data.csv?generation=1601586113872989&alt=media",
+      "name": "v1.1/splits/flood_handlabeled/flood_train_data.csv",
+      "bucket": "sen1floods11",
+      "generation": "1601586113872989",
+      "metageneration": "1",
+      "contentType": "text/csv",
+      "storageClass": "STANDARD",
+      "size": "13574",
+      "md5Hash": "LlaQkQPhCA4jkpVnOF6icQ==",
+      "contentLanguage": "en",
+      "crc32c": "uKclBg==",
+      "etag": "CN2IlJullOwCEAE=",
+      "timeCreated": "2020-10-01T21:01:53.872Z",
+      "updated": "2020-10-01T21:01:53.872Z",
+      "timeStorageClassUpdated": "2020-10-01T21:01:53.872Z",
+      "timeFinalized": "2020-10-01T21:01:53.872Z",
+      "metadata": {
+        "goog-reserved-file-mtime": "1601585791"
+      }
+    },
+    {
+      "kind": "storage#object",
+      "id": "sen1floods11/v1.1/splits/flood_handlabeled/flood_valid_data.csv/1601586113873707",
+      "selfLink": "https://www.googleapis.com/storage/v1/b/sen1floods11/o/v1.1%2Fsplits%2Fflood_handlabeled%2Fflood_valid_data.csv",
+      "mediaLink": "https://storage.googleapis.com/download/storage/v1/b/sen1floods11/o/v1.1%2Fsplits%2Fflood_handlabeled%2Fflood_valid_data.csv?generation=1601586113873707&alt=media",
+      "name": "v1.1/splits/flood_handlabeled/flood_valid_data.csv",
+      "bucket": "sen1floods11",
+      "generation": "1601586113873707",
+      "metageneration": "1",
+      "contentType": "text/csv",
+      "storageClass": "STANDARD",
+      "size": "4804",
+      "md5Hash": "Ncty4Axvu6bWSxQtr27XOw==",
+      "contentLanguage": "en",
+      "crc32c": "Mo/9yA==",
+      "etag": "CKuOlJullOwCEAE=",
+      "timeCreated": "2020-10-01T21:01:53.873Z",
+      "updated": "2020-10-01T21:01:53.873Z",
+      "timeStorageClassUpdated": "2020-10-01T21:01:53.873Z",
+      "timeFinalized": "2020-10-01T21:01:53.873Z",
+      "metadata": {
+        "goog-reserved-file-mtime": "1601585791"
+      }
+    }
+  ]
+}

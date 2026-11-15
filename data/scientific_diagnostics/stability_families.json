@@ -1,0 +1,47 @@
+{
+  "families": [
+    {
+      "name": "filter_sizes_at_minus16",
+      "settings": [
+        [
+          1,
+          -16
+        ],
+        [
+          3,
+          -16
+        ],
+        [
+          5,
+          -16
+        ]
+      ],
+      "expansion_pixels": 63,
+      "recession_pixels": 0,
+      "expansion_km2": 0.0063,
+      "recession_km2": 0.0
+    },
+    {
+      "name": "thresholds_at_filter3",
+      "settings": [
+        [
+          3,
+          -14
+        ],
+        [
+          3,
+          -16
+        ],
+        [
+          3,
+          -18
+        ]
+      ],
+      "expansion_pixels": 29,
+      "recession_pixels": 0,
+      "expansion_km2": 0.0029000000000000002,
+      "recession_km2": 0.0
+    }
+  ],
+  "interpretation": "Within-family consistency is sensitivity support, not independently confirmed water. All twelve settings also include minus20 and have an empty intersection."
+}

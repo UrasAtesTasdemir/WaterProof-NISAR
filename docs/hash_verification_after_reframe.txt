@@ -1,0 +1,13 @@
+# Verified 2026-11-14T17:02:29Z against docs/baseline_hashes_before_reframe.sha256
+# Expected changes: UI/doc files intentionally edited in the reframe. data/, src/water_change.py and tests/ must be unchanged.
+README.md: FAILED
+app.py: FAILED
+requirements.txt: FAILED
+src/__init__.py: FAILED
+src/benchmark_panel.py: FAILED
+src/diagnostics_panel.py: FAILED
+src/geographic_panel.py: FAILED
+src/investigation_panel.py: FAILED
+src/polarization_panel.py: FAILED
+src/time_series_panel.py: FAILED
+# OK count: 421 of      431

@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "tests": 41,
+  "raw_download_sha256_verified": true,
+  "prior_scientific_outputs_and_algorithm_unchanged": true,
+  "app_change": "Optional separate benchmark workspace only; pre-change app backed up",
+  "actual_radar_and_label_alignment_verified": true,
+  "no_train_test_chip_overlap": true,
+  "live_server_health": "HTTP 200 ok",
+  "new_ui_test": "Streamlit AppTest, not actual browser interactions"
+}

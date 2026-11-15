@@ -1,0 +1,90 @@
+{
+ "created_utc": "2026-11-15T06:24:46.206037+00:00",
+ "rule": {
+  "variant": "HH",
+  "t_HH": -16.0,
+  "min_change_db": 3.0,
+  "outcome": "new open water",
+  "reference": "S1"
+ },
+ "stages": {
+  "a": {
+   "site": "thailand_prachinburi",
+   "track": "004 D",
+   "dates": [
+    "2026-09-06",
+    "2026-09-30"
+   ],
+   "transform": [
+    10.0,
+    0.0,
+    751100.0,
+    0.0,
+    -10.0,
+    1560100.0
+   ],
+   "crs": "EPSG:32647",
+   "references": [
+    "OPERA_L3_DSWx-S1_T47PQR_20260908T230013Z_20260915T060302Z_S1C_30_v1.0",
+    "OPERA_L3_DSWx-S1_T47PQR_20261001T230839Z_20261013T115214Z_S1D_30_v1.0"
+   ],
+   "counts_match_saved_metrics": true,
+   "TP": 198761,
+   "FP": 56205,
+   "FN": 123388,
+   "TN": 598915
+  },
+  "b": {
+   "site": "thailand_prachinburi",
+   "track": "011 A",
+   "dates": [
+    "2026-09-06",
+    "2026-09-30"
+   ],
+   "transform": [
+    10.0,
+    0.0,
+    751100.0,
+    0.0,
+    -10.0,
+    1560100.0
+   ],
+   "crs": "EPSG:32647",
+   "references": [
+    "OPERA_L3_DSWx-S1_T47PQR_20260908T230013Z_20260915T060302Z_S1C_30_v1.0",
+    "OPERA_L3_DSWx-S1_T47PQR_20261001T230839Z_20261013T115214Z_S1D_30_v1.0"
+   ],
+   "counts_match_saved_metrics": true,
+   "TP": 246283,
+   "FP": 66069,
+   "FN": 75866,
+   "TN": 589051
+  },
+  "c": {
+   "site": "gandak_eo_image",
+   "track": "026 A",
+   "dates": [
+    "2026-09-19",
+    "2026-10-01"
+   ],
+   "transform": [
+    10.0,
+    0.0,
+    821120.0,
+    0.0,
+    -10.0,
+    2963760.0
+   ],
+   "crs": "EPSG:32644",
+   "references": [
+    "OPERA_L3_DSWx-S1_T45RTK_20260917T001912Z_20261012T215550Z_S1D_30_v1.0",
+    "OPERA_L3_DSWx-S1_T45RTK_20260929T001912Z_20261012T062954Z_S1D_30_v1.0"
+   ],
+   "counts_match_saved_metrics": true,
+   "TP": 7448,
+   "FP": 14284,
+   "FN": 32323,
+   "TN": 909691
+  }
+ }
+}

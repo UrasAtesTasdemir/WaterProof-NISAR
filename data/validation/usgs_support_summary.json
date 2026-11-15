@@ -1,0 +1,14 @@
+{
+  "station": "USGS 07380310 Bayou Verret Western Tie-in Sector Gate",
+  "query": {
+    "format": "json",
+    "sites": "07380310",
+    "startDT": "2026-06-20",
+    "endDT": "2026-07-04",
+    "parameterCd": "00065",
+    "siteStatus": "all"
+  },
+  "interpretation": "Supporting gauge level only; not satellite water extent or flood truth.",
+  "series": [],
+  "status": "no_historical_stage_series_returned"
+}

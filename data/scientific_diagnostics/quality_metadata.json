@@ -1,0 +1,1844 @@
+{
+  "status": "success",
+  "observations": [
+    {
+      "product_id": "NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001",
+      "acquisition_utc": "2026-06-21T11:19:06+00:00",
+      "date": "2026-06-21",
+      "layers": {
+        "numberOfLooks": {
+          "available": true,
+          "path": "/science/LSAR/GCOV/grids/frequencyA/numberOfLooks",
+          "shape": [
+            34632,
+            35208
+          ],
+          "dtype": "float32",
+          "attributes": {
+            "description": "Number of averaged radar-grid pixels for covariance estimation",
+            "grid_mapping": "projection",
+            "long_name": "Number of radar looks",
+            "max_value": 11.575950622558594,
+            "mean_value": 4.638327121734619,
+            "min_value": 8.190192968271504e-11,
+            "sample_stddev": 0.5627762079238892,
+            "units": "1",
+            "valid_min": 0.0
+          },
+          "encoding_fill_value": NaN,
+          "window_shape": [
+            257,
+            579
+          ],
+          "common_finite_count": 138779,
+          "min": 3.727660655975342,
+          "median": 4.745011806488037,
+          "max": 5.96254825592041
+        },
+        "mask": {
+          "available": true,
+          "path": "/science/LSAR/GCOV/grids/frequencyA/mask",
+          "shape": [
+            34632,
+            35208
+          ],
+          "dtype": "float32",
+          "attributes": {
+            "description": "Mask indicating the subswath number associated with valid GCOV samples. A GCOV sample is only considered valid if it is generated from fully-focused radar samples. If at least one radar sample in the averaging set is partially focused or invalid, the corresponding mask pixel will contain the value 0. GCOV pixels outside of the radar acquisition extent are filled with the value 255",
+            "grid_mapping": "projection",
+            "long_name": "Valid samples subswath mask",
+            "valid_min": 0
+          },
+          "encoding_fill_value": 255,
+          "window_shape": [
+            257,
+            579
+          ],
+          "common_finite_count": 138779,
+          "min": 1.0,
+          "median": 1.0,
+          "max": 1.0,
+          "observed_common_codes": {
+            "1": 138779
+          }
+        }
+      },
+      "noise_calibration_inventory": [
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/projection",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "uint32",
+          "attributes": {
+            "description": "Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/rxHorizontalCrosspol",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "complex64",
+          "attributes": {
+            "_FillValue": "(nan+nanj)",
+            "description": "Crosstalk in H-receive channel expressed as ratio rxV / rxH",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/rxVerticalCrosspol",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "complex64",
+          "attributes": {
+            "_FillValue": "(nan+nanj)",
+            "description": "Crosstalk in V-receive channel expressed as ratio rxH / rxV",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/txHorizontalCrosspol",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "complex64",
+          "attributes": {
+            "_FillValue": "(nan+nanj)",
+            "description": "Crosstalk in H-transmit channel expressed as ratio txV / txH",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/txVerticalCrosspol",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "complex64",
+          "attributes": {
+            "_FillValue": "(nan+nanj)",
+            "description": "Crosstalk in V-transmit channel expressed as ratio txH / txV",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/xCoordinates",
+          "kind": "dataset",
+          "shape": [
+            353
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "description": "X coordinates in specified projection",
+            "long_name": "X coordinates of projection",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/yCoordinates",
+          "kind": "dataset",
+          "shape": [
+            347
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Y coordinates in specified projection",
+            "long_name": "Y coordinates of projection",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HH",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HH/differentialDelay",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Range delay correction applied to HH channel",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HH/differentialPhase",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Phase correction applied to HH channel",
+            "units": "radians"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HH/rfiLikelihood",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Severity of radio frequency interference (RFI) contamination in the data. Value is in the interval [0,1], where 0: lowest severity, and 1: highest severity (or NaN if RFI detection was skipped)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HH/scaleFactor",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Scale factor applied to HH channel complex amplitude (at antenna boresite)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HH/scaleFactorSlope",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Slope of scale factor applied to HH channel complex amplitude with respect to elevation angle",
+            "units": "radians^-1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HV",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HV/differentialDelay",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Range delay correction applied to HV channel",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HV/differentialPhase",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Phase correction applied to HV channel",
+            "units": "radians"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HV/rfiLikelihood",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Severity of radio frequency interference (RFI) contamination in the data. Value is in the interval [0,1], where 0: lowest severity, and 1: highest severity (or NaN if RFI detection was skipped)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HV/scaleFactor",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Scale factor applied to HV channel complex amplitude (at antenna boresite)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HV/scaleFactorSlope",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Slope of scale factor applied to HV channel complex amplitude with respect to elevation angle",
+            "units": "radians^-1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/VH",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/VH/differentialDelay",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Range delay correction applied to VH channel",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/VH/differentialPhase",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Phase correction applied to VH channel",
+            "units": "radians"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/VH/scaleFactor",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Scale factor applied to VH channel complex amplitude (at antenna boresite)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/VH/scaleFactorSlope",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Slope of scale factor applied to VH channel complex amplitude with respect to elevation angle",
+            "units": "radians^-1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/VV",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/VV/differentialDelay",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Range delay correction applied to VV channel",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/VV/differentialPhase",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Phase correction applied to VV channel",
+            "units": "radians"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/VV/scaleFactor",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Scale factor applied to VV channel complex amplitude (at antenna boresite)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/VV/scaleFactorSlope",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Slope of scale factor applied to VV channel complex amplitude with respect to elevation angle",
+            "units": "radians^-1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/commonDelay",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Range delay correction applied to all polarimetric channels",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/HH",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "complex64",
+          "attributes": {
+            "_FillValue": "(nan+nanj)",
+            "description": "Complex two-way elevation antenna pattern",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/HV",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "complex64",
+          "attributes": {
+            "_FillValue": "(nan+nanj)",
+            "description": "Complex two-way elevation antenna pattern",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/projection",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "uint32",
+          "attributes": {
+            "description": "Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/xCoordinates",
+          "kind": "dataset",
+          "shape": [
+            353
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "description": "X coordinates in specified projection",
+            "long_name": "X coordinates of projection",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/yCoordinates",
+          "kind": "dataset",
+          "shape": [
+            347
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Y coordinates in specified projection",
+            "long_name": "Y coordinates of projection",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/faradayRotation",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Faraday rotation correction applied in processing",
+            "units": "radians"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/HH",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "_FillValue": NaN,
+            "description": "Noise equivalent backscatter in linear scale (units of DN^2)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/HV",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "_FillValue": NaN,
+            "description": "Noise equivalent backscatter in linear scale (units of DN^2)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/projection",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "uint32",
+          "attributes": {
+            "description": "Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/xCoordinates",
+          "kind": "dataset",
+          "shape": [
+            353
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "description": "X coordinates in specified projection",
+            "long_name": "X coordinates of projection",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/yCoordinates",
+          "kind": "dataset",
+          "shape": [
+            347
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Y coordinates in specified projection",
+            "long_name": "Y coordinates of projection",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HH",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HH/differentialDelay",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Range delay correction applied to HH channel",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HH/differentialPhase",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Phase correction applied to HH channel",
+            "units": "radians"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HH/rfiLikelihood",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Severity of radio frequency interference (RFI) contamination in the data. Value is in the interval [0,1], where 0: lowest severity, and 1: highest severity (or NaN if RFI detection was skipped)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HH/scaleFactor",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Scale factor applied to HH channel complex amplitude (at antenna boresite)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HH/scaleFactorSlope",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Slope of scale factor applied to HH channel complex amplitude with respect to elevation angle",
+            "units": "radians^-1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HV",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HV/differentialDelay",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Range delay correction applied to HV channel",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HV/differentialPhase",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Phase correction applied to HV channel",
+            "units": "radians"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HV/rfiLikelihood",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Severity of radio frequency interference (RFI) contamination in the data. Value is in the interval [0,1], where 0: lowest severity, and 1: highest severity (or NaN if RFI detection was skipped)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HV/scaleFactor",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Scale factor applied to HV channel complex amplitude (at antenna boresite)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HV/scaleFactorSlope",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Slope of scale factor applied to HV channel complex amplitude with respect to elevation angle",
+            "units": "radians^-1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/VH",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/VH/differentialDelay",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Range delay correction applied to VH channel",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/VH/differentialPhase",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Phase correction applied to VH channel",
+            "units": "radians"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/VH/scaleFactor",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Scale factor applied to VH channel complex amplitude (at antenna boresite)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/VH/scaleFactorSlope",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Slope of scale factor applied to VH channel complex amplitude with respect to elevation angle",
+            "units": "radians^-1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/VV",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/VV/differentialDelay",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Range delay correction applied to VV channel",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/VV/differentialPhase",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Phase correction applied to VV channel",
+            "units": "radians"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/VV/scaleFactor",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Scale factor applied to VV channel complex amplitude (at antenna boresite)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/VV/scaleFactorSlope",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Slope of scale factor applied to VV channel complex amplitude with respect to elevation angle",
+            "units": "radians^-1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/commonDelay",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Range delay correction applied to all polarimetric channels",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/HH",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "complex64",
+          "attributes": {
+            "_FillValue": "(nan+nanj)",
+            "description": "Complex two-way elevation antenna pattern",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/HV",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "complex64",
+          "attributes": {
+            "_FillValue": "(nan+nanj)",
+            "description": "Complex two-way elevation antenna pattern",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/projection",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "uint32",
+          "attributes": {
+            "description": "Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/xCoordinates",
+          "kind": "dataset",
+          "shape": [
+            353
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "description": "X coordinates in specified projection",
+            "long_name": "X coordinates of projection",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/yCoordinates",
+          "kind": "dataset",
+          "shape": [
+            347
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Y coordinates in specified projection",
+            "long_name": "Y coordinates of projection",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/faradayRotation",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Faraday rotation correction applied in processing",
+            "units": "radians"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/HH",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "_FillValue": NaN,
+            "description": "Noise equivalent backscatter in linear scale (units of DN^2)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/HV",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "_FillValue": NaN,
+            "description": "Noise equivalent backscatter in linear scale (units of DN^2)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/projection",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "uint32",
+          "attributes": {
+            "description": "Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/xCoordinates",
+          "kind": "dataset",
+          "shape": [
+            353
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "description": "X coordinates in specified projection",
+            "long_name": "X coordinates of projection",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/yCoordinates",
+          "kind": "dataset",
+          "shape": [
+            347
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Y coordinates in specified projection",
+            "long_name": "Y coordinates of projection",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/noiseCorrectionApplied",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "|S5",
+          "attributes": {
+            "description": "Flag to indicate if noise correction has been applied"
+          }
+        }
+      ],
+      "gcov_metadata_group_available": true,
+      "metadata_objects_inspected": 272,
+      "available_frequencyA_variables": [
+        "HHHH",
+        "HVHV",
+        "inputDataExceptionMask",
+        "listOfCovarianceTerms",
+        "listOfPolarizations",
+        "mask",
+        "numberOfLooks",
+        "numberOfSubSwaths",
+        "projection",
+        "rtcGammaToSigmaFactor",
+        "xCoordinateSpacing",
+        "yCoordinateSpacing",
+        "xCoordinates",
+        "yCoordinates"
+      ],
+      "remote_product_bytes": 6593445888,
+      "range_bytes_read": 6291464,
+      "cache_limit_bytes": 16777216
+    },
+    {
+      "product_id": "NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001",
+      "acquisition_utc": "2026-07-03T11:19:05+00:00",
+      "date": "2026-07-03",
+      "layers": {
+        "numberOfLooks": {
+          "available": true,
+          "path": "/science/LSAR/GCOV/grids/frequencyA/numberOfLooks",
+          "shape": [
+            34632,
+            35208
+          ],
+          "dtype": "float32",
+          "attributes": {
+            "description": "Number of averaged radar-grid pixels for covariance estimation",
+            "grid_mapping": "projection",
+            "long_name": "Number of radar looks",
+            "max_value": 11.575803756713867,
+            "mean_value": 4.640019416809082,
+            "min_value": 2.2598901916470737e-10,
+            "sample_stddev": 0.5607840418815613,
+            "units": "1",
+            "valid_min": 0.0
+          },
+          "encoding_fill_value": NaN,
+          "window_shape": [
+            257,
+            579
+          ],
+          "common_finite_count": 138779,
+          "min": 3.727815628051758,
+          "median": 4.7451605796813965,
+          "max": 5.962690830230713
+        },
+        "mask": {
+          "available": true,
+          "path": "/science/LSAR/GCOV/grids/frequencyA/mask",
+          "shape": [
+            34632,
+            35208
+          ],
+          "dtype": "float32",
+          "attributes": {
+            "description": "Mask indicating the subswath number associated with valid GCOV samples. A GCOV sample is only considered valid if it is generated from fully-focused radar samples. If at least one radar sample in the averaging set is partially focused or invalid, the corresponding mask pixel will contain the value 0. GCOV pixels outside of the radar acquisition extent are filled with the value 255",
+            "grid_mapping": "projection",
+            "long_name": "Valid samples subswath mask",
+            "valid_min": 0
+          },
+          "encoding_fill_value": 255,
+          "window_shape": [
+            257,
+            579
+          ],
+          "common_finite_count": 138779,
+          "min": 1.0,
+          "median": 1.0,
+          "max": 1.0,
+          "observed_common_codes": {
+            "1": 138779
+          }
+        }
+      },
+      "noise_calibration_inventory": [
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/projection",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "uint32",
+          "attributes": {
+            "description": "Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/rxHorizontalCrosspol",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "complex64",
+          "attributes": {
+            "_FillValue": "(nan+nanj)",
+            "description": "Crosstalk in H-receive channel expressed as ratio rxV / rxH",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/rxVerticalCrosspol",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "complex64",
+          "attributes": {
+            "_FillValue": "(nan+nanj)",
+            "description": "Crosstalk in V-receive channel expressed as ratio rxH / rxV",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/txHorizontalCrosspol",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "complex64",
+          "attributes": {
+            "_FillValue": "(nan+nanj)",
+            "description": "Crosstalk in H-transmit channel expressed as ratio txV / txH",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/txVerticalCrosspol",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "complex64",
+          "attributes": {
+            "_FillValue": "(nan+nanj)",
+            "description": "Crosstalk in V-transmit channel expressed as ratio txH / txV",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/xCoordinates",
+          "kind": "dataset",
+          "shape": [
+            353
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "description": "X coordinates in specified projection",
+            "long_name": "X coordinates of projection",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/crosstalk/yCoordinates",
+          "kind": "dataset",
+          "shape": [
+            347
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Y coordinates in specified projection",
+            "long_name": "Y coordinates of projection",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HH",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HH/differentialDelay",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Range delay correction applied to HH channel",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HH/differentialPhase",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Phase correction applied to HH channel",
+            "units": "radians"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HH/rfiLikelihood",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Severity of radio frequency interference (RFI) contamination in the data. Value is in the interval [0,1], where 0: lowest severity, and 1: highest severity (or NaN if RFI detection was skipped)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HH/scaleFactor",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Scale factor applied to HH channel complex amplitude (at antenna boresite)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HH/scaleFactorSlope",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Slope of scale factor applied to HH channel complex amplitude with respect to elevation angle",
+            "units": "radians^-1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HV",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HV/differentialDelay",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Range delay correction applied to HV channel",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HV/differentialPhase",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Phase correction applied to HV channel",
+            "units": "radians"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HV/rfiLikelihood",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Severity of radio frequency interference (RFI) contamination in the data. Value is in the interval [0,1], where 0: lowest severity, and 1: highest severity (or NaN if RFI detection was skipped)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HV/scaleFactor",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Scale factor applied to HV channel complex amplitude (at antenna boresite)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/HV/scaleFactorSlope",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Slope of scale factor applied to HV channel complex amplitude with respect to elevation angle",
+            "units": "radians^-1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/VH",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/VH/differentialDelay",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Range delay correction applied to VH channel",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/VH/differentialPhase",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Phase correction applied to VH channel",
+            "units": "radians"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/VH/scaleFactor",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Scale factor applied to VH channel complex amplitude (at antenna boresite)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/VH/scaleFactorSlope",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Slope of scale factor applied to VH channel complex amplitude with respect to elevation angle",
+            "units": "radians^-1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/VV",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/VV/differentialDelay",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Range delay correction applied to VV channel",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/VV/differentialPhase",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Phase correction applied to VV channel",
+            "units": "radians"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/VV/scaleFactor",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Scale factor applied to VV channel complex amplitude (at antenna boresite)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/VV/scaleFactorSlope",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Slope of scale factor applied to VV channel complex amplitude with respect to elevation angle",
+            "units": "radians^-1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/commonDelay",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Range delay correction applied to all polarimetric channels",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/HH",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "complex64",
+          "attributes": {
+            "_FillValue": "(nan+nanj)",
+            "description": "Complex two-way elevation antenna pattern",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/HV",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "complex64",
+          "attributes": {
+            "_FillValue": "(nan+nanj)",
+            "description": "Complex two-way elevation antenna pattern",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/projection",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "uint32",
+          "attributes": {
+            "description": "Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/xCoordinates",
+          "kind": "dataset",
+          "shape": [
+            353
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "description": "X coordinates in specified projection",
+            "long_name": "X coordinates of projection",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/elevationAntennaPattern/yCoordinates",
+          "kind": "dataset",
+          "shape": [
+            347
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Y coordinates in specified projection",
+            "long_name": "Y coordinates of projection",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/faradayRotation",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Faraday rotation correction applied in processing",
+            "units": "radians"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/HH",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "_FillValue": NaN,
+            "description": "Noise equivalent backscatter in linear scale (units of DN^2)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/HV",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "_FillValue": NaN,
+            "description": "Noise equivalent backscatter in linear scale (units of DN^2)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/projection",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "uint32",
+          "attributes": {
+            "description": "Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/xCoordinates",
+          "kind": "dataset",
+          "shape": [
+            353
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "description": "X coordinates in specified projection",
+            "long_name": "X coordinates of projection",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyA/noiseEquivalentBackscatter/yCoordinates",
+          "kind": "dataset",
+          "shape": [
+            347
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Y coordinates in specified projection",
+            "long_name": "Y coordinates of projection",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HH",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HH/differentialDelay",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Range delay correction applied to HH channel",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HH/differentialPhase",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Phase correction applied to HH channel",
+            "units": "radians"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HH/rfiLikelihood",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Severity of radio frequency interference (RFI) contamination in the data. Value is in the interval [0,1], where 0: lowest severity, and 1: highest severity (or NaN if RFI detection was skipped)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HH/scaleFactor",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Scale factor applied to HH channel complex amplitude (at antenna boresite)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HH/scaleFactorSlope",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Slope of scale factor applied to HH channel complex amplitude with respect to elevation angle",
+            "units": "radians^-1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HV",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HV/differentialDelay",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Range delay correction applied to HV channel",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HV/differentialPhase",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Phase correction applied to HV channel",
+            "units": "radians"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HV/rfiLikelihood",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Severity of radio frequency interference (RFI) contamination in the data. Value is in the interval [0,1], where 0: lowest severity, and 1: highest severity (or NaN if RFI detection was skipped)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HV/scaleFactor",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Scale factor applied to HV channel complex amplitude (at antenna boresite)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/HV/scaleFactorSlope",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Slope of scale factor applied to HV channel complex amplitude with respect to elevation angle",
+            "units": "radians^-1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/VH",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/VH/differentialDelay",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Range delay correction applied to VH channel",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/VH/differentialPhase",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Phase correction applied to VH channel",
+            "units": "radians"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/VH/scaleFactor",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Scale factor applied to VH channel complex amplitude (at antenna boresite)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/VH/scaleFactorSlope",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Slope of scale factor applied to VH channel complex amplitude with respect to elevation angle",
+            "units": "radians^-1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/VV",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/VV/differentialDelay",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Range delay correction applied to VV channel",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/VV/differentialPhase",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Phase correction applied to VV channel",
+            "units": "radians"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/VV/scaleFactor",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Scale factor applied to VV channel complex amplitude (at antenna boresite)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/VV/scaleFactorSlope",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Slope of scale factor applied to VV channel complex amplitude with respect to elevation angle",
+            "units": "radians^-1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/commonDelay",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Range delay correction applied to all polarimetric channels",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/HH",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "complex64",
+          "attributes": {
+            "_FillValue": "(nan+nanj)",
+            "description": "Complex two-way elevation antenna pattern",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/HV",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "complex64",
+          "attributes": {
+            "_FillValue": "(nan+nanj)",
+            "description": "Complex two-way elevation antenna pattern",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/projection",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "uint32",
+          "attributes": {
+            "description": "Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/xCoordinates",
+          "kind": "dataset",
+          "shape": [
+            353
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "description": "X coordinates in specified projection",
+            "long_name": "X coordinates of projection",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/elevationAntennaPattern/yCoordinates",
+          "kind": "dataset",
+          "shape": [
+            347
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Y coordinates in specified projection",
+            "long_name": "Y coordinates of projection",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/faradayRotation",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Faraday rotation correction applied in processing",
+            "units": "radians"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter",
+          "kind": "group",
+          "attributes": {}
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/HH",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "_FillValue": NaN,
+            "description": "Noise equivalent backscatter in linear scale (units of DN^2)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/HV",
+          "kind": "dataset",
+          "shape": [
+            347,
+            353
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "_FillValue": NaN,
+            "description": "Noise equivalent backscatter in linear scale (units of DN^2)",
+            "units": "1"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/projection",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "uint32",
+          "attributes": {
+            "description": "Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/xCoordinates",
+          "kind": "dataset",
+          "shape": [
+            353
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "description": "X coordinates in specified projection",
+            "long_name": "X coordinates of projection",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/calibrationInformation/frequencyB/noiseEquivalentBackscatter/yCoordinates",
+          "kind": "dataset",
+          "shape": [
+            347
+          ],
+          "dtype": "float64",
+          "attributes": {
+            "description": "Y coordinates in specified projection",
+            "long_name": "Y coordinates of projection",
+            "units": "meters"
+          }
+        },
+        {
+          "path": "/science/LSAR/GCOV/metadata/processingInformation/parameters/noiseCorrectionApplied",
+          "kind": "dataset",
+          "shape": [],
+          "dtype": "|S5",
+          "attributes": {
+            "description": "Flag to indicate if noise correction has been applied"
+          }
+        }
+      ],
+      "gcov_metadata_group_available": true,
+      "metadata_objects_inspected": 272,
+      "available_frequencyA_variables": [
+        "HHHH",
+        "HVHV",
+        "inputDataExceptionMask",
+        "listOfCovarianceTerms",
+        "listOfPolarizations",
+        "mask",
+        "numberOfLooks",
+        "numberOfSubSwaths",
+        "projection",
+        "rtcGammaToSigmaFactor",
+        "xCoordinateSpacing",
+        "yCoordinateSpacing",
+        "xCoordinates",
+        "yCoordinates"
+      ],
+      "remote_product_bytes": 6585057280,
+      "range_bytes_read": 6291464,
+      "cache_limit_bytes": 16777216
+    }
+  ],
+  "full_hdf5_downloaded": false,
+  "noise_floor_assessment": "Metadata inventory only. No noise-equivalent backscatter was mapped/calibrated onto gamma-0 AOI; no HV noise-floor or SNR value is inferred.",
+  "production_masks_changed": false
+}

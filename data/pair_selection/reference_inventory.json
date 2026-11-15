@@ -1,0 +1,259 @@
+[
+  {
+    "product_id": "OPERA_L3_DSWx-S1_T15RYP_20260621T001010Z_20260827T184457Z_S1A_30_v1.0",
+    "status": "inspected",
+    "reference_utc": "2026-06-21T00:10:26.000Z",
+    "collection": "OPERA_L3_DSWX-S1_V1",
+    "subset_path": "data/validation/OPERA_L3_DSWx-S1_T15RYP_20260621T001010Z_20260827T184457Z_S1A_30_v1.0_aoi_WTR.tif",
+    "access": "reused prior real AOI window",
+    "crs": "EPSG:32615",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "aoi_pixel_centers": 15424,
+    "valid_pixels": 0,
+    "valid_fraction": 0.0,
+    "class_counts": {
+      "255": 15424
+    },
+    "tile_cloud_cover_metadata": null,
+    "validity_definition": "S1 codes0/1/3 or HLS0/1/2; all other codes excluded. Unknown is not nonwater.",
+    "nisar_date": "2026-06-21",
+    "time_offset_hours": -11.144444444444444,
+    "eligible_presence": false
+  },
+  {
+    "product_id": "OPERA_L3_DSWx-HLS_T15RYP_20260621T163131Z_20260722T172422Z_L9_30_v1.1",
+    "status": "inspected",
+    "reference_utc": "2026-06-21T16:31:31.238Z",
+    "collection": "OPERA_L3_DSWX-HLS_V1",
+    "subset_path": "data/scientific_quality_check/OPERA_L3_DSWx-HLS_T15RYP_20260621T163131Z_20260722T172422Z_L9_30_v1.1_aoi_WTR.tif",
+    "access": "reused prior real AOI window",
+    "crs": "EPSG:32615",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "aoi_pixel_centers": 15424,
+    "valid_pixels": 0,
+    "valid_fraction": 0.0,
+    "class_counts": {
+      "253": 15424
+    },
+    "tile_cloud_cover_metadata": "98",
+    "validity_definition": "S1 codes0/1/3 or HLS0/1/2; all other codes excluded. Unknown is not nonwater.",
+    "nisar_date": "2026-06-21",
+    "time_offset_hours": 5.207010555555556,
+    "eligible_presence": false
+  },
+  {
+    "product_id": "OPERA_L3_DSWx-HLS_T15RYP_20260622T163711Z_20260626T153321Z_S2A_30_v1.1",
+    "status": "inspected",
+    "reference_utc": "2026-06-22T16:45:33.397Z",
+    "collection": "OPERA_L3_DSWX-HLS_V1",
+    "subset_path": "data/pair_selection/OPERA_L3_DSWx-HLS_T15RYP_20260622T163711Z_20260626T153321Z_S2A_30_v1.1_aoi_WTR.tif",
+    "access": "reused prior real AOI window",
+    "crs": "EPSG:32615",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "aoi_pixel_centers": 15424,
+    "valid_pixels": 0,
+    "valid_fraction": 0.0,
+    "class_counts": {
+      "253": 15424
+    },
+    "tile_cloud_cover_metadata": "90",
+    "validity_definition": "S1 codes0/1/3 or HLS0/1/2; all other codes excluded. Unknown is not nonwater.",
+    "nisar_date": "2026-06-21",
+    "time_offset_hours": 29.44094361111111,
+    "eligible_presence": false
+  },
+  {
+    "product_id": "OPERA_L3_DSWx-HLS_T15RYP_20260703T163841Z_20260720T223436Z_S2C_30_v1.1",
+    "status": "inspected",
+    "reference_utc": "2026-07-03T16:55:11.907Z",
+    "collection": "OPERA_L3_DSWX-HLS_V1",
+    "subset_path": "data/validation/OPERA_L3_DSWx-HLS_T15RYP_20260703T163841Z_20260720T223436Z_S2C_30_v1.1_aoi_WTR.tif",
+    "access": "reused prior real AOI window",
+    "crs": "EPSG:32615",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "aoi_pixel_centers": 15424,
+    "valid_pixels": 0,
+    "valid_fraction": 0.0,
+    "class_counts": {
+      "253": 15424
+    },
+    "tile_cloud_cover_metadata": "72",
+    "validity_definition": "S1 codes0/1/3 or HLS0/1/2; all other codes excluded. Unknown is not nonwater.",
+    "nisar_date": "2026-07-03",
+    "time_offset_hours": 5.601918611111111,
+    "eligible_presence": false
+  },
+  {
+    "product_id": "OPERA_L3_DSWx-HLS_T15RYP_20260715T163131Z_20260718T071454Z_L8_30_v1.1",
+    "status": "inspected",
+    "reference_utc": "2026-07-15T16:31:31.043Z",
+    "collection": "OPERA_L3_DSWX-HLS_V1",
+    "subset_path": "data/pair_selection/OPERA_L3_DSWx-HLS_T15RYP_20260715T163131Z_20260718T071454Z_L8_30_v1.1_aoi_WTR.tif",
+    "access": "reused prior real AOI window",
+    "crs": "EPSG:32615",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "aoi_pixel_centers": 15424,
+    "valid_pixels": 3866,
+    "valid_fraction": 0.25064834024896265,
+    "class_counts": {
+      "0": 3777,
+      "1": 8,
+      "2": 81,
+      "253": 11526,
+      "255": 32
+    },
+    "tile_cloud_cover_metadata": "58",
+    "validity_definition": "S1 codes0/1/3 or HLS0/1/2; all other codes excluded. Unknown is not nonwater.",
+    "nisar_date": "2026-07-15",
+    "time_offset_hours": 5.207234166666667,
+    "eligible_presence": false
+  },
+  {
+    "product_id": "OPERA_L3_DSWx-HLS_T15RYP_20260728T163839Z_20260730T031807Z_S2B_30_v1.1",
+    "status": "inspected",
+    "reference_utc": "2026-07-28T16:55:13.652Z",
+    "collection": "OPERA_L3_DSWX-HLS_V1",
+    "subset_path": "data/pair_selection/OPERA_L3_DSWx-HLS_T15RYP_20260728T163839Z_20260730T031807Z_S2B_30_v1.1_aoi_WTR.tif",
+    "access": "reused prior real AOI window",
+    "crs": "EPSG:32615",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "aoi_pixel_centers": 15424,
+    "valid_pixels": 4281,
+    "valid_fraction": 0.2775544605809129,
+    "class_counts": {
+      "0": 4217,
+      "1": 1,
+      "2": 63,
+      "252": 56,
+      "253": 11087
+    },
+    "tile_cloud_cover_metadata": "51",
+    "validity_definition": "S1 codes0/1/3 or HLS0/1/2; all other codes excluded. Unknown is not nonwater.",
+    "nisar_date": "2026-07-27",
+    "time_offset_hours": 29.60268111111111,
+    "eligible_presence": false
+  },
+  {
+    "product_id": "OPERA_L3_DSWx-HLS_T15RYP_20260819T162831Z_20260821T041327Z_S2C_30_v1.1",
+    "status": "inspected",
+    "reference_utc": "2026-08-19T16:45:13.974Z",
+    "collection": "OPERA_L3_DSWX-HLS_V1",
+    "subset_path": "data/pair_selection/OPERA_L3_DSWx-HLS_T15RYP_20260819T162831Z_20260821T041327Z_S2C_30_v1.1_aoi_WTR.tif",
+    "access": "reused prior real AOI window",
+    "crs": "EPSG:32615",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "aoi_pixel_centers": 15424,
+    "valid_pixels": 78,
+    "valid_fraction": 0.005057053941908714,
+    "class_counts": {
+      "0": 78,
+      "253": 15346
+    },
+    "tile_cloud_cover_metadata": null,
+    "validity_definition": "S1 codes0/1/3 or HLS0/1/2; all other codes excluded. Unknown is not nonwater.",
+    "nisar_date": "2026-08-20",
+    "time_offset_hours": -18.563618333333334,
+    "eligible_presence": false
+  },
+  {
+    "product_id": "OPERA_L3_DSWx-HLS_T15RYP_20260821T163701Z_20260823T033117Z_S2A_30_v1.1",
+    "status": "inspected",
+    "reference_utc": "2026-08-21T16:45:31.558Z",
+    "collection": "OPERA_L3_DSWX-HLS_V1",
+    "subset_path": "data/pair_selection/OPERA_L3_DSWx-HLS_T15RYP_20260821T163701Z_20260823T033117Z_S2A_30_v1.1_aoi_WTR.tif",
+    "access": "reused prior real AOI window",
+    "crs": "EPSG:32615",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "aoi_pixel_centers": 15424,
+    "valid_pixels": 11619,
+    "valid_fraction": 0.7533065352697096,
+    "class_counts": {
+      "0": 11051,
+      "1": 171,
+      "2": 397,
+      "252": 5,
+      "253": 3800
+    },
+    "tile_cloud_cover_metadata": null,
+    "validity_definition": "S1 codes0/1/3 or HLS0/1/2; all other codes excluded. Unknown is not nonwater.",
+    "nisar_date": "2026-08-20",
+    "time_offset_hours": 29.441266111111112,
+    "eligible_presence": false
+  },
+  {
+    "product_id": "OPERA_L3_DSWx-HLS_T15RYP_20260901T163155Z_20260903T021841Z_L8_30_v1.1",
+    "status": "inspected",
+    "reference_utc": "2026-09-01T16:31:55.343Z",
+    "collection": "OPERA_L3_DSWX-HLS_V1",
+    "subset_path": "data/pair_selection/OPERA_L3_DSWx-HLS_T15RYP_20260901T163155Z_20260903T021841Z_L8_30_v1.1_aoi_WTR.tif",
+    "access": "reused prior real AOI window",
+    "crs": "EPSG:32615",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "aoi_pixel_centers": 15424,
+    "valid_pixels": 8639,
+    "valid_fraction": 0.5601011410788381,
+    "class_counts": {
+      "0": 7887,
+      "1": 394,
+      "2": 358,
+      "253": 6758,
+      "255": 27
+    },
+    "tile_cloud_cover_metadata": null,
+    "validity_definition": "S1 codes0/1/3 or HLS0/1/2; all other codes excluded. Unknown is not nonwater.",
+    "nisar_date": "2026-09-01",
+    "time_offset_hours": 5.214539722222223,
+    "eligible_presence": false
+  },
+  {
+    "product_id": "OPERA_L3_DSWx-HLS_T15RYP_20260901T163831Z_20260903T025711Z_S2C_30_v1.1",
+    "status": "inspected",
+    "reference_utc": "2026-09-01T16:55:10.886Z",
+    "collection": "OPERA_L3_DSWX-HLS_V1",
+    "subset_path": "data/pair_selection/OPERA_L3_DSWx-HLS_T15RYP_20260901T163831Z_20260903T025711Z_S2C_30_v1.1_aoi_WTR.tif",
+    "access": "reused prior real AOI window",
+    "crs": "EPSG:32615",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "aoi_pixel_centers": 15424,
+    "valid_pixels": 0,
+    "valid_fraction": 0.0,
+    "class_counts": {
+      "253": 15424
+    },
+    "tile_cloud_cover_metadata": null,
+    "validity_definition": "S1 codes0/1/3 or HLS0/1/2; all other codes excluded. Unknown is not nonwater.",
+    "nisar_date": "2026-09-01",
+    "time_offset_hours": 5.602190555555556,
+    "eligible_presence": false
+  }
+]

@@ -1,0 +1,562 @@
+[
+  {
+    "product_id": "OPERA_L3_DSWx-HLS_T14RMU_20260705T171851Z_20260720T220535Z_S2C_30_v1.1",
+    "acquisition_utc": "2026-07-05T17:35:24.553Z",
+    "tile_cloud_cover_percent": "58",
+    "tile_cloud_cover_is_not_aoi_cloud_fraction": true,
+    "public_catalog_url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/OPERA_L3_DSWX-HLS_V1/OPERA_L3_DSWx-HLS_T14RMU_20260705T171851Z_20260720T220535Z_S2C_30_v1.1_B01_WTR.tif",
+    "http_status": 206,
+    "status": "aoi_inspected",
+    "aoi_class_counts": {
+      "255": 76013
+    },
+    "aoi_pixel_centers": 76013,
+    "range_bytes_read": 131072,
+    "subset_path": "data/kerrville_feasibility/OPERA_L3_DSWx-HLS_T14RMU_20260705T171851Z_20260720T220535Z_S2C_30_v1.1_aoi_WTR.tif",
+    "usable_water_or_nonwater_pixels": 0,
+    "class_codes": {
+      "0": "not water",
+      "1": "open water",
+      "2": "partial surface water",
+      "252": "snow/ice",
+      "253": "cloud/cloud shadow",
+      "254": "ocean masked",
+      "255": "no data"
+    },
+    "valid_fraction": 0.0,
+    "crs": "EPSG:32614",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "bounds": [
+      482640.0,
+      3319890.0,
+      490380.0,
+      3328800.0
+    ],
+    "time_difference_hours": {
+      "NISAR_L2_PR_GCOV_024_142_D_073_4005_DHDH_A_20260706T012649_20260706T012723_P05023_N_F_J_001": -7.856790833333333,
+      "NISAR_L2_PR_GCOV_024_163_A_017_4005_DHDH_A_20260707T115223_20260707T115258_P05023_N_F_J_001": -42.28290194444444,
+      "NISAR_L2_PR_GCOV_025_041_D_073_4005_DHDH_A_20260711T011829_20260711T011903_P05023_N_F_J_001": -127.71790194444444,
+      "NISAR_L2_PR_GCOV_025_142_D_073_4005_DHDH_A_20260718T012648_20260718T012723_P05023_N_F_J_001": -295.8565130555555,
+      "NISAR_L2_PR_GCOV_025_163_A_017_4005_DHDH_A_20260719T115223_20260719T115257_P05023_N_F_J_001": -330.2829019444444,
+      "NISAR_L2_PR_GCOV_026_041_D_073_4005_DHDH_A_20260723T011828_20260723T011903_P05023_N_F_J_001": -415.71762416666667,
+      "NISAR_L2_PR_GCOV_027_163_A_017_4005_DHDH_A_20260812T115221_20260812T115256_P05023_N_F_J_001": -906.282346388889
+    }
+  },
+  {
+    "product_id": "OPERA_L3_DSWx-HLS_T14RMU_20260707T170849Z_20260721T174817Z_S2B_30_v1.1",
+    "acquisition_utc": "2026-07-07T17:25:28.998Z",
+    "tile_cloud_cover_percent": "48",
+    "tile_cloud_cover_is_not_aoi_cloud_fraction": true,
+    "public_catalog_url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/OPERA_L3_DSWX-HLS_V1/OPERA_L3_DSWx-HLS_T14RMU_20260707T170849Z_20260721T174817Z_S2B_30_v1.1_B01_WTR.tif",
+    "http_status": 206,
+    "status": "aoi_inspected",
+    "aoi_class_counts": {
+      "0": 27506,
+      "1": 107,
+      "2": 108,
+      "252": 54,
+      "253": 48238
+    },
+    "aoi_pixel_centers": 76013,
+    "range_bytes_read": 178621,
+    "subset_path": "data/kerrville_feasibility/OPERA_L3_DSWx-HLS_T14RMU_20260707T170849Z_20260721T174817Z_S2B_30_v1.1_aoi_WTR.tif",
+    "usable_water_or_nonwater_pixels": 27721,
+    "class_codes": {
+      "0": "not water",
+      "1": "open water",
+      "2": "partial surface water",
+      "252": "snow/ice",
+      "253": "cloud/cloud shadow",
+      "254": "ocean masked",
+      "255": "no data"
+    },
+    "valid_fraction": 0.3646876192230276,
+    "crs": "EPSG:32614",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "bounds": [
+      482640.0,
+      3319890.0,
+      490380.0,
+      3328800.0
+    ],
+    "time_difference_hours": {
+      "NISAR_L2_PR_GCOV_024_142_D_073_4005_DHDH_A_20260706T012649_20260706T012723_P05023_N_F_J_001": 39.97777722222222,
+      "NISAR_L2_PR_GCOV_024_163_A_017_4005_DHDH_A_20260707T115223_20260707T115258_P05023_N_F_J_001": 5.551666111111111,
+      "NISAR_L2_PR_GCOV_025_041_D_073_4005_DHDH_A_20260711T011829_20260711T011903_P05023_N_F_J_001": -79.88333388888888,
+      "NISAR_L2_PR_GCOV_025_142_D_073_4005_DHDH_A_20260718T012648_20260718T012723_P05023_N_F_J_001": -248.021945,
+      "NISAR_L2_PR_GCOV_025_163_A_017_4005_DHDH_A_20260719T115223_20260719T115257_P05023_N_F_J_001": -282.4483338888889,
+      "NISAR_L2_PR_GCOV_026_041_D_073_4005_DHDH_A_20260723T011828_20260723T011903_P05023_N_F_J_001": -367.88305611111116,
+      "NISAR_L2_PR_GCOV_027_163_A_017_4005_DHDH_A_20260812T115221_20260812T115256_P05023_N_F_J_001": -858.4477783333333
+    }
+  },
+  {
+    "product_id": "OPERA_L3_DSWx-HLS_T14RMU_20260707T172721Z_20260709T144548Z_S2A_30_v1.1",
+    "acquisition_utc": "2026-07-07T17:35:40.515Z",
+    "tile_cloud_cover_percent": "47",
+    "tile_cloud_cover_is_not_aoi_cloud_fraction": true,
+    "public_catalog_url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/OPERA_L3_DSWX-HLS_V1/OPERA_L3_DSWx-HLS_T14RMU_20260707T172721Z_20260709T144548Z_S2A_30_v1.1_B01_WTR.tif",
+    "http_status": 206,
+    "status": "aoi_inspected",
+    "aoi_class_counts": {
+      "255": 76013
+    },
+    "aoi_pixel_centers": 76013,
+    "range_bytes_read": 130227,
+    "subset_path": "data/kerrville_feasibility/OPERA_L3_DSWx-HLS_T14RMU_20260707T172721Z_20260709T144548Z_S2A_30_v1.1_aoi_WTR.tif",
+    "usable_water_or_nonwater_pixels": 0,
+    "class_codes": {
+      "0": "not water",
+      "1": "open water",
+      "2": "partial surface water",
+      "252": "snow/ice",
+      "253": "cloud/cloud shadow",
+      "254": "ocean masked",
+      "255": "no data"
+    },
+    "valid_fraction": 0.0,
+    "crs": "EPSG:32614",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "bounds": [
+      482640.0,
+      3319890.0,
+      490380.0,
+      3328800.0
+    ],
+    "time_difference_hours": {
+      "NISAR_L2_PR_GCOV_024_142_D_073_4005_DHDH_A_20260706T012649_20260706T012723_P05023_N_F_J_001": 40.14764305555556,
+      "NISAR_L2_PR_GCOV_024_163_A_017_4005_DHDH_A_20260707T115223_20260707T115258_P05023_N_F_J_001": 5.721531944444444,
+      "NISAR_L2_PR_GCOV_025_041_D_073_4005_DHDH_A_20260711T011829_20260711T011903_P05023_N_F_J_001": -79.71346805555555,
+      "NISAR_L2_PR_GCOV_025_142_D_073_4005_DHDH_A_20260718T012648_20260718T012723_P05023_N_F_J_001": -247.85207916666667,
+      "NISAR_L2_PR_GCOV_025_163_A_017_4005_DHDH_A_20260719T115223_20260719T115257_P05023_N_F_J_001": -282.27846805555555,
+      "NISAR_L2_PR_GCOV_026_041_D_073_4005_DHDH_A_20260723T011828_20260723T011903_P05023_N_F_J_001": -367.7131902777778,
+      "NISAR_L2_PR_GCOV_027_163_A_017_4005_DHDH_A_20260812T115221_20260812T115256_P05023_N_F_J_001": -858.2779125
+    }
+  },
+  {
+    "product_id": "OPERA_L3_DSWx-HLS_T14RMU_20260710T171859Z_20260713T102327Z_S2B_30_v1.1",
+    "acquisition_utc": "2026-07-10T17:35:24.232Z",
+    "tile_cloud_cover_percent": "99",
+    "tile_cloud_cover_is_not_aoi_cloud_fraction": true,
+    "public_catalog_url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/OPERA_L3_DSWX-HLS_V1/OPERA_L3_DSWx-HLS_T14RMU_20260710T171859Z_20260713T102327Z_S2B_30_v1.1_B01_WTR.tif",
+    "http_status": 206,
+    "status": "aoi_inspected",
+    "aoi_class_counts": {
+      "255": 76013
+    },
+    "aoi_pixel_centers": 76013,
+    "range_bytes_read": 93455,
+    "subset_path": "data/kerrville_feasibility/OPERA_L3_DSWx-HLS_T14RMU_20260710T171859Z_20260713T102327Z_S2B_30_v1.1_aoi_WTR.tif",
+    "usable_water_or_nonwater_pixels": 0,
+    "class_codes": {
+      "0": "not water",
+      "1": "open water",
+      "2": "partial surface water",
+      "252": "snow/ice",
+      "253": "cloud/cloud shadow",
+      "254": "ocean masked",
+      "255": "no data"
+    },
+    "valid_fraction": 0.0,
+    "crs": "EPSG:32614",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "bounds": [
+      482640.0,
+      3319890.0,
+      490380.0,
+      3328800.0
+    ],
+    "time_difference_hours": {
+      "NISAR_L2_PR_GCOV_024_142_D_073_4005_DHDH_A_20260706T012649_20260706T012723_P05023_N_F_J_001": 112.14312000000001,
+      "NISAR_L2_PR_GCOV_024_163_A_017_4005_DHDH_A_20260707T115223_20260707T115258_P05023_N_F_J_001": 77.7170088888889,
+      "NISAR_L2_PR_GCOV_025_041_D_073_4005_DHDH_A_20260711T011829_20260711T011903_P05023_N_F_J_001": -7.717991111111111,
+      "NISAR_L2_PR_GCOV_025_142_D_073_4005_DHDH_A_20260718T012648_20260718T012723_P05023_N_F_J_001": -175.85660222222222,
+      "NISAR_L2_PR_GCOV_025_163_A_017_4005_DHDH_A_20260719T115223_20260719T115257_P05023_N_F_J_001": -210.28299111111113,
+      "NISAR_L2_PR_GCOV_026_041_D_073_4005_DHDH_A_20260723T011828_20260723T011903_P05023_N_F_J_001": -295.71771333333334,
+      "NISAR_L2_PR_GCOV_027_163_A_017_4005_DHDH_A_20260812T115221_20260812T115256_P05023_N_F_J_001": -786.2824355555556
+    }
+  },
+  {
+    "product_id": "OPERA_L3_DSWx-HLS_T14RMU_20260710T170231Z_20260713T123101Z_L9_30_v1.1",
+    "acquisition_utc": "2026-07-10T17:02:31.671Z",
+    "tile_cloud_cover_percent": "99",
+    "tile_cloud_cover_is_not_aoi_cloud_fraction": true,
+    "public_catalog_url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/OPERA_L3_DSWX-HLS_V1/OPERA_L3_DSWx-HLS_T14RMU_20260710T170231Z_20260713T123101Z_L9_30_v1.1_B01_WTR.tif",
+    "http_status": 206,
+    "status": "aoi_inspected",
+    "aoi_class_counts": {
+      "255": 76013
+    },
+    "aoi_pixel_centers": 76013,
+    "range_bytes_read": 86669,
+    "subset_path": "data/kerrville_feasibility/OPERA_L3_DSWx-HLS_T14RMU_20260710T170231Z_20260713T123101Z_L9_30_v1.1_aoi_WTR.tif",
+    "usable_water_or_nonwater_pixels": 0,
+    "class_codes": {
+      "0": "not water",
+      "1": "open water",
+      "2": "partial surface water",
+      "252": "snow/ice",
+      "253": "cloud/cloud shadow",
+      "254": "ocean masked",
+      "255": "no data"
+    },
+    "valid_fraction": 0.0,
+    "crs": "EPSG:32614",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "bounds": [
+      482640.0,
+      3319890.0,
+      490380.0,
+      3328800.0
+    ],
+    "time_difference_hours": {
+      "NISAR_L2_PR_GCOV_024_142_D_073_4005_DHDH_A_20260706T012649_20260706T012723_P05023_N_F_J_001": 111.59518638888888,
+      "NISAR_L2_PR_GCOV_024_163_A_017_4005_DHDH_A_20260707T115223_20260707T115258_P05023_N_F_J_001": 77.16907527777776,
+      "NISAR_L2_PR_GCOV_025_041_D_073_4005_DHDH_A_20260711T011829_20260711T011903_P05023_N_F_J_001": -8.265924722222223,
+      "NISAR_L2_PR_GCOV_025_142_D_073_4005_DHDH_A_20260718T012648_20260718T012723_P05023_N_F_J_001": -176.40453583333334,
+      "NISAR_L2_PR_GCOV_025_163_A_017_4005_DHDH_A_20260719T115223_20260719T115257_P05023_N_F_J_001": -210.83092472222222,
+      "NISAR_L2_PR_GCOV_026_041_D_073_4005_DHDH_A_20260723T011828_20260723T011903_P05023_N_F_J_001": -296.2656469444444,
+      "NISAR_L2_PR_GCOV_027_163_A_017_4005_DHDH_A_20260812T115221_20260812T115256_P05023_N_F_J_001": -786.8303691666666
+    }
+  },
+  {
+    "product_id": "OPERA_L3_DSWx-HLS_T14RMU_20260717T170849Z_20260719T041454Z_S2B_30_v1.1",
+    "acquisition_utc": "2026-07-17T17:25:30.744Z",
+    "tile_cloud_cover_percent": "100",
+    "tile_cloud_cover_is_not_aoi_cloud_fraction": true,
+    "public_catalog_url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/OPERA_L3_DSWX-HLS_V1/OPERA_L3_DSWx-HLS_T14RMU_20260717T170849Z_20260719T041454Z_S2B_30_v1.1_B01_WTR.tif",
+    "http_status": 206,
+    "status": "aoi_inspected",
+    "aoi_class_counts": {
+      "253": 76013
+    },
+    "aoi_pixel_centers": 76013,
+    "range_bytes_read": 85670,
+    "subset_path": "data/kerrville_feasibility/OPERA_L3_DSWx-HLS_T14RMU_20260717T170849Z_20260719T041454Z_S2B_30_v1.1_aoi_WTR.tif",
+    "usable_water_or_nonwater_pixels": 0,
+    "class_codes": {
+      "0": "not water",
+      "1": "open water",
+      "2": "partial surface water",
+      "252": "snow/ice",
+      "253": "cloud/cloud shadow",
+      "254": "ocean masked",
+      "255": "no data"
+    },
+    "valid_fraction": 0.0,
+    "crs": "EPSG:32614",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "bounds": [
+      482640.0,
+      3319890.0,
+      490380.0,
+      3328800.0
+    ],
+    "time_difference_hours": {
+      "NISAR_L2_PR_GCOV_024_142_D_073_4005_DHDH_A_20260706T012649_20260706T012723_P05023_N_F_J_001": 279.9782622222222,
+      "NISAR_L2_PR_GCOV_024_163_A_017_4005_DHDH_A_20260707T115223_20260707T115258_P05023_N_F_J_001": 245.5521511111111,
+      "NISAR_L2_PR_GCOV_025_041_D_073_4005_DHDH_A_20260711T011829_20260711T011903_P05023_N_F_J_001": 160.1171511111111,
+      "NISAR_L2_PR_GCOV_025_142_D_073_4005_DHDH_A_20260718T012648_20260718T012723_P05023_N_F_J_001": -8.021460000000001,
+      "NISAR_L2_PR_GCOV_025_163_A_017_4005_DHDH_A_20260719T115223_20260719T115257_P05023_N_F_J_001": -42.447848888888885,
+      "NISAR_L2_PR_GCOV_026_041_D_073_4005_DHDH_A_20260723T011828_20260723T011903_P05023_N_F_J_001": -127.8825711111111,
+      "NISAR_L2_PR_GCOV_027_163_A_017_4005_DHDH_A_20260812T115221_20260812T115256_P05023_N_F_J_001": -618.4472933333334
+    }
+  },
+  {
+    "product_id": "OPERA_L3_DSWx-HLS_T14RMU_20260717T170849Z_20260719T015906Z_L9_30_v1.1",
+    "acquisition_utc": "2026-07-17T17:08:49.312Z",
+    "tile_cloud_cover_percent": "99",
+    "tile_cloud_cover_is_not_aoi_cloud_fraction": true,
+    "public_catalog_url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/OPERA_L3_DSWX-HLS_V1/OPERA_L3_DSWx-HLS_T14RMU_20260717T170849Z_20260719T015906Z_L9_30_v1.1_B01_WTR.tif",
+    "http_status": 206,
+    "status": "aoi_inspected",
+    "aoi_class_counts": {
+      "253": 76013
+    },
+    "aoi_pixel_centers": 76013,
+    "range_bytes_read": 105593,
+    "subset_path": "data/kerrville_feasibility/OPERA_L3_DSWx-HLS_T14RMU_20260717T170849Z_20260719T015906Z_L9_30_v1.1_aoi_WTR.tif",
+    "usable_water_or_nonwater_pixels": 0,
+    "class_codes": {
+      "0": "not water",
+      "1": "open water",
+      "2": "partial surface water",
+      "252": "snow/ice",
+      "253": "cloud/cloud shadow",
+      "254": "ocean masked",
+      "255": "no data"
+    },
+    "valid_fraction": 0.0,
+    "crs": "EPSG:32614",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "bounds": [
+      482640.0,
+      3319890.0,
+      490380.0,
+      3328800.0
+    ],
+    "time_difference_hours": {
+      "NISAR_L2_PR_GCOV_024_142_D_073_4005_DHDH_A_20260706T012649_20260706T012723_P05023_N_F_J_001": 279.70008666666666,
+      "NISAR_L2_PR_GCOV_024_163_A_017_4005_DHDH_A_20260707T115223_20260707T115258_P05023_N_F_J_001": 245.27397555555555,
+      "NISAR_L2_PR_GCOV_025_041_D_073_4005_DHDH_A_20260711T011829_20260711T011903_P05023_N_F_J_001": 159.83897555555558,
+      "NISAR_L2_PR_GCOV_025_142_D_073_4005_DHDH_A_20260718T012648_20260718T012723_P05023_N_F_J_001": -8.299635555555556,
+      "NISAR_L2_PR_GCOV_025_163_A_017_4005_DHDH_A_20260719T115223_20260719T115257_P05023_N_F_J_001": -42.72602444444444,
+      "NISAR_L2_PR_GCOV_026_041_D_073_4005_DHDH_A_20260723T011828_20260723T011903_P05023_N_F_J_001": -128.16074666666668,
+      "NISAR_L2_PR_GCOV_027_163_A_017_4005_DHDH_A_20260812T115221_20260812T115256_P05023_N_F_J_001": -618.7254688888889
+    }
+  },
+  {
+    "product_id": "OPERA_L3_DSWx-HLS_T14RMU_20260718T170228Z_20260720T045221Z_L8_30_v1.1",
+    "acquisition_utc": "2026-07-18T17:02:28.103Z",
+    "tile_cloud_cover_percent": "77",
+    "tile_cloud_cover_is_not_aoi_cloud_fraction": true,
+    "public_catalog_url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/OPERA_L3_DSWX-HLS_V1/OPERA_L3_DSWx-HLS_T14RMU_20260718T170228Z_20260720T045221Z_L8_30_v1.1_B01_WTR.tif",
+    "http_status": 206,
+    "status": "aoi_inspected",
+    "aoi_class_counts": {
+      "255": 76013
+    },
+    "aoi_pixel_centers": 76013,
+    "range_bytes_read": 89845,
+    "subset_path": "data/kerrville_feasibility/OPERA_L3_DSWx-HLS_T14RMU_20260718T170228Z_20260720T045221Z_L8_30_v1.1_aoi_WTR.tif",
+    "usable_water_or_nonwater_pixels": 0,
+    "class_codes": {
+      "0": "not water",
+      "1": "open water",
+      "2": "partial surface water",
+      "252": "snow/ice",
+      "253": "cloud/cloud shadow",
+      "254": "ocean masked",
+      "255": "no data"
+    },
+    "valid_fraction": 0.0,
+    "crs": "EPSG:32614",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "bounds": [
+      482640.0,
+      3319890.0,
+      490380.0,
+      3328800.0
+    ],
+    "time_difference_hours": {
+      "NISAR_L2_PR_GCOV_024_142_D_073_4005_DHDH_A_20260706T012649_20260706T012723_P05023_N_F_J_001": 303.59419527777777,
+      "NISAR_L2_PR_GCOV_024_163_A_017_4005_DHDH_A_20260707T115223_20260707T115258_P05023_N_F_J_001": 269.1680841666667,
+      "NISAR_L2_PR_GCOV_025_041_D_073_4005_DHDH_A_20260711T011829_20260711T011903_P05023_N_F_J_001": 183.73308416666666,
+      "NISAR_L2_PR_GCOV_025_142_D_073_4005_DHDH_A_20260718T012648_20260718T012723_P05023_N_F_J_001": 15.594473055555556,
+      "NISAR_L2_PR_GCOV_025_163_A_017_4005_DHDH_A_20260719T115223_20260719T115257_P05023_N_F_J_001": -18.831915833333333,
+      "NISAR_L2_PR_GCOV_026_041_D_073_4005_DHDH_A_20260723T011828_20260723T011903_P05023_N_F_J_001": -104.26663805555556,
+      "NISAR_L2_PR_GCOV_027_163_A_017_4005_DHDH_A_20260812T115221_20260812T115256_P05023_N_F_J_001": -594.8313602777778
+    }
+  },
+  {
+    "product_id": "OPERA_L3_DSWx-HLS_T14RMU_20260720T171859Z_20260727T174922Z_S2B_30_v1.1",
+    "acquisition_utc": "2026-07-20T17:35:25.611Z",
+    "tile_cloud_cover_percent": "0",
+    "tile_cloud_cover_is_not_aoi_cloud_fraction": true,
+    "public_catalog_url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/OPERA_L3_DSWX-HLS_V1/OPERA_L3_DSWx-HLS_T14RMU_20260720T171859Z_20260727T174922Z_S2B_30_v1.1_B01_WTR.tif",
+    "http_status": 206,
+    "status": "aoi_inspected",
+    "aoi_class_counts": {
+      "255": 76013
+    },
+    "aoi_pixel_centers": 76013,
+    "range_bytes_read": 92521,
+    "subset_path": "data/kerrville_feasibility/OPERA_L3_DSWx-HLS_T14RMU_20260720T171859Z_20260727T174922Z_S2B_30_v1.1_aoi_WTR.tif",
+    "usable_water_or_nonwater_pixels": 0,
+    "class_codes": {
+      "0": "not water",
+      "1": "open water",
+      "2": "partial surface water",
+      "252": "snow/ice",
+      "253": "cloud/cloud shadow",
+      "254": "ocean masked",
+      "255": "no data"
+    },
+    "valid_fraction": 0.0,
+    "crs": "EPSG:32614",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "bounds": [
+      482640.0,
+      3319890.0,
+      490380.0,
+      3328800.0
+    ],
+    "time_difference_hours": {
+      "NISAR_L2_PR_GCOV_024_142_D_073_4005_DHDH_A_20260706T012649_20260706T012723_P05023_N_F_J_001": 352.1435030555556,
+      "NISAR_L2_PR_GCOV_024_163_A_017_4005_DHDH_A_20260707T115223_20260707T115258_P05023_N_F_J_001": 317.71739194444444,
+      "NISAR_L2_PR_GCOV_025_041_D_073_4005_DHDH_A_20260711T011829_20260711T011903_P05023_N_F_J_001": 232.28239194444444,
+      "NISAR_L2_PR_GCOV_025_142_D_073_4005_DHDH_A_20260718T012648_20260718T012723_P05023_N_F_J_001": 64.14378083333334,
+      "NISAR_L2_PR_GCOV_025_163_A_017_4005_DHDH_A_20260719T115223_20260719T115257_P05023_N_F_J_001": 29.717391944444447,
+      "NISAR_L2_PR_GCOV_026_041_D_073_4005_DHDH_A_20260723T011828_20260723T011903_P05023_N_F_J_001": -55.717330277777776,
+      "NISAR_L2_PR_GCOV_027_163_A_017_4005_DHDH_A_20260812T115221_20260812T115256_P05023_N_F_J_001": -546.2820525
+    }
+  },
+  {
+    "product_id": "OPERA_L3_DSWx-HLS_T14RMU_20260724T171505Z_20260726T022312Z_L9_30_v1.1",
+    "acquisition_utc": "2026-07-24T17:15:05.611Z",
+    "tile_cloud_cover_percent": "65",
+    "tile_cloud_cover_is_not_aoi_cloud_fraction": true,
+    "public_catalog_url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/OPERA_L3_DSWX-HLS_V1/OPERA_L3_DSWx-HLS_T14RMU_20260724T171505Z_20260726T022312Z_L9_30_v1.1_B01_WTR.tif",
+    "http_status": 206,
+    "status": "aoi_inspected",
+    "aoi_class_counts": {
+      "255": 76013
+    },
+    "aoi_pixel_centers": 76013,
+    "range_bytes_read": 110482,
+    "subset_path": "data/kerrville_feasibility/OPERA_L3_DSWx-HLS_T14RMU_20260724T171505Z_20260726T022312Z_L9_30_v1.1_aoi_WTR.tif",
+    "usable_water_or_nonwater_pixels": 0,
+    "class_codes": {
+      "0": "not water",
+      "1": "open water",
+      "2": "partial surface water",
+      "252": "snow/ice",
+      "253": "cloud/cloud shadow",
+      "254": "ocean masked",
+      "255": "no data"
+    },
+    "valid_fraction": 0.0,
+    "crs": "EPSG:32614",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "bounds": [
+      482640.0,
+      3319890.0,
+      490380.0,
+      3328800.0
+    ],
+    "time_difference_hours": {
+      "NISAR_L2_PR_GCOV_024_142_D_073_4005_DHDH_A_20260706T012649_20260706T012723_P05023_N_F_J_001": 447.8046141666667,
+      "NISAR_L2_PR_GCOV_024_163_A_017_4005_DHDH_A_20260707T115223_20260707T115258_P05023_N_F_J_001": 413.37850305555554,
+      "NISAR_L2_PR_GCOV_025_041_D_073_4005_DHDH_A_20260711T011829_20260711T011903_P05023_N_F_J_001": 327.94350305555554,
+      "NISAR_L2_PR_GCOV_025_142_D_073_4005_DHDH_A_20260718T012648_20260718T012723_P05023_N_F_J_001": 159.80489194444445,
+      "NISAR_L2_PR_GCOV_025_163_A_017_4005_DHDH_A_20260719T115223_20260719T115257_P05023_N_F_J_001": 125.37850305555556,
+      "NISAR_L2_PR_GCOV_026_041_D_073_4005_DHDH_A_20260723T011828_20260723T011903_P05023_N_F_J_001": 39.943780833333335,
+      "NISAR_L2_PR_GCOV_027_163_A_017_4005_DHDH_A_20260812T115221_20260812T115256_P05023_N_F_J_001": -450.62094138888887
+    }
+  },
+  {
+    "product_id": "OPERA_L3_DSWx-HLS_T14RMU_20260724T171721Z_20260728T004601Z_S2A_30_v1.1",
+    "acquisition_utc": "2026-07-24T17:25:48.402Z",
+    "tile_cloud_cover_percent": "66",
+    "tile_cloud_cover_is_not_aoi_cloud_fraction": true,
+    "public_catalog_url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/OPERA_L3_DSWX-HLS_V1/OPERA_L3_DSWx-HLS_T14RMU_20260724T171721Z_20260728T004601Z_S2A_30_v1.1_B01_WTR.tif",
+    "http_status": 206,
+    "status": "aoi_inspected",
+    "aoi_class_counts": {
+      "0": 5,
+      "253": 76008
+    },
+    "aoi_pixel_centers": 76013,
+    "range_bytes_read": 131072,
+    "subset_path": "data/kerrville_feasibility/OPERA_L3_DSWx-HLS_T14RMU_20260724T171721Z_20260728T004601Z_S2A_30_v1.1_aoi_WTR.tif",
+    "usable_water_or_nonwater_pixels": 5,
+    "class_codes": {
+      "0": "not water",
+      "1": "open water",
+      "2": "partial surface water",
+      "252": "snow/ice",
+      "253": "cloud/cloud shadow",
+      "254": "ocean masked",
+      "255": "no data"
+    },
+    "valid_fraction": 6.577822214621183e-05,
+    "crs": "EPSG:32614",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "bounds": [
+      482640.0,
+      3319890.0,
+      490380.0,
+      3328800.0
+    ],
+    "time_difference_hours": {
+      "NISAR_L2_PR_GCOV_024_142_D_073_4005_DHDH_A_20260706T012649_20260706T012723_P05023_N_F_J_001": 447.9831672222222,
+      "NISAR_L2_PR_GCOV_024_163_A_017_4005_DHDH_A_20260707T115223_20260707T115258_P05023_N_F_J_001": 413.55705611111114,
+      "NISAR_L2_PR_GCOV_025_041_D_073_4005_DHDH_A_20260711T011829_20260711T011903_P05023_N_F_J_001": 328.12205611111114,
+      "NISAR_L2_PR_GCOV_025_142_D_073_4005_DHDH_A_20260718T012648_20260718T012723_P05023_N_F_J_001": 159.983445,
+      "NISAR_L2_PR_GCOV_025_163_A_017_4005_DHDH_A_20260719T115223_20260719T115257_P05023_N_F_J_001": 125.55705611111111,
+      "NISAR_L2_PR_GCOV_026_041_D_073_4005_DHDH_A_20260723T011828_20260723T011903_P05023_N_F_J_001": 40.12233388888889,
+      "NISAR_L2_PR_GCOV_027_163_A_017_4005_DHDH_A_20260812T115221_20260812T115256_P05023_N_F_J_001": -450.4423883333333
+    }
+  },
+  {
+    "product_id": "OPERA_L3_DSWx-HLS_T14RMU_20260709T170835Z_20260712T112028Z_L8_30_v1.1",
+    "acquisition_utc": "2026-07-09T17:08:35.773Z",
+    "tile_cloud_cover_percent": "0",
+    "tile_cloud_cover_is_not_aoi_cloud_fraction": true,
+    "public_catalog_url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/OPERA_L3_DSWX-HLS_V1/OPERA_L3_DSWx-HLS_T14RMU_20260709T170835Z_20260712T112028Z_L8_30_v1.1_B01_WTR.tif",
+    "http_status": 206,
+    "status": "aoi_inspected",
+    "aoi_class_counts": {
+      "0": 75244,
+      "1": 426,
+      "2": 323,
+      "255": 20
+    },
+    "aoi_pixel_centers": 76013,
+    "range_bytes_read": 65536,
+    "subset_path": "data/kerrville_feasibility/OPERA_L3_DSWx-HLS_T14RMU_20260709T170835Z_20260712T112028Z_L8_30_v1.1_aoi_WTR.tif",
+    "usable_water_or_nonwater_pixels": 75993,
+    "class_codes": {
+      "0": "not water",
+      "1": "open water",
+      "2": "partial surface water",
+      "252": "snow/ice",
+      "253": "cloud/cloud shadow",
+      "254": "ocean masked",
+      "255": "no data"
+    },
+    "valid_fraction": 0.9997368871114152,
+    "crs": "EPSG:32614",
+    "resolution_m": [
+      30.0,
+      30.0
+    ],
+    "bounds": [
+      482640.0,
+      3319890.0,
+      490380.0,
+      3328800.0
+    ],
+    "time_difference_hours": {
+      "NISAR_L2_PR_GCOV_024_142_D_073_4005_DHDH_A_20260706T012649_20260706T012723_P05023_N_F_J_001": 87.69632583333333,
+      "NISAR_L2_PR_GCOV_024_163_A_017_4005_DHDH_A_20260707T115223_20260707T115258_P05023_N_F_J_001": 53.27021472222222,
+      "NISAR_L2_PR_GCOV_025_041_D_073_4005_DHDH_A_20260711T011829_20260711T011903_P05023_N_F_J_001": -32.164785277777774,
+      "NISAR_L2_PR_GCOV_025_142_D_073_4005_DHDH_A_20260718T012648_20260718T012723_P05023_N_F_J_001": -200.30339638888887,
+      "NISAR_L2_PR_GCOV_025_163_A_017_4005_DHDH_A_20260719T115223_20260719T115257_P05023_N_F_J_001": -234.72978527777778,
+      "NISAR_L2_PR_GCOV_026_041_D_073_4005_DHDH_A_20260723T011828_20260723T011903_P05023_N_F_J_001": -320.1645075,
+      "NISAR_L2_PR_GCOV_027_163_A_017_4005_DHDH_A_20260812T115221_20260812T115256_P05023_N_F_J_001": -810.7292297222222
+    }
+  }
+]

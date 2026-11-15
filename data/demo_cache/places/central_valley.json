@@ -1,0 +1,49 @@
+{
+  "place": "central_valley",
+  "lat": 36.6,
+  "lon": -120.1,
+  "window_km": 5.0,
+  "surface": "irrigated agriculture",
+  "group": {
+    "instrument": "L",
+    "track": "034",
+    "direction": "A",
+    "frame": "020",
+    "bandwidth": "4005",
+    "polarization": "DHDH",
+    "source": "A",
+    "crid": "P05023"
+  },
+  "dates": [
+    "2026-06-04",
+    "2026-06-16",
+    "2026-06-28",
+    "2026-07-10",
+    "2026-07-22",
+    "2026-08-15"
+  ],
+  "product_ids": [
+    "NISAR_L2_PR_GCOV_022_034_A_020_4005_DHDH_A_20260604T130901_20260604T130935_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_023_034_A_020_4005_DHDH_A_20260616T130900_20260616T130935_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_024_034_A_020_4005_DHDH_A_20260628T130859_20260628T130934_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_025_034_A_020_4005_DHDH_A_20260710T130859_20260710T130933_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_026_034_A_020_4005_DHDH_A_20260722T130858_20260722T130933_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_028_034_A_020_4005_DHDH_A_20260815T130857_20260815T130931_P05023_N_F_J_001"
+  ],
+  "cache_keys": [
+    "f145fb76f79994ca5e5c23ab26b93de790ead62bf71e25b436976dc0a98f5b0d",
+    "83d3ae4b7c2846b8cda5231c26808f9dc9c82d952830f0eb28c8fed3401fce6d",
+    "37e3389f3145c1c1e3e408fd0c9f1a44c53039bbd679e223cd2fd12a47498dea",
+    "c279b85a5fe17a364f12a0143adcca488ab09f577c16cfbcb8dfb13b0fbef2d2",
+    "dcae61fe49109ed84e28a5be20d0fb3f2341be0bb844acde05ea51e2eb6a63cd",
+    "49a9e9e50b1f195461ca93bd0f8f5604a4268197adcbfaff194a8166469106ba"
+  ],
+  "selection_rule": "Largest compatible HH+HV group returned by src.live_engine.group_products for the date range (ties: catalog order); its first max_dates acquisition dates; window_km square centred on the point.",
+  "catalog_snapshot": "catalog/central_valley.json",
+  "processing_version": "live-window-v1",
+  "status": "cached",
+  "read_seconds": 225.3,
+  "range_bytes_read": 92274736,
+  "dates_reused": 0,
+  "prewarmed_utc": "2026-11-15T01:17:25.772521+00:00"
+}

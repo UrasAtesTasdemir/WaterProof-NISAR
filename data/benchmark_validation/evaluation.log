@@ -1,0 +1,44 @@
+TRAIN-ONLY CONFIG {'band_index': 1, 'band': 'VH', 'threshold_db': -20.5, 'training_macro_F1': 0.3682830684661647, 'input_units': 'dB', 'filter': '3x3 mask-aware linear-power mean; radar-valid support only, never label-valid support', 'objective': 'Mean per-chip training F1, undefined F1 counted as0; ties choose first VV then most-negative threshold. Grid -30..-8dB step0.5. No NISAR -16dB reuse.', 'calibration_split': 'official train subset', 'evaluation_split': 'official test subset', 'baseline': 'Per-image 256-bin Otsu on same selected band after same filtering, histogram uses radar validity only, never test annotations.'}
+{
+  "train_scenes": 12,
+  "test_scenes": 12,
+  "test_valid_pixels": 2406776,
+  "test_micro_metrics": {
+    "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+    "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+      [
+        1976949,
+        143271
+      ],
+      [
+        71213,
+        215343
+      ]
+    ],
+    "precision": 0.6004868744666968,
+    "recall": 0.7514866204162537,
+    "F1": 0.6675542880171118,
+    "IoU": 0.500999239228806,
+    "valid_pixels": 2406776
+  },
+  "baseline_micro_metrics": {
+    "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+    "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+      [
+        1514401,
+        605819
+      ],
+      [
+        73970,
+        212586
+      ]
+    ],
+    "precision": 0.25975647753862696,
+    "recall": 0.7418654643420484,
+    "F1": 0.3847846213576769,
+    "IoU": 0.23822496147919878,
+    "valid_pixels": 2406776
+  },
+  "worst_scene": "India_44475",
+  "download_bytes": 39714432
+}

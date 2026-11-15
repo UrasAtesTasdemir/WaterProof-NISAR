@@ -1,0 +1,15 @@
+Verified 2026-06-21 138779 valid pixels
+Verified 2026-07-03 138779 valid pixels
+Reading only the real HHHH window: 2026-07-15
+  Metadata inspected: full grid (34632, 35208); loading window (257, 579), EPSG:32615
+Verified 2026-07-15 138779 valid pixels
+Reading only the real HHHH window: 2026-07-27
+  Metadata inspected: full grid (34632, 35208); loading window (257, 579), EPSG:32615
+Verified 2026-07-27 138779 valid pixels
+Reading only the real HHHH window: 2026-08-20
+  Metadata inspected: full grid (34632, 35208); loading window (257, 579), EPSG:32615
+Verified 2026-08-20 138779 valid pixels
+Reading only the real HHHH window: 2026-09-01
+  Metadata inspected: full grid (34632, 35208); loading window (257, 579), EPSG:32615
+Verified 2026-09-01 138779 valid pixels
+SUCCESS: six real dates; 13.8779 km² common valid area

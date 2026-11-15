@@ -1,0 +1,36 @@
+{
+  "description": "Sidecar for data/placebo (placebo / null check, docs/PLACEBO_METHOD.md)",
+  "outputs_sha256": {
+    "results.json": "a69266dee503bfd01a97c96a573fc9925c1629204cf5c2d2633c0e82bae04971",
+    "summary.csv": "60985cb5327539fabb571bb8b2f693a368e3ab85627f023a2b8d0da35108d38b"
+  },
+  "seed": {
+    "base_seed": 20261115,
+    "rule": "base_seed + candidate id"
+  },
+  "parameters": {
+    "draws": 2000,
+    "base_seed": 20261115,
+    "seed_rule": "base_seed + candidate id",
+    "min_placements": 200,
+    "min_ring_pixels": 20,
+    "min_spacing_px": 10,
+    "pixel_size_m": 10,
+    "ring": "src.robustness.ring_mask: 50-150 m, common mask, all saved candidates excluded",
+    "statistic": "candidate (or placement) median change minus ring median change, seed interval, raw",
+    "exceedance_fraction": "(count(|null| >= |candidate|) + 1) / (placements + 1)"
+  },
+  "code_version": {
+    "version": "placebo-v1",
+    "src/placebo.py": "1f45f2b655d1653f9c14b242423dce7f46be0e16cc46679b58a2d020c5e16ea8",
+    "scripts/process_placebo.py": "44d49e7e5f1b0239a16e3936298355af5628235ea26865c8090d5f61b2b4ba85",
+    "src/robustness.py": "750dd5acd2e3b426b2da02481c7ae47000e78293541e6c94f39944034d2ba408"
+  },
+  "sources_sha256": {
+    "data/polarization_analysis/six_date/hh_hv_cube.nc": "433f905331d03b892692ca251ae0fbf86b6f4fdd51932e9936b2dd7efa6fc199",
+    "data/polarization_analysis/six_date/results.json": "68be4b5505ec49bef8da3ae47b64d24c0080060854d1315f2ab79fb0ac134786",
+    "data/investigation_engine/region_labels.tif": "66f85652615878a2c6ee0b1f3f3d86f7aff85808fcdc4d53958ed1401cc1b088",
+    "data/investigation_engine/results.json": "be118b6eb04cad6d7784f6e84f20990426688fe7efad887dd13aa5453c9470f3",
+    "data/robustness_v2/results.json": "03418c702cc0627eafc0bd18ea51d5a8719b7498eac117dc0608b81f0952bd79"
+  }
+}

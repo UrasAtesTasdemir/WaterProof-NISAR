@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "test_count": 22,
+  "server_health": "HTTP 200 ok",
+  "default_metrics": {
+    "expansion": 0.056900000000000006,
+    "recession": 0.0005,
+    "net": 0.056400000000000006,
+    "valid_area": 13.8779
+  },
+  "apptest_water_thresholds_db": [
+    -16,
+    -14,
+    -18,
+    -20
+  ],
+  "apptest_minimum_changes_db": [
+    0,
+    3,
+    8
+  ],
+  "real_browser_thresholds_db": [
+    -16,
+    -14,
+    -18
+  ],
+  "browser_sensitivity_tab_checked": true,
+  "layouts_inspected": "default narrow viewport and 1440 x 1000; not exhaustive device coverage",
+  "network_blocked_app_test_passed": true,
+  "original_files_hashes_unchanged": true,
+  "scientific_validation": "independent validation unavailable"
+}

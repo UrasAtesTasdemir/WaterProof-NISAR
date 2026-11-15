@@ -1,0 +1,18 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0}iframe{width:100%;height:360px;border:0}</style></head>
+<body><iframe id="map" title="Precise geographic selection"></iframe><script>
+const frame=document.getElementById('map');let previous='';
+const send=(type,extra={})=>parent.postMessage({isStreamlitMessage:true,type,...extra},'*');
+window.addEventListener('message',event=>{
+ if(event.source===parent && event.data.type==='streamlit:render'){
+  const html=event.data.args.html;
+  if(html!==previous){frame.srcdoc=html;previous=html;}
+  send('streamlit:setFrameHeight',{height:360});
+ }
+ if(event.source===frame.contentWindow && event.data.type==='nisar:point'){
+  const {lat,lon}=event.data;
+  if(Number.isFinite(lat)&&Number.isFinite(lon)&&Math.abs(lat)<=84&&Math.abs(lon)<=180)
+   send('streamlit:setComponentValue',{value:{lat,lon,sequence:Date.now()},dataType:'json'});
+ }
+});
+send('streamlit:componentReady',{apiVersion:1});send('streamlit:setFrameHeight',{height:360});
+</script></body></html>

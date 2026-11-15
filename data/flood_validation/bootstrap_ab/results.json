@@ -1,0 +1,399 @@
+{
+ "created_utc": "2026-11-15T06:07:06.079052+00:00",
+ "deviation": 4,
+ "bootstrap": {
+  "block_m": 1000.0,
+  "resamples": 1000,
+  "seed": 20261115,
+  "interval": "2.5/97.5 percentiles"
+ },
+ "context": {
+  "dem_source": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N14_00_E101_00_DEM/Copernicus_DSM_COG_10_N14_00_E101_00_DEM.tif",
+  "dem_bytes_read": 1769488,
+  "osm_fetched_utc": "2026-11-15T06:06:56.637587+00:00",
+  "river_lines": 26,
+  "landuse_polygons": {
+   "residential": 4,
+   "commercial": 0,
+   "industrial": 0,
+   "retail": 2,
+   "farmland": 2,
+   "aquaculture": 0
+  },
+  "grid": {
+   "shape": [
+    1021,
+    1021
+   ],
+   "transform": [
+    10.0,
+    0.0,
+    751100.0,
+    0.0,
+    -10.0,
+    1560100.0
+   ],
+   "crs": "EPSG:32647"
+  }
+ },
+ "results": {
+  "a": {
+   "track": "004 D",
+   "primary_rows": {
+    "new open water (during minus pre) | S1 primary": {
+     "point": {
+      "TP": 198761,
+      "FP": 56205,
+      "FN": 123388,
+      "TN": 598915,
+      "invalid": 65172,
+      "precision": 0.7795588431398697,
+      "recall": 0.6169846872099557,
+      "F1": 0.6888089895428121,
+      "IoU": 0.5253307748827817,
+      "reference_positive_share": 0.32964209444891834
+     },
+     "matches_saved_point_estimate": true,
+     "ci95": {
+      "blocks": 121,
+      "block_px": 100,
+      "resamples": 1000,
+      "seed": 20261115,
+      "precision": [
+       0.707244629093136,
+       0.8361246647594861
+      ],
+      "recall": [
+       0.5531198446085064,
+       0.6771110099342127
+      ],
+      "F1": [
+       0.6345481449756497,
+       0.7369035241408388
+      ],
+      "IoU": [
+       0.46471660168072076,
+       0.5834103286181604
+      ]
+     }
+    },
+    "open water presence (during) | S1 primary": {
+     "point": {
+      "TP": 246558,
+      "FP": 69332,
+      "FN": 90942,
+      "TN": 579464,
+      "invalid": 56145,
+      "precision": 0.7805185349330463,
+      "recall": 0.7305422222222222,
+      "F1": 0.7547039287408746,
+      "IoU": 0.6060437723679554,
+      "reference_positive_share": 0.3421893630309765
+     },
+     "matches_saved_point_estimate": true,
+     "ci95": {
+      "blocks": 121,
+      "block_px": 100,
+      "resamples": 1000,
+      "seed": 20261115,
+      "precision": [
+       0.7162761593734351,
+       0.8348884777311807
+      ],
+      "recall": [
+       0.6611010464823339,
+       0.7949562305450792
+      ],
+      "F1": [
+       0.7030925294933286,
+       0.8011661014115986
+      ],
+      "IoU": [
+       0.5421300790085313,
+       0.668287855834978
+      ]
+     }
+    },
+    "open water presence (during) | HLS sensitivity": {
+     "point": {
+      "TP": 278631,
+      "FP": 157,
+      "FN": 260293,
+      "TN": 291011,
+      "invalid": 212349,
+      "precision": 0.9994368480709356,
+      "recall": 0.5170135306648062,
+      "F1": 0.6814893263153775,
+      "IoU": 0.5168629575147334,
+      "reference_positive_share": 0.6492340608028989
+     },
+     "matches_saved_point_estimate": true,
+     "ci95": {
+      "blocks": 121,
+      "block_px": 100,
+      "resamples": 1000,
+      "seed": 20261115,
+      "precision": [
+       0.9989833654076041,
+       0.9997696159316936
+      ],
+      "recall": [
+       0.44959169779674824,
+       0.5787701824758157
+      ],
+      "F1": [
+       0.6201419331060701,
+       0.7330121235550388
+      ],
+      "IoU": [
+       0.4494244360036782,
+       0.5785470751019121
+      ]
+     }
+    }
+   },
+   "new_water_FP": {
+    "pixels": 56205,
+    "river channel (<=100 m of OSM river)": 0.05938973400942977,
+    "near river (100 m - 1 km)": 0.3240103193666044,
+    "S1 flood edge (+-60 m)": 0.3912107463748777,
+    "OSM built-up (residential/commercial/industrial/retail)": 0.0007650564896361534,
+    "OSM farmland": 0.02204430210835335,
+    "OSM aquaculture": 0.0,
+    "slope > 5 deg": 0.005355395427453074,
+    "HLS 10-02 open water": 0.9003825282448181,
+    "baseline_river channel (<=100 m of OSM river)": 0.06505373648401822,
+    "baseline_near river (100 m - 1 km)": 0.4802270408659233,
+    "baseline_S1 flood edge (+-60 m)": 0.30090179878825585,
+    "baseline_OSM built-up (residential/commercial/industrial/retail)": 0.10025489399540966,
+    "baseline_OSM farmland": 0.0428346749973651,
+    "baseline_OSM aquaculture": 0.0,
+    "baseline_slope > 5 deg": 0.058058733061214465,
+    "baseline_HLS 10-02 open water": 0.5398953614613786
+   },
+   "new_water_FN": {
+    "pixels": 123388,
+    "river channel (<=100 m of OSM river)": 0.015876746523162705,
+    "near river (100 m - 1 km)": 0.3586815573637631,
+    "S1 flood edge (+-60 m)": 0.5588874120660032,
+    "OSM built-up (residential/commercial/industrial/retail)": 0.0005186890135183324,
+    "OSM farmland": 0.07031477939507894,
+    "OSM aquaculture": 0.0,
+    "slope > 5 deg": 0.0007294064252601549,
+    "HLS 10-02 open water": 0.9034346938113917,
+    "baseline_river channel (<=100 m of OSM river)": 0.06505373648401822,
+    "baseline_near river (100 m - 1 km)": 0.4802270408659233,
+    "baseline_S1 flood edge (+-60 m)": 0.30090179878825585,
+    "baseline_OSM built-up (residential/commercial/industrial/retail)": 0.10025489399540966,
+    "baseline_OSM farmland": 0.0428346749973651,
+    "baseline_OSM aquaculture": 0.0,
+    "baseline_slope > 5 deg": 0.058058733061214465,
+    "baseline_HLS 10-02 open water": 0.5398953614613786
+   },
+   "new_water_TP": {
+    "pixels": 198761,
+    "river channel (<=100 m of OSM river)": 0.013367813605284738,
+    "near river (100 m - 1 km)": 0.4030569377292326,
+    "S1 flood edge (+-60 m)": 0.4738001921906209,
+    "OSM built-up (residential/commercial/industrial/retail)": 0.0,
+    "OSM farmland": 0.1266848124128979,
+    "OSM aquaculture": 0.0,
+    "slope > 5 deg": 0.0006540518512182973,
+    "HLS 10-02 open water": 0.8814505863826405,
+    "baseline_river channel (<=100 m of OSM river)": 0.06505373648401822,
+    "baseline_near river (100 m - 1 km)": 0.4802270408659233,
+    "baseline_S1 flood edge (+-60 m)": 0.30090179878825585,
+    "baseline_OSM built-up (residential/commercial/industrial/retail)": 0.10025489399540966,
+    "baseline_OSM farmland": 0.0428346749973651,
+    "baseline_OSM aquaculture": 0.0,
+    "baseline_slope > 5 deg": 0.058058733061214465,
+    "baseline_HLS 10-02 open water": 0.5398953614613786
+   },
+   "mechanisms": {
+    "FN_after_not_dark": 0.7107741433526761,
+    "FN_already_dark_before": 0.09919927383538107,
+    "FN_change_below_3dB": 0.5146286510843843,
+    "FP_median_dHH_db": -7.0789747886186305
+   }
+  },
+  "b": {
+   "track": "011 A",
+   "primary_rows": {
+    "new open water (during minus pre) | S1 primary": {
+     "point": {
+      "TP": 246283,
+      "FP": 66069,
+      "FN": 75866,
+      "TN": 589051,
+      "invalid": 65172,
+      "precision": 0.7884790236656081,
+      "recall": 0.7645002778217533,
+      "F1": 0.7763045290708762,
+      "IoU": 0.6343935623799,
+      "reference_positive_share": 0.32964209444891834
+     },
+     "matches_saved_point_estimate": true,
+     "ci95": {
+      "blocks": 121,
+      "block_px": 100,
+      "resamples": 1000,
+      "seed": 20261115,
+      "precision": [
+       0.7302838411021814,
+       0.8389124387931612
+      ],
+      "recall": [
+       0.7309010797739001,
+       0.7974074603985832
+      ],
+      "F1": [
+       0.738687084580475,
+       0.8075750493230923
+      ],
+      "IoU": [
+       0.5856493472850344,
+       0.6772544059508916
+      ]
+     }
+    },
+    "open water presence (during) | S1 primary": {
+     "point": {
+      "TP": 293973,
+      "FP": 84833,
+      "FN": 43527,
+      "TN": 563963,
+      "invalid": 56145,
+      "precision": 0.7760515936917578,
+      "recall": 0.8710311111111111,
+      "F1": 0.820802841243826,
+      "IoU": 0.6960692155242427,
+      "reference_positive_share": 0.3421893630309765
+     },
+     "matches_saved_point_estimate": true,
+     "ci95": {
+      "blocks": 121,
+      "block_px": 100,
+      "resamples": 1000,
+      "seed": 20261115,
+      "precision": [
+       0.7195569570151626,
+       0.8230387265268531
+      ],
+      "recall": [
+       0.8392610842938285,
+       0.9013622681539663
+      ],
+      "F1": [
+       0.7846360341878842,
+       0.8493155370426354
+      ],
+      "IoU": [
+       0.6455975800781764,
+       0.7380959575681588
+      ]
+     }
+    },
+    "open water presence (during) | HLS sensitivity": {
+     "point": {
+      "TP": 336605,
+      "FP": 271,
+      "FN": 202319,
+      "TN": 290897,
+      "invalid": 212349,
+      "precision": 0.9991955496978117,
+      "recall": 0.6245871403017865,
+      "F1": 0.7686800639415392,
+      "IoU": 0.6242732221181576,
+      "reference_positive_share": 0.6492340608028989
+     },
+     "matches_saved_point_estimate": true,
+     "ci95": {
+      "blocks": 121,
+      "block_px": 100,
+      "resamples": 1000,
+      "seed": 20261115,
+      "precision": [
+       0.9982744946601719,
+       0.9996988644733134
+      ],
+      "recall": [
+       0.5780067457935059,
+       0.6699463159331203
+      ],
+      "F1": [
+       0.732358955298092,
+       0.8022304351474882
+      ],
+      "IoU": [
+       0.5777337456068813,
+       0.6697702761219816
+      ]
+     }
+    }
+   },
+   "new_water_FP": {
+    "pixels": 66069,
+    "river channel (<=100 m of OSM river)": 0.05771239159060982,
+    "near river (100 m - 1 km)": 0.3723380102619988,
+    "S1 flood edge (+-60 m)": 0.4048192041653423,
+    "OSM built-up (residential/commercial/industrial/retail)": 0.005918055366359412,
+    "OSM farmland": 0.02943891991705641,
+    "OSM aquaculture": 0.0,
+    "slope > 5 deg": 0.004101772389471613,
+    "HLS 10-02 open water": 0.9001044362711711,
+    "baseline_river channel (<=100 m of OSM river)": 0.06505373648401822,
+    "baseline_near river (100 m - 1 km)": 0.4802270408659233,
+    "baseline_S1 flood edge (+-60 m)": 0.30090179878825585,
+    "baseline_OSM built-up (residential/commercial/industrial/retail)": 0.10025489399540966,
+    "baseline_OSM farmland": 0.0428346749973651,
+    "baseline_OSM aquaculture": 0.0,
+    "baseline_slope > 5 deg": 0.058058733061214465,
+    "baseline_HLS 10-02 open water": 0.5398953614613786
+   },
+   "new_water_FN": {
+    "pixels": 75866,
+    "river channel (<=100 m of OSM river)": 0.017926343816729497,
+    "near river (100 m - 1 km)": 0.2775024385100045,
+    "S1 flood edge (+-60 m)": 0.6089420820921098,
+    "OSM built-up (residential/commercial/industrial/retail)": 0.000685419028286716,
+    "OSM farmland": 0.04266733451084807,
+    "OSM aquaculture": 0.0,
+    "slope > 5 deg": 0.0008831360556771149,
+    "HLS 10-02 open water": 0.8997970105185459,
+    "baseline_river channel (<=100 m of OSM river)": 0.06505373648401822,
+    "baseline_near river (100 m - 1 km)": 0.4802270408659233,
+    "baseline_S1 flood edge (+-60 m)": 0.30090179878825585,
+    "baseline_OSM built-up (residential/commercial/industrial/retail)": 0.10025489399540966,
+    "baseline_OSM farmland": 0.0428346749973651,
+    "baseline_OSM aquaculture": 0.0,
+    "baseline_slope > 5 deg": 0.058058733061214465,
+    "baseline_HLS 10-02 open water": 0.5398953614613786
+   },
+   "new_water_TP": {
+    "pixels": 246283,
+    "river channel (<=100 m of OSM river)": 0.013220563335674814,
+    "near river (100 m - 1 km)": 0.4195011429940353,
+    "S1 flood edge (+-60 m)": 0.4747993162337636,
+    "OSM built-up (residential/commercial/industrial/retail)": 4.872443489806442e-05,
+    "OSM farmland": 0.12432445601198622,
+    "OSM aquaculture": 0.0,
+    "slope > 5 deg": 0.0006212365449503214,
+    "HLS 10-02 open water": 0.8868131377317964,
+    "baseline_river channel (<=100 m of OSM river)": 0.06505373648401822,
+    "baseline_near river (100 m - 1 km)": 0.4802270408659233,
+    "baseline_S1 flood edge (+-60 m)": 0.30090179878825585,
+    "baseline_OSM built-up (residential/commercial/industrial/retail)": 0.10025489399540966,
+    "baseline_OSM farmland": 0.0428346749973651,
+    "baseline_OSM aquaculture": 0.0,
+    "baseline_slope > 5 deg": 0.058058733061214465,
+    "baseline_HLS 10-02 open water": 0.5398953614613786
+   },
+   "mechanisms": {
+    "FN_after_not_dark": 0.5304088788126433,
+    "FN_already_dark_before": 0.21618379774866212,
+    "FN_change_below_3dB": 0.5974613133683073,
+    "FP_median_dHH_db": -7.181995533891573
+   }
+  }
+ }
+}

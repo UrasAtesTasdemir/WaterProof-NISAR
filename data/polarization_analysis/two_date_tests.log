@@ -1,0 +1,13 @@
+test_actual_hvhv_sources_positive_linear_power_and_no_band_mix (test_polarization.PolarizationTests.test_actual_hvhv_sources_positive_linear_power_and_no_band_mix) ... ok
+test_actual_matching_grid_native_area_and_temporal_statistics (test_polarization.PolarizationTests.test_actual_matching_grid_native_area_and_temporal_statistics) ... ok
+test_linear_power_db_ratio_and_joint_invalid_centers (test_polarization.PolarizationTests.test_linear_power_db_ratio_and_joint_invalid_centers) ... ok
+test_reader_selects_real_power_term_explicitly (test_polarization.PolarizationTests.test_reader_selects_real_power_term_explicitly) ...   Metadata inspected: full grid (3, 3); loading window (3, 3), EPSG:4326
+  Metadata inspected: full grid (3, 3); loading window (3, 3), EPSG:4326
+  Metadata inspected: full grid (3, 3); loading window (3, 3), EPSG:4326
+ok
+test_separate_change_sign_same_date_and_no_valid_pair (test_polarization.PolarizationTests.test_separate_change_sign_same_date_and_no_valid_pair) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.281s
+
+OK

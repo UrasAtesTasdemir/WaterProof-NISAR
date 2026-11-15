@@ -1,0 +1,34 @@
+{
+  "checked_at_utc": "2026-11-14T07:57:14.994769+00:00",
+  "status": "product_access_verified",
+  "products": [
+    {
+      "product_id": "NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001",
+      "redirects": [
+        {
+          "http_status": 303,
+          "from_host": "nisar.asf.earthdatacloud.nasa.gov",
+          "to_host": "d1mv8zhcvry6x4.cloudfront.net"
+        }
+      ],
+      "http_status": 206,
+      "hdf5_signature_verified": true,
+      "bytes_read": 8
+    },
+    {
+      "product_id": "NISAR_L2_PR_GCOV_024_105_A_017_4005_DHDH_A_20260703T111905_20260703T111940_P05023_N_F_J_001",
+      "redirects": [
+        {
+          "http_status": 303,
+          "from_host": "nisar.asf.earthdatacloud.nasa.gov",
+          "to_host": "d1mv8zhcvry6x4.cloudfront.net"
+        }
+      ],
+      "http_status": 206,
+      "hdf5_signature_verified": true,
+      "bytes_read": 8
+    }
+  ],
+  "full_products_downloaded": false,
+  "detail": "Both HDF5 signatures verified using eight-byte HTTPS ranges. HHHH layers and radar arrays have not been read."
+}

@@ -1,0 +1,13 @@
+{
+  "outputs_sha256": {
+    "maps.png": "86646df18359fce95edc7874d92cab6712566a6506939fc5a504882806df1259",
+    "metrics.csv": "9398496309330ea5adeb6794173d93ae9bf8f302f7ff89b07851128f9e857b85",
+    "metrics.json": "67e1e38c4d3bb2fb524a6ce3165fe39ecf029acfea22c605d7a469641bc4fe98"
+  },
+  "protocol_freeze_commit": "181782456a49aa252885861754a67934c3431007",
+  "code_sha256": {
+    "scripts/flood_step2.py": "20dfc047adacdec356c933a73fe05e57f7cede3d135090579da6e251ed098dc9",
+    "src/flood_validation.py": "3500fa8e0ef3e5aefb434d12602e910471b8fe6dc39977538e282fdd9feacfb1",
+    "src/flood_classes.py": "487f60e9e22667a4f60615770ce00906a968709f05bf030d243181407ed6cea9"
+  }
+}

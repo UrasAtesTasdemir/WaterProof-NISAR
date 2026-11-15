@@ -1,0 +1,29 @@
+{
+  "automated_tests": 46,
+  "test_result": "passed",
+  "server_health_http": 200,
+  "server_url": "http://127.0.0.1:8502",
+  "old_data_preserved": true,
+  "benchmark_files_unchanged": true,
+  "changed_preexisting_hashed_files": [
+    "app.py",
+    "requirements.txt",
+    "requirements-lock.txt"
+  ],
+  "actual_browser_tests": {
+    "original_default_metrics": true,
+    "osm_and_real_overlay_images_loaded": true,
+    "each_candidate_layer_toggle": true,
+    "zoom_scale_3_to_1_km": true,
+    "pan_map_pane_px": [
+      70,
+      30
+    ],
+    "coverage_selector_5_and_10_km": true
+  },
+  "native_area_km2": {
+    "5km": 25.0,
+    "10km": 100.0
+  },
+  "scientific_status": "Unvalidated candidates; no NISAR accuracy claim"
+}

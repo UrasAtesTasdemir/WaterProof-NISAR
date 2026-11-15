@@ -1,0 +1,332 @@
+{
+  "criteria": {
+    "max_abs_reference_time_gap_hours": 24,
+    "min_each_and_common_valid_fraction": 0.8,
+    "ranking": "Require compatible radar and nonzero reference-water support on both dates; rank change eligibility first, then both reference gaps <=24h, then larger common support, smaller max time gap, shorter NISAR interval. Rejected pairs remain rejected.",
+    "note": "Conservative full-AOI feasibility guardrails, not universal validation standards. Partial-area presence evaluation can still be useful but is not full-AOI or robust change validation. No agreement metrics used to rank."
+  },
+  "ranked_at_most_three_pairs": [
+    {
+      "before": {
+        "date": "2026-07-15",
+        "product_id": "NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001",
+        "acquisition_utc": "2026-07-15T11:19:05Z",
+        "track": 105,
+        "frame": 17,
+        "direction": "ASCENDING",
+        "polarization": [
+          "HH",
+          "HV"
+        ],
+        "bandwidth": [
+          "40+5"
+        ],
+        "crid": "P05023",
+        "aoi_footprint_coverage_fraction": 0.9999999999999999,
+        "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001.h5"
+      },
+      "after": {
+        "date": "2026-09-01",
+        "product_id": "NISAR_L2_PR_GCOV_029_105_A_017_4005_DHDH_A_20260901T111903_20260901T111937_P05023_N_F_J_001",
+        "acquisition_utc": "2026-09-01T11:19:03Z",
+        "track": 105,
+        "frame": 17,
+        "direction": "ASCENDING",
+        "polarization": [
+          "HH",
+          "HV"
+        ],
+        "bandwidth": [
+          "40+5"
+        ],
+        "crid": "P05023",
+        "aoi_footprint_coverage_fraction": 0.9999999999999999,
+        "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_029_105_A_017_4005_DHDH_A_20260901T111903_20260901T111937_P05023_N_F_J_001/NISAR_L2_PR_GCOV_029_105_A_017_4005_DHDH_A_20260901T111903_20260901T111937_P05023_N_F_J_001.h5"
+      },
+      "before_reference": {
+        "product_id": "OPERA_L3_DSWx-HLS_T15RYP_20260715T163131Z_20260718T071454Z_L8_30_v1.1",
+        "status": "inspected",
+        "reference_utc": "2026-07-15T16:31:31.043Z",
+        "collection": "OPERA_L3_DSWX-HLS_V1",
+        "subset_path": "data/pair_selection/OPERA_L3_DSWx-HLS_T15RYP_20260715T163131Z_20260718T071454Z_L8_30_v1.1_aoi_WTR.tif",
+        "access": "reused prior real AOI window",
+        "crs": "EPSG:32615",
+        "resolution_m": [
+          30.0,
+          30.0
+        ],
+        "aoi_pixel_centers": 15424,
+        "valid_pixels": 3866,
+        "valid_fraction": 0.25064834024896265,
+        "class_counts": {
+          "0": 3777,
+          "1": 8,
+          "2": 81,
+          "253": 11526,
+          "255": 32
+        },
+        "tile_cloud_cover_metadata": "58",
+        "validity_definition": "S1 codes0/1/3 or HLS0/1/2; all other codes excluded. Unknown is not nonwater.",
+        "nisar_date": "2026-07-15",
+        "time_offset_hours": 5.207234166666667,
+        "eligible_presence": false
+      },
+      "after_reference": {
+        "product_id": "OPERA_L3_DSWx-HLS_T15RYP_20260901T163155Z_20260903T021841Z_L8_30_v1.1",
+        "status": "inspected",
+        "reference_utc": "2026-09-01T16:31:55.343Z",
+        "collection": "OPERA_L3_DSWX-HLS_V1",
+        "subset_path": "data/pair_selection/OPERA_L3_DSWx-HLS_T15RYP_20260901T163155Z_20260903T021841Z_L8_30_v1.1_aoi_WTR.tif",
+        "access": "reused prior real AOI window",
+        "crs": "EPSG:32615",
+        "resolution_m": [
+          30.0,
+          30.0
+        ],
+        "aoi_pixel_centers": 15424,
+        "valid_pixels": 8639,
+        "valid_fraction": 0.5601011410788381,
+        "class_counts": {
+          "0": 7887,
+          "1": 394,
+          "2": 358,
+          "253": 6758,
+          "255": 27
+        },
+        "tile_cloud_cover_metadata": null,
+        "validity_definition": "S1 codes0/1/3 or HLS0/1/2; all other codes excluded. Unknown is not nonwater.",
+        "nisar_date": "2026-09-01",
+        "time_offset_hours": 5.214539722222223,
+        "eligible_presence": false
+      },
+      "common_reference_valid_fraction": 0.07747665975103735,
+      "presence_dates_eligible": 0,
+      "max_abs_time_offset_hours": 5.214539722222223,
+      "nisar_interval_days": 47.999976851851855,
+      "eligible_change": false,
+      "within24hours_both": true,
+      "reference_water_cells_in_common": [
+        16,
+        10
+      ]
+    },
+    {
+      "before": {
+        "date": "2026-08-20",
+        "product_id": "NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001",
+        "acquisition_utc": "2026-08-20T11:19:03Z",
+        "track": 105,
+        "frame": 17,
+        "direction": "ASCENDING",
+        "polarization": [
+          "HH",
+          "HV"
+        ],
+        "bandwidth": [
+          "40+5"
+        ],
+        "crid": "P05023",
+        "aoi_footprint_coverage_fraction": 0.9999999999999999,
+        "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001/NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001.h5"
+      },
+      "after": {
+        "date": "2026-09-01",
+        "product_id": "NISAR_L2_PR_GCOV_029_105_A_017_4005_DHDH_A_20260901T111903_20260901T111937_P05023_N_F_J_001",
+        "acquisition_utc": "2026-09-01T11:19:03Z",
+        "track": 105,
+        "frame": 17,
+        "direction": "ASCENDING",
+        "polarization": [
+          "HH",
+          "HV"
+        ],
+        "bandwidth": [
+          "40+5"
+        ],
+        "crid": "P05023",
+        "aoi_footprint_coverage_fraction": 0.9999999999999999,
+        "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_029_105_A_017_4005_DHDH_A_20260901T111903_20260901T111937_P05023_N_F_J_001/NISAR_L2_PR_GCOV_029_105_A_017_4005_DHDH_A_20260901T111903_20260901T111937_P05023_N_F_J_001.h5"
+      },
+      "before_reference": {
+        "product_id": "OPERA_L3_DSWx-HLS_T15RYP_20260821T163701Z_20260823T033117Z_S2A_30_v1.1",
+        "status": "inspected",
+        "reference_utc": "2026-08-21T16:45:31.558Z",
+        "collection": "OPERA_L3_DSWX-HLS_V1",
+        "subset_path": "data/pair_selection/OPERA_L3_DSWx-HLS_T15RYP_20260821T163701Z_20260823T033117Z_S2A_30_v1.1_aoi_WTR.tif",
+        "access": "reused prior real AOI window",
+        "crs": "EPSG:32615",
+        "resolution_m": [
+          30.0,
+          30.0
+        ],
+        "aoi_pixel_centers": 15424,
+        "valid_pixels": 11619,
+        "valid_fraction": 0.7533065352697096,
+        "class_counts": {
+          "0": 11051,
+          "1": 171,
+          "2": 397,
+          "252": 5,
+          "253": 3800
+        },
+        "tile_cloud_cover_metadata": null,
+        "validity_definition": "S1 codes0/1/3 or HLS0/1/2; all other codes excluded. Unknown is not nonwater.",
+        "nisar_date": "2026-08-20",
+        "time_offset_hours": 29.441266111111112,
+        "eligible_presence": false
+      },
+      "after_reference": {
+        "product_id": "OPERA_L3_DSWx-HLS_T15RYP_20260901T163155Z_20260903T021841Z_L8_30_v1.1",
+        "status": "inspected",
+        "reference_utc": "2026-09-01T16:31:55.343Z",
+        "collection": "OPERA_L3_DSWX-HLS_V1",
+        "subset_path": "data/pair_selection/OPERA_L3_DSWx-HLS_T15RYP_20260901T163155Z_20260903T021841Z_L8_30_v1.1_aoi_WTR.tif",
+        "access": "reused prior real AOI window",
+        "crs": "EPSG:32615",
+        "resolution_m": [
+          30.0,
+          30.0
+        ],
+        "aoi_pixel_centers": 15424,
+        "valid_pixels": 8639,
+        "valid_fraction": 0.5601011410788381,
+        "class_counts": {
+          "0": 7887,
+          "1": 394,
+          "2": 358,
+          "253": 6758,
+          "255": 27
+        },
+        "tile_cloud_cover_metadata": null,
+        "validity_definition": "S1 codes0/1/3 or HLS0/1/2; all other codes excluded. Unknown is not nonwater.",
+        "nisar_date": "2026-09-01",
+        "time_offset_hours": 5.214539722222223,
+        "eligible_presence": false
+      },
+      "common_reference_valid_fraction": 0.4131224066390041,
+      "presence_dates_eligible": 0,
+      "max_abs_time_offset_hours": 29.441266111111112,
+      "nisar_interval_days": 12.0,
+      "eligible_change": false,
+      "within24hours_both": false,
+      "reference_water_cells_in_common": [
+        387,
+        459
+      ]
+    },
+    {
+      "before": {
+        "date": "2026-07-15",
+        "product_id": "NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001",
+        "acquisition_utc": "2026-07-15T11:19:05Z",
+        "track": 105,
+        "frame": 17,
+        "direction": "ASCENDING",
+        "polarization": [
+          "HH",
+          "HV"
+        ],
+        "bandwidth": [
+          "40+5"
+        ],
+        "crid": "P05023",
+        "aoi_footprint_coverage_fraction": 0.9999999999999999,
+        "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001.h5"
+      },
+      "after": {
+        "date": "2026-08-20",
+        "product_id": "NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001",
+        "acquisition_utc": "2026-08-20T11:19:03Z",
+        "track": 105,
+        "frame": 17,
+        "direction": "ASCENDING",
+        "polarization": [
+          "HH",
+          "HV"
+        ],
+        "bandwidth": [
+          "40+5"
+        ],
+        "crid": "P05023",
+        "aoi_footprint_coverage_fraction": 0.9999999999999999,
+        "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001/NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001.h5"
+      },
+      "before_reference": {
+        "product_id": "OPERA_L3_DSWx-HLS_T15RYP_20260715T163131Z_20260718T071454Z_L8_30_v1.1",
+        "status": "inspected",
+        "reference_utc": "2026-07-15T16:31:31.043Z",
+        "collection": "OPERA_L3_DSWX-HLS_V1",
+        "subset_path": "data/pair_selection/OPERA_L3_DSWx-HLS_T15RYP_20260715T163131Z_20260718T071454Z_L8_30_v1.1_aoi_WTR.tif",
+        "access": "reused prior real AOI window",
+        "crs": "EPSG:32615",
+        "resolution_m": [
+          30.0,
+          30.0
+        ],
+        "aoi_pixel_centers": 15424,
+        "valid_pixels": 3866,
+        "valid_fraction": 0.25064834024896265,
+        "class_counts": {
+          "0": 3777,
+          "1": 8,
+          "2": 81,
+          "253": 11526,
+          "255": 32
+        },
+        "tile_cloud_cover_metadata": "58",
+        "validity_definition": "S1 codes0/1/3 or HLS0/1/2; all other codes excluded. Unknown is not nonwater.",
+        "nisar_date": "2026-07-15",
+        "time_offset_hours": 5.207234166666667,
+        "eligible_presence": false
+      },
+      "after_reference": {
+        "product_id": "OPERA_L3_DSWx-HLS_T15RYP_20260821T163701Z_20260823T033117Z_S2A_30_v1.1",
+        "status": "inspected",
+        "reference_utc": "2026-08-21T16:45:31.558Z",
+        "collection": "OPERA_L3_DSWX-HLS_V1",
+        "subset_path": "data/pair_selection/OPERA_L3_DSWx-HLS_T15RYP_20260821T163701Z_20260823T033117Z_S2A_30_v1.1_aoi_WTR.tif",
+        "access": "reused prior real AOI window",
+        "crs": "EPSG:32615",
+        "resolution_m": [
+          30.0,
+          30.0
+        ],
+        "aoi_pixel_centers": 15424,
+        "valid_pixels": 11619,
+        "valid_fraction": 0.7533065352697096,
+        "class_counts": {
+          "0": 11051,
+          "1": 171,
+          "2": 397,
+          "252": 5,
+          "253": 3800
+        },
+        "tile_cloud_cover_metadata": null,
+        "validity_definition": "S1 codes0/1/3 or HLS0/1/2; all other codes excluded. Unknown is not nonwater.",
+        "nisar_date": "2026-08-20",
+        "time_offset_hours": 29.441266111111112,
+        "eligible_presence": false
+      },
+      "common_reference_valid_fraction": 0.22653008298755187,
+      "presence_dates_eligible": 0,
+      "max_abs_time_offset_hours": 29.441266111111112,
+      "nisar_interval_days": 35.999976851851855,
+      "eligible_change": false,
+      "within24hours_both": false,
+      "reference_water_cells_in_common": [
+        89,
+        59
+      ]
+    }
+  ],
+  "decision": "NO-GO for paired independent validation",
+  "production_unchanged": true,
+  "new_nisar_products_downloaded": false,
+  "limitations": [
+    "Reference products are not ground truth; no flood event inferred.",
+    "30m reference pixels mix 10m canal/surface features.",
+    "S1 inundated vegetation and HLS partial water differ from open-water low-HH detection; class definitions must be separated.",
+    "Hours of timing difference can matter in tidal/drainage landscapes.",
+    "Only the original June21/July3 radar subsets are cached; later NISAR validity remains to be checked with small windows."
+  ]
+}

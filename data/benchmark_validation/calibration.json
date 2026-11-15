@@ -1,0 +1,12 @@
+{
+  "band_index": 1,
+  "band": "VH",
+  "threshold_db": -20.5,
+  "training_macro_F1": 0.3682830684661647,
+  "input_units": "dB",
+  "filter": "3x3 mask-aware linear-power mean; radar-valid support only, never label-valid support",
+  "objective": "Mean per-chip training F1, undefined F1 counted as0; ties choose first VV then most-negative threshold. Grid -30..-8dB step0.5. No NISAR -16dB reuse.",
+  "calibration_split": "official train subset",
+  "evaluation_split": "official test subset",
+  "baseline": "Per-image 256-bin Otsu on same selected band after same filtering, histogram uses radar validity only, never test annotations."
+}

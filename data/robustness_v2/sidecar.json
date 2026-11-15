@@ -1,0 +1,18 @@
+{
+  "description": "Sidecar for data/robustness_v2 outputs (version 2 of the robustness checks)",
+  "sources_sha256": {
+    "data/polarization_analysis/six_date/hh_db.tif": "dc91713753f78d6c1cf8b18b2422f6a3d785e2b3972465bbe4a54a6a8aefb26d",
+    "data/polarization_analysis/six_date/hv_db.tif": "ce8ad75230f246c012b62ea63776068f40e8fa93f285135eb7ac7ae3b7e6551e",
+    "data/polarization_analysis/six_date/hh_hv_cube.nc": "433f905331d03b892692ca251ae0fbf86b6f4fdd51932e9936b2dd7efa6fc199",
+    "data/polarization_analysis/six_date/results.json": "68be4b5505ec49bef8da3ae47b64d24c0080060854d1315f2ab79fb0ac134786",
+    "data/investigation_engine/results.json": "be118b6eb04cad6d7784f6e84f20990426688fe7efad887dd13aa5453c9470f3",
+    "data/investigation_engine/region_labels.tif": "66f85652615878a2c6ee0b1f3f3d86f7aff85808fcdc4d53958ed1401cc1b088"
+  },
+  "outputs_sha256": {
+    "settings_sensitivity.csv": "f1c49ab3c40132e87bae460116d78bb13df25c739072d064623eec054f10d81d",
+    "leave_one_date_out.csv": "f754fa8f7f16e3b2a6a621f018148034dd4de51d32fe9936b54a3ec451666c2f",
+    "ring_comparison.csv": "8aa6fe563dc0ed7684e5e0cd4506b2c2a5144612d7fbf8109e43b664210dc188",
+    "results.json": "03418c702cc0627eafc0bd18ea51d5a8719b7498eac117dc0608b81f0952bd79",
+    "REPORT.md": "bca05c0da6e12a26421f85a59aa3a6bf28c31c1374f2c2321d240786e60e3077"
+  }
+}

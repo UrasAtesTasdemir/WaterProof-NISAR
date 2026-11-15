@@ -1,0 +1,38 @@
+{
+  "place": "thailand_prachinburi",
+  "lat": 14.0541,
+  "lon": 101.3724,
+  "window_km": 10.0,
+  "surface": "river floodplain: rice paddies, town, aquaculture",
+  "group": {
+    "instrument": "L",
+    "track": "004",
+    "direction": "D",
+    "frame": "081",
+    "bandwidth": "4005",
+    "polarization": "DHDH",
+    "source": "A",
+    "crid": "P05023"
+  },
+  "dates": [
+    "2026-09-06",
+    "2026-09-18",
+    "2026-09-30"
+  ],
+  "product_ids": [
+    "NISAR_L2_PR_GCOV_030_004_D_081_4005_DHDH_A_20260906T114712_20260906T114746_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_031_004_D_081_4005_DHDH_A_20260918T114712_20260918T114746_P05023_F_F_J_001",
+    "NISAR_L2_PR_GCOV_032_004_D_081_4005_DHDH_A_20260930T114712_20260930T114746_P05023_N_F_J_001"
+  ],
+  "cache_keys": [
+    "7b2fed4430462b9918c74cba85e75c77fd2d1b801978b2b554d303b9ac674e6f",
+    "360026118c0af32216753f45d5fc38c9b5d56ee58fef92e83aa3e80a328c54a2",
+    "fdffb8490a9a69371135494141f69a60b2ce4b7be1d3ba98b3c6080d5aa3eb73"
+  ],
+  "selection_rule": "Flood-validation scene (docs/FLOOD_VALIDATION_PROTOCOL.md): AOI thailand_prachinburi, track 004 D, pre 2026-09-06, pre 2026-09-18 (forecast orbit; negative control), during 2026-09-30.",
+  "catalog_snapshot": "catalog/thailand_prachinburi.json",
+  "processing_version": "live-window-v1",
+  "status": "cached",
+  "source": "copied unchanged from data/live_cache (windows read on 2026-11-15 for the flood validation)",
+  "prewarmed_utc": "2026-11-15T06:46:28.370564+00:00"
+}

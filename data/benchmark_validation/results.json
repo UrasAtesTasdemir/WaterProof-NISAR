@@ -1,0 +1,956 @@
+{
+  "status": "success",
+  "dataset": "Sen1Floods11 v1.1 hand labels",
+  "sampling": "First six alphabetic event groups shared by official train/test, two chips per group per split by SHA256(FloodPulse-Sen1Floods11-v1:filename). Fixed before opening labels.",
+  "train_scenes": 12,
+  "test_scenes": 12,
+  "groups": [
+    "Ghana",
+    "India",
+    "Mekong",
+    "Nigeria",
+    "Pakistan",
+    "Paraguay"
+  ],
+  "calibration": {
+    "band_index": 1,
+    "band": "VH",
+    "threshold_db": -20.5,
+    "training_macro_F1": 0.3682830684661647,
+    "input_units": "dB",
+    "filter": "3x3 mask-aware linear-power mean; radar-valid support only, never label-valid support",
+    "objective": "Mean per-chip training F1, undefined F1 counted as0; ties choose first VV then most-negative threshold. Grid -30..-8dB step0.5. No NISAR -16dB reuse.",
+    "calibration_split": "official train subset",
+    "evaluation_split": "official test subset",
+    "baseline": "Per-image 256-bin Otsu on same selected band after same filtering, histogram uses radar validity only, never test annotations."
+  },
+  "test_micro_metrics": {
+    "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+    "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+      [
+        1976949,
+        143271
+      ],
+      [
+        71213,
+        215343
+      ]
+    ],
+    "precision": 0.6004868744666968,
+    "recall": 0.7514866204162537,
+    "F1": 0.6675542880171118,
+    "IoU": 0.500999239228806,
+    "valid_pixels": 2406776
+  },
+  "baseline_micro_metrics": {
+    "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+    "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+      [
+        1514401,
+        605819
+      ],
+      [
+        73970,
+        212586
+      ]
+    ],
+    "precision": 0.25975647753862696,
+    "recall": 0.7418654643420484,
+    "F1": 0.3847846213576769,
+    "IoU": 0.23822496147919878,
+    "valid_pixels": 2406776
+  },
+  "test_scene_metrics": [
+    {
+      "scene_id": "Ghana_313799",
+      "group": "Ghana",
+      "split": "official test",
+      "metrics": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            229471,
+            60
+          ],
+          [
+            13812,
+            1121
+          ]
+        ],
+        "precision": 0.9491955969517358,
+        "recall": 0.07506863992499832,
+        "F1": 0.1391336725828472,
+        "IoU": 0.07476822517174682,
+        "valid_pixels": 244464
+      },
+      "baseline": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            144041,
+            85490
+          ],
+          [
+            2955,
+            11978
+          ]
+        ],
+        "precision": 0.12289161570977142,
+        "recall": 0.8021161186633631,
+        "F1": 0.21312977642547665,
+        "IoU": 0.11927546478396384,
+        "valid_pixels": 244464
+      },
+      "otsu_threshold_db": -14.613494259229903,
+      "metadata": {
+        "crs": "EPSG:4326",
+        "shape": [
+          512,
+          512
+        ],
+        "transform": [
+          8.983152841195215e-05,
+          0.0,
+          -1.471799761501424,
+          0.0,
+          -8.983152841195215e-05,
+          9.336729737024658
+        ],
+        "radar_bands": [
+          "VV",
+          "VH"
+        ],
+        "radar_nodata": [
+          "nan",
+          "nan"
+        ],
+        "label_nodata_metadata": "None",
+        "label_codes": [
+          -1,
+          0,
+          1
+        ],
+        "units_source": "Official README: S1 GRD dB; bands also verified from actual TIFF descriptions",
+        "label_valid_pixels": 244464,
+        "radar_valid_pixels": 262144
+      }
+    },
+    {
+      "scene_id": "Ghana_866994",
+      "group": "Ghana",
+      "split": "official test",
+      "metrics": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            1021,
+            10519
+          ],
+          [
+            34500,
+            71471
+          ]
+        ],
+        "precision": 0.8717038663251616,
+        "recall": 0.6744392333751686,
+        "F1": 0.7604875479487766,
+        "IoU": 0.613537642716113,
+        "valid_pixels": 117511
+      },
+      "baseline": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            1059,
+            10481
+          ],
+          [
+            39110,
+            66861
+          ]
+        ],
+        "precision": 0.8644850146104316,
+        "recall": 0.6309367657189231,
+        "F1": 0.7294736325301533,
+        "IoU": 0.574150723044688,
+        "valid_pixels": 117511
+      },
+      "otsu_threshold_db": -23.382181501694106,
+      "metadata": {
+        "crs": "EPSG:4326",
+        "shape": [
+          512,
+          512
+        ],
+        "transform": [
+          8.983152841195215e-05,
+          0.0,
+          -0.735899880750712,
+          0.0,
+          -8.983152841195215e-05,
+          8.32486740099243
+        ],
+        "radar_bands": [
+          "VV",
+          "VH"
+        ],
+        "radar_nodata": [
+          "nan",
+          "nan"
+        ],
+        "label_nodata_metadata": "None",
+        "label_codes": [
+          -1,
+          0,
+          1
+        ],
+        "units_source": "Official README: S1 GRD dB; bands also verified from actual TIFF descriptions",
+        "label_valid_pixels": 117511,
+        "radar_valid_pixels": 262144
+      }
+    },
+    {
+      "scene_id": "India_44475",
+      "group": "India",
+      "split": "official test",
+      "metrics": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            259890,
+            285
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "precision": 0.0,
+        "recall": null,
+        "F1": 0.0,
+        "IoU": 0.0,
+        "valid_pixels": 260175
+      },
+      "baseline": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            121710,
+            138465
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "precision": 0.0,
+        "recall": null,
+        "F1": 0.0,
+        "IoU": 0.0,
+        "valid_pixels": 260175
+      },
+      "otsu_threshold_db": -12.923751282075244,
+      "metadata": {
+        "crs": "EPSG:4326",
+        "shape": [
+          512,
+          512
+        ],
+        "transform": [
+          8.983152841195215e-05,
+          0.0,
+          93.27530988515275,
+          0.0,
+          -8.983152841195215e-05,
+          26.492395707025633
+        ],
+        "radar_bands": [
+          "VV",
+          "VH"
+        ],
+        "radar_nodata": [
+          "nan",
+          "nan"
+        ],
+        "label_nodata_metadata": "None",
+        "label_codes": [
+          -1,
+          0
+        ],
+        "units_source": "Official README: S1 GRD dB; bands also verified from actual TIFF descriptions",
+        "label_valid_pixels": 260175,
+        "radar_valid_pixels": 262144
+      }
+    },
+    {
+      "scene_id": "India_952728",
+      "group": "India",
+      "split": "official test",
+      "metrics": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            179404,
+            3464
+          ],
+          [
+            4644,
+            1204
+          ]
+        ],
+        "precision": 0.2579263067694944,
+        "recall": 0.20588235294117646,
+        "F1": 0.2289844047166223,
+        "IoU": 0.12929553264604812,
+        "valid_pixels": 188716
+      },
+      "baseline": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            100546,
+            82322
+          ],
+          [
+            1151,
+            4697
+          ]
+        ],
+        "precision": 0.05397671772831221,
+        "recall": 0.8031805745554036,
+        "F1": 0.10115541580970636,
+        "IoU": 0.05327208801179539,
+        "valid_pixels": 188716
+      },
+      "otsu_threshold_db": -15.36521129017177,
+      "metadata": {
+        "crs": "EPSG:4326",
+        "shape": [
+          512,
+          512
+        ],
+        "transform": [
+          8.983152841195215e-05,
+          0.0,
+          93.78124105316886,
+          0.0,
+          -8.983152841195215e-05,
+          26.906339389947906
+        ],
+        "radar_bands": [
+          "VV",
+          "VH"
+        ],
+        "radar_nodata": [
+          "nan",
+          "nan"
+        ],
+        "label_nodata_metadata": "None",
+        "label_codes": [
+          -1,
+          0,
+          1
+        ],
+        "units_source": "Official README: S1 GRD dB; bands also verified from actual TIFF descriptions",
+        "label_valid_pixels": 188716,
+        "radar_valid_pixels": 262144
+      }
+    },
+    {
+      "scene_id": "Mekong_254910",
+      "group": "Mekong",
+      "split": "official test",
+      "metrics": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            197427,
+            7933
+          ],
+          [
+            87,
+            48
+          ]
+        ],
+        "precision": 0.0060142839243202606,
+        "recall": 0.35555555555555557,
+        "F1": 0.011828486939379004,
+        "IoU": 0.005949429846306396,
+        "valid_pixels": 205495
+      },
+      "baseline": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            181959,
+            23401
+          ],
+          [
+            26,
+            109
+          ]
+        ],
+        "precision": 0.004636324968098682,
+        "recall": 0.8074074074074075,
+        "F1": 0.009219708183548319,
+        "IoU": 0.004631203263086336,
+        "valid_pixels": 205495
+      },
+      "otsu_threshold_db": -17.479997651626327,
+      "metadata": {
+        "crs": "EPSG:4326",
+        "shape": [
+          512,
+          512
+        ],
+        "transform": [
+          8.983152841195215e-05,
+          0.0,
+          105.8775953430087,
+          0.0,
+          -8.983152841195215e-05,
+          12.556291715309024
+        ],
+        "radar_bands": [
+          "VV",
+          "VH"
+        ],
+        "radar_nodata": [
+          "nan",
+          "nan"
+        ],
+        "label_nodata_metadata": "None",
+        "label_codes": [
+          -1,
+          0,
+          1
+        ],
+        "units_source": "Official README: S1 GRD dB; bands also verified from actual TIFF descriptions",
+        "label_valid_pixels": 205495,
+        "radar_valid_pixels": 262144
+      }
+    },
+    {
+      "scene_id": "Mekong_45934",
+      "group": "Mekong",
+      "split": "official test",
+      "metrics": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            261473,
+            90
+          ],
+          [
+            220,
+            76
+          ]
+        ],
+        "precision": 0.4578313253012048,
+        "recall": 0.25675675675675674,
+        "F1": 0.329004329004329,
+        "IoU": 0.19689119170984457,
+        "valid_pixels": 261859
+      },
+      "baseline": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            142313,
+            119250
+          ],
+          [
+            2,
+            294
+          ]
+        ],
+        "precision": 0.002459345512949207,
+        "recall": 0.9932432432432432,
+        "F1": 0.004906542056074766,
+        "IoU": 0.0024593043681929968,
+        "valid_pixels": 261859
+      },
+      "otsu_threshold_db": -14.148359016396373,
+      "metadata": {
+        "crs": "EPSG:4326",
+        "shape": [
+          512,
+          512
+        ],
+        "transform": [
+          8.983152841195215e-05,
+          0.0,
+          105.8775953430087,
+          0.0,
+          -8.983152841195215e-05,
+          12.142348032386748
+        ],
+        "radar_bands": [
+          "VV",
+          "VH"
+        ],
+        "radar_nodata": [
+          "nan",
+          "nan"
+        ],
+        "label_nodata_metadata": "None",
+        "label_codes": [
+          -1,
+          0,
+          1
+        ],
+        "units_source": "Official README: S1 GRD dB; bands also verified from actual TIFF descriptions",
+        "label_valid_pixels": 261859,
+        "radar_valid_pixels": 262144
+      }
+    },
+    {
+      "scene_id": "Nigeria_417184",
+      "group": "Nigeria",
+      "split": "official test",
+      "metrics": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            43223,
+            5528
+          ],
+          [
+            176,
+            1208
+          ]
+        ],
+        "precision": 0.17933491686460806,
+        "recall": 0.8728323699421965,
+        "F1": 0.2975369458128079,
+        "IoU": 0.17476851851851852,
+        "valid_pixels": 50135
+      },
+      "baseline": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            44317,
+            4434
+          ],
+          [
+            218,
+            1166
+          ]
+        ],
+        "precision": 0.2082142857142857,
+        "recall": 0.8424855491329479,
+        "F1": 0.33390607101947306,
+        "IoU": 0.20041251289102785,
+        "valid_pixels": 50135
+      },
+      "otsu_threshold_db": -21.24086825269084,
+      "metadata": {
+        "crs": "EPSG:4326",
+        "shape": [
+          512,
+          512
+        ],
+        "transform": [
+          8.983152841195215e-05,
+          0.0,
+          5.887199046005696,
+          0.0,
+          -8.983152841195215e-05,
+          9.704679677400014
+        ],
+        "radar_bands": [
+          "VV",
+          "VH"
+        ],
+        "radar_nodata": [
+          "nan",
+          "nan"
+        ],
+        "label_nodata_metadata": "None",
+        "label_codes": [
+          -1,
+          0,
+          1
+        ],
+        "units_source": "Official README: S1 GRD dB; bands also verified from actual TIFF descriptions",
+        "label_valid_pixels": 59069,
+        "radar_valid_pixels": 156380
+      }
+    },
+    {
+      "scene_id": "Nigeria_812045",
+      "group": "Nigeria",
+      "split": "official test",
+      "metrics": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            110548,
+            6453
+          ],
+          [
+            12478,
+            107105
+          ]
+        ],
+        "precision": 0.9431744130752567,
+        "recall": 0.8956540645409464,
+        "F1": 0.9188002110310928,
+        "IoU": 0.849796883430131,
+        "valid_pixels": 236584
+      },
+      "baseline": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            114414,
+            2587
+          ],
+          [
+            23818,
+            95765
+          ]
+        ],
+        "precision": 0.9736965186269725,
+        "recall": 0.8008245319150715,
+        "F1": 0.8788400211072108,
+        "IoU": 0.7838667430629451,
+        "valid_pixels": 236584
+      },
+      "otsu_threshold_db": -22.903925511422205,
+      "metadata": {
+        "crs": "EPSG:4326",
+        "shape": [
+          512,
+          512
+        ],
+        "transform": [
+          8.983152841195215e-05,
+          0.0,
+          5.795211560911857,
+          0.0,
+          -8.983152841195215e-05,
+          9.10676102429006
+        ],
+        "radar_bands": [
+          "VV",
+          "VH"
+        ],
+        "radar_nodata": [
+          "nan",
+          "nan"
+        ],
+        "label_nodata_metadata": "None",
+        "label_codes": [
+          -1,
+          0,
+          1
+        ],
+        "units_source": "Official README: S1 GRD dB; bands also verified from actual TIFF descriptions",
+        "label_valid_pixels": 237134,
+        "radar_valid_pixels": 261565
+      }
+    },
+    {
+      "scene_id": "Pakistan_167553",
+      "group": "Pakistan",
+      "split": "official test",
+      "metrics": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            168135,
+            77512
+          ],
+          [
+            637,
+            821
+          ]
+        ],
+        "precision": 0.010480895663385802,
+        "recall": 0.5631001371742113,
+        "F1": 0.02057876201576619,
+        "IoU": 0.010396353045460301,
+        "valid_pixels": 247105
+      },
+      "baseline": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            135273,
+            110374
+          ],
+          [
+            400,
+            1058
+          ]
+        ],
+        "precision": 0.009494579653959365,
+        "recall": 0.7256515775034293,
+        "F1": 0.018743910000885818,
+        "IoU": 0.009460619500679592,
+        "valid_pixels": 247105
+      },
+      "otsu_threshold_db": -19.13575407894377,
+      "metadata": {
+        "crs": "EPSG:4326",
+        "shape": [
+          512,
+          512
+        ],
+        "transform": [
+          8.983152841195215e-05,
+          0.0,
+          70.5084073244276,
+          0.0,
+          -8.983152841195215e-05,
+          30.35587008096687
+        ],
+        "radar_bands": [
+          "VV",
+          "VH"
+        ],
+        "radar_nodata": [
+          "nan",
+          "nan"
+        ],
+        "label_nodata_metadata": "None",
+        "label_codes": [
+          -1,
+          0,
+          1
+        ],
+        "units_source": "Official README: S1 GRD dB; bands also verified from actual TIFF descriptions",
+        "label_valid_pixels": 247105,
+        "radar_valid_pixels": 262144
+      }
+    },
+    {
+      "scene_id": "Pakistan_664885",
+      "group": "Pakistan",
+      "split": "official test",
+      "metrics": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            50040,
+            20587
+          ],
+          [
+            88,
+            2295
+          ]
+        ],
+        "precision": 0.10029717682020803,
+        "recall": 0.9630717582878724,
+        "F1": 0.18167425291905798,
+        "IoU": 0.0999129299085764,
+        "valid_pixels": 73010
+      },
+      "baseline": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            46886,
+            23741
+          ],
+          [
+            73,
+            2310
+          ]
+        ],
+        "precision": 0.0886722198763963,
+        "recall": 0.9693663449433487,
+        "F1": 0.16248153618906944,
+        "IoU": 0.08842443729903537,
+        "valid_pixels": 73010
+      },
+      "otsu_threshold_db": -20.0780056895028,
+      "metadata": {
+        "crs": "EPSG:4326",
+        "shape": [
+          512,
+          512
+        ],
+        "transform": [
+          8.983152841195215e-05,
+          0.0,
+          71.79623211574133,
+          0.0,
+          -8.983152841195215e-05,
+          32.70155095085976
+        ],
+        "radar_bands": [
+          "VV",
+          "VH"
+        ],
+        "radar_nodata": [
+          "nan",
+          "nan"
+        ],
+        "label_nodata_metadata": "None",
+        "label_codes": [
+          -1,
+          0,
+          1
+        ],
+        "units_source": "Official README: S1 GRD dB; bands also verified from actual TIFF descriptions",
+        "label_valid_pixels": 73010,
+        "radar_valid_pixels": 262144
+      }
+    },
+    {
+      "scene_id": "Paraguay_683296",
+      "group": "Paraguay",
+      "split": "official test",
+      "metrics": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            250569,
+            1600
+          ],
+          [
+            1681,
+            5728
+          ]
+        ],
+        "precision": 0.7816593886462883,
+        "recall": 0.7731137805371845,
+        "F1": 0.7773630996810749,
+        "IoU": 0.6358086358086358,
+        "valid_pixels": 259578
+      },
+      "baseline": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            251828,
+            341
+          ],
+          [
+            1893,
+            5516
+          ]
+        ],
+        "precision": 0.941779067782141,
+        "recall": 0.7444999325145094,
+        "F1": 0.8315995778682346,
+        "IoU": 0.711741935483871,
+        "valid_pixels": 259578
+      },
+      "otsu_threshold_db": -21.752680476898654,
+      "metadata": {
+        "crs": "EPSG:4326",
+        "shape": [
+          512,
+          512
+        ],
+        "transform": [
+          8.983152841195215e-05,
+          0.0,
+          -57.308203213461695,
+          0.0,
+          -8.983152841195215e-05,
+          -24.0547273520389
+        ],
+        "radar_bands": [
+          "VV",
+          "VH"
+        ],
+        "radar_nodata": [
+          "nan",
+          "nan"
+        ],
+        "label_nodata_metadata": "None",
+        "label_codes": [
+          -1,
+          0,
+          1
+        ],
+        "units_source": "Official README: S1 GRD dB; bands also verified from actual TIFF descriptions",
+        "label_valid_pixels": 259578,
+        "radar_valid_pixels": 262144
+      }
+    },
+    {
+      "scene_id": "Paraguay_651904",
+      "group": "Paraguay",
+      "split": "official test",
+      "metrics": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            225748,
+            9240
+          ],
+          [
+            2890,
+            24266
+          ]
+        ],
+        "precision": 0.7242284963887065,
+        "recall": 0.8935778465164236,
+        "F1": 0.8000395634829053,
+        "IoU": 0.6667216177601935,
+        "valid_pixels": 262144
+      },
+      "baseline": {
+        "label": "Agreement with selected reference product, NOT ground-truth flood accuracy",
+        "matrix_rows_reference_nonwater_water_columns_prediction_nonwater_water": [
+          [
+            230055,
+            4933
+          ],
+          [
+            4324,
+            22832
+          ]
+        ],
+        "precision": 0.8223302719250856,
+        "recall": 0.8407718367948152,
+        "F1": 0.8314488082882686,
+        "IoU": 0.7115210819907133,
+        "valid_pixels": 262144
+      },
+      "otsu_threshold_db": -21.645381142816234,
+      "metadata": {
+        "crs": "EPSG:4326",
+        "shape": [
+          512,
+          512
+        ],
+        "transform": [
+          8.983152841195215e-05,
+          0.0,
+          -57.0782345007271,
+          0.0,
+          -8.983152841195215e-05,
+          -24.698639747695772
+        ],
+        "radar_bands": [
+          "VV",
+          "VH"
+        ],
+        "radar_nodata": [
+          "nan",
+          "nan"
+        ],
+        "label_nodata_metadata": "None",
+        "label_codes": [
+          0,
+          1
+        ],
+        "units_source": "Official README: S1 GRD dB; bands also verified from actual TIFF descriptions",
+        "label_valid_pixels": 262144,
+        "radar_valid_pixels": 262144
+      }
+    }
+  ],
+  "test_macro_F1": 0.37211927301122155,
+  "worst_scene": "India_44475",
+  "test_valid_pixels": 2406776,
+  "interpretation": "Small selected official test-chip subset; not full benchmark, event-independent holdout, NISAR accuracy, or confirmed flood extent. Hand labels include surface water; zero is nonwater, -1 ignored. Both bands read, training chooses band/threshold; test frozen and no selective removal. Training/test chips can share event geography under official split.",
+  "download_bytes": 39714432
+}

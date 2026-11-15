@@ -1,0 +1,10 @@
+test_catalog_configuration_and_reject_incompatible_or_uncovered (test_time_series.TimeSeriesTests.test_catalog_configuration_and_reject_incompatible_or_uncovered) ... ok
+test_pair_sign_common_mask_and_identical_dates (test_time_series.TimeSeriesTests.test_pair_sign_common_mask_and_identical_dates) ... ok
+test_real_selected_point_matches_native_pixel_and_missing (test_time_series.TimeSeriesTests.test_real_selected_point_matches_native_pixel_and_missing) ... ok
+test_real_six_date_grid_units_masks_and_geolocation (test_time_series.TimeSeriesTests.test_real_six_date_grid_units_masks_and_geolocation) ... ok
+test_temporal_residual_zero_variance_outlier_missing (test_time_series.TimeSeriesTests.test_temporal_residual_zero_variance_outlier_missing) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.298s
+
+OK

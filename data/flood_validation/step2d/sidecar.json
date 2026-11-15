@@ -1,0 +1,12 @@
+{
+  "outputs_sha256": {
+    "metrics.csv": "8047928d4131bee51f08e82ff09aa16475035822cfe2cacd0f6e413672c451ea",
+    "metrics.json": "c4e9feb4c4ab741dfe65089c46e51cc8e7473fecde543a2e8664a6aeb1f41e97"
+  },
+  "protocol_freeze_commit": "181782456a49aa252885861754a67934c3431007",
+  "code_sha256": {
+    "scripts/flood_step2.py": "ffbf63d72246102c08d2d2e479abe0bcb6beb02145b38880d36c2ab2d943f06b",
+    "src/flood_validation.py": "81385d46df532299f55b0d85fd1b2f123fca4c2ead3e8c14199bf734aa8f9e02",
+    "src/flood_classes.py": "487f60e9e22667a4f60615770ce00906a968709f05bf030d243181407ed6cea9"
+  }
+}

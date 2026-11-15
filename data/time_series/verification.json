@@ -1,0 +1,84 @@
+{
+  "phase0": {
+    "checkpoint_commit": "59c8bb4a90a0cfa4090d9ca1395be013c4e27d69",
+    "checkpoint_tag": "pre-timeseries-phase0",
+    "baseline_tests_passed": 46,
+    "secrets_excluded": true,
+    "git_backend": "Dulwich in project venv; system Git blocked by Xcode license"
+  },
+  "phase1": {
+    "actual_dates_processed": 6,
+    "dates": [
+      "2026-06-21",
+      "2026-07-03",
+      "2026-07-15",
+      "2026-07-27",
+      "2026-08-20",
+      "2026-09-01"
+    ],
+    "common_valid_pixels": 138779,
+    "common_valid_area_km2": 13.8779,
+    "alignment_corrections": 0,
+    "original_dates_reused": 2,
+    "new_small_windows": 4,
+    "range_read_bytes": 35651616,
+    "elapsed_seconds": 142.23745650000637,
+    "full_hdf5_downloaded": false,
+    "tests_passed_before_ui": 5
+  },
+  "phase2": {
+    "regression_tests_passed": 54,
+    "network_blocked_widget_tests": true,
+    "all_six_date_selectors_automated": true,
+    "geographic_observation_change_anomaly_layers": true,
+    "coordinate_and_neighborhood_sampling": true,
+    "missing_data_and_out_of_extent_handling": true,
+    "server_health_http": 200,
+    "server_file_watcher": "poll (macOS FSEvents unavailable in execution context)",
+    "final_regression_log": "data/time_series/regression_tests.log"
+  },
+  "preservation": {
+    "existing_data_files_sha256_unchanged": 254,
+    "existing_tracked_files_modified": [
+      "app.py",
+      "README.md"
+    ],
+    "benchmark_results_unchanged": true,
+    "scientific_algorithm_unchanged": true
+  },
+  "actual_browser_checks": {
+    "baseline_default_areas": true,
+    "six_date_workspace_rendered": true,
+    "date_comparison": "2026-06-21 / 2026-09-01, then 2026-07-15 / 2026-09-01",
+    "layers_inspected": [
+      "Selected observation",
+      "Comparison \u2212 selected (dB)",
+      "Selected anomaly (dB)"
+    ],
+    "point_coordinates": [
+      -90.29,
+      29.915
+    ],
+    "native_row_column": [
+      114,
+      196
+    ],
+    "neighborhood": "3x3",
+    "valid_observations": 6,
+    "missing_observations": 0,
+    "table_matches_saved_point_check": true,
+    "real_raster_overlay_loaded": true,
+    "overlay_toggle": true,
+    "zoom_button": true,
+    "previous_geographic_page": true,
+    "previous_benchmark_page": true,
+    "workspace_return_defaults_match_server": true,
+    "final_hh_map_selected_date": "2026-07-15",
+    "zoom_scale_before_after": [
+      "500 m",
+      "300 m"
+    ]
+  },
+  "scope_stop": "Phases 3 and 4 not performed; user approval required.",
+  "scientific_status": "Exploratory radar dynamics; no NISAR accuracy or confirmed flooding claim."
+}

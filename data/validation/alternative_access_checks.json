@@ -1,0 +1,45 @@
+{
+  "scope": "Alternative recommendation only. Header/range access checks, no new-region rasters processed.",
+  "products": [
+    {
+      "product_id": "NISAR_L2_PR_GCOV_025_163_A_017_4005_DHDH_A_20260719T115223_20260719T115257_P05023_N_F_J_001",
+      "date": "2026-07-19T11:52:23Z",
+      "redirects": [
+        {
+          "http_status": 303,
+          "from_host": "nisar.asf.earthdatacloud.nasa.gov",
+          "to_host": "d1mv8zhcvry6x4.cloudfront.net"
+        }
+      ],
+      "http_status": 206,
+      "accessible_hdf5_signature": true
+    },
+    {
+      "product_id": "NISAR_L2_PR_GCOV_024_163_A_017_4005_DHDH_A_20260707T115223_20260707T115258_P05023_N_F_J_001",
+      "date": "2026-07-07T11:52:23Z",
+      "redirects": [
+        {
+          "http_status": 303,
+          "from_host": "nisar.asf.earthdatacloud.nasa.gov",
+          "to_host": "d1mv8zhcvry6x4.cloudfront.net"
+        }
+      ],
+      "http_status": 206,
+      "accessible_hdf5_signature": true
+    },
+    {
+      "product_id": "OPERA_L3_DSWx-HLS_T14RMU_20260709T170835Z_20260712T112028Z_L8_30_v1.1",
+      "date": "2026-07-09T17:08:35.773Z",
+      "tile_cloud_cover": "0",
+      "http_status": 206,
+      "range_accessible": true
+    },
+    {
+      "product_id": "OPERA_L3_DSWx-HLS_T14RMU_20260720T171859Z_20260727T174922Z_S2B_30_v1.1",
+      "date": "2026-07-20T17:35:25.611Z",
+      "tile_cloud_cover": "0",
+      "http_status": 206,
+      "range_accessible": true
+    }
+  ]
+}

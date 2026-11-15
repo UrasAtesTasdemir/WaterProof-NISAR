@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "catalog_observations": 7,
+  "compatible_12day_pairs": 3,
+  "optical_windows_inspected": 12,
+  "nisar_small_windows_inspected": 2,
+  "reference_pixel_count_checks": true,
+  "original_scientific_hashes_unchanged": true,
+  "no_new_map": true,
+  "decision": "NO-GO validated flood extent"
+}
